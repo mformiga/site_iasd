@@ -104,7 +104,7 @@ $scientists = [
     </section>
 
     <!-- Scientists Section -->
-    <section id="cientistas" class="py-12 container mx-auto px-4">
+    <section id="cientistas" class="py-4 container mx-auto px-4">
         @foreach($scientists as $category)
         <div class="mb-12">
             <div class="text-center mb-8">
@@ -152,7 +152,7 @@ $scientists = [
     </section>
 
     <!-- SCB Section -->
-    <section class="py-1 container mx-auto px-4">
+    <section class="container mx-auto px-4">
         <div class="bg-blue-900 text-white p-8 md:p-12 rounded-3xl max-w-5xl mx-auto">
             <h2 class="text-3xl mb-6">Conheça a Sociedade Criacionista Brasileira (SCB)!</h2>
             <p class="mb-8 opacity-90 text-lg">A SCB promove o criacionismo com rigor científico e teológico através de diversos recursos:</p>
