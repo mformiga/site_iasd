@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+main{
+    width: 85.72%;
+}
+
+aside{
+    width: 14.28%;
+    min-height: 100vh;
+    background-color: #003366;
+    z-index: 10;
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+}
+
+aside img{
+    margin-top: 3vh;
+    width: 50%;
+}
+
+@media (max-width: 1100px){
+    aside{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+}

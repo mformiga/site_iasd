@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(composer install:*)",
+      "Bash(php:*)",
+      "Bash(node:*)",
+      "Bash(npm --version:*)",
+      "Bash(npm install:*)",
+      "Bash(winget search:*)",
+      "Bash(winget install:*)",
+      "Bash(exec bash:*)",
+      "Bash(powershell:*)",
+      "Bash(\"/c/xampp/php/php.exe\" --version)",
+      "Bash(curl:*)",
+      "Bash(\"/c/xampp/php/php.exe\" -- --install-dir=/c/xampp/php --filename=composer)",
+      "Bash(\"/c/xampp/php/php.exe\":*)",
+      "Bash(\"/c/xampp/php/php.exe\" /c/xampp/php/composer.phar install)",
+      "Bash(\"/c/xampp/php/php.exe\" artisan:*)",
+      "Bash(\"/c/xampp/php/php.exe\" artisan serve --host=0.0.0.0 --port=8000)",
+      "Bash(npm run dev)",
+      "Bash(\"/c/xampp/php/php.exe\" artisan serve --host=localhost --port=8000)",
+      "Bash(\"/c/xampp/php/php.exe\" artisan serve --host=localhost --port=8001)",
+      "Bash(\"/c/xampp/php/php.exe\" -S localhost:8002 -t public)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(\"/c/xampp/php/php.exe\" artisan route:list)",
+      "Bash(\"/c/xampp/php/php.exe\" -S localhost:8001 -t public)",
+      "mcp__web-reader__webReader",
+      "Bash(\"/c/xampp/php/php.exe\" artisan route:clear)",
+      "Bash(\"/c/xampp/php/php.php\" artisan config:clear)",
+      "Bash(\"/c/xampp/php/php.exe\" artisan config:clear:*)",
+      "Bash(\"/c/xampp/php/php.exe\" artisan view:clear)",
+      "Bash(tree:*)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

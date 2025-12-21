@@ -1,0 +1,26 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+
+// Página inicial
+Route::get('/', [PageController::class, 'home'])->name('home');
+
+// Páginas do site
+Route::get('/igreja', [PageController::class, 'igreja'])->name('igreja');
+Route::get('/dizimos-ofertas', [PageController::class, 'dizimosOfertas'])->name('dizimos-ofertas');
+Route::get('/escola-sabatina', [PageController::class, 'escolaSabatina'])->name('escola-sabatina');
+Route::get('/estudo-biblico', [PageController::class, 'estudoBiblico'])->name('estudo-biblico');
+Route::get('/oracao-visita', [PageController::class, 'oracaoVisita'])->name('oracao-visita');
+Route::get('/participe', [PageController::class, 'participe'])->name('participe');
+Route::get('/midias', [PageController::class, 'midias'])->name('midias');
+Route::get('/midias/cpb', [PageController::class, 'cpb'])->name('midias.cpb');
+Route::get('/asa', [PageController::class, 'asa'])->name('asa');
+
+// Formulários
+Route::post('/contato/enviar', [PageController::class, 'enviarContato'])->name('contato.enviar');
+Route::post('/estudo-biblico/enviar', [PageController::class, 'enviarEstudoBiblico'])->name('estudo-biblico.enviar');
+Route::post('/oracao-visita/enviar', [PageController::class, 'enviarOracaoVisita'])->name('oracao-visita.enviar');
+
+// API para vídeos do YouTube
+Route::get('/api/videos-youtube', [PageController::class, 'getVideosYoutube'])->name('api.videos-youtube');
