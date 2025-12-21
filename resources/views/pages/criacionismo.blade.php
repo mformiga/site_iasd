@@ -232,11 +232,7 @@ $scientists = [
         </div>
     </section>
 
-    <!-- Credits -->
-    <div class="text-center py-8 text-gray-400 text-xs">
-        © Conteúdo extraído do documento Criacionismo.pdf
-    </div>
-@endsection
+    @endsection
 
 @push('scripts')
 <!-- Initialize Lucide Icons -->

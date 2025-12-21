@@ -158,7 +158,7 @@
         </div>
         <div class="media-card-body">
             <p>Descubra as evidências históricas e arqueológicas que confirmam a veracidade das Escrituras Sagradas.</p>
-            <a href="#">Acessar</a>
+            <a href="{{ route('midias.evidencias-biblicas') }}">Acessar</a>
         </div>
     </div>
 

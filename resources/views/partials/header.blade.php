@@ -23,7 +23,7 @@
                 <ul class="dropdown" style="margin-top: 6px;">
                     <li><a href="{{ route('midias.cpb') }}">CPB</a></li>
                     <li><a href="{{ route('midias.criacionismo') }}">Criacionismo</a></li>
-                    <li><a href="">Evidências bíblicas</a></li>
+                    <li><a href="{{ route('midias.evidencias-biblicas') }}">Evidências bíblicas</a></li>
                     <li><a href="">Filmes e séries</a></li>
                     <li><a href="">Profecias</a></li>
                     <li><a href="">Rádio e TV Novo Tempo</a></li>

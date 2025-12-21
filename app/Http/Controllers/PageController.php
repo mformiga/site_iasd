@@ -87,6 +87,14 @@ class PageController extends Controller
     }
 
     /**
+     * Exibe a página de Evidências Bíblicas
+     */
+    public function evidenciasBiblicas()
+    {
+        return view('pages.evidencias-biblicas');
+    }
+
+    /**
      * Exibe a página da ASA (Ação Solidária Adventista)
      */
     public function asa()
