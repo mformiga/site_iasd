@@ -148,7 +148,7 @@ $addressEncoded = urlencode($addressString);
                                    rel="noopener noreferrer"
                                    class="flex items-center space-x-1 bg-blue-100 hover:bg-blue-200 text-blue-800 text-sm font-semibold py-2 px-3 rounded-lg transition">
                                     <i data-lucide="navigation" class="w-4 h-4"></i>
-                                    <span>Abrir no Waze</span>
+                                    <span>Waze</span>
                                 </a>
                                 <a href="https://www.google.com/maps/dir/?api=1&destination={{ $addressEncoded }}"
                                    target="_blank"
