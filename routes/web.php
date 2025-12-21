@@ -15,6 +15,7 @@ Route::get('/oracao-visita', [PageController::class, 'oracaoVisita'])->name('ora
 Route::get('/participe', [PageController::class, 'participe'])->name('participe');
 Route::get('/midias', [PageController::class, 'midias'])->name('midias');
 Route::get('/midias/cpb', [PageController::class, 'cpb'])->name('midias.cpb');
+Route::get('/midias/criacionismo', [PageController::class, 'criacionismo'])->name('midias.criacionismo');
 Route::get('/asa', [PageController::class, 'asa'])->name('asa');
 
 // Formulários

@@ -79,6 +79,14 @@ class PageController extends Controller
     }
 
     /**
+     * Exibe a página de Criacionismo
+     */
+    public function criacionismo()
+    {
+        return view('pages.criacionismo');
+    }
+
+    /**
      * Exibe a página da ASA (Ação Solidária Adventista)
      */
     public function asa()

@@ -22,7 +22,7 @@
             <li class="btn_drop"><a href="{{ route('midias') }}">Mídias <i class='bx bx-chevron-down'></i></a>
                 <ul class="dropdown" style="margin-top: 6px;">
                     <li><a href="{{ route('midias.cpb') }}">CPB</a></li>
-                    <li><a href="">Criacionismo</a></li>
+                    <li><a href="{{ route('midias.criacionismo') }}">Criacionismo</a></li>
                     <li><a href="">Evidências bíblicas</a></li>
                     <li><a href="">Filmes e séries</a></li>
                     <li><a href="">Profecias</a></li>
