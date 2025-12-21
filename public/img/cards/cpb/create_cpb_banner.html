@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPB Banner Template</title>
+    <style>
+        .banner {
+            width: 1920px;
+            height: 300px;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%23ffffff20" x="10" y="10" width="80" height="80" rx="5"/><rect fill="%23ffffff30" x="20" y="20" width="60" height="60" rx="3"/><circle fill="%23ffffff40" cx="50" cy="50" r="15"/></svg>');
+            opacity: 0.3;
+            background-size: 200px;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .title {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            opacity: 0.9;
+        }
+
+        .book-icon {
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="content">
+            <div class="book-icon">📚</div>
+            <div class="title">Casa Publicadora Brasileira</div>
+            <div class="subtitle">Luz para o Coração e a Mente</div>
+        </div>
+    </div>
+
+    <script>
+        // Instructions para criar imagem real:
+        // 1. Capture screenshot desta página
+        // 2. Recorte para 1920x300 pixels
+        // 3. Salve como cpb_header.png
+        // 4. Substitua o arquivo atual
+        document.write(`
+            <div style="margin: 20px; padding: 20px; background: #f0f0f0; border-radius: 10px;">
+                <h3>Instruções para criar banner CPB:</h3>
+                <ol>
+                    <li>Faça print screen desta página</li>
+                    <li>Corte a imagem para exatamente 1920x300 pixels</li>
+                    <li>Salve como cpb_header.png</li>
+                    <li>Substitua o arquivo em: /public/img/cards/cpb/cpb_header.png</li>
+                </ol>
+                <p><strong>Tema sugerido:</strong> Loja CPB com pessoas comprando livros e Bíblias</p>
+                <p><strong>Cores:</strong> Azul CPB (#1e40af, #3b82f6, #60a5fa)</p>
+                <p><strong>Elementos:</strong> Livros, Bíblias, logo CPB, pessoas comprando</p>
+            </div>
+        `);
+    </script>
+</body>
+</html>

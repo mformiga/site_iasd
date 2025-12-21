@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; padding: 20px; background: #f0f0f0; }
+        .cpb-banner {
+            width: 1920px;
+            height: 300px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #3b82f6 75%, #60a5fa 100%);
+            position: relative;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .left-section {
+            text-align: right;
+            padding-right: 40px;
+        }
+
+        .right-section {
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        .title {
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 20px;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .decoration {
+            position: absolute;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .book-icon {
+            font-size: 80px;
+            margin: 0 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="cpb-banner">
+        <div class="decoration" style="width: 300px; height: 300px; top: -150px; left: -100px;"></div>
+        <div class="decoration" style="width: 200px; height: 200px; bottom: -100px; right: 100px;"></div>
+
+        <div class="content">
+            <div class="left-section">
+                <div class="title">CASA</div>
+                <div class="subtitle">Publicadora</div>
+                <div class="subtitle">Brasileira</div>
+            </div>
+
+            <div class="book-icon">📚</div>
+
+            <div class="right-section">
+                <div class="subtitle">Luz para o</div>
+                <div class="title">CORAÇÃO</div>
+                <div class="subtitle">e a Mente</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px; padding: 20px; background: white; border-radius: 10px; max-width: 1920px;">
+        <h3>Instruções para Capturar o Banner:</h3>
+        <ol>
+            <li>Faça zoom out para ver o banner completo (1920x300px)</li>
+            <li>Use ferramenta de print (Win + Shift + S)</li>
+            <li>Selecione exatamente o retângulo azul do banner</li>
+            <li>Salve como PNG com nome: cpb_header.png</li>
+            <li>Substitua o arquivo em: /public/img/cards/cpb/</li>
+        </ol>
+        <p><strong>Atenção:</strong> Mantenha exatamente 1920x300 pixels!</p>
+    </div>
+
+    <script>
+        alert('Para capturar o banner: 1) Zoom para ver o banner completo 2) Print (Win+Shift+S) 3) Selecione o banner azul 4) Salve como cpb_header.png');
+    </script>
+</body>
+</html>

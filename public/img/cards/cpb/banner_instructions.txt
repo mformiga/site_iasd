@@ -1,0 +1,32 @@
+CPB BANNER INSTRUCTIONS
+========================
+
+File: cpb_header.png
+Dimensions: 1920 x 300 pixels
+Format: PNG
+
+Tema: Casa Publicadora Brasileira
+
+SUGGESTED DESIGN:
+- Background: Gradient azul CPB (#1e40af → #3b82f6 → #60a5fa)
+- Title: "Casa Publicadora Brasileira" (grande, branco)
+- Subtitle: "Luz para o Coração e a Mente" (menor, branco)
+- Elements:
+  * Logo CPB
+  * Livros e Bíblias em destaque
+  * Pessoas em ambiente de loja
+  * Instalações da CPB
+- Colors: Azul, branco, tons de amarelo dourado
+
+REFERENCE FILES:
+- Veja: /public/img/cards/asa/asa_header.png
+- Dimensões: 1920x300px (exatamente igual)
+
+CREATION OPTIONS:
+1. Use Ferramenta de Design: Canva, Photoshop, GIMP
+2. Template Search: "Bookstore banner 1920x300"
+3. Stock Images: pessoas em livraria cristã
+
+ALTERNATIVE:
+Abra o arquivo: create_cpb_banner.html
+Faça print screen e recorte para 1920x300px

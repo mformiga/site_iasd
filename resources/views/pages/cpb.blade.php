@@ -58,6 +58,7 @@ $addressEncoded = urlencode($addressString);
 @endpush
 
 @section('content')
+<img src="{{ asset('img/cards/cpb/cpb_header.png') }}" alt="Casa Publicadora Brasileira" style="width: 100%;" onerror="this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80';">
 
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-r from-blue-800 to-blue-600 text-white py-8 px-4">
