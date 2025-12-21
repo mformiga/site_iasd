@@ -60,13 +60,11 @@ $addressEncoded = urlencode($addressString);
 @section('content')
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-blue-800 to-blue-600 text-white py-12 px-4">
+    <section class="relative bg-gradient-to-r from-blue-800 to-blue-600 text-white py-8 px-4">
         <div class="container mx-auto max-w-4xl text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Casa Publicadora Brasileira</h1>
-            <p class="text-lg md:text-xl text-blue-100 mb-4 leading-relaxed">
-                Bem-vindo(a) à seção dedicada à Casa Publicadora Brasileira. Um farol de inspiração e conhecimento
-                para a comunidade adventista e todos que buscam fortalecer sua fé. Descubra recursos incríveis
-                para alimentar sua espiritualidade, educar a família e conectar-se com valores cristãos.
+            <p class="text-lg md:text-xl text-blue-100 mb-2 leading-relaxed">
+                Bem-vindo(a) à seção da Casa Publicadora Brasileira, um espaço de inspiração e conhecimento para todos que desejam fortalecer a fé, a espiritualidade e os valores cristãos.
             </p>
         </div>
         <!-- Decorative bottom fade -->
