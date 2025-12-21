@@ -166,7 +166,7 @@ $addressEncoded = urlencode($addressString);
                                 <!-- Telefone Fixo -->
                                 <div class="text-center">
                                     <strong class="block text-gray-900">Telefone:</strong>
-                                    <span class="block text-blue-600 font-semibold">(61) 3321-2021</span>
+                                    <span class="block text-gray-700">(61) 3321-2021</span>
                                 </div>
 
                                 <!-- WhatsApp -->
