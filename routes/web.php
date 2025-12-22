@@ -17,6 +17,7 @@ Route::get('/midias', [PageController::class, 'midias'])->name('midias');
 Route::get('/midias/cpb', [PageController::class, 'cpb'])->name('midias.cpb');
 Route::get('/midias/criacionismo', [PageController::class, 'criacionismo'])->name('midias.criacionismo');
 Route::get('/midias/evidencias-biblicas', [PageController::class, 'evidenciasBiblicas'])->name('midias.evidencias-biblicas');
+Route::get('/midias/filmes-series', [PageController::class, 'filmesSeries'])->name('midias.filmes-series');
 Route::get('/asa', [PageController::class, 'asa'])->name('asa');
 
 // Formulários

@@ -95,6 +95,14 @@ class PageController extends Controller
     }
 
     /**
+     * Exibe a página de Filmes e Séries
+     */
+    public function filmesSeries()
+    {
+        return view('pages.filmes-series');
+    }
+
+    /**
      * Exibe a página da ASA (Ação Solidária Adventista)
      */
     public function asa()
