@@ -3,236 +3,584 @@
 @section('title', 'IASD Central de Brasília - Filmes e Séries')
 
 @push('styles')
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Lucide Icons -->
-<script src="https://unpkg.com/lucide@latest"></script>
-
 <style>
-    body {
-        font-family: 'Inter', sans-serif;
-        background-color: #fcfaf7;
-        color: #2d2a26;
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+    .filmes-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
     }
-    h1, h2, h3 {
-        font-family: 'Crimson Pro', serif;
+
+    .header-section {
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        padding: 60px 40px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        text-align: center;
+        color: #fff;
     }
-    .card {
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease;
+
+    .header-section h1 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2em;
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: 500;
     }
-    .card:hover {
+
+    .header-section .subtitle {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.3em;
+        color: #8bb8e8;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .header-section p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #f8f9fa;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.5em;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
+    }
+
+    .section-benefits {
+        margin: 60px 0;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .benefit-card {
+        background: #fff;
+        border: 2px solid #e0e0e0;
+        border-radius: 15px;
+        padding: 35px 25px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .benefit-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     }
-    .filme-banner {
-        background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1e293b 100%);
-    }
-    .img-container {
-        background-color: #3d3a35;
+
+    .benefit-icon {
+        width: 70px;
+        height: 70px;
+        background: #f8f9fa;
+        border-radius: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 350px;
+        margin: 0 auto 20px;
+        font-size: 2em;
+        transition: transform 0.3s, background 0.3s;
+    }
+
+    .benefit-card:hover .benefit-icon {
+        transform: scale(1.1);
+        background: #e3f2fd;
+    }
+
+    .benefit-card h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        color: #003366;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    .benefit-card p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.7;
+    }
+
+    .destaque-section-wrapper {
+        margin: 60px 0;
+    }
+
+    .destaque-card {
+        background: #1e293b;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        border: 1px solid #334155;
+    }
+
+    .destaque-img-container {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .destaque-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .destaque-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background: linear-gradient(to top, #1e293b, transparent);
+    }
+
+    .destaque-content {
+        padding: 50px 40px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 6px 18px;
+        border-radius: 50px;
+        background: rgba(37, 99, 235, 0.2);
+        color: #60a5fa;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 1px solid rgba(37, 99, 235, 0.3);
+        margin-bottom: 20px;
+    }
+
+    .destaque-content h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 3em;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .destaque-content p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #cbd5e1;
+        max-width: 700px;
+        margin: 0 auto 30px;
+    }
+
+    .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: #2563eb;
+        color: #fff;
+        padding: 16px 45px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.1em;
+        transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+    }
+
+    .btn-primary:hover {
+        background: #3b82f6;
+        transform: translateY(-2px);
+        box-shadow: 0 15px 35px rgba(37, 99, 235, 0.5);
+    }
+
+    .destaque-meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        color: #94a3b8;
+    }
+
+    .destaque-meta span {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .destaque-meta .separator {
+        width: 4px;
+        height: 4px;
+        background: #475569;
+        border-radius: 50%;
+    }
+
+    .destaques-section {
+        margin: 60px 0;
+    }
+
+    .destaques-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    .destaque-item {
+        background: #fff;
+        border: 2px solid #e0e0e0;
+        border-radius: 15px;
+        padding: 30px 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .destaque-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .destaque-item .icon-box {
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        transition: transform 0.3s;
+    }
+
+    .destaque-item:hover .icon-box {
+        transform: scale(1.1);
+    }
+
+    .destaque-item .icon-box.amber {
+        background: #fef3c7;
+    }
+
+    .destaque-item .icon-box.indigo {
+        background: #e0e7ff;
+    }
+
+    .destaque-item .icon-box.pink {
+        background: #fce7f3;
+    }
+
+    .destaque-item .icon-box.cyan {
+        background: #cffafe;
+    }
+
+    .destaque-item h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        color: #003366;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    .destaque-item p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.7;
+    }
+
+    .footer-section {
+        background: #f8f9fa;
+        padding: 40px;
+        border-radius: 15px;
+        margin: 50px 0;
+        text-align: center;
+        border-left: 5px solid #003366;
+    }
+
+    .footer-section h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2em;
+        color: #003366;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .footer-section h4 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        color: #003366;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .footer-section p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .btn-youtube {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: #dc2626;
+        color: #fff;
+        padding: 14px 35px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+        box-shadow: 0 10px 25px rgba(220, 38, 38, 0.4);
+    }
+
+    .btn-youtube:hover {
+        background: #b91c1c;
+        transform: translateY(-2px);
+        box-shadow: 0 15px 35px rgba(220, 38, 38, 0.5);
+    }
+
+    .footer-divider {
+        width: 100%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 40px 0;
+    }
+
+    .verse-box {
+        background: #fff;
+        padding: 35px;
+        border-radius: 15px;
+        border: 2px solid #e0e0e0;
+        max-width: 700px;
+        margin: 30px auto 0;
+    }
+
+    .verse-box p {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        color: #003366;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .verse-box .reference {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        color: #003366;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+        .filmes-container {
+            padding: 20px 15px;
+        }
+
+        .header-section {
+            padding: 40px 20px;
+        }
+
+        .header-section h1 {
+            font-size: 1.6em;
+        }
+
+        .header-section .subtitle {
+            font-size: 1.1em;
+        }
+
+        .section-title {
+            font-size: 2em;
+        }
+
+        .benefits-grid,
+        .destaques-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .destaque-img-container {
+            height: 300px;
+        }
+
+        .destaque-content {
+            padding: 30px 20px;
+        }
+
+        .destaque-content h2 {
+            font-size: 2.5em;
+        }
+
+        .btn-primary,
+        .btn-youtube {
+            width: 100%;
+        }
+
+        .verse-box p {
+            font-size: 1.4em;
+        }
     }
 </style>
 @endpush
 
 @section('content')
-<!-- Banner Principal - Mesmo banner da página de dízimos e ofertas -->
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Filmes e Séries" style="width: 100%;"
-     onerror="this.src='https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1920&auto=format&fit=crop';"
+<img src="{{ asset('img/cards/asa/asa_header.png') }}" alt="Filmes e Séries" style="width: 100%;">
 
-<!-- SEÇÃO DE CABEÇALHO -->
-<header class="filme-banner text-white py-8 px-6 text-center shadow-xl">
-    <div class="max-w-4xl mx-auto space-y-4">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+<div class="filmes-container">
+    <!-- SEÇÃO DE CABEÇALHO -->
+    <div class="header-section">
+        <h1>
             Filmes e Séries
-            <span class="block text-blue-300 mt-2 text-2xl md:text-4xl font-light">Descubra Inspiração Divina na Tela!</span>
+            <span class="subtitle">Descubra Inspiração Divina na Tela!</span>
         </h1>
-        <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed">
+        <p>
             Bem-vindo(a) à sua janela espiritual para filmes e séries que celebram histórias bíblicas, valores cristãos e lições de fé!
             Aqui, você encontra produções cuidadosamente selecionadas para edificar sua família, fortalecer sua comunhão com Deus e mergulhar em narrativas que refletem a verdade eterna.
         </p>
     </div>
-</header>
 
-<!-- SEÇÃO 1: POR QUE ASSISTIR? -->
-<section class="py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-        <div class="flex items-center space-x-3 mb-8">
-            <div class="h-1 w-10 bg-blue-600 rounded-full"></div>
-            <h2 class="text-3xl font-bold text-slate-900">Por Que Assistir Filmes e Séries Bíblicas?</h2>
-        </div>
+    <!-- SEÇÃO 1: POR QUE ASSISTIR? -->
+    <div class="section-benefits">
+        <h2 class="section-title">Por Que Assistir Filmes e Séries Bíblicas?</h2>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="card p-8 flex flex-col items-center text-center group">
-                <div class="p-4 bg-slate-50 rounded-2xl mb-4 group-hover:bg-blue-50 group-hover:scale-110 transition-all">
-                    <i data-lucide="heart" class="w-8 h-8 text-rose-500"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-800 mb-2">Crescimento Espiritual</h3>
-                <p class="text-slate-600 leading-relaxed">Conecte-se com histórias que inspiram reflexão e renovam sua fé.</p>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">❤️</div>
+                <h3>Crescimento Espiritual</h3>
+                <p>Conecte-se com histórias que inspiram reflexão e renovam sua fé.</p>
             </div>
 
-            <div class="card p-8 flex flex-col items-center text-center group">
-                <div class="p-4 bg-slate-50 rounded-2xl mb-4 group-hover:bg-blue-50 group-hover:scale-110 transition-all">
-                    <i data-lucide="shield" class="w-8 h-8 text-blue-500"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-800 mb-2">Para Toda a Família</h3>
-                <p class="text-slate-600 leading-relaxed">Conteúdo seguro e educativo para crianças, jovens e adultos.</p>
+            <div class="benefit-card">
+                <div class="benefit-icon">🛡️</div>
+                <h3>Para Toda a Família</h3>
+                <p>Conteúdo seguro e educativo para crianças, jovens e adultos.</p>
             </div>
 
-            <div class="card p-8 flex flex-col items-center text-center group">
-                <div class="p-4 bg-slate-50 rounded-2xl mb-4 group-hover:bg-blue-50 group-hover:scale-110 transition-all">
-                    <i data-lucide="book-open" class="w-8 h-8 text-emerald-500"></i>
-                </div>
-                <h3 class="text-xl font-bold text-slate-800 mb-2">Aprendizado Histórico</h3>
-                <p class="text-slate-600 leading-relaxed">Explore cenários, costumes e personagens das Escrituras de forma dinâmica.</p>
+            <div class="benefit-card">
+                <div class="benefit-icon">📖</div>
+                <h3>Aprendizado Histórico</h3>
+                <p>Explore cenários, costumes e personagens das Escrituras de forma dinâmica.</p>
             </div>
         </div>
     </div>
-</section>
 
-<!-- SEÇÃO DE DESTAQUE VERTICAL - O GAROTO DO LENÇO -->
-<section class="py-8 px-6 bg-slate-900 text-white overflow-hidden">
-    <div class="max-w-4xl mx-auto">
-        <div class="bg-slate-800 rounded-3xl overflow-hidden shadow-2xl border border-slate-700 flex flex-col">
-
+    <!-- SEÇÃO DE DESTAQUE VERTICAL - O GAROTO DO LENÇO -->
+    <div class="destaque-section-wrapper">
+        <div class="destaque-card">
             <!-- Imagem no Topo -->
-            <div class="w-full h-[300px] md:h-[500px] relative">
+            <div class="destaque-img-container">
                 <img id="filme-destaque-img"
                      src="{{ asset('img/garoto_lenco.jpg') }}"
                      alt="Pôster do filme O Garoto do Lenço"
-                     class="w-full h-full object-cover object-center"
-                     onerror="this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop'">
-                <!-- Overlay suave na parte inferior da imagem -->
-                <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-800 to-transparent"></div>
+                     onerror="this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop'" />
+                <div class="destaque-overlay"></div>
             </div>
 
             <!-- Conteúdo Abaixo -->
-            <div class="p-8 md:p-12 space-y-6 text-center">
-                <div class="inline-block py-1 px-4 rounded-full bg-blue-600/20 text-blue-400 text-xs font-bold tracking-widest uppercase border border-blue-600/30">
-                    Filme em Destaque
-                </div>
-                <h2 class="text-4xl md:text-5xl font-black tracking-tighter leading-tight">
-                    O GAROTO DO LENÇO
-                </h2>
-                <p class="text-slate-300 text-lg leading-relaxed font-light max-w-2xl mx-auto">
+            <div class="destaque-content">
+                <span class="badge">Filme em Destaque</span>
+                <h2>O GAROTO DO LENÇO</h2>
+                <p>
                     Uma história poderosa sobre superação, o valor da amizade e o impacto transformador da fé em momentos de desafio. Uma produção emocionante que fala diretamente ao coração.
                 </p>
 
-                <div class="pt-4 flex justify-center">
-                    <a href="https://www.youtube.com/watch?v=BAJGGhU3dzo" target="_blank" rel="noopener noreferrer"
-                       class="bg-blue-600 hover:bg-blue-500 text-white px-12 py-4 rounded-xl font-bold transition flex items-center gap-3 group shadow-xl shadow-blue-900/40 w-full md:w-auto justify-center">
-                        <i data-lucide="play" class="w-5 h-5 fill-current"></i>
-                        Assistir no YouTube
-                    </a>
-                </div>
+                <a href="https://www.youtube.com/watch?v=BAJGGhU3dzo" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    ▶ Assistir no YouTube
+                </a>
 
-                <div class="pt-4 flex justify-center items-center gap-4 text-slate-400 text-sm">
-                    <span>Livre para todos os públicos</span>
-                    <span class="w-1 h-1 bg-slate-600 rounded-full"></span>
-                    <span>Drama / Inspiração</span>
+                <div class="destaque-meta">
+                    <span>📺 Livre para todos os públicos</span>
+                    <span class="separator"></span>
+                    <span>🎭 Drama / Inspiração</span>
                 </div>
             </div>
         </div>
     </div>
-</section>
 
-<!-- SEÇÃO 2: DESTAQUES IMPERDÍVEIS -->
-<section class="py-12 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-        <div class="flex items-center space-x-3 mb-8 justify-center md:justify-start">
-            <h2 class="text-3xl font-bold text-slate-900">Destaques Imperdíveis</h2>
-            <div class="h-1 w-10 bg-amber-500 rounded-full"></div>
-        </div>
+    <!-- SEÇÃO 2: DESTAQUES IMPERDÍVEIS -->
+    <div class="destaques-section">
+        <h2 class="section-title">Destaques Imperdíveis</h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="card p-6 group">
-                <div class="w-12 h-12 bg-amber-100 text-amber-800 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <i data-lucide="star" class="w-6 h-6"></i>
-                </div>
-                <h4 class="text-lg font-bold text-slate-800 mb-2">Dramas Épicos</h4>
-                <p class="text-sm text-slate-600 leading-relaxed">Reviva o Êxodo, a jornada de Davi ou a coragem de Ester com produções de alta qualidade!</p>
+        <div class="destaques-grid">
+            <div class="destaque-item">
+                <div class="icon-box amber">⭐</div>
+                <h4>Dramas Épicos</h4>
+                <p>Reviva o Êxodo, a jornada de Davi ou a coragem de Ester com produções de alta qualidade!</p>
             </div>
 
-            <div class="card p-6 group">
-                <div class="w-12 h-12 bg-indigo-100 text-indigo-800 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <i data-lucide="video" class="w-6 h-6"></i>
-                </div>
-                <h4 class="text-lg font-bold text-slate-800 mb-2">Documentários</h4>
-                <p class="text-sm text-slate-600 leading-relaxed">Entenda o contexto arqueológico e cultural por trás das passagens bíblicas.</p>
+            <div class="destaque-item">
+                <div class="icon-box indigo">🎬</div>
+                <h4>Documentários</h4>
+                <p>Entenda o contexto arqueológico e cultural por trás das passagens bíblicas.</p>
             </div>
 
-            <div class="card p-6 group">
-                <div class="w-12 h-12 bg-pink-100 text-pink-800 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <i data-lucide="users" class="w-6 h-6"></i>
-                </div>
-                <h4 class="text-lg font-bold text-slate-800 mb-2">Animação Infantil</h4>
-                <p class="text-sm text-slate-600 leading-relaxed">Ensine os pequenos sobre amor, obediência e milagres com séries coloridas e divertidas!</p>
+            <div class="destaque-item">
+                <div class="icon-box pink">👨‍👩‍👧‍👦</div>
+                <h4>Animação Infantil</h4>
+                <p>Ensine os pequenos sobre amor, obediência e milagres com séries coloridas e divertidas!</p>
             </div>
 
-            <div class="card p-6 group">
-                <div class="w-12 h-12 bg-cyan-100 text-cyan-800 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <i data-lucide="book-open" class="w-6 h-6"></i>
-                </div>
-                <h4 class="text-lg font-bold text-slate-800 mb-2">Estudos Bíblicos</h4>
-                <p class="text-sm text-slate-600 leading-relaxed">Aprofunde-se em temas como profecia, santidade e o plano da salvação.</p>
+            <div class="destaque-item">
+                <div class="icon-box cyan">📚</div>
+                <h4>Estudos Bíblicos</h4>
+                <p>Aprofunde-se em temas como profecia, santidade e o plano da salvação.</p>
             </div>
         </div>
     </div>
-</section>
 
-<!-- RODAPÉ E MENSAGEM FINAL -->
-<footer class="bg-slate-900 text-slate-300 py-12 px-6 border-t border-slate-800">
-    <div class="max-w-4xl mx-auto text-center space-y-10">
+    <!-- RODAPÉ E MENSAGEM FINAL -->
+    <div class="footer-section">
+        <h3>Não Perca Nenhum Lançamento!</h3>
+        <p>Siga nossas redes sociais e ative as notificações para ser avisado(a) sobre novas produções!</p>
+        <a href="https://www.youtube.com/@feliz7play" target="_blank" rel="noopener noreferrer" class="btn-youtube">
+            ▶ Inscrever-se no YouTube
+        </a>
 
-        <div class="space-y-4">
-            <h3 class="text-2xl font-semibold text-white">Não Perca Nenhum Lançamento!</h3>
-            <p class="text-slate-400">Siga nossas redes sociais e ative as notificações para ser avisado(a) sobre novas produções!</p>
-            <a href="https://www.youtube.com/@feliz7play" target="_blank" rel="noopener noreferrer"
-               class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold transition shadow-lg shadow-red-900/40">
-                <i data-lucide="youtube" class="w-5 h-5"></i>
-                Inscrever-se no YouTube
-            </a>
-        </div>
+        <div class="footer-divider"></div>
 
-        <div class="w-full h-px bg-slate-800"></div>
+        <h4>Uma Mensagem Final</h4>
+        <p style="font-style: italic; max-width: 650px; margin: 0 auto;">
+            Que cada filme ou série assistido aqui seja uma semente plantada em seu coração, frutificando em amor, esperança e comunhão com Deus.
+        </p>
 
-        <div class="space-y-6">
-            <h4 class="text-xl font-medium text-white">Uma Mensagem Final</h4>
-            <p class="italic text-lg text-slate-400 max-w-2xl mx-auto">
-                Que cada filme ou série assistido aqui seja uma semente plantada em seu coração, frutificando em amor, esperança e comunhão com Deus.
-            </p>
-
-            <div class="mt-8 bg-slate-800/40 p-8 rounded-2xl border border-slate-700 inline-block backdrop-blur-sm">
-                <p class="font-serif text-xl md:text-3xl text-blue-200">
-                    "Tudo o que é verdadeiro, tudo o que é respeitável [...] é isso que devem pensar!"
-                </p>
-                <p class="mt-4 text-sm font-bold text-blue-400 tracking-widest uppercase">
-                    — Filipenses 4:8 (NVT)
-                </p>
-            </div>
+        <div class="verse-box">
+            <p>"Tudo o que é verdadeiro, tudo o que é respeitável [...] é isso que devem pensar!"</p>
+            <p class="reference">— Filipenses 4:8 (NVT)</p>
         </div>
     </div>
-</footer>
+</div>
 @endsection
 
 @push('scripts')
 <script>
-    // Inicializa os ícones Lucide
-    lucide.createIcons();
-
+document.addEventListener('DOMContentLoaded', function() {
     // Script para gerenciar a imagem do filme (fallback se a imagem não existir)
-    document.addEventListener('DOMContentLoaded', function() {
-        const img = document.getElementById('filme-destaque-img');
-        if (img) {
-            img.onerror = function() {
-                this.src = 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop';
-            };
-        }
-    });
+    const img = document.getElementById('filme-destaque-img');
+    if (img) {
+        img.onerror = function() {
+            this.src = 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop';
+        };
+    }
+});
 </script>
 @endpush
