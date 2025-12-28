@@ -23,9 +23,9 @@
 <!-- Hero Section -->
 <header class="hero-gradient text-white py-16 px-4 shadow-lg">
     <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Rádio e TV Novo Tempo</h1>
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">Rádio e TV Novo Tempo</h1>
         <p class="text-xl md:text-2xl font-light opacity-90 italic">
-            TV e Rádio Novo Tempo: Conectando Você à Esperança!
+            Conectando Você à Esperança!
         </p>
     </div>
 </header>
@@ -38,10 +38,8 @@
             Bem-vindo(a) à janela digital da <strong>TV e Rádio Novo Tempo</strong>, um ministério da Igreja Adventista do Sétimo Dia dedicado a levar mensagens de fé, saúde, família e esperança diretamente para o seu coração!
         </p>
         <p class="text-lg leading-relaxed mb-8">
-            Aqui, você encontrará programação de qualidade para inspirar seu dia a dia, fortalecer sua espiritualidade e oferecer conteúdo positivo para toda a família. Conheça nossos principais produtos:
+            Aqui, você encontrará programação de qualidade para inspirar seu dia a dia, fortalecer sua espiritualidade e oferecer conteúdo positivo para toda a família.
         </p>
-
-        <h2 class="text-3xl font-bold text-blue-900 mb-8 border-b-2 border-blue-100 pb-2">O Que Oferecemos?</h2>
 
         <div class="grid md:grid-cols-2 gap-8">
 
