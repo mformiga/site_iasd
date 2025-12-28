@@ -111,6 +111,14 @@ class PageController extends Controller
     }
 
     /**
+     * Exibe a página de Rádio e TV Novo Tempo
+     */
+    public function radioTv()
+    {
+        return view('pages.radio-tv');
+    }
+
+    /**
      * Exibe a página da ASA (Ação Solidária Adventista)
      */
     public function asa()

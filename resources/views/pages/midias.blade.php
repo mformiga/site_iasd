@@ -191,7 +191,7 @@
         </div>
         <div class="media-card-body">
             <p>Programação 24 horas com conteúdo cristão de qualidade. Músicas, sermões, estudos e muito mais.</p>
-            <a href="https://novotempo.com" target="_blank">Acessar</a>
+            <a href="{{ route('midias.radio-tv') }}">Acessar</a>
         </div>
     </div>
 </div>

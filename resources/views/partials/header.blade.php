@@ -26,7 +26,7 @@
                     <li><a href="{{ route('midias.evidencias-biblicas') }}">Evidências bíblicas</a></li>
                     <li><a href="{{ route('midias.filmes-series') }}">Filmes e séries</a></li>
                     <li><a href="{{ route('midias.profecias') }}">Profecias</a></li>
-                    <li><a href="">Rádio e TV Novo Tempo</a></li>
+                    <li><a href="{{ route('midias.radio-tv') }}">Rádio e TV Novo Tempo</a></li>
                 </ul>
             </li>
             <li><a href="{{ route('dizimos-ofertas') }}">Dízimos e Ofertas</a></li>
