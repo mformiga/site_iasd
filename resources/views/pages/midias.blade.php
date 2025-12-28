@@ -180,7 +180,7 @@
         </div>
         <div class="media-card-body">
             <p>Estude as profecias bíblicas e entenda os sinais dos tempos. Conteúdo para aprofundar seu conhecimento profético.</p>
-            <a href="#">Acessar</a>
+            <a href="{{ route('midias.profecias') }}">Acessar</a>
         </div>
     </div>
 

@@ -103,6 +103,14 @@ class PageController extends Controller
     }
 
     /**
+     * Exibe a página de Profecias Bíblicas
+     */
+    public function profecias()
+    {
+        return view('pages.profecias');
+    }
+
+    /**
      * Exibe a página da ASA (Ação Solidária Adventista)
      */
     public function asa()
