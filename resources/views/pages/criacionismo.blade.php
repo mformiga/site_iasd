@@ -48,17 +48,18 @@ $scientists = [
     }
 
     .intro-section {
-        background: linear-gradient(135deg, #e8f5e9 0%, #f3e5f5 100%);
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
         padding: 50px 40px;
         border-radius: 15px;
         margin-bottom: 50px;
         text-align: center;
+        color: #fff;
     }
 
     .intro-section h1 {
         font-family: 'Playfair Display', serif;
         font-size: 3em;
-        color: #1b5e20;
+        color: #fff;
         margin-bottom: 15px;
         font-weight: 700;
     }
@@ -66,7 +67,7 @@ $scientists = [
     .intro-section .subtitle {
         font-family: 'Playfair Display', serif;
         font-size: 1.5em;
-        color: #6a1b9a;
+        color: #8bb8e8;
         margin-bottom: 20px;
         display: block;
         font-style: italic;
@@ -76,7 +77,7 @@ $scientists = [
         font-family: 'Inter', sans-serif;
         font-size: 1.1rem;
         line-height: 1.8;
-        color: #333;
+        color: #f8f9fa;
         max-width: 900px;
         margin: 0 auto;
     }
