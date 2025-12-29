@@ -48,7 +48,7 @@ $scientists = [
     }
 
     .intro-section {
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        background: linear-gradient(135deg, #e8f5e9 0%, #f3e5f5 100%);
         padding: 50px 40px;
         border-radius: 15px;
         margin-bottom: 50px;
@@ -58,7 +58,7 @@ $scientists = [
     .intro-section h1 {
         font-family: 'Playfair Display', serif;
         font-size: 3em;
-        color: #003366;
+        color: #1b5e20;
         margin-bottom: 15px;
         font-weight: 700;
     }
@@ -66,7 +66,7 @@ $scientists = [
     .intro-section .subtitle {
         font-family: 'Playfair Display', serif;
         font-size: 1.5em;
-        color: #003366;
+        color: #6a1b9a;
         margin-bottom: 20px;
         display: block;
         font-style: italic;
@@ -101,13 +101,13 @@ $scientists = [
     .category-header .icon-wrapper i {
         width: 28px;
         height: 28px;
-        color: #003366;
+        color: #2e7d32;
     }
 
     .category-header h2 {
         font-family: 'Playfair Display', serif;
         font-size: 2em;
-        color: #003366;
+        color: #1565c0;
         font-weight: 700;
     }
 
@@ -137,7 +137,7 @@ $scientists = [
     }
 
     .newton-item {
-        background: #e3f2fd;
+        background: #c8e6c9;
         border-radius: 12px;
         padding: 25px;
     }
@@ -145,7 +145,7 @@ $scientists = [
     .newton-item h3 {
         font-family: 'Inter', sans-serif;
         font-size: 1.2em;
-        color: #003366;
+        color: #1b5e20;
         margin-bottom: 12px;
         font-weight: 700;
     }
@@ -158,12 +158,12 @@ $scientists = [
     }
 
     .quote-card {
-        border-left: 4px solid #003366;
-        background: #f8f9fa;
+        border-left: 4px solid #6a1b9a;
+        background: #f3e5f5;
         padding: 25px;
         border-radius: 8px;
         font-style: italic;
-        color: #003366;
+        color: #4a148c;
         font-family: 'Inter', sans-serif;
         font-size: 1.1rem;
         line-height: 1.8;
@@ -175,7 +175,7 @@ $scientists = [
         font-weight: 700;
         font-style: normal;
         font-size: 0.9em;
-        color: #003366;
+        color: #6a1b9a;
     }
 
     .scientists-grid {
@@ -203,7 +203,7 @@ $scientists = [
     .scientist-card h3 {
         font-family: 'Inter', sans-serif;
         font-size: 1.3em;
-        color: #003366;
+        color: #d84315;
         margin-bottom: 8px;
         font-weight: 700;
     }
@@ -211,7 +211,7 @@ $scientists = [
     .scientist-card .subtitle {
         font-family: 'Inter', sans-serif;
         font-size: 0.85em;
-        color: #003366;
+        color: #ff6f00;
         margin-bottom: 15px;
         font-weight: 600;
         text-transform: uppercase;
@@ -364,7 +364,7 @@ $scientists = [
     .conclusao-section h2 {
         font-family: 'Playfair Display', serif;
         font-size: 2.5em;
-        color: #003366;
+        color: #00695c;
         margin-bottom: 25px;
         font-weight: 700;
         font-style: italic;
@@ -379,7 +379,7 @@ $scientists = [
     }
 
     .verse-box {
-        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        background: linear-gradient(135deg, #00695c 0%, #004d40 100%);
         color: #fff;
         padding: 40px;
         border-radius: 15px;
@@ -412,7 +412,7 @@ $scientists = [
         display: flex;
         align-items: center;
         gap: 8px;
-        color: #003366;
+        color: #00897b;
         text-decoration: none;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
@@ -421,7 +421,7 @@ $scientists = [
     }
 
     .link-item:hover {
-        color: #004d99;
+        color: #00695c;
     }
 
     .link-item i {
