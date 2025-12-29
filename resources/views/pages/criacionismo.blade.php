@@ -31,13 +31,13 @@ $scientists = [
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
 <style>
     html { scroll-behavior: smooth; }
 
     body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
 
     .criacionismo-container {
@@ -48,36 +48,34 @@ $scientists = [
     }
 
     .intro-section {
-        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         padding: 50px 40px;
         border-radius: 15px;
         margin-bottom: 50px;
         text-align: center;
-        color: #fff;
     }
 
     .intro-section h1 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Bebas neue', sans-serif;
         font-size: 3em;
-        color: #fff;
-        margin-bottom: 15px;
-        font-weight: 700;
+        color: #003366;
+        margin-bottom: 25px;
+        font-weight: 500;
     }
 
     .intro-section .subtitle {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Bebas neue', sans-serif;
         font-size: 1.5em;
-        color: #8bb8e8;
+        color: #003366;
         margin-bottom: 20px;
         display: block;
-        font-style: italic;
     }
 
     .intro-section p {
-        font-family: 'Inter', sans-serif;
-        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.15rem;
         line-height: 1.8;
-        color: #f8f9fa;
+        color: #333;
         max-width: 900px;
         margin: 0 auto;
     }
@@ -123,7 +121,7 @@ $scientists = [
     }
 
     .newton-intro {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         line-height: 1.8;
         color: #666;
@@ -144,7 +142,7 @@ $scientists = [
     }
 
     .newton-item h3 {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.2em;
         color: #1b5e20;
         margin-bottom: 12px;
@@ -152,7 +150,7 @@ $scientists = [
     }
 
     .newton-item p {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1rem;
         line-height: 1.6;
         color: #333;
@@ -165,7 +163,7 @@ $scientists = [
         border-radius: 8px;
         font-style: italic;
         color: #4a148c;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         line-height: 1.8;
     }
@@ -202,7 +200,7 @@ $scientists = [
     }
 
     .scientist-card h3 {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.3em;
         color: #d84315;
         margin-bottom: 8px;
@@ -210,7 +208,7 @@ $scientists = [
     }
 
     .scientist-card .subtitle {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 0.85em;
         color: #ff6f00;
         margin-bottom: 15px;
@@ -220,7 +218,7 @@ $scientists = [
     }
 
     .scientist-card p {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 0.95rem;
         line-height: 1.6;
         color: #666;
@@ -243,7 +241,7 @@ $scientists = [
     }
 
     .scb-section p {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         opacity: 0.9;
         margin-bottom: 30px;
@@ -303,7 +301,7 @@ $scientists = [
         padding: 14px 35px;
         border-radius: 50px;
         text-decoration: none;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
         transition: background 0.3s;
     }
@@ -320,7 +318,7 @@ $scientists = [
     }
 
     .social-label {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 0.8em;
         color: #8bb8e8;
         text-transform: uppercase;
@@ -372,7 +370,7 @@ $scientists = [
     }
 
     .conclusao-section > p {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         color: #333;
         margin-bottom: 40px;
@@ -397,7 +395,7 @@ $scientists = [
     }
 
     .verse-ref {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 0.9em;
         opacity: 0.8;
     }
@@ -415,7 +413,7 @@ $scientists = [
         gap: 8px;
         color: #00897b;
         text-decoration: none;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 600;
         font-size: 0.95rem;
         transition: color 0.3s;
