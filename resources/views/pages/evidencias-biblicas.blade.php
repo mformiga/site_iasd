@@ -24,7 +24,7 @@
 
     .evidencias-container {
         width: 100%;
-        max-width: 1000px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 40px 20px;
     }
@@ -64,6 +64,7 @@
 
     .section-block {
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .section-title {
@@ -84,6 +85,9 @@
         margin-bottom: 30px;
         line-height: 1.8;
         font-style: italic;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .cards-grid {
@@ -205,6 +209,7 @@
 
     .explore-section {
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .explore-section h2 {
@@ -247,8 +252,9 @@
     }
 
     .mab-content .max-width {
-        max-width: 800px;
+        max-width: 1100px;
         margin: 0 auto;
+        text-align: center;
     }
 
     .mab-badge {
