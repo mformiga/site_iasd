@@ -121,6 +121,7 @@
         color: #292524;
         margin-bottom: 15px;
         font-weight: 600;
+        text-align: center;
     }
 
     .evidence-card p {
@@ -128,6 +129,7 @@
         font-size: 1rem;
         line-height: 1.7;
         color: #44403c;
+        text-align: center;
     }
 
     .jesus-section {
@@ -136,6 +138,7 @@
         border-radius: 15px;
         padding: 50px 40px;
         box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        text-align: center;
     }
 
     .jesus-section h2 {
@@ -160,6 +163,7 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        text-align: center;
     }
 
     .jesus-item p {
@@ -167,6 +171,7 @@
         font-size: 1rem;
         line-height: 1.7;
         color: #d6d3d1;
+        text-align: center;
     }
 
     .stats-grid {
