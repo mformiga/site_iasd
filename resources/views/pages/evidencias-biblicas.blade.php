@@ -3,9 +3,6 @@
 @section('title', 'IASD Central de Brasília - Evidências Bíblicas')
 
 @push('styles')
-<!-- Lucide Icons via CDN -->
-<script src="https://unpkg.com/lucide@latest"></script>
-
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -24,7 +21,7 @@
 
     .evidencias-container {
         width: 100%;
-        max-width: 1400px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 40px 20px;
     }
@@ -64,18 +61,20 @@
 
     .section-block {
         margin-bottom: 50px;
-        text-align: center;
     }
 
     .section-title {
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Bebas neue', sans-serif;
         font-size: 2.5em;
-        color: #292524;
-        margin-bottom: 20px;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
         padding-bottom: 10px;
         border-bottom: 3px solid #f59e0b;
-        display: inline-block;
-        font-weight: 700;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .section-intro {
@@ -85,6 +84,7 @@
         margin-bottom: 30px;
         line-height: 1.8;
         font-style: italic;
+        text-align: center;
         max-width: 900px;
         margin-left: auto;
         margin-right: auto;
@@ -92,8 +92,9 @@
 
     .cards-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 30px;
+        margin-bottom: 40px;
     }
 
     .evidence-card {
@@ -101,13 +102,17 @@
         border: 2px solid #e0e0e0;
         border-radius: 15px;
         padding: 30px 25px;
+        text-align: center;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .evidence-card:nth-child(1) {
         border-left: 4px solid #f59e0b;
     }
 
-    .evidence-card:nth-child(n+3) {
-        border-left-color: #a8a29e;
+    .evidence-card:nth-child(n+2) {
+        border-left: 4px solid #a8a29e;
     }
 
     .evidence-card:hover {
@@ -117,19 +122,17 @@
 
     .evidence-card h3 {
         font-family: 'Crimson Pro', serif;
-        font-size: 1.5em;
+        font-size: 1.3em;
         color: #292524;
         margin-bottom: 15px;
         font-weight: 600;
-        text-align: center;
     }
 
     .evidence-card p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.7;
         color: #44403c;
-        text-align: center;
     }
 
     .jesus-section {
@@ -142,16 +145,16 @@
     }
 
     .jesus-section h2 {
-        font-family: 'Crimson Pro', serif;
-        font-size: 2.5em;
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2em;
         color: #fbbf24;
         margin-bottom: 30px;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     .jesus-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 30px;
     }
 
@@ -163,43 +166,49 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
-        text-align: center;
     }
 
     .jesus-item p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.7;
         color: #d6d3d1;
-        text-align: center;
     }
 
     .stats-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
     }
 
     .stat-card {
         background: #fff;
         border: 2px solid #e0e0e0;
         border-radius: 15px;
-        padding: 30px 25px;
+        padding: 30px 20px;
         text-align: center;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     }
 
     .stat-number {
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Bebas neue', sans-serif;
         font-size: 3em;
         color: #f59e0b;
-        font-weight: 700;
+        font-weight: 500;
         margin-bottom: 10px;
+        display: block;
     }
 
     .stat-label {
         font-family: 'Roboto', sans-serif;
-        font-size: 0.8em;
+        font-size: 0.85em;
         color: #292524;
         margin-bottom: 8px;
         font-weight: 600;
@@ -213,16 +222,16 @@
     }
 
     .explore-section {
-        margin-bottom: 50px;
-        text-align: center;
+        margin: 60px 0;
     }
 
     .explore-section h2 {
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Bebas neue', sans-serif;
         font-size: 2.5em;
-        color: #292524;
-        margin-bottom: 30px;
-        font-weight: 700;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
     }
 
     .mab-banner {
@@ -254,11 +263,6 @@
         background: #1c1917;
         color: #fff;
         padding: 50px 40px;
-    }
-
-    .mab-content .max-width {
-        max-width: 1100px;
-        margin: 0 auto;
         text-align: center;
     }
 
@@ -277,11 +281,11 @@
     }
 
     .mab-content h3 {
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Bebas neue', sans-serif;
         font-size: 2em;
         color: #fbbf24;
         margin-bottom: 20px;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     .mab-content p {
@@ -290,6 +294,9 @@
         line-height: 1.8;
         color: #d6d3d1;
         margin-bottom: 30px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .btn-mab {
@@ -311,7 +318,7 @@
 
     .links-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
     }
 
@@ -359,6 +366,7 @@
         text-align: center;
         padding: 50px 20px;
         border-top: 2px solid #e7e5e4;
+        margin-top: 50px;
     }
 
     .quote-text {
@@ -367,6 +375,8 @@
         color: #44403c;
         line-height: 1.8;
         font-style: italic;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .quote-ref {
@@ -391,13 +401,14 @@
             font-size: 2.2em;
         }
 
-        .cards-grid,
-        .jesus-grid,
-        .links-grid {
-            grid-template-columns: 1fr;
+        .section-title {
+            font-size: 2em;
         }
 
-        .stats-grid {
+        .cards-grid,
+        .jesus-grid,
+        .stats-grid,
+        .links-grid {
             grid-template-columns: 1fr;
         }
 
@@ -408,10 +419,6 @@
 
         .mab-image {
             height: 250px;
-        }
-
-        .section-title {
-            font-size: 2em;
         }
 
         .quote-text {
@@ -434,132 +441,128 @@
         </p>
     </div>
 
-    <main>
-        <!-- Secção 1: Arqueologia e a Bíblia -->
-        <section class="section-block">
-            <h2 class="section-title">Arqueologia e a Bíblia</h2>
-            <p class="section-intro">
-                A Bíblia não é apenas um livro de fé, mas também um registro histórico comprovado por descobertas arqueológicas.
-            </p>
+    <!-- Secção 1: Arqueologia e a Bíblia -->
+    <div class="section-block">
+        <h2 class="section-title">Arqueologia e a Bíblia</h2>
+        <p class="section-intro">
+            A Bíblia não é apenas um livro de fé, mas também um registro histórico comprovado por descobertas arqueológicas.
+        </p>
 
-            <div class="cards-grid">
-                <div class="evidence-card">
-                    <h3>Manuscritos do Mar Morto (1947)</h3>
-                    <p>Encontrados em cavernas próximas ao Mar Morto, incluem cópias de livros do Antigo Testamento datadas de 200 a.C.</p>
-                </div>
-                <div class="evidence-card">
-                    <h3>Anel de Pôncio Pilatos (2018)</h3>
-                    <p>Um anel de bronze identificado em Israel associado ao governador que ordenou a crucificação de Jesus.</p>
-                </div>
-                <div class="evidence-card">
-                    <h3>Cidade de Zanoa (3.200 anos)</h3>
-                    <p>Escavações revelaram muros e cerâmicas corroborando relatos de cidades israelitas em Josué e Neemias.</p>
-                </div>
-                <div class="evidence-card">
-                    <h3>Fosso de Salomão em Jerusalém</h3>
-                    <p>Um fosso monumental datado da Idade do Ferro, alinhando-se com as fortificações descritas em 1 Reis 11:27.</p>
-                </div>
+        <div class="cards-grid">
+            <div class="evidence-card">
+                <h3>Manuscritos do Mar Morto (1947)</h3>
+                <p>Encontrados em cavernas próximas ao Mar Morto, incluem cópias de livros do Antigo Testamento datadas de 200 a.C.</p>
             </div>
-        </section>
-
-        <!-- Secção 2: Jesus Cristo -->
-        <section class="jesus-section">
-            <h2>Jesus Cristo: Evidências Históricas</h2>
-            <div class="jesus-grid">
-                <div class="jesus-item">
-                    <h3>Confiabilidade dos Evangelhos</h3>
-                    <p>Relatos escritos por testemunhas oculares que se harmonizam em pontos centrais.</p>
-                </div>
-                <div class="jesus-item">
-                    <h3>Fontes Seculares</h3>
-                    <p>Tácito e Flávio Josefo mencionam Jesus e o impacto do cristianismo primitivo.</p>
-                </div>
-                <div class="jesus-item">
-                    <h3>Túmulo Vazio</h3>
-                    <p>O papel das mulheres como testemunhas reforça a autenticidade do relato histórico.</p>
-                </div>
-                <div class="jesus-item">
-                    <h3>Transformação dos Discípulos</h3>
-                    <p>A coragem e martírio dos apóstolos sugerem uma convicção inabalável.</p>
-                </div>
+            <div class="evidence-card">
+                <h3>Anel de Pôncio Pilatos (2018)</h3>
+                <p>Um anel de bronze identificado em Israel associado ao governador que ordenou a crucificação de Jesus.</p>
             </div>
-        </section>
-
-        <!-- Secção 3: Integridade Textual -->
-        <section class="section-block">
-            <h2 class="section-title">Integridade Textual</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">1.000+</div>
-                    <p class="stat-label">Anos de Preservação</p>
-                    <p class="stat-desc">O texto permaneceu praticamente inalterado.</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">40</div>
-                    <p class="stat-label">Autores Diferentes</p>
-                    <p class="stat-desc">Mensagem coerente em 3 continentes.</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">Gezer</div>
-                    <p class="stat-label">Portão de Salomão</p>
-                    <p class="stat-desc">Confirmação de projetos monumentais (1 Reis).</p>
-                </div>
+            <div class="evidence-card">
+                <h3>Cidade de Zanoa (3.200 anos)</h3>
+                <p>Escavações revelaram muros e cerâmicas corroborando relatos de cidades israelitas em Josué e Neemias.</p>
             </div>
-        </section>
+            <div class="evidence-card">
+                <h3>Fosso de Salomão em Jerusalém</h3>
+                <p>Um fosso monumental datado da Idade do Ferro, alinhando-se com as fortificações descritas em 1 Reis 11:27.</p>
+            </div>
+        </div>
+    </div>
 
-        <!-- Secção Explore Mais com o Destaque do MAB -->
-        <section class="explore-section">
-            <h2>Explore e Aprofunde-se:</h2>
+    <!-- Secção 2: Jesus Cristo -->
+    <div class="jesus-section">
+        <h2>Jesus Cristo: Evidências Históricas</h2>
+        <div class="jesus-grid">
+            <div class="jesus-item">
+                <h3>Confiabilidade dos Evangelhos</h3>
+                <p>Relatos escritos por testemunhas oculares que se harmonizam em pontos centrais.</p>
+            </div>
+            <div class="jesus-item">
+                <h3>Fontes Seculares</h3>
+                <p>Tácito e Flávio Josefo mencionam Jesus e o impacto do cristianismo primitivo.</p>
+            </div>
+            <div class="jesus-item">
+                <h3>Túmulo Vazio</h3>
+                <p>O papel das mulheres como testemunhas reforça a autenticidade do relato histórico.</p>
+            </div>
+            <div class="jesus-item">
+                <h3>Transformação dos Discípulos</h3>
+                <p>A coragem e martírio dos apóstolos sugerem uma convicção inabalável.</p>
+            </div>
+        </div>
+    </div>
 
-            <div class="mab-banner">
-                <!-- Imagem em destaque -->
-                <div class="mab-image">
-                    <img src="/images/museu_mab.jpg"
-                         alt="Museu de Arqueologia Bíblica"
-                         onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'p-16 text-center\'><div class=\'text-6xl mb-4\'>🏛️</div><p class=\'text-amber-200 font-serif italic text-xl\'>Acervo Histórico MAB</p></div>'">
-                </div>
+    <!-- Secção 3: Integridade Textual -->
+    <div class="section-block">
+        <h2 class="section-title">Integridade Textual</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">1.000+</span>
+                <p class="stat-label">Anos de Preservação</p>
+                <p class="stat-desc">O texto permaneceu praticamente inalterado.</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">40</span>
+                <p class="stat-label">Autores Diferentes</p>
+                <p class="stat-desc">Mensagem coerente em 3 continentes.</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">Gezer</span>
+                <p class="stat-label">Portão de Salomão</p>
+                <p class="stat-desc">Confirmação de projetos monumentais (1 Reis).</p>
+            </div>
+        </div>
+    </div>
 
-                <!-- Conteúdo do MAB -->
-                <div class="mab-content">
-                    <div class="max-width">
-                        <span class="mab-badge">Destaque Especial</span>
-                        <h3>Museu de Arqueologia Bíblica (MAB)</h3>
-                        <p>
-                            Localizado no campus do UNASP (Estado de São Paulo), o MAB é referência na América Latina. Explore artefatos da época de Jesus e réplicas de manuscritos que narram milênios de história bíblica.
-                        </p>
-                        <a href="http://mab.unasp.edu.br" target="_blank" class="btn-mab">
-                            Conhecer o Museu
-                        </a>
-                    </div>
-                </div>
+    <!-- Secção Explore Mais -->
+    <div class="explore-section">
+        <h2>Explore e Aprofunde-se:</h2>
+
+        <div class="mab-banner">
+            <!-- Imagem em destaque -->
+            <div class="mab-image">
+                <img src="/images/museu_mab.jpg"
+                     alt="Museu de Arqueologia Bíblica"
+                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'p-16 text-center\'><div class=\'text-6xl mb-4\'>🏛️</div><p class=\'text-amber-200 font-serif italic text-xl\'>Acervo Histórico MAB</p></div>'">
             </div>
 
-            <!-- Outros Links -->
-            <div class="links-grid">
-                <a href="https://www.novotempo.com/programa/evidencias/" target="_blank" class="link-card">
-                    <span class="link-emoji">📺</span>
-                    <div>
-                        <h4>Série Evidências</h4>
-                        <p>Assista na TV Novo Tempo.</p>
-                    </div>
+            <!-- Conteúdo do MAB -->
+            <div class="mab-content">
+                <span class="mab-badge">Destaque Especial</span>
+                <h3>Museu de Arqueologia Bíblica (MAB)</h3>
+                <p>
+                    Localizado no campus do UNASP (Estado de São Paulo), o MAB é referência na América Latina. Explore artefatos da época de Jesus e réplicas de manuscritos que narram milênios de história bíblica.
+                </p>
+                <a href="http://mab.unasp.edu.br" target="_blank" class="btn-mab">
+                    Conhecer o Museu
                 </a>
-                <div class="link-card">
-                    <span class="link-emoji">🌍</span>
-                    <div>
-                        <h4>Museus Internacionais</h4>
-                        <p>Louvre (França) e Museu de Israel.</p>
-                    </div>
+            </div>
+        </div>
+
+        <!-- Outros Links -->
+        <div class="links-grid">
+            <a href="https://www.novotempo.com/programa/evidencias/" target="_blank" class="link-card">
+                <span class="link-emoji">📺</span>
+                <div>
+                    <h4>Série Evidências</h4>
+                    <p>Assista na TV Novo Tempo.</p>
+                </div>
+            </a>
+            <div class="link-card">
+                <span class="link-emoji">🌍</span>
+                <div>
+                    <h4>Museus Internacionais</h4>
+                    <p>Louvre (França) e Museu de Israel.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <!-- Citação Final -->
-        <section class="quote-section">
-            <blockquote class="quote-text">
-                "Estejam sempre preparados para responder a qualquer que lhes pedir a razão da esperança que há em vocês."
-            </blockquote>
-            <cite class="quote-ref">— 1 Pedro 3:15</cite>
-        </section>
-    </main>
+    <!-- Citação Final -->
+    <div class="quote-section">
+        <blockquote class="quote-text">
+            "Estejam sempre preparados para responder a qualquer que lhes pedir a razão da esperança que há em vocês."
+        </blockquote>
+        <cite class="quote-ref">— 1 Pedro 3:15</cite>
+    </div>
 </div>
 @endsection
