@@ -14,27 +14,26 @@
     }
 
     .header-section {
-        background: linear-gradient(135deg, #003366 0%, #001531 100%);
-        padding: 60px 40px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 50px 40px;
         border-radius: 15px;
         margin-bottom: 50px;
         text-align: center;
-        color: #fff;
     }
 
     .header-section h1 {
         font-family: 'Bebas neue', sans-serif;
-        font-size: 2em;
-        color: #fff;
-        margin-bottom: 15px;
+        font-size: 3em;
+        color: #003366;
+        margin-bottom: 25px;
         font-weight: 500;
     }
 
     .header-section .subtitle {
         font-family: 'Bebas neue', sans-serif;
-        font-size: 1.3em;
-        color: #8bb8e8;
-        margin-bottom: 20px;
+        font-size: 1.5em;
+        color: #003366;
+        margin-bottom: 25px;
         display: block;
     }
 
@@ -42,7 +41,8 @@
         font-family: 'Roboto', sans-serif;
         font-size: 1.15rem;
         line-height: 1.8;
-        color: #f8f9fa;
+        color: #333;
+        text-align: justify;
         max-width: 900px;
         margin: 0 auto;
     }
@@ -399,15 +399,15 @@
         }
 
         .header-section {
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
 
         .header-section h1 {
-            font-size: 1.6em;
+            font-size: 2.2em;
         }
 
         .header-section .subtitle {
-            font-size: 1.1em;
+            font-size: 1.3em;
         }
 
         .section-title {
@@ -449,10 +449,8 @@
 <div class="filmes-container">
     <!-- SEÇÃO DE CABEÇALHO -->
     <div class="header-section">
-        <h1>
-            Filmes e Séries
-            <span class="subtitle">Descubra Inspiração Divina na Tela!</span>
-        </h1>
+        <h1>Filmes e Séries</h1>
+        <span class="subtitle">Descubra Inspiração Divina na Tela!</span>
         <p>
             Bem-vindo(a) à sua janela espiritual para filmes e séries que celebram histórias bíblicas, valores cristãos e lições de fé!
             Aqui, você encontra produções cuidadosamente selecionadas para edificar sua família, fortalecer sua comunhão com Deus e mergulhar em narrativas que refletem a verdade eterna.

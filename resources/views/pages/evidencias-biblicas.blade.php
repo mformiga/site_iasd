@@ -60,6 +60,7 @@
     }
 
     .section-block {
+        margin-top: 60px;
         margin-bottom: 50px;
     }
 
