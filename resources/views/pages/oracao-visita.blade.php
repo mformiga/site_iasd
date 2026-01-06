@@ -5,178 +5,266 @@
 @push('styles')
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-    
-    .text_estudo_biblico{
+
+    .oracao-container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
     }
 
-    h2{
-        margin: 4vh 0 3vh;
-        font-family: 'Bebas neue';
-        font-size: 2.7em;
+    .oracao-intro {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 50px 40px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .oracao-intro h1 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 3em;
         color: #003366;
+        margin-bottom: 25px;
         font-weight: 500;
     }
 
-    h3{
-        margin: 4vh 0 3vh;
-        font-family: "Noto Sans", sans-serif;
-        font-size: 1.4em;
-        color: #003366;
-        font-weight: 600;
-    }
-
-    p{
-        width: 100%;
-        margin-bottom: 3vh;
+    .oracao-intro p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #333;
         text-align: justify;
-        font-family: "roboto", sans-serif;
-        font-size: 1.1rem;
+        max-width: 900px;
+        margin: 0 auto 20px;
     }
 
-    .topicos_estudo_biblico{
-        margin-left: 20px;
+    .form-section {
+        background: #fff;
+        padding: 50px 40px;
+        border-radius: 15px;
+        margin: 50px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
-    .topicos_estudo_biblico li{
-        list-style-type: disc;
+    .form-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.5em;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
     }
 
-    .container_form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid rgb(192, 191, 191);
-        border-radius: 11px;
-        padding: 30px 50px 0 50px;
-        margin: 4vh 0 8vh 0;
+    .oracao-form {
+        max-width: 700px;
+        margin: 0 auto;
     }
 
-    .container_label{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
+    .form-group {
+        margin-bottom: 25px;
     }
 
-    label{
-        margin-bottom: 4px;
-        font-family: 'Roboto';
+    .form-group label {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 8px;
+        font-weight: 500;
     }
 
-    span{
-        font-family: 'Roboto';
-    }
-
-    .container_input{
+    .input-wrapper {
         position: relative;
     }
 
-    .container_input i{
+    .input-wrapper i {
         position: absolute;
-        bottom: 6px;
-        left: 6px;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #003366;
+        font-size: 1.2rem;
     }
 
-    input{
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group textarea {
         width: 100%;
-        padding: 6px 0;
-        border: 1px solid rgb(192, 191, 191);
-        text-indent: 26px;
-        border-radius: 8px;
+        padding: 14px 15px 14px 50px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #333;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        background: #f8f9fa;
     }
 
-    textarea{
-        text-indent: 6px;
-        border: 1px solid rgb(192, 191, 191);
-        padding: 6px 0;
-        border-radius: 8px;
+    .form-group textarea {
+        padding-left: 15px;
+        resize: vertical;
+        min-height: 150px;
     }
 
-    button{
-        background-color: #001531;
-        color: #fff;
-        margin: 15px 0 25px 0;
-        padding: 12px 50px;
-        border-radius: 6px;
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #003366;
+        box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+        background: #fff;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #999;
+    }
+
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin: 25px 0;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border: 2px solid #e0e0e0;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        margin-right: 12px;
         cursor: pointer;
-        transition: .4s;
+        accent-color: #003366;
     }
 
-    button:hover{
-        background-color: #003366;
+    .checkbox-group span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .btn-submit {
+        display: block;
+        width: 100%;
+        padding: 16px 40px;
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-top: 30px;
+    }
+
+    .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 51, 102, 0.3);
+    }
+
+    .btn-submit:active {
+        transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+        .oracao-container {
+            padding: 20px 15px;
+        }
+
+        .oracao-intro {
+            padding: 30px 20px;
+        }
+
+        .oracao-intro h1 {
+            font-size: 2.2em;
+        }
+
+        .form-section {
+            padding: 30px 20px;
+        }
+
+        .form-section h2 {
+            font-size: 2em;
+        }
+
+        .oracao-form {
+            max-width: 100%;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="email"] {
+            padding-left: 45px;
+        }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Estudo Bíblico" style="width: 100%;">
+<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Oração e Visita" style="width: 100%;">
 
-<div class="text_estudo_biblico">
-    <h2>Precisa de Oração ou Visita? Estamos Aqui para Interceder por Você!</h2>
-    <div class="container_text_estudo_biblico" style="width: 80%;">
-
+<div class="oracao-container">
+    <!-- Seção Introdutória -->
+    <div class="oracao-intro">
+        <h1>Precisa de Oração ou Visita? Estamos Aqui para Interceder por Você!</h1>
         <p>
             No Ministério de Oração, nossa missão é apoiar você em meio às dificuldades da vida. Oramos por seus pedidos, confiando no poder transformador da oração.
         </p>
-
         <p>
             Não carregue suas lutas sozinho(a). Deus ouve cada oração e, através da nossa comunidade, queremos ser um canal de esperança para sua vida.
         </p>
-    </div><!--Fim container_text_estudo_biblico-->
-</div><!--Fim text_estudo_biblico-->
+    </div>
 
-<div class="container_form">
-    <form action="{{ route('oracao-visita.enviar') }}" method="POST">
-        @csrf
-        <h2 style="margin: 0;">Preencha o formulário</h2>
-        <div class="container_label">
-            <label for="nome">Nome</label>
-            <div class="container_input">
-                <i class='bx bx-user' style='color:#000000'></i>
-                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+    <!-- Seção do Formulário -->
+    <div class="form-section">
+        <h2>Preencha o formulário</h2>
+
+        <form action="{{ route('oracao-visita.enviar') }}" method="POST" class="oracao-form">
+            @csrf
+
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <div class="input-wrapper">
+                    <i class='bx bx-user'></i>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                </div>
             </div>
-        </div>
 
-        <div class="container_label">
-            <label for="telefone">Telefone</label>
-            <div class="container_input">
-                <i class='bx bx-phone' style='color:#000000'></i>  
-                <input type="tel" name="telefone" id="telefone" placeholder="Telefone com DDD" required>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <div class="input-wrapper">
+                    <i class='bx bx-phone'></i>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000" required>
+                </div>
             </div>
-        </div>
 
-        <div class="container_label">
-            <label for="email">Email</label>
-            <div class="container_input">
-                <i class='bx bx-envelope' style='color:#000000'></i> 
-                <input type="email" name="email" id="email" placeholder="Email" required>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                </div>
             </div>
-        </div>
 
-        <div class="container_checkbox" style="display: flex; align-items: center; margin-top: 20px;">
-            <input type="checkbox" name="contato_pastor" value="1" style="width: 13px; margin-right: 6px;">
-            <span>Deseja ser contatado por um dos nossos pastores</span>
-        </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="contato_pastor" value="1" id="contato_pastor">
+                <span for="contato_pastor">Deseja ser contatado por um dos nossos pastores</span>
+            </div>
 
-        <div class="container_label">
-            <label for="pedido">Pedido de oração</label>
-            <textarea name="pedido" id="pedido" placeholder="Faça seu pedido..." rows="10" required></textarea>
-        </div>
+            <div class="form-group">
+                <label for="pedido">Pedido de oração</label>
+                <textarea name="pedido" id="pedido" placeholder="Compartilhe seu pedido de oração... Ore-mos por você." required></textarea>
+            </div>
 
-        <button type="submit">Enviar Mensagem</button>
-    </form>
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+    </div>
 </div>
 @endsection
 
@@ -194,4 +282,3 @@
     });
 </script>
 @endpush
-
