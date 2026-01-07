@@ -370,7 +370,7 @@
         <p>
             A Agência Humanitária da Igreja Adventista do Sétimo Dia trabalha em conjunto com a ASA para promover ações de solidariedade e assistência humanitária em todo o mundo, seguindo os princípios cristãos de amor ao próximo e serviço desinteressado.
         </p>
-        <a href="https://adra.org.br" target="_blank" class="btn-conhecer">Conheça</a>
+        <a href="https://adra.org.br/" target="_blank" class="btn-conhecer">Conheça</a>
     </div>
 
     <!-- Seção de Estatísticas -->
