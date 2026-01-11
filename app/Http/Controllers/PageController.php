@@ -127,6 +127,14 @@ class PageController extends Controller
     }
 
     /**
+     * Exibe a página Fale com a Secretaria
+     */
+    public function secretaria()
+    {
+        return view('pages.secretaria');
+    }
+
+    /**
      * Processa o formulário de contato
      */
     public function enviarContato(Request $request)

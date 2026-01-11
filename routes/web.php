@@ -21,6 +21,7 @@ Route::get('/midias/filmes-series', [PageController::class, 'filmesSeries'])->na
 Route::get('/midias/profecias', [PageController::class, 'profecias'])->name('midias.profecias');
 Route::get('/midias/radio-tv', [PageController::class, 'radioTv'])->name('midias.radio-tv');
 Route::get('/asa', [PageController::class, 'asa'])->name('asa');
+Route::get('/secretaria', [PageController::class, 'secretaria'])->name('secretaria');
 
 // Formulários
 Route::post('/contato/enviar', [PageController::class, 'enviarContato'])->name('contato.enviar');

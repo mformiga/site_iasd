@@ -89,7 +89,7 @@
             <img src="{{ asset('img/cards/secretaria.jpg') }}" alt="">
             <h2>Fale com a secretaria </h2>
             <p>Na Igreja Adventista do Sétimo Dia, cada membro é parte essencial da família de Deus. Para cuidar bem uns dos outros e garantir que nossa missão avance com eficiência, é fundamental que seus dados estejam sempre atualizados.</p>
-            <a href="">Saiba mais</a>
+            <a href="{{ route('secretaria') }}">Saiba mais</a>
         </div>
     </div><!--Fim container_cards-->
 </span><!--Fim Span Cards-->
