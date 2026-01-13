@@ -115,7 +115,7 @@
         </div>
         <div class="ministry-card-body">
             <p>Uma classe especial para estudar a Bíblia e crescer na fé junto com a TV Novo Tempo.</p>
-            <a href="#">Saiba mais</a>
+            <a href="{{ route('classe-novo-tempo') }}">Saiba mais</a>
         </div>
     </div>
 
@@ -125,7 +125,7 @@
         </div>
         <div class="ministry-card-body">
             <p>Aprenda sobre saúde integral: física, mental e espiritual. Cuidando do corpo como templo de Deus.</p>
-            <a href="#">Saiba mais</a>
+            <a href="{{ route('classe-saude') }}">Saiba mais</a>
         </div>
     </div>
 

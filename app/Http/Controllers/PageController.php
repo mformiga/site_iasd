@@ -142,6 +142,14 @@ class PageController extends Controller
     }
 
     /**
+     * Exibe a página Classe de Saúde
+     */
+    public function classeSaude()
+    {
+        return view('pages.classe-saude');
+    }
+
+    /**
      * Processa o formulário de contato
      */
     public function enviarContato(Request $request)

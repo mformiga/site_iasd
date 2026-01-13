@@ -22,6 +22,7 @@ Route::get('/midias/profecias', [PageController::class, 'profecias'])->name('mid
 Route::get('/midias/radio-tv', [PageController::class, 'radioTv'])->name('midias.radio-tv');
 Route::get('/asa', [PageController::class, 'asa'])->name('asa');
 Route::get('/classe-novo-tempo', [PageController::class, 'classeNovoTempo'])->name('classe-novo-tempo');
+Route::get('/classe-saude', [PageController::class, 'classeSaude'])->name('classe-saude');
 Route::get('/secretaria', [PageController::class, 'secretaria'])->name('secretaria');
 
 // Formulários
