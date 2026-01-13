@@ -133,6 +133,13 @@ class PageController extends Controller
     {
         return view('pages.secretaria');
     }
+    /**
+     * Exibe a página Classe Novo Tempo
+     */
+    public function classeNovoTempo()
+    {
+        return view('pages.classe-novo-tempo');
+    }
 
     /**
      * Processa o formulário de contato

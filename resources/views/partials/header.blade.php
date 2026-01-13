@@ -7,7 +7,7 @@
             <li class="btn_drop"><a href="{{ route('participe') }}">Participe <i class='bx bx-chevron-down'></i></a>
                 <ul class="dropdown" style="margin-top: 6px;">
                     <li><a href="">CEMAB</a></li>
-                    <li><a href="">Classe Novo Tempo</a></li>
+                    <li><a href="{{ route('classe-novo-tempo') }}">Classe Novo Tempo</a></li>
                     <li><a href="">Classe de Saúde</a></li>
                     <li><a href="">Clube do Livro</a></li>
                     <li><a href="">Comunidades</a></li>
