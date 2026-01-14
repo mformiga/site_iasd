@@ -24,6 +24,7 @@ Route::get('/asa', [PageController::class, 'asa'])->name('asa');
 Route::get('/classe-novo-tempo', [PageController::class, 'classeNovoTempo'])->name('classe-novo-tempo');
 Route::get('/classe-saude', [PageController::class, 'classeSaude'])->name('classe-saude');
 Route::get('/secretaria', [PageController::class, 'secretaria'])->name('secretaria');
+Route::get('/clube-do-livro', [PageController::class, 'clubeDoLivro'])->name('clube-do-livro');
 
 // Formulários
 Route::post('/contato/enviar', [PageController::class, 'enviarContato'])->name('contato.enviar');

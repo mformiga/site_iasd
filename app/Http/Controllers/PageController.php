@@ -148,6 +148,13 @@ class PageController extends Controller
     {
         return view('pages.classe-saude');
     }
+    /**
+     * Exibe a página Clube do Livro
+     */
+    public function clubeDoLivro()
+    {
+        return view('pages.clube-do-livro');
+    }
 
     /**
      * Processa o formulário de contato
@@ -264,4 +271,3 @@ class PageController extends Controller
         }
     }
 }
-
