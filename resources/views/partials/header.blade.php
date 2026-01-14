@@ -13,7 +13,7 @@
                     <li><a href="">Comunidades</a></li>
                     <li><a href="">Corais</a></li>
                     <li><a href="">Cursos</a></li>
-                    <li><a href="">Doutores da esperança</a></li>
+                    <li><a href="{{ route('doutores-esperanca') }}">Doutores da esperança</a></li>
                     <li><a href="">MAP</a></li>
                     <li><a href="">Ministério de Oração</a></li>
                     <li><a href="">Mulher Plena</a></li>

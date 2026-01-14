@@ -270,4 +270,12 @@ class PageController extends Controller
             return response()->json(['error' => 'Erro ao carregar vídeos: ' . $e->getMessage()], 500);
         }
     }
+    /**
+     * Exibe a página de Doutores da Esperança
+     */
+    public function doutoresEsperanca()
+    {
+        return view('pages.doutores-esperanca');
+    }
+
 }
