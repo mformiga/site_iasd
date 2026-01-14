@@ -402,7 +402,7 @@
     <!-- Seção Identidade Corporativa -->
     <div class="identidade-section">
         <h2 style="display: flex; align-items: center; justify-content: center; gap: 15px;">
-            <img src="{{ asset('img/cards/doutores-esperanca/imagem_12.webp') }}" alt="" style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
+            <img src="{{ asset('img/cards/doutores/imagem_12.webp') }}" alt="" style="width: 60px; height: 60px; object-fit: contain; border-radius: 8px;">
             Identidade Corporativa
         </h2>
 
@@ -468,21 +468,21 @@
         <!-- Atividade 1 -->
         <div class="atividade-card">
             <h3 style="display: flex; align-items: center; gap: 15px;">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_14.webp') }}" alt="" style="width: 50px; height: 50px; object-fit: contain; border-radius: 8px;">
+                <img src="{{ asset('img/cards/doutores/imagem_14.webp') }}" alt="" style="width: 50px; height: 50px; object-fit: contain; border-radius: 8px;">
                 1. Visitas Humanizadas a Hospitais
             </h3>
             <p>
                 Equipes de voluntários da comunidade, adventistas ou não, maiores de 16 anos, treinados, vestindo figurinos leves (estilo "palhaço solidário" não clínico, coletes coloridos de acordo com a função) levam música, a palavra, a oração e contação de histórias para crianças e adultos internados; promovem interação com familiares e profissionais de saúde.
             </p>
             <div class="atividade-galeria">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_16.webp') }}" alt="Visitas hospitalares">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_09.webp') }}" alt="Voluntários em ação">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_02.webp') }}" alt="Humanização">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_05.webp') }}" alt="Acolhimento">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_06.webp') }}" alt="Alegrando pacientes">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_10.webp') }}" alt="Equipe de voluntários">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_03.webp') }}" alt="Momentos de alegria">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_07.webp') }}" alt="Palhaços solidários">
+                <img src="{{ asset('img/cards/doutores/imagem_16.webp') }}" alt="Visitas hospitalares">
+                <img src="{{ asset('img/cards/doutores/imagem_09.webp') }}" alt="Voluntários em ação">
+                <img src="{{ asset('img/cards/doutores/imagem_02.webp') }}" alt="Humanização">
+                <img src="{{ asset('img/cards/doutores/imagem_05.webp') }}" alt="Acolhimento">
+                <img src="{{ asset('img/cards/doutores/imagem_06.webp') }}" alt="Alegrando pacientes">
+                <img src="{{ asset('img/cards/doutores/imagem_10.webp') }}" alt="Equipe de voluntários">
+                <img src="{{ asset('img/cards/doutores/imagem_03.webp') }}" alt="Momentos de alegria">
+                <img src="{{ asset('img/cards/doutores/imagem_07.webp') }}" alt="Palhaços solidários">
             </div>
         </div>
 
@@ -493,11 +493,11 @@
                 Cada paciente visitado recebe um coração confecionado por voluntários da comunidade, desde criança até idoso, atuante ou não no projeto. Os corações são feitos de feltro, decorados, esterelizados e embalados individualmente. Cada coração é diferente do outro para mostrar para o paciente que ele também é único e especial, muito amado por Deus. Também são confeccionados corações especiais para as crianças/pediatria. As oficinas e o Projeto têm sido instrumentos de resgate de pessoas com depressão e isolamento, pelo senso de propósito, utilidade, pertencimento e amor ao próximo trazidos.
             </p>
             <div class="atividade-galeria">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_14.webp') }}" alt="Oficinas de corações">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_13.webp') }}" alt="Artesanato solidário">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_04.webp') }}" alt="Voluntários na confecção">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_08.webp') }}" alt="Corações de feltro">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_18.webp') }}" alt="Amor em cada detalhe">
+                <img src="{{ asset('img/cards/doutores/imagem_14.webp') }}" alt="Oficinas de corações">
+                <img src="{{ asset('img/cards/doutores/imagem_13.webp') }}" alt="Artesanato solidário">
+                <img src="{{ asset('img/cards/doutores/imagem_04.webp') }}" alt="Voluntários na confecção">
+                <img src="{{ asset('img/cards/doutores/imagem_08.webp') }}" alt="Corações de feltro">
+                <img src="{{ asset('img/cards/doutores/imagem_18.webp') }}" alt="Amor em cada detalhe">
             </div>
         </div>
 
@@ -508,7 +508,7 @@
                 Eventos de acolhimento fora do hospital para alcançar populações vulneráveis e ampliar o impacto comunitário, realizados em asilos, orfanatos, creches e outras instituições.
             </p>
             <div class="atividade-galeria">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_15.webp') }}" alt="Ações em asilos">
+                <img src="{{ asset('img/cards/doutores/imagem_15.webp') }}" alt="Ações em asilos">
             </div>
         </div>
 
@@ -519,7 +519,7 @@
                 Treinamentos periódicos que abordam técnicas de humanização, palhaçaria, ética, postura em ambientes de saúde, inteligência emocional, música, fotografia e protocolos de segurança, com emissão de certificado. As inscrições são geralmente comunicadas pelas redes locais do projeto.
             </p>
             <div class="atividade-galeria">
-                <img src="{{ asset('img/cards/doutores-esperanca/imagem_11.webp') }}" alt="Formação de voluntários">
+                <img src="{{ asset('img/cards/doutores/imagem_11.webp') }}" alt="Formação de voluntários">
             </div>
         </div>
 

@@ -333,9 +333,7 @@
         <p>
             Para receber o link da próxima reunião no Google Meet e ser adicionado ao nosso grupo, por favor, entre em contato:
         </p>
-        <a href="mailto:asacentralbsb@gmail.com" style="display: inline-block; margin: 30px auto;">
-            <img src="https://maas-log-prod.cn-wlcb.ufileos.com/anthropic/558fd183-aa9a-484b-9313-1522760386cd/0438f0306a9f79a2c82560bd65003dcd.jpg?UCloudPublicKey=TOKEN_e15ba47a-d098-4fbd-9afc-a0dcf0e4e621&Expires=1768396258&Signature=TlB7q3UfqJYKNiNb5TYH34h3u7U=" alt="Quero Participar" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-        </a>
+        <img src="{{ asset('img/cards/clubelivro/clubelivro.jpg') }}" alt="Capa do livro Cartas de um Diabo a seu Aprendiz" style="max-width: 400px; height: auto; margin: 30px auto; display: block; box-shadow: 0 6px 25px rgba(0,0,0,0.3); border-radius: 10px;">
     </div>
 
 </div>
