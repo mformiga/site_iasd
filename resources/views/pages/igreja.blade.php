@@ -4,320 +4,776 @@
 
 @push('styles')
 <style>
-    .quem_somos, .historia, .que_cremos, .lideranca, .fale_conosco{
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+    
+    .igreja-container {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
     }
 
-    h2{
-        margin: 4vh 0 3vh;
-        font-family: 'Bebas neue';
-        font-size: 2.7em;
+    .igreja-intro {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 50px 40px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .igreja-intro h1 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 3em;
         color: #003366;
+        margin-bottom: 25px;
         font-weight: 500;
     }
 
-    p{
-        width: 80%;
-        margin-bottom: 3vh;
+    .igreja-intro p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #333;
         text-align: justify;
-        font-family: "roboto", sans-serif;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .pilares-section {
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        padding: 60px 40px;
+        border-radius: 15px;
+        margin: 50px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    .pilares-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.5em;
+        color: #fff;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    .pilares-section p {
+        font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
+        line-height: 1.8;
+        color: #f8f9fa;
+        margin-bottom: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .img_historia{
-        width: 35%;
-        float: left;
-        margin: 0px 15px;
+    .pilares-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 30px;
     }
 
-    .btn_historia{
-        text-decoration: none;
-        border: 2px solid #003366;
-        border-radius: 5px;
-        background-color:#003366;
+    .pilar-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding: 30px 25px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .pilar-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    }
+
+    .pilar-card .emoji {
+        font-size: 3em;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .pilar-card h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
         color: #fff;
-        padding: 5px 8px;
+        margin-bottom: 15px;
+        font-weight: 600;
     }
 
-    .btn_historia:hover{
-        background-color:rgb(19, 71, 168);
-        border: 2px solid rgb(19, 71, 168);
-        color: #fff;
+    .pilar-card p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #f8f9fa;
+        line-height: 1.6;
+        text-align: center;
     }
 
-    .form_box{
-        width: 80%;
+
+    .estrutura-section {
+        margin: 60px 0;
+    }
+
+    .estrutura-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.5em;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
+    }
+
+    .timeline-year {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 3.5em;
+        color: #003366;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .timeline-content {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .campanhas-info {
+        background: #f8f9fa;
         padding: 40px;
+        border-radius: 15px;
+        margin: 50px 0;
+        border-left: 5px solid #003366;
     }
 
-    form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .campanhas-info h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2em;
+        color: #003366;
+        margin-bottom: 20px;
+        font-weight: 500;
     }
 
-    .input-box{
-        position: relative;
-        width: 60%;
-        height: 50px;
-        border-bottom: 3px solid #003366;
-        margin: 25px 0;
+    .campanhas-info p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+        text-align: justify;
     }
 
-    .input-box label{
-        position: absolute;
-        top: 50%;
-        left: 5px;
-        transform: translateY(-50%);
-        font-size: 1.3em;
-        color: #162938;
-        font-weight: 600;
-        pointer-events: none;
-        transition: 0.5s;
-    }
-
-    .input-box input:focus~label,
-    .input-box input:valid~label{
-        top: -5px;
-    }
-
-    .input-box input{
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        border: none;
-        outline: none;
-        font-size: 1em;
-        color: #162938;
-        font-weight: 600;
-        padding: 0 35px 0 5px;
-    }
-
-    .input-box .icon{
-        position: absolute;
-        right: 8px;
-        font-size: 1.6em;
-        color: #162938;
-        line-height: 57px;
-    }
-
-    .input-textarea{
-        position: relative;
-        width: 60%;
-        height: auto;
-        border: 3px solid #003366;
-        margin: 25px 0;
-        margin-top: 50px;
-    }
-
-    textarea{
-        width: 98%;
-        max-width: 98%;
-        background-color: transparent;
-        border: none;
-        padding: 1%;
-    }
-
-    textarea:focus {
-        outline: none;
-        border: none;
-        box-shadow: none;
-    }
-
-    .input-textarea label{
-        position: absolute;
-        top: -14%;
-        left: 5px;
-        transform: translateY(-50%);
-        font-size: 1.3em;
-        color: #162938;
-        font-weight: 600;
-        pointer-events: none;
-        transition: 0.5s;
-    }
-
-    .input-textarea input{
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        border: none;
-        outline: none;
-        font-size: 1em;
-        color: #162938;
-        font-weight: 600;
-        padding: 10px;
-    }
-
-    .input-textarea .icon{
-        position: absolute;
-        top: -29%;
-        right: 1.1%;
-        font-size: 1.6em;
-        color: #162938;
-        line-height: 57px;
-    }
-
-    .termos{
-        width: 60%;
-    }
-
-    .btn_submit{
-        background-color: #003366;
+    .boletim-section {
+        background: linear-gradient(135deg, #003366 0%, #1b4472 100%);
+        padding: 50px 40px;
+        border-radius: 15px;
+        margin: 50px 0;
+        text-align: center;
         color: #fff;
+    }
+
+    .boletim-section h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2em;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .boletim-section p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        color: #f8f9fa;
+        margin-bottom: 25px;
+    }
+
+    .btn-boletim {
+        display: inline-block;
+        background-color: #fff;
+        color: #003366;
+        padding: 12px 35px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1em;
+        transition: transform 0.3s, box-shadow 0.3s;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .btn-boletim:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .como-ajudar-section {
+        margin: 60px 0;
+    }
+
+    .como-ajudar-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.5em;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
+    }
+
+    .formas-ajuda-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .forma-ajuda-card {
+        background: #fff;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 25px 20px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .forma-ajuda-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    }
+
+    .forma-ajuda-card .emoji {
+        font-size: 3em;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .forma-ajuda-card h4 {
+        font-family: 'Roboto', sans-serif;
         font-size: 1.2em;
-        padding: 10px 30px;
+        color: #003366;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .forma-ajuda-card p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .btn-ajudar-grande {
+        display: block;
+        text-align: center;
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        color: #fff;
+        padding: 18px 50px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 40px auto;
+        max-width: 400px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .btn-ajudar-grande:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .contato-section {
+        background: #f8f9fa;
+        padding: 40px;
+        border-radius: 15px;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .contato-section h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2em;
+        color: #003366;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .contato-section p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .contato-section a {
+        color: #003366;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .contato-section a:hover {
+        text-decoration: underline;
+    }
+
+
+    .historia-expansivel {
+        display: none;
+        background: #f8f9fa;
+        padding: 40px;
+        border-radius: 15px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .historia-expansivel.show {
+        display: block;
+        animation: fadeIn 0.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .historia-expansivel h4 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        color: #003366;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .historia-expansivel h4:first-child {
+        margin-top: 0;
+    }
+
+    .historia-expansivel p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #333;
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    .historia-expansivel img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .historia-expansivel .verso {
+        font-style: italic;
+        color: #666;
+        background: #fff;
+        padding: 20px;
+        border-left: 4px solid #003366;
+        margin: 20px 0;
         border-radius: 5px;
-        margin-top: 3vh;
-        border: none;
     }
 
-    .btn_submit:hover{
-        background-color:rgb(19, 71, 168);
-        cursor: pointer;
+
+    .crencas-section {
+        margin: 60px 0;
     }
 
-    input[type="checkbox"]{
-        cursor: pointer;
-        margin-right: 5px;
+    .crencas-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.5em;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
     }
 
-    @media (max-width: 790px){
-        .form_box{
-            width: 100%;
+    .crencas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .crenca-card {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border: 2px solid #e0e0e0;
+        border-radius: 15px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .crenca-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        border-color: #003366;
+    }
+
+    .crenca-icon {
+        font-size: 3em;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .crenca-card h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        color: #003366;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .crenca-card p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    .crencas-cta {
+        background: linear-gradient(135deg, #003366 0%, #1b4472 100%);
+        padding: 50px 40px;
+        border-radius: 15px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .btn-crencas-destaque {
+        display: inline-block;
+        background-color: #ff6b35;
+        color: #fff;
+        padding: 18px 50px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.3em;
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        font-family: 'Roboto', sans-serif;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn-crencas-destaque:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        background-color: #e55a2b;
+    }
+
+    @media (max-width: 768px) {
+        .igreja-container {
+            padding: 20px 15px;
         }
-    }
 
-    @media (max-width: 500px){
-        .input-box{
-            width: 80%;
+        .igreja-intro {
+            padding: 30px 20px;
         }
 
-        .input-textarea{
-            width: 80%;
+        .igreja-intro h1 {
+            font-size: 2.2em;
+        }
+
+        .pilares-section {
+            padding: 40px 20px;
+        }
+
+        .pilares-section h2 {
+            font-size: 2em;
+        }
+
+        .estatisticas-grid,
+        .formas-ajuda-grid,
+        .pilares-grid,
+        .crencas-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .timeline-year {
+            font-size: 2.5em;
         }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/igreja/igreja.png') }}" alt="igreja Adeventista do Sétimo Dia Central de Brasília" style="width: 100%;">
+<img src="{{ asset('img/cards/aigreja/fachada.jpg') }}" alt="Fachada da Igreja Adventista Central de Brasília" style="width: 100%;">
 
-<div class="quem_somos">
-    <h2>Quem somos</h2>
+<div class="igreja-container">
     
-    <p>A Igreja Adventista do Sétimo Dia é uma igreja cristã protestante com atuação mundial que teve suas primeiras raízes entre as décadas de 1850 e 1860, concomitantemente nos Estados Unidos e na Europa. Seu início se deu a partir de um grupo composto por homens e mulheres de várias denominações religiosas, estudiosos da Bíblia, que em 1863 organizou e oficializou uma estrutura denominacional, passando a adotar o nome "Igreja Adventista do Sétimo Dia". Dentre suas principais doutrinas estão: a crença na Bíblia, inspirada por Deus; a Trindade (Pai, Filho e Espírito Santo); e Jesus Cristo como salvador da humanidade por sua morte, ressurreição e retorno a esta Terra.</p>
+    <!-- Seção Introdutória -->
+    <div class="igreja-intro">
+        <h1>Quem Somos</h1>
+        <p>
+            A Igreja Adventista do Sétimo Dia é uma igreja cristã protestante com atuação mundial que teve suas primeiras raízes entre as décadas de 1850 e 1860, concomitantemente nos Estados Unidos e na Europa. Seu início se deu a partir de um grupo composto por homens e mulheres de várias denominações religiosas, estudiosos da Bíblia, que em 1863 organizou e oficializou uma estrutura denominacional, passando a adotar o nome atual.
+        </p>
+    </div>
 
-    <p>Administrativamente a igreja é formada a partir dos seus membros, que por sua vez formam as igrejas (IASD Central de Brasília, por exemplo). Um conjunto de igrejas numa determinada região geográfica forma uma Associação (Associação Planalto Central) e um grupo de Associações forma uma União (União Centro Oeste Brasileira). Acima das Uniões está o último nível hierárquico e instância deliberativa máxima, que é chamada Conferência Geral, da qual fazem parte as 9 Divisões (Divisão SulAmerica), nas quais o mundo é dividido. Há unidade de doutrinas, preceitos, regulamentos e orientação administrativa entre todas as igrejas adventistas do mundo.</p>
+    <!-- Seção Pilares de Nossa Fé -->
+    <div class="pilares-section">
+        <h2>⛪ Pilares de Nossa Fé</h2>
 
-    <p>No Brasil, a mensagem adventista chegou por meio de impressos que ingressaram nas colônias de imigrantes alemães e austríacos, nos estados de Santa Catarina, São Paulo e Espírito Santo. Na última estatística em 2021, eram 21,9 milhões de membros em 212 países sendo que, o Brasil é o país com maior número de adventistas no mundo (https://www.adventist.org/statistics/)</p>
-</div>
+        <div class="pilares-grid">
+            <div class="pilar-card">
+                <span class="emoji">📖</span>
+                <h3>A Bíblia</h3>
+                <p>Nossa única regra de fé e prática</p>
+            </div>
 
-<div class="historia">
+            <div class="pilar-card">
+                <span class="emoji">✝️</span>
+                <h3>A Trindade</h3>
+                <p>Um só Deus em três pessoas (Pai, Filho e Espírito Santo)</p>
+            </div>
 
-    <h2>Nossa História</h2>
-    
-        <p><img src="{{ asset('img/igreja/inauguracao.png') }}" alt="inauguração" class="img_historia" style="margin-left: 0px;">Era o dia 08 de dezembro de 1968. A Cidade de Brasília, a nova Capital Federal do Brasil contava com apenas oito anos de inaugurada. Na linguagem maternal, estava apenas engatinhando. Estávamos vivendo uma nova época, cheia de expectativas e vislumbres de um futuro promissor. Havia chegado, finalmente, o tão almejado dia da inauguração do grande Templo da Igreja Adventista do Sétimo Dia, onde Cultos Divinos seriam celebrados para honra e glória do Senhor Deus Triúno, o TodoPoderoso.<br><br><br>
+            <div class="pilar-card">
+                <span class="emoji">💫</span>
+                <h3>Jesus Cristo</h3>
+                <p>O Salvador da humanidade, que morreu por nós, ressuscitou e prometeu voltar a esta Terra</p>
+            </div>
+        </div>
+    </div>
 
-        Assim a ordem Divina está escrita: "E Me farão um Santuário para que Eu habite no meio deles" exarada no Livro de Êxodo 25:8, estava sendo cumprida.<br><br><br>
+    <!-- Seção Estrutura Organizacional -->
+    <div class="estrutura-section">
+        <h2>🗺️ Estrutura Organizacional</h2>
 
-        Pelo exercício da fé e pelo esforço determinado de muitos, a magnífica realidade ali estava presente, numa demonstração de que aquela máxima citada pelo Apóstolo Paulo aos Filipenses capítulo 4, verso 13, inspirada pelo Espírito da Profecia, de que, "Tudo posso nAquele que me fortalece", estava sendo transformada em uma verdade deslumbrante, real, concreta esplendorosa, sublime, bem presente, cheia de luz, "e a Glória do Senhor Deus encheu o Templo" (II Crônicas 5:14).<br><br><br>
+        <div class="campanhas-info">
+            <p>
+                No Brasil, a mensagem adventista chegou por meio de impressos que ingressaram nas colônias de imigrantes alemães e austríacos, nos estados de Santa Catarina, São Paulo e Espírito Santo. Na última estatística em 2021, eram 21,9 milhões de membros em 212 países sendo que o Brasil é o país com maior número de adventistas no mundo.
+            </p>
+            <div style="text-align: center; margin-top: 30px; padding: 0 20px;">
+                <img src="{{ asset('img/cards/aigreja/estrutura.webp') }}" alt="Estrutura Organizacional" style="width: 100%; max-width: 1100px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: block; margin: 0 auto;">
+            </div>
+        </div>
+    </div>
 
-        <img src="{{ asset('img/igreja/construcao.png') }}" alt="construção igreja" class="img_historia" style="float: right; margin-right: 0px;">Naquele dia esta bela Igreja, esta Casa de Deus, nova, exuberante e confortável, estava pronta para ser dedicada ao Senhor Deus; e assim foi, para honra e glória do nosso Pai Eterno, a quem tudo devemos.<br><br><br>
-        
-        O terreno onde está construída a Igreja tem a área total de 25.000 m2, medindo 100 metros de frente por 250 metros de fundos, foi uma doação do Governo do Brasil à União Sul  Brasileira, com a intermediação incansável do saudoso irmão Dr. João Batista Clayton Rossi, Procurador da República.<br><br><br>
-        
-        De acordo com as informações colhidas com o Pr. Wilson Sarli, então Presidente da Missão Brasil Central da IASD, um dos vespertinos da Capital Federal anunciou: "Igreja Adventista inaugura Templo e reúne fiéis do DF". E acrescenta: "Foi inaugurada, às 11 horas de ontem, na Avenida L2 Sul, o novo Templo da Igreja Adventista, com o descerramento da fita pelo presidente mundial daquela Igreja, Pastor Roberto H. Pierson, e o Senador Carvalho Pinto, especialmente convidado para a cerimônia".<br><br>
+    <!-- Seção Nossa História -->
+    <div class="como-ajudar-section">
+        <h2>⏳ Nossa História: IASD Brasilia</h2>
+        <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Uma Jornada de Fé e Comunidade
+        </p>
 
-        <img src="{{ asset('img/igreja/coral_taguatinga.png') }}" alt="coral inauguração" class="img_historia" style="margin-left: 0px;">Conforme informações colhidas, cinco ônibus chegaram de várias partes do Estado de Goiás, trazendo irmãos para a cerimônia de inauguração, além de mais outros dez ônibus e inúmeros carros particulares com pessoas de outros Estados.<br><br><br>
+        <div class="formas-ajuda-grid">
+            <div class="forma-ajuda-card">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 10px;">1957</h3>
+                <p style="text-align: justify;">
+                    A dedicação do casal Walter e Antônia Leão foi fundamental. Eles abriram as portas de sua casa na Candangolândia para encontros de adoração a Deus com poucas pessoas, plantando a primeira semente adventista na região. Com o tempo, o casal se mudou para o Núcleo Bandeirante, mas a chama da missão continuou acesa, e os encontros evangelísticos prosseguiram.
+                </p>
+            </div>
 
-        Após o descerramento da fita, a grande porta de vidro foi aberta e o Coral da Igreja Adventista de Taguatinga entoou o hino de nº 18, do então Hinário Cantai ao Senhor: SANTO, SANTO, SANTO.<br><br>
-        
-        <a href="" class="btn_historia">Leia mais aqui</a></p>
-</div>
+            <div class="forma-ajuda-card">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 10px;">1960</h3>
+                <p style="text-align: justify;">
+                    No ano da inauguração de Brasília, Walter e Antônia foram para o Gama. O endereço mudou novamente, mas a paixão por compartilhar a fé permaneceu inabalável. Outras pessoas, inspiradas pelo mesmo ideal, uniram-se a eles para fazer a obra avançar na nova capital.
+                </p>
+            </div>
 
-<div class="que_cremos">
-    <h2>Em que cremos</h2>
+            <div class="forma-ajuda-card">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 10px;">1967</h3>
+                <p style="text-align: justify;">
+                    Um personagem crucial nesta história foi Clayton Rossi, Procurador da República. Já membro da igreja em Belo Horizonte, ele se mudou para Brasília com a missão em seu coração. Movido por sua fé, Clayton empreendeu uma verdadeira maratona para garantir, junto ao Governo Federal, um grande terreno que se estendia da Avenida L-2 à Avenida L-3. Esse esforço foi recompensado, e a propriedade foi adquirida. O estabelecimento efetivo da Igreja Central de Brasília aconteceu a partir deste ano. Inicialmente, foi construído um salão simples no terreno adquirido, conhecido como Capela Azul.
+                </p>
+            </div>
 
-    <p>Os adventistas do sétimo dia aceitam a Bíblia como sua regra de fé e prática, e mantêm crenças fundamentais, como ensinam as Sagradas Escrituras. Essas crenças, aqui expostas, constituem a visão que a Igreja Adventista sustenta com respeito aos ensinos bíblicos.</p>
-</div>
-<div class="lideranca">
-    <h2>Liderança</h2>
-    <img src="{{ asset('img/igreja/lideres.png') }}" alt="lideres" style="width: 80%;">
-</div>
-<div class="fale_conosco">
-    <h2>Fale conosco</h2>
+            <div class="forma-ajuda-card">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 10px;">1968</h3>
+                <p style="text-align: justify;">
+                    Finalmente, o momento tão esperado chegou! O templo da Igreja Central de Brasília foi inaugurado em 8 de dezembro de 1968. Cerca de 60 adventistas assinaram a ata de inauguração. Desde seus primeiros dias até hoje, a Igreja Central de Brasília cresceu e se consolidou como uma grande e influente comunidade adventista, servindo de inspiração e apoio para outras igrejas na capital federal.
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <div class="form_box">
-        <form action="{{ route('contato.enviar') }}" method="POST">
-            @csrf
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="person"></ion-icon>
-                </span>
-                <input type="text" name="nome" id="nome" required>
-                <label for="nome">Nome</label>
-            </div><!--input-box-->
+    <!-- Seção O Temporal que Uniu uma Comunidade -->
+    <div class="boletim-section">
+        <h3>🌧️ O Temporal que Uniu uma Comunidade</h3>
+        <p>
+            Na véspera da inauguração (7/12/1968), um temporal inundou o templo. Membros trabalharam a noite toda para limpar a igreja, garantindo que, ao amanhecer, tudo estivesse impecável para receber visitantes de todo o Brasil.
+        </p>
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="javascript:void(0)" id="btn-historia" style="display: inline-block; background-color: #ff6b35; color: #fff; padding: 12px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; transition: transform 0.3s, box-shadow 0.3s; font-family: 'Roboto', sans-serif; cursor: pointer;" onmouseover="this.style.backgroundColor='#e55a2b'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)'" onmouseout="this.style.backgroundColor='#ff6b35'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">Veja mais sobre nossa história</a>
+        </div>
+        <div id="historia-expansivel" class="historia-expansivel">
+            <p>
+                Era o dia 08 de dezembro de 1968. A Cidade de Brasília, a nova Capital Federal do Brasil contava com apenas oito anos de inaugurada. Na linguagem maternal, estava apenas engatinhando. Estávamos vivendo uma nova época, cheia de expectativas e vislumbres de um futuro promissor. Havia chegado, finalmente, o tão almejado dia da inauguração do grande Templo da Igreja Adventista do Sétimo Dia, onde Cultos Divinos seriam celebrados para honra e glória do Senhor Deus Triúno, o TodoPoderoso.
+            </p>
 
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="mail"></ion-icon>
-                </span>
-                <input type="text" name="email" id="email" required>
-                <label for="email">Email</label>
-            </div><!--input-box-->
+            <p>
+                Assim a ordem Divina está escrita: "E Me farão um Santuário para que Eu habite no meio deles" exarada no Livro de Êxodo 25:8, estava sendo cumprida.
+            </p>
 
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="call"></ion-icon>
-                </span>
-                <input type="text" name="telefone" id="telefone" required>
-                <label for="telefone">Telefone</label>
-            </div><!--input-box-->
+            <p>
+                Pelo exercício da fé e pelo esforço determinado de muitos, a magnífica realidade ali estava presente, numa demonstração de que aquela máxima citada pelo Apóstolo Paulo aos Filipenses capítulo 4, verso 13, inspirada pelo Espírito da Profecia, de que, "Tudo posso nAquele que me fortalece", estava sendo transformada em uma verdade deslumbrante, real, concreta esplendorosa, sublime, bem presente, cheia de luz, "e a Glória do Senhor Deus encheu o Templo" (II Crônicas 5:14).
+            </p>
 
-            <div class="input-box">
-                <span class="icon">
-                    <ion-icon name="clipboard"></ion-icon>
-                </span>
-                <input type="text" name="assunto" id="assunto" required>
-                <label for="assunto">Assunto</label>
-            </div><!--input-box-->
+            <img src="{{ asset('img/cards/aigreja/inauguracao.png') }}" alt="Inauguração da Igreja Central de Brasília">
 
-            <div class="input-textarea">
-                <span class="icon">
-                    <ion-icon name="send"></ion-icon>
-                </span>
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10" maxlength="255" required></textarea>
-            </div><!--input-box-->
+            <p>
+                Naquele dia esta bela Igreja, esta Casa de Deus, nova, exuberante e confortável, estava pronta para ser dedicada ao Senhor Deus; e assim foi, para honra e glória do nosso Pai Eterno, a quem tudo devemos.
+            </p>
 
-            <div class="termos">
-                <label><input type="checkbox" required>Lí e aceito os termos</label>
-                <a href="#">Política de Privacidade</a>
-            </div><!--termos-->
-            
-            <button type="submit" class="btn_submit">Enviar</button>
-        </form>
-    </div><!--form_box-->
+            <p>
+                O terreno onde está construída a Igreja tem a área total de 25.000 m², medindo 100 metros de frente por 250 metros de fundos, foi uma doação do Governo do Brasil à União Sul Brasileira, com a intermediação incansável do saudoso irmão Dr. João Batista Clayton Rossi, Procurador da República.
+            </p>
+
+            <img src="{{ asset('img/cards/aigreja/construcao.png') }}" alt="Construção do Templo">
+
+            <p>
+                De acordo com as informações colhidas com o Pr. Wilson Sarli, então Presidente da Missão Brasil Central da IASD, um dos vespertinos da Capital Federal anunciou: "Igreja Adventista inaugura Templo e reúne fiéis do DF". E acrescenta: "Foi inaugurada, às 11 horas de ontem, na Avenida L2 Sul, o novo Templo da Igreja Adventista, com o descerramento da fita pelo presidente mundial daquela Igreja, Pastor Roberto H. Pierson, e o Senador Carvalho Pinto, especialmente convidado para a cerimônia".
+            </p>
+
+            <img src="{{ asset('img/cards/aigreja/coral_taguatinga.png') }}" alt="Coral de Taguatinga na Inauguração">
+
+            <p>
+                Conforme informações colhidas, cinco ônibus chegaram de várias partes do Estado de Goiás, trazendo irmãos para a cerimônia de inauguração, além de mais outros dez ônibus e inúmeros carros particulares com pessoas de outros Estados.
+            </p>
+
+            <p>
+                Após o descerramento da fita, a grande porta de vidro foi aberta e o Coral da Igreja Adventista de Taguatinga entoou o hino de nº 18, do então Hinário Cantai ao Senhor: SANTO, SANTO, SANTO.
+            </p>
+        </div>
+    </div>
+
+    <!-- Seção Em Que Cremos -->
+    <div class="crencas-section">
+        <h2>📖 Em Que Cremos</h2>
+        <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Os adventistas do sétimo dia baseiam suas crenças integralmente nas Sagradas Escrituras. Aceitamos a Bíblia como nossa única regra de fé e prática.
+        </p>
+
+        <div class="crencas-grid">
+            <div class="crenca-card">
+                <span class="crenca-icon">🕊️</span>
+                <h4>Deus</h4>
+                <p>Cremos em Deus como Pai, Filho e Espírito Santo, um Deus em três pessoas</p>
+            </div>
+
+            <div class="crenca-card">
+                <span class="crenca-icon">📖</span>
+                <h4>A Bíblia</h4>
+                <p>As Escrituras Sagradas são a única regra de fé e prática cristã</p>
+            </div>
+
+            <div class="crenca-card">
+                <span class="crenca-icon">✝️</span>
+                <h4>Salvação</h4>
+                <p>Jesus Cristo morreu por nossos pecados e oferece salvação pela graça</p>
+            </div>
+
+            <div class="crenca-card">
+                <span class="crenca-icon">🔄</span>
+                <h4>Retorno de Cristo</h4>
+                <p>Jesus voltará pessoal e visivelmente a esta Terra para buscar seu povo</p>
+            </div>
+
+            <div class="crenca-card">
+                <span class="crenca-icon">⚰️</span>
+                <h4>Morte e Ressurreição</h4>
+                <p>A morte é um sono inconsciente até a ressurreição no dia de Cristo</p>
+            </div>
+
+            <div class="crenca-card">
+                <span class="crenca-icon">🏛️</span>
+                <h4>Santuário</h4>
+                <p>Há um santuário no céu onde Cristo ministra em nosso favor</p>
+            </div>
+
+            <div class="crenca-card">
+                <span class="crenca-icon">📜</span>
+                <h4>Lei de Deus</h4>
+                <p>Os Dez Mandamentos refletem o caráter de Deus e são válidos hoje</p>
+            </div>
+
+            <div class="crenca-card">
+                <span class="crenca-icon">🛁</span>
+                <h4>Batismo</h4>
+                <p>O batismo por imersão é símbolo de morte para o pecado e nova vida</p>
+            </div>
+        </div>
+
+        <div class="crencas-cta">
+            <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.8em; color: #ffffff; margin-bottom: 20px; font-weight: 500;">
+                Conheça Nossas 28 Crenças Fundamentais
+            </h3>
+            <p style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #f8f9fa; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Acesse gratuitamente a publicação "Nisto Cremos" para conhecer em detalhes todas as crenças que a Igreja Adventista sustenta a respeito dos ensinos bíblicos.
+            </p>
+            <a href="https://www.institutodemissao.org.br/wp-content/uploads/2021/07/Nisto-Cremos.pdf" target="_blank" class="btn-crencas-destaque">
+                <span style="font-size: 1.5em; margin-right: 10px;">📖</span>
+                Ler "Nisto Cremos"
+            </a>
+        </div>
+    </div>
+
+    <!-- Seção Liderança -->
+    <div class="contato-section">
+        <h2>Liderança</h2>
+        <img src="{{ asset('img/cards/aigreja/lideres.png') }}" alt="Liderança da Igreja" style="width: 100%; max-width: 900px; border-radius: 10px;">
+    </div>
+
 </div>
 @endsection
 
 @push('scripts')
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script>
-    document.querySelector('form').addEventListener('submit', function(e) {
-        const email = document.getElementById('email').value.trim();
-
-        if (email.length === 0 || !email.includes('@')) {
-            alert('Por favor, insira um e-mail válido.');
+document.addEventListener('DOMContentLoaded', function() {
+    // Animação suave de scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-        }
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
+
+
+    // Toggle da história expansível
+    const btnHistoria = document.getElementById('btn-historia');
+    const historiaExpansivel = document.getElementById('historia-expansivel');
+
+    if (btnHistoria && historiaExpansivel) {
+        btnHistoria.addEventListener('click', function(e) {
+            e.preventDefault();
+            historiaExpansivel.classList.toggle('show');
+
+            // Change button text based on state
+            if (historiaExpansivel.classList.contains('show')) {
+                btnHistoria.textContent = 'Recolher história';
+            } else {
+                btnHistoria.textContent = 'Veja mais sobre nossa história';
+            }
+        });
+    }
+
+    // Animação de fade-in para cards
+    const cards = document.querySelectorAll('.pilar-card, .forma-ajuda-card, .crenca-card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) scale(1)';
+                }, index * 100);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px) scale(0.95)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+    });
+});
 </script>
 @endpush
-
