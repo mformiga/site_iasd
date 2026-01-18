@@ -312,6 +312,48 @@
         text-decoration: underline;
     }
 
+    .galeria-section {
+        margin: 60px 0;
+    }
+
+    .galeria-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.5em;
+        color: #003366;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 500;
+    }
+
+    .galeria-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .galeria-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        aspect-ratio: 1;
+        background: #f0f0f0;
+    }
+
+    .galeria-item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .galeria-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
     @media (max-width: 768px) {
         .asa-container {
             padding: 20px 15px;
@@ -340,6 +382,11 @@
 
         .estatistica-numero {
             font-size: 2.5em;
+        }
+
+        .galeria-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
         }
     }
 </style>
@@ -441,6 +488,77 @@
         </div>
 
         <a href="{{ route('oracao-visita') }}" class="btn-ajudar-grande">QUERO AJUDAR AGORA!</a>
+    </div>
+
+    <!-- Seção Galeria de Fotos -->
+    <div class="galeria-section">
+        <h2>Galeria de Fotos</h2>
+
+        <div class="galeria-grid">
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio1.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio2.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio3.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio4.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio5.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio6.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio7.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio8.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio9.jpeg" alt="ASA - Apoio" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/bazar1.jpeg" alt="ASA - Bazar" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/costura1.jpeg" alt="ASA - Costura" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/costura2.jpeg" alt="ASA - Costura" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/costura3.jpeg" alt="ASA - Costura" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/culinaria1.jpeg" alt="ASA - Culinária" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/culinaria2.jpeg" alt="ASA - Culinária" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/culinaria3.jpeg" alt="ASA - Culinária" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/pizzas1.jpeg" alt="ASA - Pizzas" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras2.jpeg" alt="ASA - Tesouras" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras3.jpeg" alt="ASA - Tesouras" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras4.jpeg" alt="ASA - Tesouras" loading="lazy">
+            </div>
+            <div class="galeria-item">
+                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras5.jpeg" alt="ASA - Tesouras" loading="lazy">
+            </div>
+        </div>
     </div>
 
     <!-- Seção de Contato -->
