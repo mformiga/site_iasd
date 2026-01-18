@@ -277,5 +277,12 @@ class PageController extends Controller
     {
         return view('pages.doutores-esperanca');
     }
+    /**
+     * Exibe a página de Programações
+     */
+    public function programacoes()
+    {
+        return view('pages.programacoes');
+    }
 
 }

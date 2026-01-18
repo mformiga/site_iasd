@@ -125,6 +125,122 @@
         font-weight: 500;
     }
 
+    .piramide-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    .piramide-nivel {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 8px 15px;
+        border-radius: 6px;
+        background: #ffffff;
+        border: 2px solid #003366;
+        box-shadow: 0 2px 8px rgba(0, 51, 102, 0.08);
+        transition: all 0.3s ease;
+    }
+
+    .piramide-nivel:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
+    }
+
+    .piramide-nivel.nivel-1 {
+        background: linear-gradient(to right, #e3f2fd, #bbdefb);
+        color: #003366;
+        border-color: #003366;
+        width: 35%;
+    }
+
+    .piramide-nivel.nivel-2 {
+        background: linear-gradient(to right, #e3f2fd, #bbdefb);
+        color: #003366;
+        border-color: #003366;
+        width: 48%;
+    }
+
+    .piramide-nivel.nivel-3 {
+        background: linear-gradient(to right, #e3f2fd, #bbdefb);
+        color: #003366;
+        border-color: #003366;
+        width: 58%;
+    }
+
+    .piramide-nivel.nivel-4 {
+        background: linear-gradient(to right, #e3f2fd, #bbdefb);
+        color: #003366;
+        border-color: #003366;
+        width: 72%;
+    }
+
+    .piramide-nivel.nivel-5 {
+        background: linear-gradient(to right, #e3f2fd, #bbdefb);
+        color: #003366;
+        border-color: #003366;
+        width: 80%;
+    }
+
+    .piramide-nivel.nivel-6 {
+        background: linear-gradient(to right, #e3f2fd, #bbdefb);
+        color: #003366;
+        border-color: #003366;
+        width: 100%;
+    }
+
+    .piramide-nivel .icone {
+        font-size: 1.3em;
+        margin: 0 auto 3px auto;
+        display: block;
+    }
+
+    .piramide-nivel h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.2em;
+        margin: 0 auto 3px auto;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        display: block;
+    }
+
+    .piramide-nivel p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .piramide-nivel .exemplo {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.85em;
+        font-weight: 700;
+        margin: 0 auto 3px auto;
+        opacity: 1;
+        display: block;
+        text-align: center;
+    }
+
+    .piramide-nivel .descricao {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.75em;
+        line-height: 1.3;
+        margin: 0 auto;
+        opacity: 1;
+        font-weight: 400;
+        display: block;
+        text-align: center;
+    }
+
+    .seta-baixo {
+        display: none;
+    }
+
     .timeline-year {
         font-family: 'Bebas neue', sans-serif;
         font-size: 3.5em;
@@ -494,12 +610,39 @@
         .timeline-year {
             font-size: 2.5em;
         }
+
+        .piramide-nivel {
+            width: 100% !important;
+            padding: 6px 12px;
+        }
+
+        .piramide-nivel h3 {
+            font-size: 1.1em;
+        }
+
+        .piramide-nivel .icone {
+            font-size: 1.1em;
+        }
+
+        .piramide-nivel .exemplo {
+            font-size: 0.8em;
+        }
+
+        .piramide-nivel .descricao {
+            font-size: 0.7em;
+        }
+
+        .contato-section > div[style*="display: flex"] {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/aigreja/fachada.jpg') }}" alt="Fachada da Igreja Adventista Central de Brasília" style="width: 100%;">
+<img src="{{ asset('img/cards/aigreja/fachada.webp') }}" alt="IASD Central de Brasília - A Igreja" style="width: 100%;">
 
 <div class="igreja-container">
     
@@ -541,11 +684,59 @@
         <h2>🗺️ Estrutura Organizacional</h2>
 
         <div class="campanhas-info">
-            <p>
+            <p style="margin-bottom: 30px;">
                 No Brasil, a mensagem adventista chegou por meio de impressos que ingressaram nas colônias de imigrantes alemães e austríacos, nos estados de Santa Catarina, São Paulo e Espírito Santo. Na última estatística em 2021, eram 21,9 milhões de membros em 212 países sendo que o Brasil é o país com maior número de adventistas no mundo.
             </p>
-            <div style="text-align: center; margin-top: 30px; padding: 0 20px;">
-                <img src="{{ asset('img/cards/aigreja/estrutura.webp') }}" alt="Estrutura Organizacional" style="width: 100%; max-width: 1100px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: block; margin: 0 auto;">
+
+            <!-- Pirâmide Organizacional HTML -->
+            <div class="piramide-container">
+                <!-- Nível 1: Conferência Geral -->
+                <div class="piramide-nivel nivel-1">
+                    <span class="icone">🌍</span>
+                    <h3>Conferência Geral</h3>
+                    <p class="exemplo">Sede Mundial - Maryland, EUA</p>
+                    <p class="descricao">Supervisão global da igreja em escala mundial</p>
+                </div>
+
+                <!-- Nível 2: Divisões -->
+                <div class="piramide-nivel nivel-2">
+                    <span class="icone">🗺️</span>
+                    <h3>Divisões</h3>
+                    <p class="exemplo">Divisão Sul-Americana</p>
+                    <p class="descricao">Grandes áreas geográficas compostas por uniões</p>
+                </div>
+
+                <!-- Nível 3: Uniões -->
+                <div class="piramide-nivel nivel-3">
+                    <span class="icone">🏢</span>
+                    <h3>Uniões</h3>
+                    <p class="exemplo">União Centro-Oeste Brasileira</p>
+                    <p class="descricao">Grupos de associações dentro de um território</p>
+                </div>
+
+                <!-- Nível 4: Associações / Missões -->
+                <div class="piramide-nivel nivel-4">
+                    <span class="icone">🏛️</span>
+                    <h3>Associações / Missões</h3>
+                    <p class="exemplo">Associação Planalto Central</p>
+                    <p class="descricao">Conjunto de igrejas locais em uma área específica</p>
+                </div>
+
+                <!-- Nível 5: Igrejas Locais -->
+                <div class="piramide-nivel nivel-5">
+                    <span class="icone">⛪</span>
+                    <h3>Igrejas Locais</h3>
+                    <p class="exemplo">IASD Central de Brasília</p>
+                    <p class="descricao">Congregações de base formadas por membros</p>
+                </div>
+
+                <!-- Nível 6: Membros -->
+                <div class="piramide-nivel nivel-6">
+                    <span class="icone">👥</span>
+                    <h3>Membros</h3>
+                    <p class="exemplo">Fiéis batizados</p>
+                    <p class="descricao">Base fundamental que forma e sustenta as igrejas locais</p>
+                </div>
             </div>
         </div>
     </div>
@@ -711,8 +902,27 @@
 
     <!-- Seção Liderança -->
     <div class="contato-section">
-        <h2>Liderança</h2>
-        <img src="{{ asset('img/cards/aigreja/lideres.png') }}" alt="Liderança da Igreja" style="width: 100%; max-width: 900px; border-radius: 10px;">
+        <h2 style="font-family: 'Bebas neue', sans-serif; font-size: 2.5em; color: #003366; text-align: center; margin-bottom: 40px; font-weight: 500;">Liderança</h2>
+
+        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
+            <!-- Pastor Lucas Alves -->
+            <div style="text-align: center; max-width: 300px;">
+                <img src="{{ asset('img/cards/aigreja/Pr. Lucas para site.webp') }}"
+                     alt="Pastor Lucas Alves"
+                     style="width: 200px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Lucas Alves</h3>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Pastor Sênior</p>
+            </div>
+
+            <!-- Pastor Hugo Rodrigues -->
+            <div style="text-align: center; max-width: 300px;">
+                <img src="{{ asset('img/cards/aigreja/Pr. Hugo para site.webp') }}"
+                     alt="Pastor Hugo Rodrigues"
+                     style="width: 200px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Hugo Rodrigues</h3>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Área Jovem</p>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -755,7 +965,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Animação de fade-in para cards
-    const cards = document.querySelectorAll('.pilar-card, .forma-ajuda-card, .crenca-card');
+    const cards = document.querySelectorAll('.pilar-card, .forma-ajuda-card, .crenca-card, .piramide-nivel');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {

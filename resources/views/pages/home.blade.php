@@ -10,19 +10,19 @@
 <div class="slider">
     <div class="list">
         <div class="item">
-            <img src="{{ asset('img/carrousel/1.jpeg') }}" alt="">
+            <img src="{{ asset('img/carrousel/1.webp') }}" alt="">
         </div>
         <div class="item">
-            <img src="{{ asset('img/carrousel/2.jpeg') }}" alt="">
+            <img src="{{ asset('img/carrousel/2.webp') }}" alt="">
         </div>
         <div class="item">
-            <img src="{{ asset('img/carrousel/3.jpeg') }}" alt="">
+            <img src="{{ asset('img/carrousel/3.webp') }}" alt="">
         </div>
         <div class="item">
-            <img src="{{ asset('img/carrousel/4.jpeg') }}" alt="">
+            <img src="{{ asset('img/carrousel/4.webp') }}" alt="">
         </div>
         <div class="item">
-            <img src="{{ asset('img/carrousel/5.jpeg') }}" alt="">
+            <img src="{{ asset('img/carrousel/5.webp') }}" alt="">
         </div>
     </div>
 
@@ -73,7 +73,7 @@
             <img src="{{ asset('img/cards/eventos.jpg') }}" alt="">
             <h2>Programações </h2>
             <p>Nossa comunidade está em constante movimento! Todos os meses, os ministérios organizam programações especiais que abraçam todas as idades. Venha participar e fortalecer sua fé junto à família da igreja. Aqui, há espaço para todos!</p>
-            <a href="">Saiba mais</a>
+            <a href="{{ route('programacoes') }}">Saiba mais</a>
         </div>
 
         <!--Card 5-->
