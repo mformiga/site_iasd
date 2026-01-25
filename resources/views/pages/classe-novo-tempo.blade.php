@@ -41,9 +41,9 @@
 
     .convite-section {
         background: linear-gradient(135deg, #003366 0%, #001531 100%);
-        padding: 60px 40px;
+        padding: 30px 40px;
         border-radius: 15px;
-        margin: 50px 0;
+        margin: 20px 0 50px 0;
         text-align: center;
         color: #fff;
     }
@@ -58,13 +58,15 @@
 
     .convite-section p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         line-height: 1.8;
         color: #f8f9fa;
-        margin-bottom: 30px;
-        max-width: 800px;
+        margin-bottom: 25px;
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
+        text-align: justify;
+        text-indent: 0;
     }
 
     .expectativas-section {

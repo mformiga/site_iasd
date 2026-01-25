@@ -285,4 +285,72 @@ class PageController extends Controller
         return view('pages.programacoes');
     }
 
+    /**
+     * API para buscar vídeos do canal Provai e Vede
+     */
+    public function getVideosProvaieVede()
+    {
+        $channelUrl = 'https://www.youtube.com/@provaievedeoficial/videos';
+        $maxResults = 10;
+
+        try {
+            $context = stream_context_create([
+                'http' => [
+                    'ignore_errors' => true,
+                    'timeout' => 10,
+                    'header' => "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\r\n"
+                ],
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false
+                ]
+            ]);
+
+            // Buscar o HTML da página do canal
+            $response = @file_get_contents($channelUrl, false, $context);
+
+            if ($response === false) {
+                return response()->json(['error' => 'Não foi possível conectar ao YouTube'], 500);
+            }
+
+            $videos = [];
+            $videoIdPattern = '/"videoId":"([a-zA-Z0-9_-]{11})"/';
+            $titlePattern = '/"videoId":"' . '([a-zA-Z0-9_-]{11})' . '".*?"title":"([^"]+)"/s';
+            $thumbnailPattern = '/"videoId":"' . '([a-zA-Z0-9_-]{11})' . '".*?"thumbnails":\{[^}]*"medium":\{[^}]*"url":"([^"]+)"/s';
+
+            // Extrair todos os IDs de vídeo
+            preg_match_all($videoIdPattern, $response, $videoIdMatches);
+
+            if (isset($videoIdMatches[1]) && is_array($videoIdMatches[1])) {
+                // Remover duplicatas mantendo a ordem
+                $uniqueVideoIds = array_unique($videoIdMatches[1]);
+                $uniqueVideoIds = array_slice($uniqueVideoIds, 0, $maxResults);
+
+                foreach ($uniqueVideoIds as $videoId) {
+                    // Criar URLs de thumbnail
+                    $thumbnail = "https://img.youtube.com/vi/{$videoId}/mqdefault.jpg";
+
+                    $videos[] = [
+                        'id' => $videoId,
+                        'title' => 'Testemunho - Provai e Vede',
+                        'thumbnail' => $thumbnail,
+                        'url' => "https://www.youtube.com/watch?v={$videoId}"
+                    ];
+
+                    if (count($videos) >= $maxResults) {
+                        break;
+                    }
+                }
+            }
+
+            if (empty($videos)) {
+                return response()->json(['error' => 'Nenhum vídeo encontrado'], 404);
+            }
+
+            return response()->json($videos);
+        } catch (\Exception $e) {
+            return response()->json(['error' => 'Erro ao carregar vídeos: ' . $e->getMessage()], 500);
+        }
+    }
+
 }

@@ -35,3 +35,4 @@ Route::post('/oracao-visita/enviar', [PageController::class, 'enviarOracaoVisita
 
 // API para vídeos do YouTube
 Route::get('/api/videos-youtube', [PageController::class, 'getVideosYoutube'])->name('api.videos-youtube');
+Route::get('/api/videos-provaievede', [PageController::class, 'getVideosProvaieVede'])->name('api.videos-provaievede');

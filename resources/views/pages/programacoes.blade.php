@@ -373,7 +373,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/asa/asa_header.png') }}" alt="Programações 2026" style="width: 100%;">
+<img src="{{ asset('img/cards/programacoes/programacoes_header.webp') }}" alt="Programações 2026" style="width: 100%; height: 200px; object-fit: cover; object-position: center;">
 
 <div class="programacoes-container">
 

@@ -393,7 +393,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/asa/asa_header.png') }}" alt="ASA (Ação Social Adventista)" style="width: 100%;">
+<img src="{{ asset('img/cards/asa/asa_header.webp') }}" alt="ASA (Ação Social Adventista)" style="width: 100%; height: 220px; object-fit: cover;">
 
 <div class="asa-container">
     
