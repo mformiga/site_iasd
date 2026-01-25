@@ -15,9 +15,9 @@
 
     .escola-intro {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        padding: 50px 40px;
+        padding: 40px 40px 15px 40px;
         border-radius: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -41,9 +41,9 @@
 
     .convite-section {
         background: linear-gradient(135deg, #003366 0%, #001531 100%);
-        padding: 70px 50px;
+        padding: 30px 50px;
         border-radius: 20px;
-        margin: 60px 0;
+        margin: 20px 0 60px 0;
         text-align: center;
         color: #fff;
         position: relative;
@@ -93,11 +93,11 @@
         line-height: 1.9;
         color: #f8f9fa;
         margin-bottom: 25px;
-        max-width: 850px;
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
         text-align: justify;
-        text-indent: 1.5em;
+        text-indent: 0;
     }
 
     .convite-highlight {
