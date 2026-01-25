@@ -406,9 +406,6 @@
         <p>
             Cada ação realizada é um gesto de carinho e cuidado, revelando a preocupação genuína com o próximo. Seja através de seminários educativos, programas de desenvolvimento comunitário, visitas, aconselhamento, ou outras iniciativas, o Ministério da Ação Social Adventista se dedica a transformar vidas e a trazer esperança.
         </p>
-        <p>
-            Envolvendo-se de maneira profunda com outros ministérios da igreja, como a Sociedade de Homens Adventistas, diáconos e diaconisas, este ministério se torna uma verdadeira rede de apoio, refletindo a luz de Cristo em cada canto da comunidade. Sob a liderança de um diretor comprometido, que participa ativamente das comissões da igreja, o ministério se fortalece e se amplia, alcançando mais corações e promovendo um impacto duradouro.
-        </p>
     </div>
 
     <!-- Seção Agência Humanitária -->
@@ -487,7 +484,15 @@
             </div>
         </div>
 
-        <a href="{{ route('oracao-visita') }}" class="btn-ajudar-grande">QUERO AJUDAR AGORA!</a>
+        <div id="ajudar-container">
+            <a href="#" id="btn-ajudar" class="btn-ajudar-grande">QUERO AJUDAR AGORA!</a>
+            <div id="contato-info" style="display: none; text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px; max-width: 500px; margin: 0 auto;">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.8em; color: #003366; margin-bottom: 20px; font-weight: 500;">Contato ASA</h3>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #333;">
+                    <strong>📧 Email:</strong> <a href="mailto:asacentralbsb@gmail.com" style="color: #003366; text-decoration: none; font-weight: 600;">asacentralbsb@gmail.com</a>
+                </p>
+            </div>
+        </div>
     </div>
 
     <!-- Seção Galeria de Fotos -->
@@ -575,6 +580,15 @@
         </p>
     </div>
 
+    <!-- Seção Manual ASA -->
+    <div class="contato-section" style="background: linear-gradient(135deg, #003366 0%, #1b4472 100%); border-top: 3px solid #f1c9a1;">
+        <h3 style="color: #fff;">Mais Informações</h3>
+        <p style="color: #f8f9fa; font-size: 1.1rem;">
+            Para mais informações, acesse o <strong>"Manual da ASA"</strong>
+        </p>
+        <a href="https://drive.google.com/file/d/1Lb3HRoIijHaFmhgqMoJaMscRvX1Qpjlz/view" target="_blank" style="display: inline-block; margin-top: 15px; background-color: #f1c9a1; color: #003366; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; transition: transform 0.3s, box-shadow 0.3s, background 0.3s; font-family: 'Roboto', sans-serif;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)'; this.style.backgroundColor='#e7ac6d';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.backgroundColor='#f1c9a1';">Acessar Manual</a>
+    </div>
+
 </div>
 @endsection
 
@@ -599,7 +613,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const timer = setInterval(() => {
             valorAtual += incremento;
-            
+
             if (valorAtual >= valorFinal) {
                 valorAtual = valorFinal;
                 clearInterval(timer);
@@ -614,7 +628,7 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting && !animado) {
                 animado = true;
-                
+
                 numeros.forEach(numero => {
                     const valorFinal = parseFloat(numero.getAttribute('data-value'));
                     animarContagem(numero, valorFinal);
@@ -627,6 +641,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (estatisticasSection) {
         observer.observe(estatisticasSection);
+    }
+
+    // Funcionalidade do botão "Quero Ajudar Agora"
+    const btnAjudar = document.getElementById('btn-ajudar');
+    const contatoInfo = document.getElementById('contato-info');
+
+    if (btnAjudar && contatoInfo) {
+        btnAjudar.addEventListener('click', function(e) {
+            e.preventDefault();
+            btnAjudar.style.display = 'none';
+            contatoInfo.style.display = 'block';
+        });
     }
 });
 </script>
