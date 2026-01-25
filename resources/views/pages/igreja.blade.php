@@ -906,19 +906,19 @@
 
         <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
             <!-- Pastor Lucas Alves -->
-            <div style="text-align: center; max-width: 300px;">
+            <div style="text-align: center; max-width: 400px;">
                 <img src="{{ asset('img/cards/aigreja/Pr. Lucas para site.webp') }}"
                      alt="Pastor Lucas Alves"
-                     style="width: 200px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
+                     style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Lucas Alves</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Pastor Sênior</p>
             </div>
 
             <!-- Pastor Hugo Rodrigues -->
-            <div style="text-align: center; max-width: 300px;">
+            <div style="text-align: center; max-width: 400px;">
                 <img src="{{ asset('img/cards/aigreja/Pr. Hugo para site.webp') }}"
                      alt="Pastor Hugo Rodrigues"
-                     style="width: 200px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
+                     style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Hugo Rodrigues</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Área Jovem</p>
             </div>
