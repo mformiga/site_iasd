@@ -6,7 +6,7 @@
             <li><a href="{{ route('igreja') }}">A Igreja</a></li>
             <li class="btn_drop"><a href="{{ route('participe') }}">Participe <i class='bx bx-chevron-down'></i></a>
                 <ul class="dropdown" style="margin-top: 6px;">
-                    <li><a href="">CEMAB</a></li>
+                    <li><a href="{{ route('cemab') }}">CEMAB</a></li>
                     <li><a href="{{ route('classe-novo-tempo') }}">Classe Novo Tempo</a></li>
                     <li><a href="{{ route('classe-saude') }}">Classe de Saúde</a></li>
                     <li><a href="{{ route('clube-do-livro') }}">Clube do Livro</a></li>

@@ -353,4 +353,12 @@ class PageController extends Controller
         }
     }
 
+    /**
+     * Exibe a página do CEMAB (Centro Musical Adventista de Brasília)
+     */
+    public function cemab()
+    {
+        return view('pages.cemab');
+    }
+
 }

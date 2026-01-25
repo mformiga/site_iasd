@@ -21,6 +21,7 @@ Route::get('/midias/filmes-series', [PageController::class, 'filmesSeries'])->na
 Route::get('/midias/profecias', [PageController::class, 'profecias'])->name('midias.profecias');
 Route::get('/midias/radio-tv', [PageController::class, 'radioTv'])->name('midias.radio-tv');
 Route::get('/asa', [PageController::class, 'asa'])->name('asa');
+Route::get('/cemab', [PageController::class, 'cemab'])->name('cemab');
 Route::get('/classe-novo-tempo', [PageController::class, 'classeNovoTempo'])->name('classe-novo-tempo');
 Route::get('/classe-saude', [PageController::class, 'classeSaude'])->name('classe-saude');
 Route::get('/secretaria', [PageController::class, 'secretaria'])->name('secretaria');
