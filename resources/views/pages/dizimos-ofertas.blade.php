@@ -15,7 +15,7 @@
 
     .dizimos-intro {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-        padding: 50px 40px;
+        padding: 40px 40px 30px 40px;
         border-radius: 15px;
         margin-bottom: 50px;
         text-align: center;
@@ -360,7 +360,7 @@
     }
 
     .testemunhos-section {
-        margin: 60px 0;
+        margin: 60px 0 30px 0;
     }
 
     .testemunhos-section h2 {
@@ -372,92 +372,279 @@
         font-weight: 500;
     }
 
-    .video-container {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .video-card {
-        background: #fff;
-        border: 2px solid #e0e0e0;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
-        cursor: pointer;
-    }
-
-    .video-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    }
-
-    .video-thumbnail {
+    /* Estilos do carrossel Provai e Vede */
+    .pa-widget.pa-w-provaievede {
+        padding: 2rem 0 1rem 0;
+        position: relative;
+        background-color: #f8f9fa;
+        margin-bottom: 0;
+        overflow: visible;
         width: 100%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        display: block;
+        max-width: 100%;
     }
 
-    .video-play-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80px;
-        height: 80px;
-        background: rgba(0, 51, 102, 0.9);
+    .pa-widget.pa-w-provaievede .row {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 3rem;
+        overflow: hidden;
+    }
+
+    .pa-widget.pa-w-provaievede .col {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .pa-glide-provaievede {
+        position: relative;
+        width: 100%;
+    }
+
+    .pa-glide-provaievede .glide__track {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .pa-glide-provaievede .glide__slides {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pa-glide-provaievede .glide__slide {
+        cursor: pointer;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        height: 191px;
+        box-sizing: border-box;
+    }
+
+    .carousel-image-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .carousel-image-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .carousel-image-link img {
+        display: block;
+        width: 100%;
+        height: 191px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .pa-glide-provaievede .glide__slide:hover .carousel-image-link img {
+        transform: scale(1.05);
+    }
+
+    .pa-slider-controle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .pa-slider-btn {
+        background-color: #003366;
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        pointer-events: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1rem;
     }
 
-    .video-play-overlay::after {
-        content: '';
-        width: 0;
-        height: 0;
-        border-left: 25px solid #fff;
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
-        margin-left: 5px;
+    .pa-slider-btn:hover {
+        background-color: #004488;
+        transform: scale(1.1);
     }
 
-    .video-info {
-        padding: 25px 30px;
+    /* Estilos dos bullets (pontos indicadores) */
+    .pa-slider-bullet-btn {
+        background-color: #ccc;
+        border: none;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0 4px;
+        padding: 0;
     }
 
-    .video-info h3 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.3rem;
-        color: #003366;
-        margin-bottom: 10px;
+    .pa-slider-bullet-btn:hover {
+        background-color: #999;
+        transform: scale(1.2);
+    }
+
+    .pa-slider-bullet-btn.active {
+        background-color: #003366;
+        transform: scale(1.3);
+    }
+
+    .pa-slider-header {
+        margin-bottom: 2rem;
+    }
+
+    .pa-logo-link {
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+        margin-left: 2rem;
+    }
+
+    .pa-slider-header .btn {
+        margin-right: 2rem;
+    }
+
+    .pa-logo-link:hover {
+        opacity: 0.8;
+    }
+
+    /* Estilos para o botão Ver canal (estilo Bootstrap) */
+    .btn {
+        display: inline-block;
         font-weight: 600;
-    }
-
-    .video-info p {
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.375rem;
+        transition: all 0.3s ease;
         font-family: 'Roboto', sans-serif;
-        font-size: 0.95rem;
-        color: #666;
-        line-height: 1.6;
     }
 
-    .thumbnail-wrapper {
+    .btn-primary {
+        color: #fff;
+        background-color: #003366;
+        border-color: #003366;
+    }
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #004488;
+        border-color: #004488;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,51,102,0.3);
+    }
+
+    /* Garantir que os ícones das setas apareçam */
+    .pa-slider-btn i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    /* Estilos para o container do slider */
+    .pa-w-provaievede .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .pa-w-provaievede .col {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* Garantir que o Glide não oculte as setas */
+    .glide__arrow {
+        z-index: 10;
+    }
+
+    .pa-slider-controle {
         position: relative;
-        width: 100%;
-        aspect-ratio: 16/9;
-        background: #f0f0f0;
+        z-index: 10;
     }
 
-    .loading-spinner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #003366;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.1rem;
+    /* Classes utilitárias do Bootstrap */
+    .d-flex {
+        display: flex !important;
+    }
+
+    .justify-content-between {
+        justify-content: space-between !important;
+    }
+
+    .align-items-center {
+        align-items: center !important;
+    }
+
+    .w-100 {
+        width: 100% !important;
+    }
+
+    .py-4 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .position-relative {
+        position: relative !important;
+    }
+
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 3rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem !important;
+    }
+
+    .mx-1 {
+        margin-left: 0.25rem !important;
+        margin-right: 0.25rem !important;
+    }
+
+    .mx-2 {
+        margin-left: 0.5rem !important;
+        margin-right: 0.5rem !important;
     }
 
     @media (max-width: 768px) {
@@ -486,6 +673,10 @@
         .beneficios-grid,
         .formas-grid {
             grid-template-columns: 1fr;
+        }
+
+        .pa-widget.pa-w-provaievede .row {
+            padding: 0 0.5rem;
         }
     }
 </style>
@@ -621,25 +812,23 @@
             </div>
 
             <div class="forma-card">
+                <span class="icon">🏦</span>
+                <h4>Transferência/PIX</h4>
+                <p><strong>Banco:</strong> Banco do Brasil</p>
+                <p><strong>Favorecido:</strong> União Centro Oeste Brasileira da IASD</p>
+                <p><strong>Agência:</strong> 3380-4</p>
+                <p><strong>Conta:</strong> 39999-X</p>
+                <p><strong>CNPJ:</strong> 07.121.135/0004-5</p>
+                <p><strong>Chave PIX:</strong> pix.centralbsb.aplac@adventistas.org</p>
+                <p style="margin-top: 15px; font-size: 0.95rem; color: #003366; font-weight: 600; background: rgba(0, 51, 102, 0.08); padding: 10px; border-radius: 6px;">* Envie o comprovante para: tesouraria.centralbsb@gmail.com</p>
+            </div>
+
+            <div class="forma-card">
                 <span class="icon">✉️</span>
                 <h4>Envelope</h4>
                 <p>Disponíveis na igreja. Preencha seus dados e deposite nos gazofilácios durante os cultos ou entregue na tesouraria.</p>
             </div>
-
-            <div class="forma-card">
-                <span class="icon">🏦</span>
-                <h4>Transferência/PIX</h4>
-                <p>Para sua conveniência, utilize os dados bancários da igreja. Entre em contato para obter as informações.</p>
-            </div>
-
-            <div class="forma-card">
-                <span class="icon">🏢</span>
-                <h4>Tesouraria</h4>
-                <p>Entregue sua contribuição diretamente na tesouraria durante o horário de funcionamento.</p>
-            </div>
         </div>
-
-        <a href="{{ route('oracao-visita') }}" class="btn-contribuir">QUERO CONTRIBUIR AGORA!</a>
     </div>
 
     <!-- Seção Transparência -->
@@ -682,19 +871,59 @@
     <div class="testemunhos-section">
         <h2>Testemunhos (Provai e Vede)</h2>
         <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
-            Assista ao testemunho mais recente e veja como a fidelidade a Deus transforma vidas.
+            Assista aos testemunhos mais recentes e veja como a fidelidade a Deus transforma vidas.
         </p>
 
-        <div class="video-container">
-            <div class="video-card" id="videoCard" onclick="openVideo()">
-                <div class="thumbnail-wrapper">
-                    <div class="loading-spinner" id="loadingSpinner">Carregando vídeo...</div>
-                    <img class="video-thumbnail" id="videoThumbnail" style="display: none;" alt="Testemunho">
-                    <div class="video-play-overlay" id="playOverlay" style="display: none;"></div>
+        <!-- Carrossel de Vídeos Provai e Vede -->
+        <div class="pa-widget pa-w-provaievede py-4 col-12 position-relative bg-light">
+            <div class="pa-slider-header mb-4">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <a
+                        href="https://www.youtube.com/@provaievedeoficial"
+                        target="_blank"
+                        rel="noopener"
+                        class="pa-logo-link"
+                    >
+                        <h3 style="margin: 0; color: #003366; font-family: 'Bebas neue', sans-serif; font-size: 1.8em;">Provai e Vede</h3>
+                    </a>
+                    <a
+                        href="https://www.youtube.com/@provaievedeoficial"
+                        target="_blank"
+                        class="btn btn-primary"
+                        rel="noopener"
+                    >
+                        Ver canal
+                    </a>
                 </div>
-                <div class="video-info">
-                    <h3 id="videoTitle">Carregando...</h3>
-                    <p id="videoDescription">Clique para assistir no YouTube</p>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="pa-glide-provaievede"
+                         data-autoplay="2500"
+                         data-format="100">
+                        <div class="glide__track" data-glide-el="track">
+                            <div class="glide__slides" id="provaievede-slides">
+                                <!-- Slides serão preenchidos via JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="pa-slider-controle d-flex align-items-center mt-4">
+                            <div data-glide-el="controls">
+                                <button type="button" class="pa-slider-btn" data-glide-dir="&lt;" aria-label="Anterior">
+                                    <i class="bi bi-chevron-left"></i>
+                                </button>
+                            </div>
+                            <div class="mx-2 pa-slider-bullet" id="provaievede-bullets" data-glide-el="controls[nav]">
+                                <!-- Bullets serão preenchidos via JavaScript -->
+                            </div>
+                            <div data-glide-el="controls">
+                                <button type="button" class="pa-slider-btn" data-glide-dir="&gt;" aria-label="Próximo">
+                                    <i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -718,84 +947,136 @@
 @endsection
 
 @push('scripts')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
 <script>
-const CHANNEL_HANDLE = '@provaievedeoficial';
-let latestVideoUrl = '';
-
-// Função para buscar o vídeo mais recente usando o método noembed
-async function fetchLatestVideo() {
-    try {
-        // Primeiro, tentamos obter o ID do canal através da página do canal
-        // Usando a API do YouTube para buscar vídeos do canal
-        const response = await fetch(`https://www.youtube.com/@${CHANNEL_HANDLE.replace('@', '')}/videos`);
-        const html = await response.text();
-
-        // Extrair o ID do primeiro vídeo usando regex
-        const match = html.match(/"videoId":"([a-zA-Z0-9_-]{11})"/);
-
-        if (match && match[1]) {
-            const videoId = match[1];
-            latestVideoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-
-            // Atualizar a thumbnail
-            const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-            const thumbnail = document.getElementById('videoThumbnail');
-            const playOverlay = document.getElementById('playOverlay');
-            const loadingSpinner = document.getElementById('loadingSpinner');
-
-            // Carregar a imagem
-            thumbnail.src = thumbnailUrl;
-            thumbnail.onload = function() {
-                loadingSpinner.style.display = 'none';
-                thumbnail.style.display = 'block';
-                playOverlay.style.display = 'flex';
-            };
-
-            thumbnail.onerror = function() {
-                // Se maxresdefault não funcionar, tentar hqdefault
-                thumbnail.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-            };
-
-            // Buscar metadados do vídeo usando noembed (para o título)
-            try {
-                const noembedResponse = await fetch(`https://noembed.com/embed?url=${encodeURIComponent(latestVideoUrl)}`);
-                const data = await noembedResponse.json();
-
-                if (data.title) {
-                    document.getElementById('videoTitle').textContent = data.title;
-                } else {
-                    document.getElementById('videoTitle').textContent = 'Último Testemunho';
-                }
-            } catch (e) {
-                document.getElementById('videoTitle').textContent = 'Último Testemunho';
-            }
-        } else {
-            showError();
-        }
-    } catch (error) {
-        console.error('Erro ao buscar vídeo:', error);
-        showError();
-    }
-}
-
-function showError() {
-    document.getElementById('loadingSpinner').textContent = 'Vídeo não disponível no momento';
-    document.getElementById('videoTitle').textContent = 'Testemunhos';
-    document.getElementById('videoDescription').textContent = 'Acesse nosso canal no YouTube para ver os testemunhos mais recentes';
-}
-
-function openVideo() {
-    if (latestVideoUrl) {
-        window.open(latestVideoUrl, '_blank');
-    } else {
-        window.open('https://www.youtube.com/@provaievedeoficial', '_blank');
-    }
-}
-
-// Carregar o vídeo quando a página estiver pronta
 document.addEventListener('DOMContentLoaded', function() {
-    // Usar um timeout pequeno para garantir que a página carregou
-    setTimeout(fetchLatestVideo, 500);
+    const apiUrlProvaiEVede = (window.APP_URL || '') + '/api/videos-provaievede';
+
+    fetch(apiUrlProvaiEVede)
+        .then(response => response.json())
+        .then(videos => {
+            if (!videos || videos.length === 0 || videos.error) {
+                console.error('Erro ao carregar vídeos do Provai e Vede:', videos.error || 'Nenhum vídeo encontrado');
+                return;
+            }
+
+            const slidesContainer = document.getElementById('provaievede-slides');
+            const bulletsContainer = document.getElementById('provaievede-bullets');
+
+            if (!slidesContainer || !bulletsContainer) return;
+
+            // Limpar containers
+            slidesContainer.innerHTML = '';
+            bulletsContainer.innerHTML = '';
+
+            // Criar slides
+            videos.forEach((video, index) => {
+                const slide = document.createElement('li');
+                slide.className = 'glide__slide';
+
+                const link = document.createElement('a');
+                link.href = video.url || `https://www.youtube.com/watch?v=${video.id}`;
+                link.target = '_blank';
+                link.rel = 'noopener';
+                link.className = 'carousel-image-link';
+                link.title = video.title || 'Testemunho';
+
+                const img = document.createElement('img');
+                img.src = video.thumbnail || `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
+                img.alt = video.title || 'Testemunho';
+                img.loading = 'lazy';
+
+                link.appendChild(img);
+                slide.appendChild(link);
+                slidesContainer.appendChild(slide);
+
+                // Criar bullet
+                const bullet = document.createElement('button');
+                bullet.className = 'pa-slider-bullet-btn';
+                bullet.setAttribute('data-glide-dir', `=${index}`);
+                bullet.setAttribute('aria-label', `Ir para slide ${index + 1}`);
+                bulletsContainer.appendChild(bullet);
+            });
+
+            // Inicializar carrossel após criar os slides
+            const provaievedeCarousel = document.querySelector('.pa-glide-provaievede');
+            if (provaievedeCarousel && videos.length > 0) {
+                const autoplay = provaievedeCarousel.getAttribute('data-autoplay') || 2500;
+
+                const glideProvaiEVede = new Glide('.pa-glide-provaievede', {
+                    type: 'carousel',
+                    startAt: 0,
+                    perView: 4,
+                    gap: 20,
+                    rewind: true,
+                    autoplay: parseInt(autoplay),
+                    hoverpause: true,
+                    animationDuration: 600,
+                    animationTimingFunc: 'ease-in-out',
+                    peek: {
+                        before: 0,
+                        after: 0
+                    },
+                    breakpoints: {
+                        1024: {
+                            perView: 3,
+                            gap: 15
+                        },
+                        768: {
+                            perView: 2,
+                            gap: 10
+                        },
+                        480: {
+                            perView: 1,
+                            gap: 0,
+                            rewind: true
+                        }
+                    }
+                });
+
+                // Função para atualizar bullets ativos do Provai e Vede
+                function updateBulletsProvaiEVede() {
+                    const bullets = document.querySelectorAll('#provaievede-bullets button');
+                    const slides = document.querySelectorAll('.pa-glide-provaievede .glide__slide');
+                    const totalSlides = slides.length;
+                    if (totalSlides === 0) return;
+
+                    let currentIndex = glideProvaiEVede.index;
+
+                    // Normalizar o índice para valores negativos ou maiores que o total
+                    if (currentIndex < 0) {
+                        currentIndex = ((currentIndex % totalSlides) + totalSlides) % totalSlides;
+                    } else if (currentIndex >= totalSlides) {
+                        currentIndex = currentIndex % totalSlides;
+                    }
+
+                    bullets.forEach((bullet, idx) => {
+                        if (idx === currentIndex) {
+                            bullet.classList.add('active');
+                        } else {
+                            bullet.classList.remove('active');
+                        }
+                    });
+                }
+
+                glideProvaiEVede.on('run', function() {
+                    updateBulletsProvaiEVede();
+                });
+
+                glideProvaiEVede.on('mount.after', function() {
+                    updateBulletsProvaiEVede();
+                });
+
+                glideProvaiEVede.mount();
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao carregar vídeos do Provai e Vede:', error);
+        });
 });
 </script>
 @endpush
