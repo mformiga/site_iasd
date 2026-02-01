@@ -41,9 +41,9 @@
 
     .oquee-section {
         background: linear-gradient(135deg, #003366 0%, #001531 100%);
-        padding: 60px 40px;
+        padding: 50px 40px;
         border-radius: 15px;
-        margin: 50px 0;
+        margin: 30px 0;
         text-align: center;
         color: #fff;
     }
@@ -52,7 +52,7 @@
         font-family: 'Bebas neue', sans-serif;
         font-size: 2.5em;
         color: #fff;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         font-weight: 500;
     }
 
@@ -61,7 +61,7 @@
         font-size: 1.1rem;
         line-height: 1.8;
         color: #f8f9fa;
-        margin-bottom: 30px;
+        margin-bottom: 0;
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;

@@ -207,7 +207,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Oração e Visita" style="width: 100%;">
+<img src="{{ asset('img/cards/oracao/oracao_header.webp') }}" alt="Oração e Visita" style="width: 100%;">
 
 <div class="oracao-container">
     <!-- Seção Introdutória -->
@@ -259,11 +259,30 @@
 
             <div class="form-group">
                 <label for="pedido">Pedido de oração</label>
-                <textarea name="pedido" id="pedido" placeholder="Compartilhe seu pedido de oração... Ore-mos por você." required></textarea>
+                <textarea name="pedido" id="pedido" placeholder="Compartilhe seu pedido de oração... Oraremos por você." required></textarea>
             </div>
 
             <button type="submit" class="btn-submit">Enviar Mensagem</button>
         </form>
+    </div>
+
+    <!-- Versículos Bíblicos -->
+    <div style="background: linear-gradient(135deg, #003366 0%, #001531 100%); padding: 50px 40px; border-radius: 15px; text-align: center; margin-top: 50px; box-shadow: 0 8px 30px rgba(0, 51, 102, 0.3);">
+        <i class='bx bx-book-open' style="font-size: 3rem; color: #fff; margin-bottom: 20px; display: block;"></i>
+        <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 2.2em; color: #fff; margin-bottom: 25px; font-weight: 500;">O Poder da Oração Intercessória</h3>
+        <p style="font-family: 'Roboto', sans-serif; font-size: 1.3rem; color: #f0f0f0; line-height: 1.8; font-style: italic; max-width: 900px; margin: 0 auto 20px;">
+            "Confessai, pois, os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. A oração de um justo pode muito em seus efeitos."
+        </p>
+        <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #ffd700; font-weight: 600; letter-spacing: 1px; margin-bottom: 30px;">
+            TIAGO 5:16
+        </p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.3); max-width: 600px; margin: 30px auto;">
+        <p style="font-family: 'Roboto', sans-serif; font-size: 1.3rem; color: #f0f0f0; line-height: 1.8; font-style: italic; max-width: 900px; margin: 0 auto 20px;">
+            "Antes de tudo, pois, exorto que se façam súplicas, orações, intercessões e ações de graças por todos os homens."
+        </p>
+        <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #ffd700; font-weight: 600; letter-spacing: 1px;">
+            1 TIMÓTEO 2:1
+        </p>
     </div>
 </div>
 @endsection

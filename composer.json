@@ -64,8 +64,7 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
-        },
-        "cache-dir": "/home2/maur5614/adventistascentralbrasilia.org/cache"
+        }
     },
     "minimum-stability": "stable",
     "prefer-stable": true

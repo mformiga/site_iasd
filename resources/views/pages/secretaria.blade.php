@@ -371,7 +371,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/asa/asa_header.png') }}" alt="IASD Central de Brasília" style="width: 100%;">
+<img src="{{ asset('img/cards/secretaria_header.webp') }}" alt="IASD Central de Brasília - Secretaria" style="width: 100%;">
 
 <div class="secretaria-container">
 

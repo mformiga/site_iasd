@@ -246,7 +246,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/classe_novo_tempo/classe_novo_tempo_header.png') }}" alt="Classe Novo Tempo" style="width: 100%;">
+<img src="{{ asset('img/cards/classe_novo_tempo/classe_novo_tempo_header.webp') }}" alt="Classe Novo Tempo" style="width: 100%;">
 
 <div class="cnt-container">
 
