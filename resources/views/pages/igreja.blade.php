@@ -70,7 +70,7 @@
     .pilares-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
+        gap: 35px;
         margin-bottom: 30px;
     }
 
@@ -390,7 +390,7 @@
         font-weight: bold;
         font-size: 1.2em;
         margin: 40px auto;
-        max-width: 400px;
+        max-width: 310px;
         transition: transform 0.3s, box-shadow 0.3s;
         font-family: 'Roboto', sans-serif;
     }
@@ -635,7 +635,7 @@
         .contato-section > div[style*="display: flex"] {
             flex-direction: column;
             align-items: center;
-            gap: 30px;
+            gap: 35px;
         }
     }
 </style>
@@ -826,6 +826,25 @@
             <p>
                 Após o descerramento da fita, a grande porta de vidro foi aberta e o Coral da Igreja Adventista de Taguatinga entoou o hino de nº 18, do então Hinário Cantai ao Senhor: SANTO, SANTO, SANTO.
             </p>
+
+            <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e0e0e0; text-align: center;">
+                <img src="{{ asset('img/cards/aigreja/dr-josias-gonsioroski.webp') }}"
+                     alt="Dr. Josias Gonsioroski"
+                     style="max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin: 0 auto 20px auto; display: block;">
+
+                <p style="font-size: 0.9rem; color: #666; font-style: italic; text-align: center; margin: 0;">
+                    * Conteúdo retirado do livro de autoria do Dr. Josias Gonsioroski, advogado de carreira, mestre em Teologia e membro na Igreja Adventista Do Sétimo Dia Central de Brasília. Com sólida trajetória jurídica, consolidou sua atuação profissional na capital federal, onde também desenvolve um expressivo trabalho voluntário e religioso.
+                </p>
+            </div>
+
+            <p style="text-align: center; margin-top: 30px; font-size: 0.95rem; color: #333;">
+                Para acesso ao conteúdo completo, pode baixar pelo link
+                <a href="https://drive.google.com/file/d/1r3p6dMnht_2jf2n_np5ytpKhqnVmYK87/view?usp=sharing"
+                   target="_blank"
+                   style="color: #003366; text-decoration: underline; font-weight: 600;">
+                    clicando aqui
+                </a>.
+            </p>
         </div>
     </div>
 
@@ -904,23 +923,32 @@
     <div class="contato-section">
         <h2 style="font-family: 'Bebas neue', sans-serif; font-size: 2.5em; color: #003366; text-align: center; margin-bottom: 40px; font-weight: 500;">Liderança</h2>
 
-        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
+        <div style="display: flex; justify-content: center; gap: 35px; flex-wrap: wrap; margin-top: 30px;">
             <!-- Pastor Lucas Alves -->
-            <div style="text-align: center; max-width: 400px;">
+            <div style="text-align: center; max-width: 310px;">
                 <img src="{{ asset('img/cards/aigreja/Pr. Lucas para site.webp') }}"
                      alt="Pastor Lucas Alves"
-                     style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
+                     style="width: 310px; height: 310px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Lucas Alves</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Pastor Sênior</p>
             </div>
 
             <!-- Pastor Hugo Rodrigues -->
-            <div style="text-align: center; max-width: 400px;">
+            <div style="text-align: center; max-width: 310px;">
                 <img src="{{ asset('img/cards/aigreja/Pr. Hugo para site.webp') }}"
                      alt="Pastor Hugo Rodrigues"
-                     style="width: 350px; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
+                     style="width: 310px; height: 310px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Hugo Rodrigues</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Área Jovem</p>
+            </div>
+
+            <!-- Pastor Adriano Rezende -->
+            <div style="text-align: center; max-width: 310px;">
+                <img src="{{ asset('img/cards/aigreja/pr-adriano-rezende.webp') }}"
+                     alt="Pastor Adriano Rezende"
+                     style="width: 310px; height: 310px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
+                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Adriano Rezende</h3>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Área Missionária</p>
             </div>
         </div>
     </div>
