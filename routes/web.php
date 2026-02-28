@@ -28,6 +28,7 @@ Route::get('/secretaria', [PageController::class, 'secretaria'])->name('secretar
 Route::get('/clube-do-livro', [PageController::class, 'clubeDoLivro'])->name('clube-do-livro');
 Route::get('/doutores-esperanca', [PageController::class, 'doutoresEsperanca'])->name('doutores-esperanca');
 Route::get('/programacoes', [PageController::class, 'programacoes'])->name('programacoes');
+Route::get('/corais', [PageController::class, 'corais'])->name('corais');
 
 // Formulários
 Route::post('/contato/enviar', [PageController::class, 'enviarContato'])->name('contato.enviar');

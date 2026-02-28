@@ -361,4 +361,12 @@ class PageController extends Controller
         return view('pages.cemab');
     }
 
+    /**
+     * Exibe a página de Corais e Orquestras
+     */
+    public function corais()
+    {
+        return view('pages.corais');
+    }
+
 }
