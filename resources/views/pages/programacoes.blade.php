@@ -130,12 +130,6 @@
         font-weight: 600;
     }
 
-    .evento-descricao br {
-        display: block;
-        margin: 8px 0;
-        content: '';
-    }
-
     /* Cores diferentes para cada mês */
     .evento-card[data-mes="01"]::before {
         background: linear-gradient(180deg, #f093fb 0%, #f5576c 100%);
@@ -197,6 +191,17 @@
         color: #764ba2;
     }
 
+    .evento-card[data-mes="07"]::before {
+        background: linear-gradient(180deg, #d299c2 0%, #fef9d7 100%);
+    }
+    .evento-card[data-mes="07"] .evento-data {
+        background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+        color: #333;
+    }
+    .evento-card[data-mes="07"] .evento-titulo {
+        color: #c4779e;
+    }
+
     .evento-card[data-mes="08"]::before {
         background: linear-gradient(180deg, #ffecd2 0%, #fcb69f 100%);
     }
@@ -206,6 +211,17 @@
     }
     .evento-card[data-mes="08"] .evento-titulo {
         color: #f47b3c;
+    }
+
+    .evento-card[data-mes="09"]::before {
+        background: linear-gradient(180deg, #a1c4fd 0%, #c2e9fb 100%);
+    }
+    .evento-card[data-mes="09"] .evento-data {
+        background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+        color: #333;
+    }
+    .evento-card[data-mes="09"] .evento-titulo {
+        color: #5b9bd5;
     }
 
     .evento-card[data-mes="10"]::before {
@@ -236,18 +252,6 @@
     }
     .evento-card[data-mes="12"] .evento-titulo {
         color: #764ba2;
-    }
-
-    .destaque-badge {
-        display: inline-block;
-        background: #ff6b6b;
-        color: #fff;
-        padding: 4px 12px;
-        border-radius: 15px;
-        font-size: 0.85em;
-        font-weight: 600;
-        margin-left: 10px;
-        vertical-align: middle;
     }
 
     .filtro-section {
@@ -293,57 +297,6 @@
         color: #fff;
     }
 
-    .info-section {
-        background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-        padding: 50px 40px;
-        border-radius: 15px;
-        margin: 50px 0;
-        text-align: center;
-        color: #fff;
-    }
-
-    .info-section h3 {
-        font-family: 'Bebas neue', sans-serif;
-        font-size: 2em;
-        color: #fff;
-        margin-bottom: 20px;
-        font-weight: 500;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    }
-
-    .info-section p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.1rem;
-        color: #f8f9fa;
-        margin-bottom: 25px;
-        line-height: 1.8;
-    }
-
-    .contato-info {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        padding: 40px;
-        border-radius: 15px;
-        margin: 50px 0;
-        text-align: center;
-        color: #fff;
-    }
-
-    .contato-info h3 {
-        font-family: 'Bebas neue', sans-serif;
-        font-size: 2em;
-        color: #fff;
-        margin-bottom: 20px;
-        font-weight: 500;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-    }
-
-    .contato-info p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.1rem;
-        color: #fff;
-        margin-bottom: 10px;
-    }
-
     @media (max-width: 768px) {
         .programacoes-container {
             padding: 20px 15px;
@@ -363,10 +316,6 @@
 
         .evento-titulo {
             font-size: 1.2em;
-        }
-
-        .info-section {
-            padding: 40px 20px;
         }
     }
 </style>
@@ -397,7 +346,9 @@
             <button class="filtro-btn" data-mes="04">Abril</button>
             <button class="filtro-btn" data-mes="05">Maio</button>
             <button class="filtro-btn" data-mes="06">Junho</button>
+            <button class="filtro-btn" data-mes="07">Julho</button>
             <button class="filtro-btn" data-mes="08">Agosto</button>
+            <button class="filtro-btn" data-mes="09">Setembro</button>
             <button class="filtro-btn" data-mes="10">Outubro</button>
             <button class="filtro-btn" data-mes="11">Novembro</button>
             <button class="filtro-btn" data-mes="12">Dezembro</button>
@@ -411,165 +362,744 @@
             <!-- Janeiro -->
             <div class="mes-header" data-mes="01">Janeiro</div>
             <div class="evento-card" data-mes="01">
-                <span class="evento-data">22/01</span>
-                <div class="evento-titulo">Formação de Professores do DF</div>
+                <span class="evento-data">01/01</span>
+                <div class="evento-titulo">Feriado nacional</div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">17/01</span>
+                <div class="evento-titulo">Reunião Direção Escola</div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">17/01</span>
+                <div class="evento-titulo">Sabatina e Líderes de Unidades de Ação</div>
                 <div class="evento-descricao">
-                    <strong>[Educação Adventista de Brasília e Entorno]</strong>
+                    <strong>Tarde</strong>
                 </div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">17/01</span>
+                <div class="evento-titulo">Reunião Diretoria Executiva</div>
+                <div class="evento-descricao">
+                    <strong>Desbravadores</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">18-22/01</span>
+                <div class="evento-titulo">Concílio Pastoral UCOB e APLAC</div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">23/01</span>
+                <div class="evento-titulo">Divulgação atividades Clube Desbravadores</div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">24/01</span>
+                <div class="evento-titulo">Consagração Equipe MJ</div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">24/01</span>
+                <div class="evento-titulo">Formação Geral Vivos em Jesus</div>
+            </div>
+            <div class="evento-card" data-mes="01">
+                <span class="evento-data">24/01</span>
+                <div class="evento-titulo">1ª Reunião Comissão Missionária</div>
             </div>
 
             <!-- Fevereiro -->
             <div class="mes-header" data-mes="02">Fevereiro</div>
             <div class="evento-card" data-mes="02">
+                <span class="evento-data">01/02</span>
+                <div class="evento-titulo">Reunião da Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h
+                </div>
+            </div>
+            <div class="evento-card" data-mes="02">
                 <span class="evento-data">07/02</span>
-                <div class="evento-titulo">APlaC Integrada – Encontro de Líderes 2026</div>
+                <div class="evento-titulo">Início da 1ª Temporada da Classe Bíblica NT</div>
+            </div>
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">07/02</span>
+                <div class="evento-titulo">Plantão Dr. Esperança</div>
                 <div class="evento-descricao">
-                    <strong>Macrorregiões:</strong> Centro e Sobradinho<br>
-                    <strong>Horário:</strong> 15h<br>
-                    <strong>Público-alvo:</strong><br>
-                    1. Ancionato / Diretores de Grupo<br>
-                    2. Líderes: ASA, MAP, Comunicação e Ministério Pessoal<br>
-                    3. Líderes Distritais: MM, MF, MCA (1 por distrito)
+                    <strong>HMIB</strong>
                 </div>
             </div>
-
             <div class="evento-card" data-mes="02">
-                <span class="evento-data">11/02</span>
-                <div class="evento-titulo">Simpósio MAP</div>
+                <span class="evento-data">07/02</span>
+                <div class="evento-titulo">Reunião Diretoria Executiva</div>
                 <div class="evento-descricao">
-                    Ministério das Possibilidades
+                    <strong>Desbravadores</strong>
                 </div>
             </div>
-
             <div class="evento-card" data-mes="02">
-                <span class="evento-data">13 a 18/02</span>
-                <div class="evento-titulo">Retiro Espiritual – CATRE</div>
+                <span class="evento-data">07/02</span>
+                <div class="evento-titulo">APLAC Integrada – Encontro de Líderes</div>
             </div>
-
             <div class="evento-card" data-mes="02">
-                <span class="evento-data">19 a 28/02</span>
-                <div class="evento-titulo">10 Dias de Oração e 10 Horas de Jejum</div>
+                <span class="evento-data">08/02</span>
+                <div class="evento-titulo">Plantão Dr. Esperança</div>
+                <div class="evento-descricao">
+                    <strong>Hospital da Criança</strong>
+                </div>
             </div>
-
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">13-16/02</span>
+                <div class="evento-titulo">Retiro Espiritual</div>
+                <div class="evento-descricao">
+                    <strong>CATRE</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">17/02</span>
+                <div class="evento-titulo">Plantão Dr. Esperança</div>
+                <div class="evento-descricao">
+                    <strong>HMIB</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">19-27/02</span>
+                <div class="evento-titulo">10 Dias de Clamor</div>
+            </div>
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">21/02</span>
+                <div class="evento-titulo">10 Horas de Jejum e Oração</div>
+            </div>
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">21/02</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
             <div class="evento-card" data-mes="02">
                 <span class="evento-data">28/02</span>
-                <div class="evento-titulo">Vigília de Oração</div>
+                <div class="evento-titulo">Encerramento dos 10 Dias de Clamor</div>
+            </div>
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">28/02</span>
+                <div class="evento-titulo">1ª Ceia do Senhor</div>
+            </div>
+            <div class="evento-card" data-mes="02">
+                <span class="evento-data">28/02</span>
+                <div class="evento-titulo">1ª Vigília do Ministério de Oração</div>
             </div>
 
             <!-- Março -->
             <div class="mes-header" data-mes="03">Março</div>
             <div class="evento-card" data-mes="03">
                 <span class="evento-data">01/03</span>
+                <div class="evento-titulo">Início das Classes Bíblicas</div>
+                <div class="evento-descricao">
+                    <strong>Embaixadores e Juvenis</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">01/03</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
+            </div>
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">01/03</span>
+                <div class="evento-titulo">Aventureiro por 1 Dia</div>
+                <div class="evento-descricao">
+                    <strong>Passeio Ciclístico</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">07/03</span>
                 <div class="evento-titulo">Convenção das Novas Gerações</div>
                 <div class="evento-descricao">
                     <strong>MDA e Ministério Jovem</strong>
                 </div>
             </div>
-
             <div class="evento-card" data-mes="03">
-                <span class="evento-data">08/03</span>
-                <div class="evento-titulo">Convenção Escola Sabatina</div>
+                <span class="evento-data">07/03</span>
+                <div class="evento-titulo">Início das Classes Bíblicas</div>
+                <div class="evento-descricao">
+                    <strong>Embaixadores e Juvenis</strong>
+                </div>
             </div>
-
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">08-10/03</span>
+                <div class="evento-titulo">Concílio Pastoral APLAC</div>
+            </div>
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">14/03</span>
+                <div class="evento-titulo">Pr. Arilton – Culto Divino e Instrução Bíblica</div>
+                <div class="evento-descricao">
+                    <strong>Tarde</strong>
+                </div>
+            </div>
             <div class="evento-card" data-mes="03">
                 <span class="evento-data">21/03</span>
                 <div class="evento-titulo">Dia Mundial do Jovem Adventista</div>
+                <div class="evento-descricao">
+                    <strong>Manhã/Tarde</strong>
+                </div>
             </div>
-
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">21/03</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
             <div class="evento-card" data-mes="03">
                 <span class="evento-data">22/03</span>
-                <div class="evento-titulo">Formação Recepção | Discipulado e Missão</div>
+                <div class="evento-titulo">Formação Recepção / Discipulado e Missão</div>
+            </div>
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">28/03</span>
+                <div class="evento-titulo">Musical de Páscoa</div>
+                <div class="evento-descricao">
+                    <strong>Ministério da Música - 19h</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">28/03</span>
+                <div class="evento-titulo">2ª Reunião da Comissão Missionária</div>
+                <div class="evento-descricao">
+                    <strong>Tarde</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="03">
+                <span class="evento-data">29/03</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
             </div>
 
-            <div class="evento-card" data-mes="03">
-                <span class="evento-data">28/03 a 04/04</span>
-                <div class="evento-titulo">Semana Santa</div>
+            <!-- Abril -->
+            <div class="mes-header" data-mes="04">Abril</div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">01-04/04</span>
+                <div class="evento-titulo">Evangelismo Semana Santa</div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">08-10/04</span>
+                <div class="evento-titulo">Santa Convocação</div>
+                <div class="evento-descricao">
+                    <strong>Mordomia – APLAC</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">11/04</span>
+                <div class="evento-titulo">Trilha JA</div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">11/04</span>
+                <div class="evento-titulo">Simpósio MAP para líderes</div>
+                <div class="evento-descricao">
+                    <strong>Adventist Health</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">15/04</span>
+                <div class="evento-titulo">Rodrigo Silva</div>
+                <div class="evento-descricao">
+                    <strong>Evangelismo</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">18/04</span>
+                <div class="evento-titulo">Encontro de Homens</div>
+                <div class="evento-descricao">
+                    <strong>Ministério da Família</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">18/04</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">25/04</span>
+                <div class="evento-titulo">Culto de Gratidão</div>
+                <div class="evento-descricao">
+                    <strong>Aniversário do Clube de Desbravadores</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="04">
+                <span class="evento-data">25/04</span>
+                <div class="evento-titulo">Jotão Regional</div>
+                <div class="evento-descricao">
+                    <strong>(Ministério Jovem) Tarde</strong>
+                </div>
             </div>
 
             <!-- Maio -->
             <div class="mes-header" data-mes="05">Maio</div>
             <div class="evento-card" data-mes="05">
-                <span class="evento-data">09/05</span>
-                <div class="evento-titulo">Congresso de Liberdade Religiosa</div>
+                <span class="evento-data">01/05</span>
+                <div class="evento-titulo">Feriado nacional</div>
             </div>
-
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">09/05</span>
+                <div class="evento-titulo">Cerimônia de Admissão Aventureiro</div>
+            </div>
             <div class="evento-card" data-mes="05">
                 <span class="evento-data">10/05</span>
-                <div class="evento-titulo">Encontro de Ancionato e Diretores de Grupos</div>
+                <div class="evento-titulo">Dia das Mães</div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">16/05</span>
+                <div class="evento-titulo">Dia da Criança Adventista e do Aventureiro</div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">16/05</span>
+                <div class="evento-titulo">Culto Jovem</div>
+                <div class="evento-descricao">
+                    <strong>Raissa Andreoli</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">16/05</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">22-24/05</span>
+                <div class="evento-titulo">1º Seminário de Liberdade Religiosa no Tempo do Fim</div>
+                <div class="evento-descricao">
+                    <strong>Noite/Tarde/Noite</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">23/05</span>
+                <div class="evento-titulo">Congresso de Liberdade Religiosa</div>
+                <div class="evento-descricao">
+                    <strong>APLAC</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">23/05</span>
+                <div class="evento-titulo">Congresso de Liberdade Religiosa</div>
+                <div class="evento-descricao">
+                    <strong>APLAC – Igreja Central</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">24/05</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
+            </div>
+            <div class="evento-card" data-mes="05">
+                <span class="evento-data">30/05</span>
+                <div class="evento-titulo">3ª Reunião da Comissão Missionária</div>
             </div>
 
             <!-- Junho -->
             <div class="mes-header" data-mes="06">Junho</div>
             <div class="evento-card" data-mes="06">
-                <span class="evento-data">14/06</span>
-                <div class="evento-titulo">Investidura de Liderança</div>
+                <span class="evento-data">01-06/06</span>
+                <div class="evento-titulo">Campori de Desbravadores APLAC</div>
                 <div class="evento-descricao">
-                    <strong>Ministério da Criança</strong>
+                    <strong>CATRE</strong>
                 </div>
             </div>
-
             <div class="evento-card" data-mes="06">
-                <span class="evento-data">21/06</span>
-                <div class="evento-titulo">Formação Liderança de Aventureiros | Investidura de Liderança</div>
+                <span class="evento-data">06/06</span>
+                <div class="evento-titulo">Jantar do Dia dos Namorados</div>
+                <div class="evento-descricao">
+                    <strong>JA e Ministério Família</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="06">
+                <span class="evento-data">20/06</span>
+                <div class="evento-titulo">2ª Ceia do Senhor</div>
+            </div>
+            <div class="evento-card" data-mes="06">
+                <span class="evento-data">20/06</span>
+                <div class="evento-titulo">Sábado Universitário JA</div>
+            </div>
+            <div class="evento-card" data-mes="06">
+                <span class="evento-data">20/06</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="06">
+                <span class="evento-data">27/06</span>
+                <div class="evento-titulo">Dia do Ancionato</div>
+            </div>
+            <div class="evento-card" data-mes="06">
+                <span class="evento-data">27/06</span>
+                <div class="evento-titulo">Cerimônia de Investidura Aventureiros</div>
+                <div class="evento-descricao">
+                    <strong>16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="06">
+                <span class="evento-data">28/06</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
+            </div>
+            <div class="evento-card" data-mes="06">
+                <span class="evento-data">28/06</span>
+                <div class="evento-titulo">2º Seminário de Liberdade Religiosa</div>
+            </div>
+
+            <!-- Julho -->
+            <div class="mes-header" data-mes="07">Julho</div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">11/07</span>
+                <div class="evento-titulo">Culto Jovem – Consagração dos Calebes</div>
+            </div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">12-17/07</span>
+                <div class="evento-titulo">Missão Calebe</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Jovem</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">18/07</span>
+                <div class="evento-titulo">Missão Calebe</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Jovem</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">18/07</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">19-24/07</span>
+                <div class="evento-titulo">Missão Calebe</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Jovem</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">25/07</span>
+                <div class="evento-titulo">4ª Reunião da Comissão Missionária</div>
+            </div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">26/07</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
+            </div>
+            <div class="evento-card" data-mes="07">
+                <span class="evento-data">31/07</span>
+                <div class="evento-titulo">Celebração Calebe APLAC</div>
             </div>
 
             <!-- Agosto -->
             <div class="mes-header" data-mes="08">Agosto</div>
             <div class="evento-card" data-mes="08">
-                <span class="evento-data">29/08</span>
-                <div class="evento-titulo">Almoço de Universitários</div>
+                <span class="evento-data">01/08</span>
+                <div class="evento-titulo">Celebração Calebe APLAC</div>
+                <div class="evento-descricao">
+                    <strong>Ginásio Nilson Nelson</strong>
+                </div>
             </div>
-
+            <div class="evento-card" data-mes="08">
+                <span class="evento-data">08/08</span>
+                <div class="evento-titulo">Curso de Noivos</div>
+                <div class="evento-descricao">
+                    <strong>APLAC</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="08">
+                <span class="evento-data">08/08</span>
+                <div class="evento-titulo">Dia da Asa</div>
+                <div class="evento-descricao">
+                    <strong>APLAC</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="08">
+                <span class="evento-data">14-16/08</span>
+                <div class="evento-titulo">ECC – Encontro de Casais com Cristo</div>
+            </div>
+            <div class="evento-card" data-mes="08">
+                <span class="evento-data">15/08</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="08">
+                <span class="evento-data">22/08</span>
+                <div class="evento-titulo">Musical do Coral Jovem</div>
+                <div class="evento-descricao">
+                    <strong>Ministério da Música - 19h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="08">
+                <span class="evento-data">23/08</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
+            </div>
             <div class="evento-card" data-mes="08">
                 <span class="evento-data">29/08</span>
-                <div class="evento-titulo">Congresso SVA</div>
+                <div class="evento-titulo">Congresso SVA – APLAC</div>
+                <div class="evento-descricao">
+                    <strong>Igreja Central - 16h</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="08">
+                <span class="evento-data">29/08</span>
+                <div class="evento-titulo">Encerramento da 2ª Temporada da Classe Bíblica NT</div>
+            </div>
+
+            <!-- Setembro -->
+            <div class="mes-header" data-mes="09">Setembro</div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">05/09</span>
+                <div class="evento-titulo">Retiro Jovem</div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">07/09</span>
+                <div class="evento-titulo">Feriado nacional</div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">13-18/09</span>
+                <div class="evento-titulo">Semana do Lenço</div>
+                <div class="evento-descricao">
+                    <strong>Desbravadores</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">19/09</span>
+                <div class="evento-titulo">Dia Mundial dos Desbravadores</div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">19/09</span>
+                <div class="evento-titulo">Semana do Lenço</div>
+                <div class="evento-descricao">
+                    <strong>Desbravadores</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">19/09</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">20/09</span>
+                <div class="evento-titulo">Início dos Trabalhos da Comissão de Nomeações</div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">26/09</span>
+                <div class="evento-titulo">Batismo da Primavera</div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">26/09</span>
+                <div class="evento-titulo">5ª Reunião da Comissão Missionária</div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">27/09</span>
+                <div class="evento-titulo">Conclusão dos Trabalhos da Comissão de Nomeações</div>
+            </div>
+            <div class="evento-card" data-mes="09">
+                <span class="evento-data">27/09</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
             </div>
 
             <!-- Outubro -->
             <div class="mes-header" data-mes="10">Outubro</div>
             <div class="evento-card" data-mes="10">
                 <span class="evento-data">03/10</span>
-                <div class="evento-titulo">FEMUSA – Festival de Música</div>
+                <div class="evento-titulo">Sábado da Educação Adventista</div>
             </div>
-
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">10/10</span>
+                <div class="evento-titulo">Culto Jovem ao Ar Livre</div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">10/10</span>
+                <div class="evento-titulo">Projeto Reencontro</div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">12/10</span>
+                <div class="evento-titulo">Nossa Senhora Aparecida</div>
+                <div class="evento-descricao">
+                    <strong>Feriado</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">17/10</span>
+                <div class="evento-titulo">Impacto Esperança</div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">17/10</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">24/10</span>
+                <div class="evento-titulo">Sábado da Criação</div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">24/10</span>
+                <div class="evento-titulo">Dia do Pastor</div>
+            </div>
             <div class="evento-card" data-mes="10">
                 <span class="evento-data">25/10</span>
-                <div class="evento-titulo">Investidura do Ministério do Adolescente</div>
+                <div class="evento-titulo">Planejamento 2027</div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">25/10</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
+            </div>
+            <div class="evento-card" data-mes="10">
+                <span class="evento-data">31/10</span>
+                <div class="evento-titulo">Musical Cênico "O Grande Desapontamento"</div>
+                <div class="evento-descricao">
+                    <strong>19h</strong>
+                </div>
             </div>
 
             <!-- Novembro -->
             <div class="mes-header" data-mes="11">Novembro</div>
             <div class="evento-card" data-mes="11">
+                <span class="evento-data">02/11</span>
+                <div class="evento-titulo">Feriado nacional</div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">07/11</span>
+                <div class="evento-titulo">Festa das Primícias</div>
+                <div class="evento-descricao">
+                    <strong>Mordomia Cristã</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="11">
                 <span class="evento-data">07/11</span>
                 <div class="evento-titulo">Congresso Comunidade Teen</div>
                 <div class="evento-descricao">
-                    <strong>Novas Gerações</strong>
+                    <strong>APLAC - Igreja Central - 16h</strong>
                 </div>
             </div>
-
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">08/11</span>
+                <div class="evento-titulo">Conclusão do Planejamento 2027</div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">11-13/11</span>
+                <div class="evento-titulo">Mini Semana Jovem</div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">14/11</span>
+                <div class="evento-titulo">Impacto Brasília</div>
+                <div class="evento-descricao">
+                    <strong>APLAC</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">15/11</span>
+                <div class="evento-titulo">Feriado nacional</div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">20/11</span>
+                <div class="evento-titulo">Feriado nacional</div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">21/11</span>
+                <div class="evento-titulo">6ª Reunião da Comissão Missionária</div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">21/11</span>
+                <div class="evento-titulo">Programa "Volta para Casa Filho"</div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">21/11</span>
+                <div class="evento-titulo">Culto Hospital Brasília</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Pessoal - 16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">21/11</span>
+                <div class="evento-titulo">Investidura dos Aventureiros</div>
+                <div class="evento-descricao">
+                    <strong>16h00</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="11">
+                <span class="evento-data">22/11</span>
+                <div class="evento-titulo">Comissão Diretiva</div>
+                <div class="evento-descricao">
+                    <strong>Horário:</strong> 17h00
+                </div>
+            </div>
             <div class="evento-card" data-mes="11">
                 <span class="evento-data">28/11</span>
-                <div class="evento-titulo">Celebração Secretaria de Excelência</div>
+                <div class="evento-titulo">In Concert – Jefferson Pilar</div>
+                <div class="evento-descricao">
+                    <strong>Ministério Jovem</strong>
+                </div>
             </div>
 
             <!-- Dezembro -->
             <div class="mes-header" data-mes="12">Dezembro</div>
             <div class="evento-card" data-mes="12">
-                <span class="evento-data">12/12</span>
-                <div class="evento-titulo">Encontro Distrital</div>
+                <span class="evento-data">05/12</span>
+                <div class="evento-titulo">Musical de Natal</div>
                 <div class="evento-descricao">
-                    <strong>Ministério da Criança e do Ministério do Adolescente</strong>
+                    <strong>Ministério da Música</strong>
                 </div>
             </div>
-
             <div class="evento-card" data-mes="12">
-                <span class="evento-data">13/12</span>
-                <div class="evento-titulo">Encontro de Casais CelebrAPlaC</div>
+                <span class="evento-data">12/12</span>
+                <div class="evento-titulo">Encontro Distrital do Ministério da Criança e Adolescente</div>
+                <div class="evento-descricao">
+                    <strong>APLAC – Igreja Central</strong>
+                </div>
             </div>
-
             <div class="evento-card" data-mes="12">
-                <span class="evento-data">17/12</span>
-                <div class="evento-titulo">Culto de Gratidão e Confraternização da APlaC</div>
+                <span class="evento-data">19/12</span>
+                <div class="evento-titulo">Natal Solidário</div>
+                <div class="evento-descricao">
+                    <strong>Dr. Esperança</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="12">
+                <span class="evento-data">19/12</span>
+                <div class="evento-titulo">Mutirão de Natal</div>
+            </div>
+            <div class="evento-card" data-mes="12">
+                <span class="evento-data">25/12</span>
+                <div class="evento-titulo">Feriado nacional</div>
+            </div>
+            <div class="evento-card" data-mes="12">
+                <span class="evento-data">26/12</span>
+                <div class="evento-titulo">13º Sábado</div>
+                <div class="evento-descricao">
+                    <strong>Escola Sabatina</strong>
+                </div>
+            </div>
+            <div class="evento-card" data-mes="12">
+                <span class="evento-data">31/12</span>
+                <div class="evento-titulo">Culto de Ação de Graças</div>
             </div>
 
         </div>
