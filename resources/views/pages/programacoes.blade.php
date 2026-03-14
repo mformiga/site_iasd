@@ -538,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const range = formatRangeShort(e.start, e.end);
             item.innerHTML = `
                 <p class="title">${e.title}</p>
-                <p class="meta"><strong>Data:</strong> ${range}${e.metaHtml ? `<br>${e.metaHtml}` : ''}</p>
+                ${e.metaHtml ? `<p class="meta">${e.metaHtml}<\/p>` : ''}
             `;
             agendaListEl.appendChild(item);
         }
