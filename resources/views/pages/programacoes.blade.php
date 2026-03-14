@@ -406,6 +406,7 @@
 @endsection
 
 @push('scripts')
+<script src="{{ asset('js/programacoes-events.js') }}"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const YEAR = 2026;
@@ -422,135 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * Eventos (2026)
      * start/end no formato YYYY-MM-DD (intervalo inclusivo)
      */
-    const EVENTS = [
-        {
-            title: 'Formação de Professores do DF',
-            start: '2026-01-22',
-            end: '2026-01-22',
-            metaHtml: '<strong>[Educação Adventista de Brasília e Entorno]</strong>',
-        },
-        {
-            title: 'APlaC Integrada – Encontro de Líderes 2026',
-            start: '2026-02-07',
-            end: '2026-02-07',
-            metaHtml: '<strong>Macrorregiões:</strong> Centro e Sobradinho<br><strong>Horário:</strong> 15h<br><strong>Público-alvo:</strong><br>1. Ancionato / Diretores de Grupo<br>2. Líderes: ASA, MAP, Comunicação e Ministério Pessoal<br>3. Líderes Distritais: MM, MF, MCA (1 por distrito)',
-        },
-        {
-            title: 'Simpósio MAP',
-            start: '2026-02-11',
-            end: '2026-02-11',
-            metaHtml: 'Ministério das Possibilidades',
-        },
-        {
-            title: 'Retiro Espiritual – CATRE',
-            start: '2026-02-13',
-            end: '2026-02-18',
-        },
-        {
-            title: '10 Dias de Oração e 10 Horas de Jejum',
-            start: '2026-02-19',
-            end: '2026-02-28',
-        },
-        {
-            title: 'Vigília de Oração',
-            start: '2026-02-28',
-            end: '2026-02-28',
-        },
-        {
-            title: 'Convenção das Novas Gerações',
-            start: '2026-03-01',
-            end: '2026-03-01',
-            metaHtml: '<strong>MDA e Ministério Jovem</strong>',
-        },
-        {
-            title: 'Convenção Escola Sabatina',
-            start: '2026-03-08',
-            end: '2026-03-08',
-        },
-        {
-            title: 'Dia Mundial do Jovem Adventista',
-            start: '2026-03-21',
-            end: '2026-03-21',
-        },
-        {
-            title: 'Formação Recepção | Discipulado e Missão',
-            start: '2026-03-22',
-            end: '2026-03-22',
-        },
-        {
-            title: 'Semana Santa',
-            start: '2026-03-28',
-            end: '2026-04-04',
-        },
-        {
-            title: 'Congresso de Liberdade Religiosa',
-            start: '2026-05-09',
-            end: '2026-05-09',
-        },
-        {
-            title: 'Encontro de Ancionato e Diretores de Grupos',
-            start: '2026-05-10',
-            end: '2026-05-10',
-        },
-        {
-            title: 'Investidura de Liderança',
-            start: '2026-06-14',
-            end: '2026-06-14',
-            metaHtml: '<strong>Ministério da Criança</strong>',
-        },
-        {
-            title: 'Formação Liderança de Aventureiros | Investidura de Liderança',
-            start: '2026-06-21',
-            end: '2026-06-21',
-        },
-        {
-            title: 'Almoço de Universitários',
-            start: '2026-08-29',
-            end: '2026-08-29',
-        },
-        {
-            title: 'Congresso SVA',
-            start: '2026-08-29',
-            end: '2026-08-29',
-        },
-        {
-            title: 'FEMUSA – Festival de Música',
-            start: '2026-10-03',
-            end: '2026-10-03',
-        },
-        {
-            title: 'Investidura do Ministério do Adolescente',
-            start: '2026-10-25',
-            end: '2026-10-25',
-        },
-        {
-            title: 'Congresso Comunidade Teen',
-            start: '2026-11-07',
-            end: '2026-11-07',
-            metaHtml: '<strong>Novas Gerações</strong>',
-        },
-        {
-            title: 'Celebração Secretaria de Excelência',
-            start: '2026-11-28',
-            end: '2026-11-28',
-        },
-        {
-            title: 'Encontro Distrital',
-            start: '2026-12-12',
-            end: '2026-12-12',
-            metaHtml: '<strong>Ministério da Criança e do Ministério do Adolescente</strong>',
-        },
-        {
-            title: 'Encontro de Casais CelebrAPlaC',
-            start: '2026-12-13',
-            end: '2026-12-13',
-        },
-        {
-            title: 'Culto de Gratidão e Confraternização da APlaC',
-            start: '2026-12-17',
-            end: '2026-12-17',
-        },
-    ];
+    const EVENTS = PROGRAMACOES_EVENTS_2026;
 
     const calendarRoot = document.getElementById('programacoesCalendar');
     const gridEl = document.getElementById('programacoesCalendarGrid');
