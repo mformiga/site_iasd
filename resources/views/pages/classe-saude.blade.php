@@ -67,7 +67,7 @@
         margin: 0;
     }
 
-    .citacao-destake .fonte {
+    .citacao-destaque .fonte {
         text-align: center;
         font-size: 0.9rem;
         color: #666;
@@ -247,7 +247,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/asa/asa_header.png') }}" alt="Classe de Saúde" style="width: 100%;">
+<img src="{{ asset('img/classe_saude/classe_saude_header.webp') }}" alt="Classe de Saúde" style="width: 100%;">
 
 <div class="classe-saude-container">
 
@@ -268,7 +268,7 @@
 
         <div class="video-section">
             <a href="https://www.instagram.com/reel/DFieE1Rvem4/?igsh=MnRibWN1MnpmNWI1" target="_blank">
-                📺 Assista ao Vídeo
+                <i class="bi bi-play-circle"></i> Assista ao Vídeo
             </a>
         </div>
     </div>
@@ -305,10 +305,10 @@
 
         <div class="video-section">
             <a href="https://www.instagram.com/reel/DGehyNEP9ZN/?igsh=MWQ1b2VyNGl3d2Y2ZA==" target="_blank">
-                📺 Vídeo 1
+                <i class="bi bi-play-circle"></i> Vídeo 1
             </a>
             <a href="https://www.instagram.com/reel/DB9vqqvvFAX/?igsh=Z2FmdGQ1OWl6Z3E1" target="_blank" style="margin-left: 10px;">
-                📺 Vídeo 2
+                <i class="bi bi-play-circle"></i> Vídeo 2
             </a>
         </div>
     </div>
@@ -358,7 +358,7 @@
 
         <div class="video-section">
             <a href="https://www.instagram.com/reel/C_n1konudN-/?igsh=MTVvY3FuaHJ3MXNuag==" target="_blank">
-                📺 Assista ao Vídeo
+                <i class="bi bi-play-circle"></i> Assista ao Vídeo
             </a>
         </div>
     </div>
@@ -412,7 +412,7 @@
 
         <div class="video-section">
             <a href="https://www.instagram.com/reel/DOY-9Pwj6xw/?igsh=MWdlMWhoNnFjYXdrdg==" target="_blank">
-                📺 Assista ao Vídeo
+                <i class="bi bi-play-circle"></i> Assista ao Vídeo
             </a>
         </div>
     </div>
@@ -425,14 +425,14 @@
         </p>
 
         <div class="info-box">
-            <h3>📍 LOCAL</h3>
+            <h3><i class="bi bi-geo-alt-fill"></i> LOCAL</h3>
             <p>IASD Central de Brasília</p>
 
-            <h3 style="margin-top: 25px;">📅 QUANDO</h3>
+            <h3 style="margin-top: 25px;"><i class="bi bi-calendar-date"></i> QUANDO</h3>
             <p>Todos os sábados</p>
             <p class="destaque">Durante a Escola Sabatina</p>
 
-            <h3 style="margin-top: 25px;">⏰ HORÁRIO</h3>
+            <h3 style="margin-top: 25px;"><i class="bi bi-clock"></i> HORÁRIO</h3>
             <p class="destaque">11h</p>
         </div>
     </div>

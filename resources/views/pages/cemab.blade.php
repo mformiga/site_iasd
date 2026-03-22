@@ -432,7 +432,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/cemab/cemab_header.webp') }}" alt="CEMAB (Centro Musical Adventista de Brasília)" style="width: 100%; height: 220px; object-fit: cover;">
+<img src="{{ asset('img/cemab/cemab_header.webp') }}" alt="CEMAB (Centro Musical Adventista de Brasília)" style="width: 100%; height: 220px; object-fit: cover;">
 
 <div class="cemab-container">
 
@@ -449,7 +449,7 @@
 
     <!-- Seção Destaque -->
     <div class="oquee-section">
-        <h2>🌟 Transformando Vidas Através da Música 🎶</h2>
+        <h2><i class="bi bi-star-fill"></i> Transformando Vidas Através da Música <i class="bi bi-music-note-beamed"></i></h2>
         <p>
             Venha fazer parte do CEMAB e desenvolver seus talentos musicais em um ambiente cristão e acolhedor!
         </p>
@@ -457,31 +457,31 @@
 
     <!-- Seção Cursos Oferecidos -->
     <div class="cursos-section">
-        <h2>📚 Cursos Oferecidos</h2>
+        <h2><i class="bi bi-journals"></i> Cursos Oferecidos</h2>
 
         <div class="cursos-grid">
             <div class="curso-card">
-                <span class="emoji">🎤</span>
+                <i class="bi bi-mic emoji"></i>
                 <h3>Canto Popular e Erudito</h3>
             </div>
 
             <div class="curso-card">
-                <span class="emoji">🎹</span>
+                <i class="bi bi-music-note emoji"></i>
                 <h3>Piano e Teclado</h3>
             </div>
 
             <div class="curso-card">
-                <span class="emoji">🎸</span>
+                <i class="bi bi-music-note-beamed emoji"></i>
                 <h3>Violão/Guitarra</h3>
             </div>
 
             <div class="curso-card">
-                <span class="emoji">🎻</span>
+                <i class="bi bi-music-note-list emoji"></i>
                 <h3>Cordas (Violino, Violoncelo)</h3>
             </div>
 
             <div class="curso-card">
-                <span class="emoji">🎵</span>
+                <i class="bi bi-music-note emoji"></i>
                 <h3>Teoria Musical & Solfejo</h3>
             </div>
         </div>
@@ -493,26 +493,26 @@
 
     <!-- Seção Por Que Escolher o CEMAB -->
     <div class="porque-section">
-        <h2>🙌 Por Que Escolher o CEMAB?</h2>
+        <h2><i class="bi bi-award-fill"></i> Por Que Escolher o CEMAB?</h2>
 
         <div class="motivos-grid">
             <div class="motivo-card">
-                <span class="icon">✨</span>
+                <i class="bi bi-mortarboard-fill icon"></i>
                 <p>Professores qualificados e comprometidos com o desenvolvimento integral dos alunos.</p>
             </div>
 
             <div class="motivo-card">
-                <span class="icon">✨</span>
+                <i class="bi bi-tools icon"></i>
                 <p>Infraestrutura moderna com instrumentos de alta qualidade.</p>
             </div>
 
             <div class="motivo-card">
-                <span class="icon">✨</span>
+                <i class="bi bi-calendar-event-fill icon"></i>
                 <p>Eventos musicais que conectam a comunidade e glorificam a Deus.</p>
             </div>
 
             <div class="motivo-card">
-                <span class="icon">✨</span>
+                <i class="bi bi-cash-coin icon"></i>
                 <p>Preços acessíveis</p>
             </div>
         </div>
@@ -520,24 +520,24 @@
 
     <!-- Seção Eventos e Apresentações -->
     <div class="eventos-section">
-        <h2>🗓️ Eventos e Apresentações</h2>
+        <h2><i class="bi bi-calendar3"></i> Eventos e Apresentações</h2>
         <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
             No CEMAB, a música ganha vida em:
         </p>
 
         <div class="eventos-grid">
             <div class="evento-card">
-                <span class="emoji">🎉</span>
+                <i class="bi bi-balloon emoji"></i>
                 <h4>Recitais ao final de cada semestre</h4>
             </div>
 
             <div class="evento-card">
-                <span class="emoji">📅</span>
+                <i class="bi bi-calendar-date emoji"></i>
                 <h4>Workshops com artistas convidados</h4>
             </div>
 
             <div class="evento-card">
-                <span class="emoji">🕊️</span>
+                <i class="bi bi-feather emoji"></i>
                 <h4>Participação em programas da igreja</h4>
             </div>
         </div>
@@ -552,29 +552,23 @@
 
     <!-- Seção de Contato -->
     <div class="contato-section">
-        <h3>📍 Venha nos Conhecer!</h3>
+        <h3><i class="bi bi-geo-alt-fill"></i> Venha nos Conhecer!</h3>
 
         <div class="contato-info">
             <div class="contato-item">
-                <span class="icon">📍</span>
-                <h4>Endereço</h4>
-                <p>SGAS 611 - Asa Sul, Brasília - DF, 70200-710</p>
-            </div>
-
-            <div class="contato-item">
-                <span class="icon">📞</span>
+                <i class="bi bi-telephone icon"></i>
                 <h4>Telefone</h4>
                 <p><a href="tel:+5561996529846">(61) 99652-9846</a></p>
             </div>
 
             <div class="contato-item">
-                <span class="icon">📧</span>
+                <i class="bi bi-envelope icon"></i>
                 <h4>E-mail</h4>
                 <p><a href="mailto:contato@cemab.com.br">contato@cemab.com.br</a></p>
             </div>
 
             <div class="contato-item">
-                <span class="icon">⏰</span>
+                <i class="bi bi-clock icon"></i>
                 <h4>Horário de Atendimento</h4>
                 <p>Segunda a Sexta</p>
                 <p>8h às 12h e 14h às 17h</p>
@@ -585,7 +579,7 @@
     <!-- Seção Versículo -->
     <div class="versiculo-section">
         <blockquote>"Louvem a Deus com harpa e som de cânticos!"</blockquote>
-        <cite>🎵 Salmos 98:5 🎵</cite>
+        <cite><i class="bi bi-music-note"></i> Salmos 98:5 <i class="bi bi-music-note"></i></cite>
         <p style="margin-top: 30px; font-size: 1.1rem;">
             No CEMAB, a música é mais que uma arte: é um propósito para servir e adorar!
         </p>
@@ -593,7 +587,7 @@
 
     <!-- Seção Site -->
     <div class="site-section">
-        <h3>💻 Acompanhe nossas novidades</h3>
+        <h3><i class="bi bi-laptop"></i> Acompanhe nossas novidades</h3>
         <p>Acesse nossa página para saber mais sobre os cursos, eventos e inscrições!</p>
         <a href="https://cemab.vercel.app/" target="_blank" class="btn-site">Acessar Site do CEMAB</a>
     </div>

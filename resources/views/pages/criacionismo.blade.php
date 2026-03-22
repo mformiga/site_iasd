@@ -479,7 +479,7 @@ $scientists = [
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Criacionismo e Ciência" style="width: 100%;">
+<img src="{{ asset('img/criacionismo/criacionismo_header.webp') }}" alt="Criacionismo e Ciência" style="width: 100%;">
 
 <div class="criacionismo-container">
     <!-- Seção Introdutória -->

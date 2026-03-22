@@ -3,8 +3,290 @@
 @section('title', 'IASD Central de Brasília - Filmes e Séries')
 
 @push('styles')
+<!-- Glide.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+<!-- Font Awesome para ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+    /* Estilos utilitários para o carrossel */
+    .d-flex {
+        display: flex;
+    }
+
+    .justify-content-between {
+        justify-content: space-between;
+    }
+
+    .align-items-center {
+        align-items: center;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem;
+    }
+
+    .mx-2 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .mx-1 {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+    }
+
+    .py-4 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .col {
+        flex: 1;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .row > * {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .bg-light {
+        background-color: #f8f9fa;
+    }
+
+    .mb-5 {
+        margin-bottom: 3rem;
+    }
+
+    .btn-carousel {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .btn-carousel-primary {
+        background-color: #003366;
+        border-color: #003366;
+        color: #fff;
+    }
+
+    .btn-carousel-primary:hover {
+        background-color: #001531;
+        border-color: #001531;
+    }
+
+    /* Estilos do carrossel Feliz7Play */
+    .pa-widget.pa-w-feliz7play {
+        padding: 2rem 0;
+        position: relative;
+        background-color: #f8f9fa;
+        margin-bottom: 3rem;
+        overflow: visible;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .pa-widget.pa-w-feliz7play .row {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        overflow: hidden;
+    }
+
+    .pa-widget.pa-w-feliz7play .col {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .pa-slider-header {
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .pa-slider-header .d-flex.justify-content-between.align-items-center.w-100 {
+        padding: 0 1rem;
+    }
+
+    .pa-logo-link {
+        display: inline-block;
+        text-decoration: none;
+        transition: opacity 0.3s;
+    }
+
+    .pa-logo-link:hover {
+        opacity: 0.8;
+    }
+
+    .pa-f7p-logo {
+        max-height: 40px;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
+    .pa-slider-header .btn-carousel-primary {
+        background-color: #003366;
+        border-color: #003366;
+        color: #fff;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+
+    .pa-slider-header .btn-carousel-primary:hover {
+        background-color: #001531;
+        border-color: #001531;
+    }
+
+    /* Estilos do Glide */
+    .pa-glide-feliz7play {
+        position: relative;
+        width: 100%;
+    }
+
+    .pa-glide-feliz7play .glide__track {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .pa-glide-feliz7play .glide__slides {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pa-glide-feliz7play .glide__slide {
+        cursor: pointer;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        height: 191px;
+        box-sizing: border-box;
+    }
+
+    .carousel-image-link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 191px;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        flex-shrink: 0;
+    }
+
+    .carousel-image-link img {
+        display: block;
+        width: 100%;
+        height: 191px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        transition: transform 0.3s ease;
+    }
+
+    .pa-glide-feliz7play .glide__slide:hover .carousel-image-link img {
+        transform: scale(1.05);
+    }
+
+    .pa-slider-controle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .pa-slider-btn {
+        background: #003366;
+        border: none;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1.2rem;
+    }
+
+    .pa-slider-btn:hover {
+        background: #001531;
+    }
+
+    .pa-slider-bullet {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pa-slider-bullet i {
+        color: #ccc;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .pa-slider-bullet i.active,
+    .pa-slider-bullet i:hover {
+        color: #003366;
+    }
+
+    .fa-circle {
+        font-size: 0.5rem;
+    }
+
+    .fa-xs {
+        font-size: 0.75em;
+    }
 
     .filmes-container {
         width: 100%;
@@ -439,12 +721,40 @@
         .verse-box p {
             font-size: 1.4em;
         }
+
+        .pa-widget.pa-w-feliz7play .row {
+            padding: 0 0.5rem;
+        }
+
+        .pa-slider-header {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .pa-slider-controle {
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .carousel-image-link {
+            width: 100%;
+            height: auto;
+            padding-bottom: 56.18%;
+        }
+
+        .carousel-image-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/asa/asa_header.png') }}" alt="Filmes e Séries" style="width: 100%;">
+<img src="{{ asset('img/filmes_series/filmes_series_header.webp') }}" alt="Filmes e Séries" style="width: 100%;">
 
 <div class="filmes-container">
     <!-- SEÇÃO DE CABEÇALHO -->
@@ -463,19 +773,19 @@
 
         <div class="benefits-grid">
             <div class="benefit-card">
-                <div class="benefit-icon">❤️</div>
+                <div class="benefit-icon"><i class="bi bi-heart-fill"></i></div>
                 <h3>Crescimento Espiritual</h3>
                 <p>Conecte-se com histórias que inspiram reflexão e renovam sua fé.</p>
             </div>
 
             <div class="benefit-card">
-                <div class="benefit-icon">🛡️</div>
+                <div class="benefit-icon"><i class="bi bi-shield-check"></i></div>
                 <h3>Para Toda a Família</h3>
                 <p>Conteúdo seguro e educativo para crianças, jovens e adultos.</p>
             </div>
 
             <div class="benefit-card">
-                <div class="benefit-icon">📖</div>
+                <div class="benefit-icon"><i class="bi bi-book-half"></i></div>
                 <h3>Aprendizado Histórico</h3>
                 <p>Explore cenários, costumes e personagens das Escrituras de forma dinâmica.</p>
             </div>
@@ -507,9 +817,9 @@
                 </a>
 
                 <div class="destaque-meta">
-                    <span>📺 Livre para todos os públicos</span>
+                    <span><i class="bi bi-tv"></i> Livre para todos os públicos</span>
                     <span class="separator"></span>
-                    <span>🎭 Drama / Inspiração</span>
+                    <span><i class="bi bi-film"></i> Drama / Inspiração</span>
                 </div>
             </div>
         </div>
@@ -521,27 +831,155 @@
 
         <div class="destaques-grid">
             <div class="destaque-item">
-                <div class="icon-box amber">⭐</div>
+                <div class="icon-box amber"><i class="bi bi-star-fill"></i></div>
                 <h4>Dramas Épicos</h4>
                 <p>Reviva o Êxodo, a jornada de Davi ou a coragem de Ester com produções de alta qualidade!</p>
             </div>
 
             <div class="destaque-item">
-                <div class="icon-box indigo">🎬</div>
+                <div class="icon-box indigo"><i class="bi bi-film"></i></div>
                 <h4>Documentários</h4>
                 <p>Entenda o contexto arqueológico e cultural por trás das passagens bíblicas.</p>
             </div>
 
             <div class="destaque-item">
-                <div class="icon-box pink">👨‍👩‍👧‍👦</div>
+                <div class="icon-box pink"><i class="bi bi-people-fill"></i></div>
                 <h4>Animação Infantil</h4>
                 <p>Ensine os pequenos sobre amor, obediência e milagres com séries coloridas e divertidas!</p>
             </div>
 
             <div class="destaque-item">
-                <div class="icon-box cyan">📚</div>
+                <div class="icon-box cyan"><i class="bi bi-journals"></i></div>
                 <h4>Estudos Bíblicos</h4>
                 <p>Aprofunde-se em temas como profecia, santidade e o plano da salvação.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrossel de Mídias Feliz 7 Play -->
+    <div class="pa-widget pa-w-feliz7play py-4 col-12 position-relative bg-light mb-5">
+        <div class="pa-slider-header mb-4">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a 
+                    href="https://feliz7play.com" 
+                    target="_blank"
+                    rel="noopener"
+                    class="pa-logo-link"
+                >
+                    <img 
+                        src="{{ asset('img/midias/imgi_5_f7p-logo.svg') }}" 
+                        alt="Feliz7Play" 
+                        class="pa-f7p-logo"
+                    />
+                </a>
+                <a 
+                    href="https://feliz7play.com" 
+                    target="_blank"
+                    class="btn-carousel btn-carousel-primary"
+                    rel="noopener"
+                >
+                    Acessar o site
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <div class="pa-glide-feliz7play" 
+                     data-autoplay="2500"
+                     data-format="100">
+                    <div class="glide__track" data-glide-el="track">
+                        <div class="glide__slides">
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/c/provai-e-vede/provai-e-vede-2025?target=bencaos-sem-medida" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2025/01/Miniatura_ProvaieVede_2025_Eps6.jpg" 
+                                        alt="Bençãos sem medida" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/c/provai-e-vede-libras/provai-e-vede-2024-libras?target=iniciativa-de-alimentacao-libras" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/12/Miniatura_ProvaieVede2024_Libras_Eps52.jpg" 
+                                        alt="Iniciativa de alimentação - Libras" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/documentario-o-legado" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/maxresdefault-24.jpg" 
+                                        alt="Documentário O Legado" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/c/inverso?target=livre-estou" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/Thumb_IN_episodio14.jpg" 
+                                        alt="LIVRE ESTOU" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/c/roller-peps/roller-peps-1?target=a-lesma-atleta" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/A-Lesma-Atleta.jpg" 
+                                        alt="A Lesma Atleta" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/c/corrida-da-fe?target=veloz" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/veloz.jpg" 
+                                        alt="Veloz" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/c/2359-ate-o-ultimo-minuto/2359-ate-o-ultimo-minuto-5?target=sob-pressao" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/ep2-2359.jpg" 
+                                        alt="Sob Pressão" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="glide__slide">
+                                <a href="https://feliz7play.com/pt/maratona-tuis-3" target="_blank" class="carousel-image-link">
+                                    <img 
+                                        src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/thumb-tuis.jpg" 
+                                        alt="Maratona Tuis 3" 
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pa-slider-controle d-flex align-items-center mt-4">
+                        <div data-glide-el="controls">
+                            <button type="button" class="pa-slider-btn" data-glide-dir="&lt;" aria-label="Anterior">
+                                <i class="bi bi-chevron-left"></i>
+                            </button>
+                        </div>
+                        <div class="mx-2 pa-slider-bullet" data-glide-el="controls[nav]">
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=0"></i>
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=1"></i>
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=2"></i>
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=3"></i>
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=4"></i>
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=5"></i>
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=6"></i>
+                            <i class="fas fa-circle fa-xs mx-1" data-glide-dir="=7"></i>
+                        </div>
+                        <div data-glide-el="controls">
+                            <button type="button" class="pa-slider-btn" data-glide-dir="&gt;" aria-label="Próximo">
+                                <i class="bi bi-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>									
             </div>
         </div>
     </div>
@@ -570,6 +1008,8 @@
 @endsection
 
 @push('scripts')
+<!-- Glide.js JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Script para gerenciar a imagem do filme (fallback se a imagem não existir)
@@ -578,6 +1018,97 @@ document.addEventListener('DOMContentLoaded', function() {
         img.onerror = function() {
             this.src = 'https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop';
         };
+    }
+
+    // Carrossel Feliz 7 Play
+    const carouselElement = document.querySelector('.pa-glide-feliz7play');
+    if (carouselElement) {
+        const autoplay = carouselElement.getAttribute('data-autoplay') || 2500;
+        
+        const glide = new Glide('.pa-glide-feliz7play', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 4,
+            gap: 20,
+            rewind: true,
+            autoplay: parseInt(autoplay),
+            hoverpause: true,
+            animationDuration: 600,
+            animationTimingFunc: 'ease-in-out',
+            peek: {
+                before: 0,
+                after: 0
+            },
+            perTouch: 1,
+            swipeThreshold: 80,
+            dragThreshold: 120,
+            breakpoints: {
+                1200: {
+                    perView: 3,
+                    gap: 20,
+                    rewind: true
+                },
+                768: {
+                    perView: 2,
+                    gap: 20,
+                    rewind: true
+                },
+                576: {
+                    perView: 1,
+                    gap: 0,
+                    rewind: true
+                }
+            }
+        });
+
+        // Função para atualizar bullets ativos
+        function updateBullets() {
+            const bullets = document.querySelectorAll('.pa-slider-bullet i');
+            const slides = document.querySelectorAll('.pa-glide-feliz7play .glide__slide');
+            const totalSlides = slides.length;
+            let currentIndex = glide.index;
+            
+            // Normalizar o índice para os bullets (considerando apenas slides visíveis)
+            if (currentIndex >= totalSlides) {
+                currentIndex = currentIndex % totalSlides;
+            }
+            
+            bullets.forEach((bullet, index) => {
+                if (index === currentIndex) {
+                    bullet.classList.add('active');
+                } else {
+                    bullet.classList.remove('active');
+                }
+            });
+        }
+
+        glide.mount();
+
+        // Garantir que o Glide recalcule após o mount
+        glide.on('mount.after', function() {
+            // Atualizar bullets imediatamente após o mount
+            updateBullets();
+            
+            // Forçar recálculo das dimensões
+            setTimeout(function() {
+                glide.update();
+                updateBullets();
+            }, 100);
+        });
+
+        // Prevenir recarregamento visível no loop infinito
+        glide.on('run', function() {
+            // O Glide com type: 'carousel' e rewind: true já cria loop infinito
+            // Este handler garante transições suaves
+        });
+
+        // Atualizar bullets ativos quando o carrossel se move
+        glide.on('run', updateBullets);
+        
+        // Garantir que o primeiro bullet esteja ativo na inicialização
+        setTimeout(function() {
+            updateBullets();
+        }, 200);
     }
 });
 </script>

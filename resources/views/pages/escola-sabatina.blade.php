@@ -410,7 +410,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Escola Sabatina" style="width: 100%;">
+<img src="{{ asset('img/cards/escola_sabatina/escola_sabatina_header.webp') }}" alt="Escola Sabatina" style="width: 100%;">
 
 <div class="escola-sabatina-container">
 

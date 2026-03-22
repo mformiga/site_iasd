@@ -519,7 +519,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Profecias Bíblicas" style="width: 100%;">
+<img src="{{ asset('img/profecias/profecias_header.webp') }}" alt="Profecias Bíblicas" style="width: 100%;">
 
     <!-- Hero Section -->
     <section class="hero-section">

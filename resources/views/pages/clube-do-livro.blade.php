@@ -59,8 +59,8 @@
 
     .como-funciona-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
         margin: 25px 0;
     }
 
@@ -68,8 +68,7 @@
         background: #fff;
         border: 2px solid #e0e0e0;
         border-radius: 15px;
-        padding: 30px;
-        text-align: center;
+        padding: 30px 25px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         transition: transform 0.3s, box-shadow 0.3s;
     }
@@ -79,24 +78,50 @@
         box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     }
 
-    .info-card .emoji {
-        font-size: 3em;
-        margin-bottom: 15px;
-        display: block;
+    .info-card .icon-box {
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        transition: transform 0.3s;
+    }
+
+    .info-card:hover .icon-box {
+        transform: scale(1.1);
+    }
+
+    .info-card .icon-box.amber {
+        background: #fef3c7;
+    }
+
+    .info-card .icon-box.indigo {
+        background: #e0e7ff;
+    }
+
+    .info-card .icon-box.pink {
+        background: #fce7f3;
+    }
+
+    .info-card .icon-box.cyan {
+        background: #cffafe;
     }
 
     .info-card h3 {
-        font-family: 'Bebas neue', sans-serif;
-        font-size: 1.5em;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
         color: #003366;
-        margin-bottom: 15px;
-        font-weight: 500;
+        margin-bottom: 12px;
+        font-weight: 600;
     }
 
     .info-card p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 0.95rem;
+        line-height: 1.7;
         color: #666;
     }
 
@@ -258,7 +283,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/asa/asa_header.png') }}" alt="Clube do Livro" style="width: 100%;">
+<img src="{{ asset('img/clube_do_livro/clube_livro_header.webp') }}" alt="Clube do Livro" style="width: 100%;">
 
 <div class="clube-livro-container">
 
@@ -274,7 +299,7 @@
     </div>
 
     <!-- Como Funciona -->
-    <h2 class="section-title">💡 Como Funciona o Nosso Clube?</h2>
+    <h2 class="section-title"><i class="bi bi-lightbulb"></i> Como Funciona o Nosso Clube?</h2>
 
     <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
         Para que todos possam participar, nossos encontros são objetivos, acessíveis e focados na partilha de ideias.
@@ -282,25 +307,33 @@
 
     <div class="como-funciona-grid">
         <div class="info-card">
-            <span class="emoji">📍</span>
+            <div class="icon-box amber">
+                <i class="bi bi-geo-alt-fill"></i>
+            </div>
             <h3>Onde?</h3>
             <p>Nossas reuniões são 100% remotas, realizadas confortavelmente através do Google Meet.</p>
         </div>
 
         <div class="info-card">
-            <span class="emoji">📅</span>
+            <div class="icon-box indigo">
+                <i class="bi bi-calendar-date"></i>
+            </div>
             <h3>Quando?</h3>
             <p>Nos encontramos a cada 15 dias (quinzenalmente), sempre às terças-feiras.</p>
         </div>
 
         <div class="info-card">
-            <span class="emoji">⏰</span>
+            <div class="icon-box pink">
+                <i class="bi bi-clock"></i>
+            </div>
             <h3>Horário?</h3>
             <p>Começamos pontualmente às 19h30.</p>
         </div>
 
         <div class="info-card">
-            <span class="emoji">📚</span>
+            <div class="icon-box cyan">
+                <i class="bi bi-journals"></i>
+            </div>
             <h3>O que lemos?</h3>
             <p>A seleção é democrática! Lemos livros cristãos inspiradores, escolhidos pelos próprios participantes do grupo.</p>
         </div>
@@ -308,7 +341,7 @@
 
     <!-- Leitura Atual -->
     <div class="livro-destaque">
-        <h3>📚 Leitura Atual</h3>
+        <h3><i class="bi bi-journals"></i> Leitura Atual</h3>
         <p>
             No momento, estamos mergulhados na fascinante obra:
         </p>
@@ -323,7 +356,7 @@
 
     <!-- Quer Participar -->
     <div class="cta-section">
-        <h2>💬 Quer Participar? Junte-se a Nós!</h2>
+        <h2><i class="bi bi-chat-dots"></i> Quer Participar? Junte-se a Nós!</h2>
         <p>
             Ficou interessado? Você é nosso convidado especial!
         </p>
@@ -333,7 +366,7 @@
         <p>
             Para receber o link da próxima reunião no Google Meet e ser adicionado ao nosso grupo, por favor, entre em contato:
         </p>
-        <img src="{{ asset('img/cards/clubelivro/clubelivro.jpg') }}" alt="Capa do livro Cartas de um Diabo a seu Aprendiz" style="max-width: 400px; height: auto; margin: 30px auto; display: block; box-shadow: 0 6px 25px rgba(0,0,0,0.3); border-radius: 10px;">
+        <img src="{{ asset('img/clube_do_livro/clubelivro.jpg') }}" alt="Capa do livro Cartas de um Diabo a seu Aprendiz" style="max-width: 400px; height: auto; margin: 30px auto; display: block; box-shadow: 0 6px 25px rgba(0,0,0,0.3); border-radius: 10px;">
     </div>
 
 </div>

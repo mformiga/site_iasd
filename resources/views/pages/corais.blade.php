@@ -128,9 +128,6 @@ $orchestras = [
 @endphp
 
 @push('styles')
-<!-- Lucide Icons via CDN -->
-<script src="https://unpkg.com/lucide@latest"></script>
-
 <style>
     html { scroll-behavior: smooth; }
 
@@ -234,6 +231,11 @@ $orchestras = [
         flex-shrink: 0;
     }
 
+    .group-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
     .group-name {
         font-family: 'Roboto', sans-serif;
         font-size: 1.15em;
@@ -298,6 +300,7 @@ $orchestras = [
         line-height: 1.7;
         margin-bottom: 20px;
         flex-grow: 1;
+        white-space: pre-line;
     }
 
     .group-leaders {
@@ -520,7 +523,7 @@ $orchestras = [
 @endpush
 
 @section('content')
-<img src="{{ asset('img/corais/adventista1.webp') }}" alt="Corais e Orquestras" style="width: 100%; height: 220px; object-fit: cover;">
+<img src="{{ asset('img/corais/corais_header.webp') }}" alt="Corais e Orquestras" style="width: 100%; height: 220px; object-fit: cover;">
 
 <div class="corais-container">
     <!-- Seção Introdutória -->
@@ -584,7 +587,9 @@ $orchestras = [
             @if(isset($orchestra['images']) && count($orchestra['images']) > 0)
             <div class="group-images-gallery">
                 @foreach($orchestra['images'] as $image)
-                <img src="{{ asset('img/corais/' . $image) }}" alt="{{ $orchestra['name'] }}" class="group-image lightbox-trigger" data-full="{{ asset('img/corais/' . $image) }}">
+                <div class="image-wrapper">
+                    <img src="{{ asset('img/corais/' . $image) }}" alt="{{ $orchestra['name'] }}" class="group-image lightbox-trigger" data-full="{{ asset('img/corais/' . $image) }}">
+                </div>
                 @endforeach
             </div>
             @endif
@@ -627,6 +632,7 @@ $orchestras = [
 @endsection
 
 @push('scripts')
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>
     lucide.createIcons();
 

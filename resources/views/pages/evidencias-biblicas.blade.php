@@ -430,7 +430,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Evidências Bíblicas" style="width: 100%;">
+<img src="{{ asset('img/evidencias_biblicas/evidencias_biblicas_header.webp') }}" alt="Evidências Bíblicas" style="width: 100%;">
 
 <div class="evidencias-container">
     <!-- Seção Introdutória -->
@@ -521,9 +521,8 @@
         <div class="mab-banner">
             <!-- Imagem em destaque -->
             <div class="mab-image">
-                <img src="/images/museu_mab.jpg"
-                     alt="Museu de Arqueologia Bíblica"
-                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'p-16 text-center\'><div class=\'text-6xl mb-4\'>🏛️</div><p class=\'text-amber-200 font-serif italic text-xl\'>Acervo Histórico MAB</p></div>'">
+                <img src="{{ asset('img/evidencias_biblicas/imgi_91_stock-315-scaled.webp') }}"
+                     alt="Museu de Arqueologia Bíblica">
             </div>
 
             <!-- Conteúdo do MAB -->

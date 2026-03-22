@@ -481,7 +481,6 @@
         transform: scale(1.1);
     }
 
-    /* Estilos dos bullets (pontos indicadores) */
     .pa-slider-bullet-btn {
         background-color: #ccc;
         border: none;
@@ -522,7 +521,6 @@
         opacity: 0.8;
     }
 
-    /* Estilos para o botão Ver canal (estilo Bootstrap) */
     .btn {
         display: inline-block;
         font-weight: 600;
@@ -555,7 +553,6 @@
         box-shadow: 0 4px 12px rgba(0,51,102,0.3);
     }
 
-    /* Garantir que os ícones das setas apareçam */
     .pa-slider-btn i {
         display: flex;
         align-items: center;
@@ -564,7 +561,6 @@
         color: #fff;
     }
 
-    /* Estilos para o container do slider */
     .pa-w-provaievede .row {
         display: flex;
         flex-wrap: wrap;
@@ -580,7 +576,6 @@
         padding-left: 15px;
     }
 
-    /* Garantir que o Glide não oculte as setas */
     .glide__arrow {
         z-index: 10;
     }
@@ -590,7 +585,6 @@
         z-index: 10;
     }
 
-    /* Classes utilitárias do Bootstrap */
     .d-flex {
         display: flex !important;
     }
@@ -683,7 +677,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Dízimos e Ofertas" style="width: 100%;">
+<img src="{{ asset('img/dizimos_ofertas/dizimos_ofertas_header.webp') }}" alt="Dízimos e Ofertas" style="width: 100%;">
 
 <div class="dizimos-container">
 
@@ -759,37 +753,37 @@
 
         <div class="beneficios-grid">
             <div class="beneficio-card">
-                <span class="emoji">🙏</span>
+                <i class="bi bi-heart emoji"></i>
                 <h4>Ato de Adoração</h4>
                 <p>Dar é uma forma tangível de adorar a Deus, reconhecendo Sua grandeza e bondade em nossa vida.</p>
             </div>
 
             <div class="beneficio-card">
-                <span class="emoji">💪</span>
+                <i class="bi bi-lightning emoji"></i>
                 <h4>Expressão de Fé</h4>
                 <p>Demonstramos nossa confiança de que Deus continuará a prover todas as nossas necessidades.</p>
             </div>
 
             <div class="beneficio-card">
-                <span class="emoji">😊</span>
+                <i class="bi bi-emoji-smile emoji"></i>
                 <h4>Desenvolvimento do Caráter</h4>
                 <p>A generosidade combate o egoísmo e o materialismo, moldando nosso caráter à semelhança de Cristo.</p>
             </div>
 
             <div class="beneficio-card">
-                <span class="emoji">🤝</span>
+                <i class="bi bi-globe2 emoji"></i>
                 <h4>Parceria na Missão</h4>
                 <p>Contribuímos diretamente para o avanço da obra de Deus na Terra, tornando-nos Seus colaboradores.</p>
             </div>
 
             <div class="beneficio-card">
-                <span class="emoji">❤️</span>
+                <i class="bi bi-heart-fill emoji"></i>
                 <h4>Obediência por Amor</h4>
                 <p>É uma resposta de amor aos mandamentos de Deus, motivada pela gratidão por Sua salvação.</p>
             </div>
 
             <div class="beneficio-card">
-                <span class="emoji">🌟</span>
+                <i class="bi bi-star-fill emoji"></i>
                 <h4>Bênçãos Prometidas</h4>
                 <p>Deus promete abençoar os fiéis. Essas bênçãos podem ser espirituais, materiais e a alegria de participar de Sua obra.</p>
             </div>
@@ -805,14 +799,14 @@
 
         <div class="formas-grid">
             <div class="forma-card">
-                <span class="icon">💻</span>
+                <i class="bi bi-laptop icon"></i>
                 <h4>Online (7me)</h4>
                 <p>Através do sistema oficial da igreja. É seguro, prático e rápido.</p>
                 <p style="margin-top: 10px;"><a href="https://play.google.com/store/apps/details?id=com.iatec.acms.me&hl=pt_BR&pli=1" target="_blank">Acesse o 7me →</a></p>
             </div>
 
             <div class="forma-card">
-                <span class="icon">🏦</span>
+                <i class="bi bi-bank icon"></i>
                 <h4>Transferência/PIX</h4>
                 <p><strong>Banco:</strong> Banco do Brasil</p>
                 <p><strong>Favorecido:</strong> União Centro Oeste Brasileira da IASD</p>
@@ -824,7 +818,7 @@
             </div>
 
             <div class="forma-card">
-                <span class="icon">✉️</span>
+                <i class="bi bi-envelope-fill icon"></i>
                 <h4>Envelope</h4>
                 <p>Disponíveis na igreja. Preencha seus dados e deposite nos gazofilácios durante os cultos ou entregue na tesouraria.</p>
             </div>
@@ -839,7 +833,7 @@
         </p>
         <div style="background: rgba(255,255,255,0.15); border-radius: 10px; padding: 30px; margin-top: 30px;">
             <p style="font-size: 1.15rem; font-weight: 600; margin-bottom: 20px;">
-                📚 Saiba Mais Sobre Dízimos e Ofertas
+                <i class="bi bi-journals"></i> Saiba Mais Sobre Dízimos e Ofertas
             </p>
             <p style="margin-bottom: 20px;">
                 Se quiser conhecer mais sobre os dízimos e ofertas, acesse os documentos abaixo e/ou visite a página oficial de mordomia cristã da igreja adventista.
@@ -936,10 +930,10 @@
             Entre em contato conosco para mais informações sobre como contribuir:
         </p>
         <p style="margin-top: 20px;">
-            <strong>📧 Email:</strong> tesouraria@iasdcentraldebrasilia.com.br
+            <strong><i class="bi bi-envelope"></i> Email:</strong> tesouraria@iasdcentraldebrasilia.com.br
         </p>
         <p style="margin-top: 15px;">
-            <strong>📍 Local:</strong> Tesouraria da IASD Central de Brasília
+            <strong><i class="bi bi-geo-alt-fill"></i> Local:</strong> Tesouraria da IASD Central de Brasília
         </p>
     </div>
 
@@ -969,11 +963,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (!slidesContainer || !bulletsContainer) return;
 
-            // Limpar containers
             slidesContainer.innerHTML = '';
             bulletsContainer.innerHTML = '';
 
-            // Criar slides
             videos.forEach((video, index) => {
                 const slide = document.createElement('li');
                 slide.className = 'glide__slide';
@@ -994,7 +986,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 slide.appendChild(link);
                 slidesContainer.appendChild(slide);
 
-                // Criar bullet
                 const bullet = document.createElement('button');
                 bullet.className = 'pa-slider-bullet-btn';
                 bullet.setAttribute('data-glide-dir', `=${index}`);
@@ -1002,7 +993,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 bulletsContainer.appendChild(bullet);
             });
 
-            // Inicializar carrossel após criar os slides
             const provaievedeCarousel = document.querySelector('.pa-glide-provaievede');
             if (provaievedeCarousel && videos.length > 0) {
                 const autoplay = provaievedeCarousel.getAttribute('data-autoplay') || 2500;
@@ -1038,7 +1028,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 });
 
-                // Função para atualizar bullets ativos do Provai e Vede
                 function updateBulletsProvaiEVede() {
                     const bullets = document.querySelectorAll('#provaievede-bullets button');
                     const slides = document.querySelectorAll('.pa-glide-provaievede .glide__slide');
@@ -1047,7 +1036,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                     let currentIndex = glideProvaiEVede.index;
 
-                    // Normalizar o índice para valores negativos ou maiores que o total
                     if (currentIndex < 0) {
                         currentIndex = ((currentIndex % totalSlides) + totalSlides) % totalSlides;
                     } else if (currentIndex >= totalSlides) {
