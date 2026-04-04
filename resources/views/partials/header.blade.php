@@ -1,31 +1,34 @@
 <header>
-    <img src="{{ asset('img/logo_iasd.png') }}" alt="">
+    <a href="{{ route('home') }}" class="header-brand" aria-label="Ir para a página inicial">
+        <img src="{{ asset('img/logo_iasd.webp') }}" alt="Logo IASD Central de Brasília" width="60" height="60">
+    </a>
     <nav class="navegation">
         <ul>
             <li><a href="{{ route('home') }}" style="margin: 0;">Início</a></li>
             <li><a href="{{ route('igreja') }}">A Igreja</a></li>
-            <li class="btn_drop"><a href="{{ route('participe') }}">Participe <i class='bx bx-chevron-down'></i></a>
+            <li class="btn_drop"><a href="javascript:void(0)">Participe <i class='bx bx-chevron-down'></i></a>
                 <ul class="dropdown" style="margin-top: 6px;">
                     <li><a href="{{ route('cemab') }}">CEMAB</a></li>
                     <li><a href="{{ route('classe-novo-tempo') }}">Classe Novo Tempo</a></li>
                     <li><a href="{{ route('classe-saude') }}">Classe de Saúde</a></li>
                     <li><a href="{{ route('clube-do-livro') }}">Clube do Livro</a></li>
-                    <li><a href="">Comunidades</a></li>
-                    <li><a href="{{ route('corais') }}">Corais</a></li>
-                    <li><a href="">Cursos</a></li>
-                    <li><a href="{{ route('doutores-esperanca') }}">Doutores da esperança</a></li>
-                    <li><a href="">MAP</a></li>
-                    <li><a href="">Mulher Plena</a></li>
+                    <!-- <li><a href="">Comunidades</a></li> -->
+                    <li><a href="{{ route('corais') }}">Corais e Orquestras</a></li>
+                    <!-- <li><a href="">Cursos</a></li> -->
+                    <li><a href="{{ route('doutores-da-esperanca') }}">Doutores da esperança</a></li>
+                    <!-- <li><a href="">MAP</a></li> -->
+                    <!-- <li><a href="">Ministério de Oração</a></li> -->
+                    <!-- <li><a href="">Mulher Plena</a></li> -->
                 </ul>
             </li>
-            <li class="btn_drop"><a href="{{ route('midias') }}">Mídias <i class='bx bx-chevron-down'></i></a>
+            <li class="btn_drop"><a href="#" onclick="return false;">Mídias <i class='bx bx-chevron-down'></i></a>
                 <ul class="dropdown" style="margin-top: 6px;">
-                    <li><a href="{{ route('midias.cpb') }}">CPB</a></li>
-                    <li><a href="{{ route('midias.criacionismo') }}">Criacionismo</a></li>
-                    <li><a href="{{ route('midias.evidencias-biblicas') }}">Evidências bíblicas</a></li>
-                    <li><a href="{{ route('midias.filmes-series') }}">Filmes e séries</a></li>
-                    <li><a href="{{ route('midias.profecias') }}">Profecias</a></li>
-                    <li><a href="{{ route('midias.radio-tv') }}">Rádio e TV Novo Tempo</a></li>
+                    <li><a href="{{ route('cpb') }}">CPB</a></li>
+                    <li><a href="{{ route('criacionismo') }}">Criacionismo</a></li>
+                    <li><a href="{{ route('evidencias-biblicas') }}">Evidências bíblicas</a></li>
+                    <li><a href="{{ route('filmes-series') }}">Filmes e séries</a></li>
+                    <li><a href="{{ route('profecias') }}">Profecias</a></li>
+                    <li><a href="{{ route('radio-tv-novo-tempo') }}">Rádio e TV Novo Tempo</a></li>
                 </ul>
             </li>
             <li><a href="{{ route('dizimos-ofertas') }}">Dízimos e Ofertas</a></li>
@@ -33,11 +36,15 @@
     </nav>
 
     <div class="container_por_do_sol">
-        <img src="https://img.icons8.com/color/48/sunset.png" alt="sunset"/>
         <div class="container_info_por_do_sol">
             <h5>Pôr do Sol</h5>
-            <h5 id="data"></h5>
-            <h5 id="horario"></h5>
+            <div class="container_icon_por_do_sol" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <div class="container_horario_data">
+                    <h5 id="horario"></h5>
+                    <h5 id="data"></h5>
+                </div>
+                <i class="bi bi-sunset"></i>
+            </div>
         </div>
     </div>
 

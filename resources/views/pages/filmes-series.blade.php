@@ -724,6 +724,7 @@
 
         .pa-widget.pa-w-feliz7play .row {
             padding: 0 0.5rem;
+            overflow: visible;
         }
 
         .pa-slider-header {
@@ -732,34 +733,85 @@
             align-items: flex-start;
         }
 
+        .pa-slider-header .d-flex.justify-content-between.align-items-center.w-100 {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .btn-carousel.btn-carousel-primary {
+            border-radius: 999px;
+            padding: 10px 16px;
+            font-size: 0.95rem;
+        }
+
         .pa-slider-controle {
-            flex-direction: row;
+            display: grid !important;
+            grid-template-columns: 36px 1fr 36px;
+            align-items: center;
+            gap: 10px;
+            padding: 0 8px;
+        }
+
+        .pa-slider-controle .pa-slider-bullet {
+            overflow-x: auto;
             justify-content: center;
-            gap: 1rem;
+            padding: 4px 0;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .pa-slider-controle .pa-slider-bullet::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pa-slider-bullet {
+            gap: 0.25rem;
+        }
+
+        .pa-slider-bullet i {
+            margin: 0 2px !important;
+        }
+
+        .fa-circle {
+            font-size: 0.42rem;
+        }
+
+        .pa-slider-btn {
+            width: 36px;
+            height: 36px;
+            font-size: 1rem;
+        }
+
+        .pa-glide-feliz7play .glide__slide {
+            height: auto;
         }
 
         .carousel-image-link {
             width: 100%;
             height: auto;
-            padding-bottom: 56.18%;
+            aspect-ratio: 16 / 9;
         }
 
         .carousel-image-link img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            position: absolute;
+            inset: 0;
         }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/filmes_series/filmes_series_header.webp') }}" alt="Filmes e Séries" style="width: 100%;">
+<img src="{{ asset('img/filmes_series/filmes_series_header.webp') }}" alt="Filmes e Séries" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="filmes-container">
     <!-- SEÇÃO DE CABEÇALHO -->
-    <div class="header-section">
-        <h1>Filmes e Séries</h1>
+    <div class="header-section acb-fullbleed">
+        <h1 class="acb-title-serif">Filmes e Séries</h1>
         <span class="subtitle">Descubra Inspiração Divina na Tela!</span>
         <p>
             Bem-vindo(a) à sua janela espiritual para filmes e séries que celebram histórias bíblicas, valores cristãos e lições de fé!
@@ -769,7 +821,7 @@
 
     <!-- SEÇÃO 1: POR QUE ASSISTIR? -->
     <div class="section-benefits">
-        <h2 class="section-title">Por Que Assistir Filmes e Séries Bíblicas?</h2>
+        <h2 class="section-title acb-title-serif">Por Que Assistir Filmes e Séries Bíblicas?</h2>
 
         <div class="benefits-grid">
             <div class="benefit-card">
@@ -800,6 +852,7 @@
                 <img id="filme-destaque-img"
                      src="{{ asset('img/garoto_lenco.jpg') }}"
                      alt="Pôster do filme O Garoto do Lenço"
+                     loading="lazy" decoding="async"
                      onerror="this.src='https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop'" />
                 <div class="destaque-overlay"></div>
             </div>
@@ -807,7 +860,7 @@
             <!-- Conteúdo Abaixo -->
             <div class="destaque-content">
                 <span class="badge">Filme em Destaque</span>
-                <h2>O GAROTO DO LENÇO</h2>
+                <h2 class="acb-title-serif">O GAROTO DO LENÇO</h2>
                 <p>
                     Uma história poderosa sobre superação, o valor da amizade e o impacto transformador da fé em momentos de desafio. Uma produção emocionante que fala diretamente ao coração.
                 </p>
@@ -827,7 +880,7 @@
 
     <!-- SEÇÃO 2: DESTAQUES IMPERDÍVEIS -->
     <div class="destaques-section">
-        <h2 class="section-title">Destaques Imperdíveis</h2>
+        <h2 class="section-title acb-title-serif">Destaques Imperdíveis</h2>
 
         <div class="destaques-grid">
             <div class="destaque-item">
@@ -870,6 +923,7 @@
                         src="{{ asset('img/midias/imgi_5_f7p-logo.svg') }}" 
                         alt="Feliz7Play" 
                         class="pa-f7p-logo"
+                        loading="lazy" decoding="async"
                     />
                 </a>
                 <a 
@@ -895,6 +949,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2025/01/Miniatura_ProvaieVede_2025_Eps6.jpg" 
                                         alt="Bençãos sem medida" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -903,6 +958,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/12/Miniatura_ProvaieVede2024_Libras_Eps52.jpg" 
                                         alt="Iniciativa de alimentação - Libras" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -911,6 +967,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/maxresdefault-24.jpg" 
                                         alt="Documentário O Legado" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -919,6 +976,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/Thumb_IN_episodio14.jpg" 
                                         alt="LIVRE ESTOU" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -927,6 +985,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/A-Lesma-Atleta.jpg" 
                                         alt="A Lesma Atleta" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -935,6 +994,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/veloz.jpg" 
                                         alt="Veloz" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -943,6 +1003,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/ep2-2359.jpg" 
                                         alt="Sob Pressão" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -951,6 +1012,7 @@
                                     <img 
                                         src="https://files.adventistas.org/feliz7play/v2/sites/2/2024/11/thumb-tuis.jpg" 
                                         alt="Maratona Tuis 3" 
+                                        loading="lazy" decoding="async"
                                     />
                                 </a>
                             </div>
@@ -985,8 +1047,8 @@
     </div>
 
     <!-- RODAPÉ E MENSAGEM FINAL -->
-    <div class="footer-section">
-        <h3>Não Perca Nenhum Lançamento!</h3>
+    <div class="footer-section acb-fullbleed">
+        <h3 class="acb-title-serif">Não Perca Nenhum Lançamento!</h3>
         <p>Siga nossas redes sociais e ative as notificações para ser avisado(a) sobre novas produções!</p>
         <a href="https://www.youtube.com/@feliz7play" target="_blank" rel="noopener noreferrer" class="btn-youtube">
             ▶ Inscrever-se no YouTube
@@ -994,14 +1056,16 @@
 
         <div class="footer-divider"></div>
 
-        <h4>Uma Mensagem Final</h4>
+        <h4 class="acb-title-serif">Uma Mensagem Final</h4>
         <p style="font-style: italic; max-width: 650px; margin: 0 auto;">
             Que cada filme ou série assistido aqui seja uma semente plantada em seu coração, frutificando em amor, esperança e comunhão com Deus.
         </p>
 
         <div class="verse-box">
-            <p>"Tudo o que é verdadeiro, tudo o que é respeitável [...] é isso que devem pensar!"</p>
-            <p class="reference">— Filipenses 4:8 (NVT)</p>
+            <blockquote class="acb-quote" style="max-width: 700px; margin: 0 auto;">
+                <p>"Tudo o que é verdadeiro, tudo o que é respeitável [...] é isso que devem pensar!"</p>
+                <span class="acb-quote__ref">— Filipenses 4:8 (NVT)</span>
+            </blockquote>
         </div>
     </div>
 </div>
@@ -1064,12 +1128,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Função para atualizar bullets ativos
         function updateBullets() {
             const bullets = document.querySelectorAll('.pa-slider-bullet i');
-            const slides = document.querySelectorAll('.pa-glide-feliz7play .glide__slide');
-            const totalSlides = slides.length;
+            const totalSlides = bullets.length;
+            if (totalSlides === 0) return;
             let currentIndex = glide.index;
             
-            // Normalizar o índice para os bullets (considerando apenas slides visíveis)
-            if (currentIndex >= totalSlides) {
+            // Normalizar o índice para valores negativos ou maiores que o total
+            if (currentIndex < 0) {
+                currentIndex = ((currentIndex % totalSlides) + totalSlides) % totalSlides;
+            } else if (currentIndex >= totalSlides) {
                 currentIndex = currentIndex % totalSlides;
             }
             

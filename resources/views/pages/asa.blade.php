@@ -5,19 +5,35 @@
 @push('styles')
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-    
+
     .asa-container {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 0 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .asa-header-wrap {
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 1920 / 300;
+    }
+
+    .asa-page-header-img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
     }
 
     .asa-intro {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         padding: 50px 40px;
         border-radius: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         text-align: center;
     }
 
@@ -40,10 +56,10 @@
     }
 
     .agencia-humanitaria {
-        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        background: linear-gradient(135deg, #00632E 0%, #004D24 100%);
         padding: 60px 40px;
         border-radius: 15px;
-        margin: 50px 0;
+        margin: 0 0 50px;
         text-align: center;
         color: #fff;
     }
@@ -106,33 +122,35 @@
     }
 
     .estatistica-card {
-        background: #fff;
-        border: 2px solid #e0e0e0;
+        background: linear-gradient(135deg, #e8f4f8 0%, #f0f8ff 100%);
+        border: 3px solid #003366;
         border-radius: 15px;
-        padding: 30px 20px;
+        padding: 25px 20px;
         text-align: center;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(0,51,102,0.12);
+        transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     }
 
     .estatistica-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        box-shadow: 0 8px 25px rgba(0,51,102,0.2);
+        border-color: #1b4472;
     }
 
     .estatistica-numero {
         font-family: 'Bebas neue', sans-serif;
-        font-size: 3.5em;
+        font-size: 3.2em;
         color: #003366;
         font-weight: 500;
         margin-bottom: 10px;
         display: block;
+        text-shadow: 1px 1px 3px rgba(0,51,102,0.1);
     }
 
     .estatistica-label {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.1rem;
-        color: #666;
+        font-size: 1.05rem;
+        color: #333;
         font-weight: 500;
     }
 
@@ -160,46 +178,20 @@
         text-align: justify;
     }
 
-    .boletim-section {
-        background: linear-gradient(135deg, #003366 0%, #1b4472 100%);
-        padding: 50px 40px;
-        border-radius: 15px;
-        margin: 50px 0;
-        text-align: center;
-        color: #fff;
-    }
-
-    .boletim-section h3 {
-        font-family: 'Bebas neue', sans-serif;
-        font-size: 2em;
-        color: #fff;
-        margin-bottom: 20px;
-        font-weight: 500;
-    }
-
-    .boletim-section p {
+    .campanhas-info ul {
+        margin: 12px 0 0;
+        padding-left: 24px;
         font-family: 'Roboto', sans-serif;
-        font-size: 1.1rem;
-        color: #f8f9fa;
-        margin-bottom: 25px;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #333;
+        list-style: disc;
     }
 
-    .btn-boletim {
-        display: inline-block;
-        background-color: #fff;
-        color: #003366;
-        padding: 12px 35px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1em;
-        transition: transform 0.3s, box-shadow 0.3s;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .btn-boletim:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    .campanhas-info li {
+        margin: 6px 0;
+        list-style-type: disc;
+        position: static;
     }
 
     .como-ajudar-section {
@@ -354,9 +346,57 @@
         display: block;
     }
 
+    .galeria-item img.lightbox-trigger {
+        cursor: pointer;
+    }
+
+    .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .lightbox.active {
+        display: flex;
+    }
+
+    .lightbox-content {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 28px;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s;
+        user-select: none;
+        line-height: 1;
+    }
+
+    .lightbox-close:hover {
+        color: #3b82f6;
+    }
+
     @media (max-width: 768px) {
         .asa-container {
-            padding: 20px 15px;
+            padding: 0 15px 20px;
         }
 
         .asa-intro {
@@ -393,12 +433,14 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/asa/asa_header.webp') }}" alt="ASA (Ação Social Adventista)" style="width: 100%; height: 220px; object-fit: cover;">
+<div class="asa-header-wrap">
+    <img class="asa-page-header-img" src="{{ asset('img/cards/asa/asa_header.webp') }}" alt="ASA (Ação Social Adventista)" fetchpriority="high" decoding="async">
+</div>
 
 <div class="asa-container">
-    
+
     <!-- Seção Introdutória -->
-    <div class="asa-intro">
+    <div class="asa-intro acb-fullbleed">
         <h1>ASA (Ação Social Adventista)</h1>
         <p>
             O Ministério da Ação Social Adventista é uma expressão viva do amor de Cristo em ação. Ele não se limita a doar alimentos, roupas ou suprimentos; vai além, buscando ver o ser humano em sua totalidade. Este ministério entende que as necessidades das pessoas vão muito além do material, abrangendo o emocional, o espiritual e o social.
@@ -408,77 +450,77 @@
         </p>
     </div>
 
-    <!-- Seção Agência Humanitária -->
-    <div class="agencia-humanitaria">
-        <h2>CONHEÇA A AGÊNCIA HUMANITÁRIA DA IGREJA ADVENTISTA DO SÉTIMO DIA</h2>
-        <p>
-            A Agência Humanitária da Igreja Adventista do Sétimo Dia trabalha em conjunto com a ASA para promover ações de solidariedade e assistência humanitária em todo o mundo, seguindo os princípios cristãos de amor ao próximo e serviço desinteressado.
-        </p>
-        <a href="https://adra.org.br/" target="_blank" class="btn-conhecer">Conheça</a>
-    </div>
-
     <!-- Seção de Estatísticas -->
     <div class="estatisticas-section">
-        <h2>Estes são alguns dos números que a ASA alcançou esse ano (2025):</h2>
-        
+        <h2 class="acb-title-serif">Estes são alguns dos números que a ASA alcançou (entre Setembro/2025 e Março/2026):</h2>
+
         <div class="estatisticas-grid">
             <div class="estatistica-card">
-                <span class="estatistica-numero" data-value="150">0</span>
-                <div class="estatistica-label">Atendimento Assistenciais<br><strong>famílias</strong></div>
+                <span class="estatistica-numero" data-value="250">0</span>
+                <div class="estatistica-label">🚨 Assistências familiares</div>
             </div>
 
             <div class="estatistica-card">
-                <span class="estatistica-numero" data-value="500">0</span>
-                <div class="estatistica-label">Cestas Básicas entregues<br><strong>unidades</strong></div>
+                <span class="estatistica-numero" data-value="800">0</span>
+                <div class="estatistica-label">🚨 Cestas básicas entregues</div>
             </div>
 
             <div class="estatistica-card">
-                <span class="estatistica-numero" data-value="2000">0</span>
-                <div class="estatistica-label">Apoio a necessidades básicas (roupas)<br></div>
+                <span class="estatistica-numero" data-value="3200">0</span>
+                <div class="estatistica-label">🚨Apoio a necessidades básicas<br><strong>(roupas, sapatos, remédios, enxovais para bebês, roupas de cama, toalhas, fraldas, produtos de higiene pessoal, produtos de limpeza)</strong></div>
             </div>
 
             <div class="estatistica-card">
-                <span class="estatistica-numero" data-value="300">0</span>
-                <div class="estatistica-label">Doações (móveis e utensílios domésticos)<br></div>
+                <span class="estatistica-numero" data-value="400">0</span>
+                <div class="estatistica-label">🚨 Doações<br><strong>(móveis, utensílios domésticos)</strong></div>
+            </div>
+
+            <div class="estatistica-card">
+                <span class="estatistica-numero" data-value="50">0</span>
+                <div class="estatistica-label">🚨 Pessoas atendidas em<br><strong>cursos de capacitação</strong></div>
             </div>
         </div>
 
         <div class="campanhas-info">
             <h3>Campanhas e Arrecadações</h3>
-            <p>
-                As Campanhas mensais, Drive Thru Solidário e SOS Rio Grande do Sul juntas arrecadaram <strong>12 toneladas de alimentos</strong>, grande parte foi destinada à população do Rio Grande do Sul, após as enchentes ocorridas nos meses de abril e maio/2024.
-            </p>
+            <p>Algumas das campanhas e arrecadações realizadas:</p>
+            <ul>
+                <li>Projeto Aqueça um Irmão</li>
+                <li>Projeto Meias do bem</li>
+                <li>Projeto Cestas que Alimentam</li>
+                <li>Mutirão de Natal</li>
+            </ul>
         </div>
     </div>
 
     <!-- Seção Como Você Pode Ajudar -->
     <div class="como-ajudar-section">
-        <h2>Como Você Pode Ajudar</h2>
+        <h2 class="acb-title-serif">Como Você Pode Ajudar</h2>
         <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
             A ASA depende de voluntários e doações para continuar seu trabalho. Você pode contribuir de várias formas:
         </p>
 
         <div class="formas-ajuda-grid">
             <div class="forma-ajuda-card">
-                <span class="emoji">🎁</span>
+                <i class="bi bi-gift emoji"></i>
                 <h4>Doações materiais</h4>
                 <p>Alimentos não perecíveis, roupas, cobertores, produtos de higiene</p>
             </div>
 
             <div class="forma-ajuda-card">
-                <span class="emoji">💵</span>
+                <i class="bi bi-cash-coin emoji"></i>
                 <h4>Doações financeiras</h4>
                 <p>Recursos para manutenção dos projetos</p>
             </div>
 
             <div class="forma-ajuda-card">
-                <span class="emoji">⏰</span>
+                <i class="bi bi-clock emoji"></i>
                 <h4>Trabalho voluntário</h4>
                 <p>Seu tempo e talento fazendo a diferença</p>
             </div>
 
             <div class="forma-ajuda-card">
-                <span class="emoji">📢</span>
+                <i class="bi bi-megaphone emoji"></i>
                 <h4>Divulgação</h4>
                 <p>Compartilhando nosso trabalho em suas redes</p>
             </div>
@@ -489,7 +531,7 @@
             <div id="contato-info" style="display: none; text-align: center; padding: 30px; background: #f8f9fa; border-radius: 10px; max-width: 500px; margin: 0 auto;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.8em; color: #003366; margin-bottom: 20px; font-weight: 500;">Contato ASA</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #333;">
-                    <strong>📧 Email:</strong> <a href="mailto:asacentralbsb@gmail.com" style="color: #003366; text-decoration: none; font-weight: 600;">asacentralbsb@gmail.com</a>
+                    <strong><i class="bi bi-envelope"></i> Email:</strong> <a href="mailto:asacentralbsb@gmail.com" style="color: #003366; text-decoration: none; font-weight: 600;">asacentralbsb@gmail.com</a>
                 </p>
             </div>
         </div>
@@ -497,87 +539,92 @@
 
     <!-- Seção Galeria de Fotos -->
     <div class="galeria-section">
-        <h2>Galeria de Fotos</h2>
+        <h2 class="acb-title-serif">Galeria de Fotos</h2>
 
         <div class="galeria-grid">
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio1.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio1.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio1.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio2.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio2.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio2.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio3.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio3.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio3.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio4.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio4.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio4.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio5.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio5.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio5.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio6.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio6.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio6.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio7.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio7.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio7.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio8.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio8.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio8.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/apoio9.jpeg" alt="ASA - Apoio" loading="lazy">
+                <img src="{{ asset('img/cards/asa/apoio9.jpeg') }}" alt="ASA - Apoio" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/apoio9.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/bazar1.jpeg" alt="ASA - Bazar" loading="lazy">
+                <img src="{{ asset('img/cards/asa/bazar1.jpeg') }}" alt="ASA - Bazar" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/bazar1.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/costura1.jpeg" alt="ASA - Costura" loading="lazy">
+                <img src="{{ asset('img/cards/asa/costura1.jpeg') }}" alt="ASA - Costura" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/costura1.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/costura2.jpeg" alt="ASA - Costura" loading="lazy">
+                <img src="{{ asset('img/cards/asa/costura2.jpeg') }}" alt="ASA - Costura" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/costura2.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/costura3.jpeg" alt="ASA - Costura" loading="lazy">
+                <img src="{{ asset('img/cards/asa/costura3.jpeg') }}" alt="ASA - Costura" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/costura3.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/culinaria1.jpeg" alt="ASA - Culinária" loading="lazy">
+                <img src="{{ asset('img/cards/asa/culinaria1.jpeg') }}" alt="ASA - Culinária" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/culinaria1.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/culinaria2.jpeg" alt="ASA - Culinária" loading="lazy">
+                <img src="{{ asset('img/cards/asa/culinaria2.jpeg') }}" alt="ASA - Culinária" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/culinaria2.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/culinaria3.jpeg" alt="ASA - Culinária" loading="lazy">
+                <img src="{{ asset('img/cards/asa/culinaria3.jpeg') }}" alt="ASA - Culinária" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/culinaria3.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/pizzas1.jpeg" alt="ASA - Pizzas" loading="lazy">
+                <img src="{{ asset('img/cards/asa/pizzas1.jpeg') }}" alt="ASA - Pizzas" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/pizzas1.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras2.jpeg" alt="ASA - Tesouras" loading="lazy">
+                <img src="{{ asset('img/cards/asa/tesouras2.jpeg') }}" alt="ASA - Tesouras" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/tesouras2.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras3.jpeg" alt="ASA - Tesouras" loading="lazy">
+                <img src="{{ asset('img/cards/asa/tesouras3.jpeg') }}" alt="ASA - Tesouras" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/tesouras3.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras4.jpeg" alt="ASA - Tesouras" loading="lazy">
+                <img src="{{ asset('img/cards/asa/tesouras4.jpeg') }}" alt="ASA - Tesouras" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/tesouras4.jpeg') }}">
             </div>
             <div class="galeria-item">
-                <img src="https://adventistascentralbrasilia.org/img/cards/asa/tesouras5.jpeg" alt="ASA - Tesouras" loading="lazy">
+                <img src="{{ asset('img/cards/asa/tesouras5.jpeg') }}" alt="ASA - Tesouras" loading="lazy" decoding="async" class="lightbox-trigger" data-full="{{ asset('img/cards/asa/tesouras5.jpeg') }}">
             </div>
         </div>
     </div>
 
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <span class="lightbox-close" aria-label="Fechar">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="" loading="lazy" decoding="async">
+    </div>
+
     <!-- Seção de Contato -->
-    <div class="contato-section">
-        <h3>Contato ASA</h3>
+    <div class="contato-section acb-fullbleed">
+        <h3 class="acb-title-serif">Contato ASA</h3>
         <p>
-            <strong>📧 Email:</strong> <a href="mailto:asacentralbsb@gmail.com">asacentralbsb@gmail.com</a>
+            <strong><i class="bi bi-envelope"></i> Email:</strong> <a href="mailto:asacentralbsb@gmail.com">asacentralbsb@gmail.com</a>
         </p>
-        <p style="margin-top: 20px; font-style: italic; color: #666;">
-            "Porque tive fome, e me destes de comer; tive sede, e me destes de beber; era estrangeiro, e me hospedastes; estava nu, e me vestistes; adoeci, e me visitastes; estava na prisão, e fostes ver-me."
-        </p>
-        <p style="margin-top: 10px; font-weight: 600; color: #003366;">
-            📖 Mateus 25:35-36
-        </p>
+        <blockquote class="acb-quote" style="max-width: 900px; margin: 22px auto 0;">
+            <p>
+                "Porque tive fome, e me destes de comer; tive sede, e me destes de beber; era estrangeiro, e me hospedastes; estava nu, e me vestistes; adoeci, e me visitastes; estava na prisão, e fostes ver-me."
+            </p>
+            <span class="acb-quote__ref"><i class="bi bi-book-half"></i> Mateus 25:35-36</span>
+        </blockquote>
     </div>
 
     <!-- Seção Manual ASA -->
@@ -586,7 +633,17 @@
         <p style="color: #f8f9fa; font-size: 1.1rem;">
             Para mais informações, acesse o <strong>"Manual da ASA"</strong>
         </p>
-        <a href="https://drive.google.com/file/d/1Lb3HRoIijHaFmhgqMoJaMscRvX1Qpjlz/view" target="_blank" style="display: inline-block; margin-top: 15px; background-color: #f1c9a1; color: #003366; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; transition: transform 0.3s, box-shadow 0.3s, background 0.3s; font-family: 'Roboto', sans-serif;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)'; this.style.backgroundColor='#e7ac6d';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.backgroundColor='#f1c9a1';">Acessar Manual</a>
+        <a href="https://drive.google.com/file/d/1ACGngpGUeDuVU_LE3X3vDeaEX7clkoHN/view?usp=sharing" target="_blank" style="display: inline-block; margin-top: 15px; background-color: #f1c9a1; color: #003366; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1em; transition: transform 0.3s, box-shadow 0.3s, background 0.3s; font-family: 'Roboto', sans-serif;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)'; this.style.backgroundColor='#e7ac6d';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.backgroundColor='#f1c9a1';">Acessar Manual</a>
+    </div>
+
+    <!-- Seção Agência Humanitária -->
+    <div class="agencia-humanitaria acb-fullbleed">
+        <h2 class="acb-title-serif">CONHEÇA A AGÊNCIA HUMANITÁRIA DA IGREJA ADVENTISTA DO SÉTIMO DIA</h2>
+        <img src="{{ asset('img/ADRA_Horizontal_Logo.webp') }}" alt="ADRA Logo" style="max-width: 300px; margin: 20px auto 30px; display: block;">
+        <p>
+            A Agência Humanitária da Igreja Adventista do Sétimo Dia trabalha em conjunto com a ASA para promover ações de solidariedade e assistência humanitária em todo o mundo, seguindo os princípios cristãos de amor ao próximo e serviço desinteressado.
+        </p>
+        <a href="https://adra.org.br/" target="_blank" class="btn-conhecer">Conheça</a>
     </div>
 
 </div>
@@ -599,16 +656,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const numeros = document.querySelectorAll('.estatistica-numero');
     let animado = false;
 
-    // Função para formatar número (sempre inteiro)
     function formatarNumero(num) {
-        // Sempre retorna número inteiro com separador de milhar
         return Math.floor(num).toLocaleString('pt-BR');
     }
 
-    // Função para animar contagem
     function animarContagem(elemento, valorFinal) {
-        const duracao = 2000; // 2 segundos
-        const incremento = valorFinal / (duracao / 16); // ~60 FPS
+        const duracao = 2000;
+        const incremento = valorFinal / (duracao / 16);
         let valorAtual = 0;
 
         const timer = setInterval(() => {
@@ -623,7 +677,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 16);
     }
 
-    // Intersection Observer para detectar quando a seção entra na viewport
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !animado) {
@@ -636,14 +689,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, {
-        threshold: 0.3 // Dispara quando 30% da seção está visível
+        threshold: 0.3
     });
 
     if (estatisticasSection) {
         observer.observe(estatisticasSection);
     }
 
-    // Funcionalidade do botão "Quero Ajudar Agora"
     const btnAjudar = document.getElementById('btn-ajudar');
     const contatoInfo = document.getElementById('contato-info');
 
@@ -652,6 +704,46 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             btnAjudar.style.display = 'none';
             contatoInfo.style.display = 'block';
+        });
+    }
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+
+    if (lightbox && lightboxImg && lightboxClose && lightboxTriggers.length > 0) {
+        lightboxTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function() {
+                const fullSizeSrc = this.getAttribute('data-full') || this.getAttribute('src');
+                const altText = this.getAttribute('alt') || '';
+                lightboxImg.src = fullSizeSrc || '';
+                lightboxImg.alt = altText;
+                lightbox.classList.add('active');
+                lightbox.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+            lightbox.setAttribute('aria-hidden', 'true');
+            lightboxImg.src = '';
+        });
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+                lightboxImg.src = '';
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+                lightboxImg.src = '';
+            }
         });
     }
 });

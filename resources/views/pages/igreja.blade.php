@@ -10,7 +10,20 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 0 20px 40px;
+    }
+
+    /* Cola a 1ª seção na imagem do header e a 1ª na 2ª seção */
+    .igreja-container > .igreja-intro {
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .igreja-container > .pilares-section {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .reveal-card {
@@ -663,46 +676,72 @@
 
     .crencas-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 25px;
         margin-bottom: 50px;
     }
 
     .crenca-card {
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        background: #fff;
         border: 2px solid #e0e0e0;
         border-radius: 15px;
-        padding: 30px 20px;
-        text-align: center;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        padding: 30px 25px;
+        text-align: left;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .crenca-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        border-color: #003366;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     }
 
     .crenca-icon {
-        font-size: 3em;
-        margin-bottom: 15px;
-        display: block;
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        color: #003366;
+        transition: transform 0.3s;
+    }
+
+    .crenca-card:hover .crenca-icon {
+        transform: scale(1.1);
+    }
+
+    .crencas-grid .crenca-card:nth-child(4n+1) .crenca-icon {
+        background: #fef3c7;
+    }
+
+    .crencas-grid .crenca-card:nth-child(4n+2) .crenca-icon {
+        background: #e0e7ff;
+    }
+
+    .crencas-grid .crenca-card:nth-child(4n+3) .crenca-icon {
+        background: #fce7f3;
+    }
+
+    .crencas-grid .crenca-card:nth-child(4n) .crenca-icon {
+        background: #cffafe;
     }
 
     .crenca-card h4 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: #003366;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         font-weight: 600;
     }
 
     .crenca-card p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
+        font-size: 0.95rem;
         color: #666;
-        line-height: 1.6;
+        line-height: 1.7;
     }
 
     .crencas-cta {
@@ -842,12 +881,12 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/igreja/fachada.webp') }}" alt="IASD Central de Brasília - A Igreja" style="width: 100%;">
+<img src="{{ asset('img/igreja/fachada.webp') }}" alt="IASD Central de Brasília - A Igreja" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="igreja-container">
     
     <!-- Seção Introdutória -->
-    <div class="igreja-intro">
+    <div class="igreja-intro acb-fullbleed">
         <h1>Quem Somos</h1>
         <p>
             A Igreja Adventista do Sétimo Dia é uma igreja cristã protestante com atuação mundial que teve suas primeiras raízes entre as décadas de 1850 e 1860, concomitantemente nos Estados Unidos e na Europa. Seu início se deu a partir de um grupo composto por homens e mulheres de várias denominações religiosas, estudiosos da Bíblia, que em 1863 organizou e oficializou uma estrutura denominacional, passando a adotar o nome atual.
@@ -855,8 +894,8 @@
     </div>
 
     <!-- Seção Pilares de Nossa Fé -->
-    <div class="pilares-section">
-        <h2><i class="bi bi-building"></i> Pilares de Nossa Fé</h2>
+    <div class="pilares-section acb-fullbleed">
+        <h2 class="acb-title-serif"><i class="bi bi-building"></i> Pilares de Nossa Fé</h2>
 
         <div class="pilares-grid">
             <div class="pilar-card">
@@ -883,7 +922,7 @@
 
     <!-- Seção Estrutura Organizacional -->
     <div class="estrutura-section">
-        <h2><i class="bi bi-map"></i> Estrutura Organizacional</h2>
+        <h2 class="acb-title-serif"><i class="bi bi-map"></i> Estrutura Organizacional</h2>
 
         <div class="organograma-wrapper">
             <p class="organograma-intro">
@@ -963,7 +1002,7 @@
 
     <!-- Seção Nossa História -->
     <div class="como-ajudar-section">
-        <h2><i class="bi bi-hourglass-split"></i> Nossa História: IASD Brasilia</h2>
+        <h2 class="acb-title-serif"><i class="bi bi-hourglass-split"></i> Nossa História: IASD Brasilia</h2>
         <p class="historia-subtitle">
             Uma Jornada de Fé e Comunidade
         </p>
@@ -1024,8 +1063,8 @@
     </div>
 
     <!-- Seção O Temporal que Uniu uma Comunidade -->
-    <div class="boletim-section">
-        <h3><i class="bi bi-cloud-rain"></i> O Temporal que Uniu uma Comunidade</h3>
+    <div class="boletim-section acb-fullbleed">
+        <h3 class="acb-title-serif"><i class="bi bi-cloud-rain"></i> O Temporal que Uniu uma Comunidade</h3>
         <p>
             Na véspera da inauguração (7/12/1968), um temporal inundou o templo. Membros trabalharam a noite toda para limpar a igreja, garantindo que, ao amanhecer, tudo estivesse impecável para receber visitantes de todo o Brasil.
         </p>
@@ -1045,7 +1084,7 @@
                 Pelo exercício da fé e pelo esforço determinado de muitos, a magnífica realidade ali estava presente, numa demonstração de que aquela máxima citada pelo Apóstolo Paulo aos Filipenses capítulo 4, verso 13, inspirada pelo Espírito da Profecia, de que, "Tudo posso nAquele que me fortalece", estava sendo transformada em uma verdade deslumbrante, real, concreta esplendorosa, sublime, bem presente, cheia de luz, "e a Glória do Senhor Deus encheu o Templo" (II Crônicas 5:14).
             </p>
 
-            <img src="{{ asset('img/igreja/inauguracao.png') }}" alt="Inauguração da Igreja Central de Brasília">
+            <img src="{{ asset('img/igreja/inauguracao.png') }}" alt="Inauguração da Igreja Central de Brasília" loading="lazy" decoding="async">
 
             <p>
                 Naquele dia esta bela Igreja, esta Casa de Deus, nova, exuberante e confortável, estava pronta para ser dedicada ao Senhor Deus; e assim foi, para honra e glória do nosso Pai Eterno, a quem tudo devemos.
@@ -1055,13 +1094,13 @@
                 O terreno onde está construída a Igreja tem a área total de 25.000 m², medindo 100 metros de frente por 250 metros de fundos, foi uma doação do Governo do Brasil à União Sul Brasileira, com a intermediação incansável do saudoso irmão Dr. João Batista Clayton Rossi, Procurador da República.
             </p>
 
-            <img src="{{ asset('img/igreja/construcao.png') }}" alt="Construção do Templo">
+            <img src="{{ asset('img/igreja/construcao.png') }}" alt="Construção do Templo" loading="lazy" decoding="async">
 
             <p>
                 De acordo com as informações colhidas com o Pr. Wilson Sarli, então Presidente da Missão Brasil Central da IASD, um dos vespertinos da Capital Federal anunciou: "Igreja Adventista inaugura Templo e reúne fiéis do DF". E acrescenta: "Foi inaugurada, às 11 horas de ontem, na Avenida L2 Sul, o novo Templo da Igreja Adventista, com o descerramento da fita pelo presidente mundial daquela Igreja, Pastor Roberto H. Pierson, e o Senador Carvalho Pinto, especialmente convidado para a cerimônia".
             </p>
 
-            <img src="{{ asset('img/igreja/coral_taguatinga.png') }}" alt="Coral de Taguatinga na Inauguração">
+            <img src="{{ asset('img/igreja/coral_taguatinga.png') }}" alt="Coral de Taguatinga na Inauguração" loading="lazy" decoding="async">
 
             <p>
                 Conforme informações colhidas, cinco ônibus chegaram de várias partes do Estado de Goiás, trazendo irmãos para a cerimônia de inauguração, além de mais outros dez ônibus e inúmeros carros particulares com pessoas de outros Estados.
@@ -1074,6 +1113,7 @@
             <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e0e0e0; text-align: center;">
                 <img src="{{ asset('img/igreja/dr-josias-gonsioroski.webp') }}"
                      alt="Dr. Josias Gonsioroski"
+                     loading="lazy" decoding="async"
                      style="max-width: 300px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin: 0 auto 20px auto; display: block;">
 
                 <p style="font-size: 0.9rem; color: #666; font-style: italic; text-align: center; margin: 0;">
@@ -1094,7 +1134,7 @@
 
     <!-- Seção Em Que Cremos -->
     <div class="crencas-section">
-        <h2><i class="bi bi-book-half"></i> Em Que Cremos</h2>
+        <h2 class="acb-title-serif"><i class="bi bi-book-half"></i> Em Que Cremos</h2>
         <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
             Os adventistas do sétimo dia baseiam suas crenças integralmente nas Sagradas Escrituras. Aceitamos a Bíblia como nossa única regra de fé e prática.
         </p>
@@ -1149,8 +1189,8 @@
             </div>
         </div>
 
-        <div class="crencas-cta">
-            <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.8em; color: #ffffff; margin-bottom: 20px; font-weight: 500;">
+        <div class="crencas-cta acb-fullbleed">
+            <h3 class="acb-title-serif" style="font-size: 1.8em; color: #ffffff; margin-bottom: 20px; font-weight: 700;">
                 Conheça Nossas 28 Crenças Fundamentais
             </h3>
             <p style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #f8f9fa; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
@@ -1172,6 +1212,7 @@
             <div style="text-align: center; max-width: 310px;">
                 <img src="{{ asset('img/igreja/pr-lucas.webp') }}"
                      alt="Pastor Lucas Alves"
+                     loading="lazy" decoding="async"
                      style="width: 310px; height: 310px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Lucas Alves</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Pastor Sênior</p>
@@ -1181,6 +1222,7 @@
             <div style="text-align: center; max-width: 310px;">
                 <img src="{{ asset('img/igreja/pr-hugo.webp') }}"
                      alt="Pastor Hugo Rodrigues"
+                     loading="lazy" decoding="async"
                      style="width: 310px; height: 310px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Hugo Rodrigues</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Área Jovem</p>
@@ -1190,6 +1232,7 @@
             <div style="text-align: center; max-width: 310px;">
                 <img src="{{ asset('img/igreja/pr-adriano.webp') }}"
                      alt="Pastor Adriano Rezende"
+                     loading="lazy" decoding="async"
                      style="width: 310px; height: 310px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin-bottom: 15px;">
                 <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.5em; color: #003366; margin-bottom: 5px;">Pastor Adriano Rezende</h3>
                 <p style="font-family: 'Roboto', sans-serif; font-size: 1em; color: #666; font-weight: 600;">Área Missionária</p>

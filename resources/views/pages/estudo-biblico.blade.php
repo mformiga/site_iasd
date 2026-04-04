@@ -19,6 +19,7 @@
         border-radius: 15px;
         margin-bottom: 50px;
         text-align: center;
+        border-top: 3px solid rgba(211, 84, 0, 0.4);
     }
 
     .estudo-intro h1 {
@@ -71,12 +72,14 @@
     .motivo-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        border-color: rgba(211, 84, 0, 0.4);
     }
 
     .motivo-card .emoji {
         font-size: 3em;
         margin-bottom: 20px;
         display: block;
+        color: #d35400;
     }
 
     .motivo-card h3 {
@@ -120,6 +123,67 @@
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .experiencia-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+        gap: 30px;
+        margin: 40px auto;
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .experiencia-card {
+        background: rgba(255,255,255,0.1);
+        padding: 30px;
+        border-radius: 12px;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        min-width: 0;
+        overflow: hidden;
+        color: #fff;
+        text-align: left;
+    }
+
+    .experiencia-card i {
+        font-size: 3em;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .experiencia-card h3 {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .experiencia-card p {
+        color: #f8f9fa;
+        margin: 0;
+        line-height: 1.7;
+        max-width: none;
+    }
+
+    .experiencia-highlight {
+        background: rgba(255,255,255,0.15);
+        padding: 30px 40px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.22);
+        max-width: 800px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .experiencia-highlight p {
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+        max-width: none;
     }
 
     .como-funciona-section {
@@ -189,11 +253,12 @@
     }
 
     .materiais-section {
-        background: #f8f9fa;
-        padding: 50px 40px;
-        border-radius: 15px;
-        margin: 50px 0;
-        border-left: 5px solid #003366;
+        background: radial-gradient(900px circle at 10% 0%, rgba(0, 51, 102, 0.06) 0%, rgba(0, 51, 102, 0) 55%),
+        #f8f9fa;
+        padding: 44px 40px 34px;
+        border-radius: 16px;
+        margin: 50px 0 0;
+        border: 1px solid rgba(0, 51, 102, 0.10);
     }
 
     .materiais-section h2 {
@@ -207,19 +272,19 @@
 
     .materiais-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-        margin-bottom: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-bottom: 16px;
     }
 
     .material-card {
-        background: #fff;
-        border: 2px solid #e0e0e0;
-        border-radius: 10px;
-        padding: 25px 20px;
+        background: rgba(255,255,255,0.94);
+        border: 1px solid rgba(0, 51, 102, 0.12);
+        border-radius: 14px;
+        padding: 18px 16px 16px;
         text-align: center;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
         text-decoration: none;
         color: inherit;
         display: block;
@@ -227,79 +292,205 @@
 
     .material-card:hover {
         transform: translateY(-3px);
-        box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        border-color: rgba(0, 51, 102, 0.22);
+        background: #fff;
+        box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+    }
+
+    .material-card:focus-visible {
+        outline: 3px solid rgba(0, 51, 102, 0.28);
+        outline-offset: 3px;
     }
 
     .material-card .emoji {
-        font-size: 2.5em;
-        margin-bottom: 15px;
-        display: block;
+        width: 52px;
+        height: 52px;
+        margin: 0 auto 12px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: rgba(0, 51, 102, 0.08);
+        color: #003366;
+        font-size: 1.55rem;
     }
 
     .material-card h4 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.1em;
+        font-size: 1.05rem;
         color: #003366;
-        margin-bottom: 10px;
-        font-weight: 600;
+        margin-bottom: 0;
+        font-weight: 700;
+        line-height: 1.35;
     }
 
     .btn-material-destaque {
         display: block;
         text-align: center;
-        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        background: linear-gradient(135deg, #d35400 0%, #ba4a00 100%);
         color: #fff;
         padding: 18px 50px;
         border-radius: 10px;
         text-decoration: none;
         font-weight: bold;
         font-size: 1.2em;
-        margin: 0 auto 50px auto;
+        margin: 0 auto 24px auto;
         max-width: 450px;
         transition: transform 0.3s, box-shadow 0.3s;
         font-family: 'Roboto', sans-serif;
+        border-bottom: 3px solid #ba4a00;
     }
 
     .btn-material-destaque:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        box-shadow: 0 8px 25px rgba(211, 84, 0, 0.3);
+        border-bottom-color: #9e4100;
     }
 
-    /* FORMULÁRIO */
+    .estudo-request {
+        background: radial-gradient(900px circle at 20% 0%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 55%),
+        linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        padding: 44px 40px;
+        border-radius: 16px;
+        margin: 0 0 56px;
+        border: 1px solid rgba(0, 51, 102, 0.12);
+        border-bottom: 3px solid rgba(211, 84, 0, 0.4);
+    }
+
+    .estudo-request__inner {
+        max-width: 980px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .estudo-request__title {
+        font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+        color: #003366;
+        margin-bottom: 14px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+    }
+
+    .estudo-request__lead {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.75;
+        color: rgba(0,0,0,0.78);
+        margin: 0 auto 22px;
+        max-width: 860px;
+    }
+
+    .estudo-request__modes {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin: 22px auto 18px;
+        max-width: 980px;
+    }
+
+    .estudo-request__mode {
+        background: rgba(255,255,255,0.92);
+        border: 1px solid rgba(0, 51, 102, 0.10);
+        border-radius: 14px;
+        padding: 18px 18px 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        text-align: left;
+        min-width: 0;
+    }
+
+    .estudo-request__mode:hover {
+        transform: translateY(-3px);
+        border-color: rgba(211, 84, 0, 0.4);
+        box-shadow: 0 14px 40px rgba(211, 84, 0, 0.15);
+    }
+
+    .estudo-request__mode:hover .estudo-request__mode-icon {
+        background: linear-gradient(135deg, #ba4a00 0%, #9e4100 100%);
+        box-shadow: 0 6px 16px rgba(211, 84, 0, 0.4);
+    }
+
+    .estudo-request__mode-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, #d35400 0%, #ba4a00 100%);
+        color: #fff;
+        font-size: 1.55rem;
+        margin-bottom: 12px;
+        box-shadow: 0 4px 12px rgba(211, 84, 0, 0.3);
+    }
+
+    .estudo-request__mode h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.05rem;
+        color: #003366;
+        font-weight: 700;
+        margin-bottom: 6px;
+        transition: color 0.18s ease;
+    }
+
+    .estudo-request__mode:hover h3 {
+        color: #d35400;
+    }
+
+    .estudo-request__mode p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.95rem;
+        color: rgba(0,0,0,0.62);
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .estudo-request .container_form {
+        margin-top: 10px;
+    }
+
+    .estudo-request .form-open-btn {
+        appearance: none;
+        border: 0;
+        background: linear-gradient(135deg, #d35400 0%, #ba4a00 100%);
+        color: #fff;
+        padding: 14px 22px;
+        margin: 6px 0 0;
+        border-radius: 12px;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        box-shadow: 0 14px 30px rgba(211, 84, 0, 0.3);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+        border-bottom: 3px solid rgba(186, 74, 0, 0.6);
+    }
+
+    .estudo-request .form-open-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 42px rgba(211, 84, 0, 0.4);
+        filter: brightness(1.1);
+        border-bottom-color: rgba(186, 74, 0, 0.8);
+    }
+
+    .estudo-request .form-open-btn:focus-visible {
+        outline: 3px solid rgba(249, 160, 27, 0.55);
+        outline-offset: 3px;
+    }
+
     .container_form {
         width: 100%;
-        max-width: 700px;
-        margin: 50px auto;
-    }
-
-    form {
-        background: #fff;
-        border: 2px solid #e0e0e0;
-        border-radius: 15px;
-        padding: 40px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    form h2 {
-        font-family: 'Bebas neue', sans-serif;
-        font-size: 2em;
-        color: #003366;
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .container_label {
         width: 100%;
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
     }
 
     label {
-        display: block;
-        margin-bottom: 8px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        color: #333;
+        margin-bottom: 4px;
+        font-family: 'Roboto';
     }
 
     .container_input {
@@ -308,60 +499,39 @@
 
     .container_input i {
         position: absolute;
-        bottom: 10px;
-        left: 10px;
-        color: #666;
+        bottom: 6px;
+        left: 6px;
     }
 
     input {
         width: 100%;
-        padding: 10px 10px 10px 40px;
-        border: 1px solid #ccc;
+        padding: 6px 0;
+        border: 1px solid rgb(192, 191, 191);
+        text-indent: 26px;
         border-radius: 8px;
-        font-size: 1rem;
-        font-family: 'Roboto', sans-serif;
-        box-sizing: border-box;
-    }
-
-    input:focus {
-        outline: none;
-        border-color: #003366;
     }
 
     textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
+        text-indent: 6px;
+        border: 1px solid rgb(192, 191, 191);
+        padding: 6px 0;
         border-radius: 8px;
-        font-size: 1rem;
-        font-family: 'Roboto', sans-serif;
-        resize: vertical;
-        box-sizing: border-box;
-    }
-
-    textarea:focus {
-        outline: none;
-        border-color: #003366;
     }
 
     button {
-        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        background-color: #d35400;
         color: #fff;
-        padding: 15px 50px;
-        border: none;
-        border-radius: 8px;
+        margin: 15px 0 25px 0;
+        padding: 12px 50px;
+        border-radius: 6px;
         cursor: pointer;
-        transition: transform 0.3s, box-shadow 0.3s;
-        font-size: 1.1em;
-        font-weight: bold;
-        margin: 20px auto 0;
-        display: block;
-        font-family: 'Roboto', sans-serif;
+        transition: .4s;
+        border-bottom: 3px solid #ba4a00;
     }
 
     button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        background-color: #ba4a00;
+        border-bottom-color: #9e4100;
     }
 
     @media (max-width: 768px) {
@@ -386,6 +556,20 @@
             padding: 40px 20px;
         }
 
+        .experiencia-cards {
+            gap: 16px;
+            margin: 24px auto;
+        }
+
+        .experiencia-card {
+            padding: 22px 18px;
+            text-align: center;
+        }
+
+        .experiencia-highlight {
+            padding: 22px 18px;
+        }
+
         .step {
             flex-direction: column;
             text-align: center;
@@ -395,20 +579,47 @@
             margin: 0 auto;
         }
 
-        form {
-            padding: 30px 20px;
+        .materiais-section {
+            padding: 28px 18px 22px;
+            margin: 38px 0 0;
+        }
+
+        .btn-material-destaque {
+            padding: 16px 18px;
+            font-size: 1.08em;
+            margin: 0 auto 18px auto;
+        }
+
+        .estudo-request {
+            padding: 28px 18px;
+            margin: 0 0 38px;
+        }
+
+        .estudo-request__modes {
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin: 18px auto 14px;
+        }
+
+        .estudo-request__mode {
+            text-align: center;
+            padding: 16px 16px 14px;
+        }
+
+        .estudo-request__mode-icon {
+            margin: 0 auto 10px;
         }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.png') }}" alt="Estudo Bíblico" style="width: 100%;">
+<img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.webp') }}" alt="Estudo Bíblico" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="estudo-biblico-container">
 
     <!-- Seção Introdutória -->
-    <div class="estudo-intro">
+    <div class="estudo-intro acb-fullbleed">
         <h1>Estudo Bíblico: Uma Jornada para Conectar-se com Deus</h1>
         <p>
             Procurando respostas, fortalecimento espiritual ou alívio para desafios emocionais? O Estudo Bíblico é o caminho! Seja qual for sua idade ou momento de vida, aqui você encontrará um espaço acolhedor, dinâmico e adaptado às suas necessidades. Encontros presenciais na sua residência, na igreja ou online — <strong>você escolhe como participar!</strong>
@@ -417,22 +628,22 @@
 
     <!-- Seção Por Que Estudar a Bíblia -->
     <div class="motivos-section">
-        <h2>Por que estudar a Bíblia?</h2>
+        <h2 class="acb-title-serif">Por que estudar a Bíblia?</h2>
         <div class="motivos-grid">
             <div class="motivo-card">
-                <span class="emoji">📖</span>
+                <i class="bi bi-book-half emoji"></i>
                 <h3>Aprendizado Simples</h3>
                 <p>Aprenda de forma simples como os ensinamentos de Jesus transformam vidas.</p>
             </div>
 
             <div class="motivo-card">
-                <span class="emoji">🤝</span>
+                <i class="bi bi-patch-question-fill emoji"></i>
                 <h3>Respostas Reais</h3>
                 <p>Descubra respostas para questões pessoais e espirituais, guiado pelo amor de Cristo.</p>
             </div>
 
             <div class="motivo-card">
-                <span class="emoji">👥</span>
+                <i class="bi bi-people-fill emoji"></i>
                 <h3>Conexão Autêntica</h3>
                 <p>Conecte-se com Deus de maneira prática e autêntica, em comunidade.</p>
             </div>
@@ -440,39 +651,39 @@
     </div>
 
     <!-- Seção Experiência -->
-    <div class="experiencia-section">
-        <h2>Mais que estudo, uma experiência!</h2>
+    <div class="experiencia-section acb-fullbleed">
+        <h2 class="acb-title-serif">Mais que estudo, uma experiência!</h2>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin: 40px 0; max-width: 900px; margin-left: auto; margin-right: auto;">
-            <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 12px; backdrop-filter: blur(10px);">
-                <span style="font-size: 3em; display: block; margin-bottom: 15px;">✨</span>
-                <h3 style="color: #fff; font-family: 'Roboto', sans-serif; font-size: 1.3em; font-weight: 600; margin-bottom: 12px;">Transformação Diária</h3>
-                <p style="color: #f8f9fa; margin: 0; line-height: 1.7;">Cada lição é um passo para entender melhor a Palavra de Deus e seu propósito para você.</p>
+        <div class="experiencia-cards">
+            <div class="experiencia-card">
+                <i class="bi bi-stars"></i>
+                <h3>Transformação Diária</h3>
+                <p>Cada lição é um passo para entender melhor a Palavra de Deus e seu propósito para você.</p>
             </div>
 
-            <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 12px; backdrop-filter: blur(10px);">
-                <span style="font-size: 3em; display: block; margin-bottom: 15px;">💫</span>
-                <h3 style="color: #fff; font-family: 'Roboto', sans-serif; font-size: 1.3em; font-weight: 600; margin-bottom: 12px;">Renovação e Esperança</h3>
-                <p style="color: #f8f9fa; margin: 0; line-height: 1.7;">Venha renovar sua esperança, encontrar apoio e caminhar mais perto dEle.</p>
+            <div class="experiencia-card">
+                <i class="bi bi-stars"></i>
+                <h3>Renovação e Esperança</h3>
+                <p>Venha renovar sua esperança, encontrar apoio e caminhar mais perto dEle.</p>
             </div>
 
-            <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 12px; backdrop-filter: blur(10px);">
-                <span style="font-size: 3em; display: block; margin-bottom: 15px;">🙏</span>
-                <h3 style="color: #fff; font-family: 'Roboto', sans-serif; font-size: 1.3em; font-weight: 600; margin-bottom: 12px;">Crescimento Espiritual</h3>
-                <p style="color: #f8f9fa; margin: 0; line-height: 1.7;">Venha estudar, compartilhar e crescer na graça de Deus!</p>
+            <div class="experiencia-card">
+                <i class="bi bi-heart"></i>
+                <h3>Crescimento Espiritual</h3>
+                <p>Venha estudar, compartilhar e crescer na graça de Deus!</p>
             </div>
         </div>
 
-        <div style="background: rgba(255,255,255,0.15); padding: 30px 40px; border-radius: 12px; border-left: 5px solid #F9A01B; max-width: 800px; margin: 0 auto;">
-            <p style="color: #fff; font-size: 1.2em; font-weight: 600; margin: 0; text-align: center;">
-                🌟 Sua jornada espiritual começa agora! Descubra como a Bíblia pode iluminar sua vida!
+        <div class="experiencia-highlight">
+            <p>
+                <i class="bi bi-star-fill"></i> Sua jornada espiritual começa agora! Descubra como a Bíblia pode iluminar sua vida!
             </p>
         </div>
     </div>
 
     <!-- Seção Como Funciona -->
     <div class="como-funciona-section">
-        <h2>Como funciona?</h2>
+        <h2 class="acb-title-serif">Como funciona?</h2>
         <div class="steps-container">
             <div class="step">
                 <div class="step-number">1</div>
@@ -501,112 +712,110 @@
     </div>
 
     <!-- Seção Materiais de Estudo -->
-    <div class="materiais-section">
-        <h2>Materiais de Estudo</h2>
+    <div class="materiais-section acb-fullbleed">
+        <h2 class="acb-title-serif">Materiais de Estudo</h2>
         <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 30px;">
             Acesse nossos conteúdos e solicite materiais gratuitos.
         </p>
 
         <a href="https://cursobiblicool.wordpress.com/2019/01/08/sumario/" target="_blank" class="btn-material-destaque">
-            📚 Materiais para Estudo Bíblico
+            <i class="bi bi-journals"></i> Materiais para Estudo Bíblico
         </a>
 
         <div class="materiais-grid">
             <a href="https://cursos.novotempo.com/" target="_blank" class="material-card">
-                <span class="emoji">🎁</span>
+                <i class="bi bi-gift emoji"></i>
                 <h4>Solicite materiais impressos ou digitais gratuitamente</h4>
             </a>
 
             <a href="https://www.youtube.com/user/BibliaFacil" target="_blank" class="material-card">
-                <span class="emoji">🎥</span>
+                <i class="bi bi-camera-video emoji"></i>
                 <h4>Canal Bíblia Fácil</h4>
             </a>
 
             <a href="https://www.youtube.com/@NaMiradaVerdadeNT" target="_blank" class="material-card">
-                <span class="emoji">🔍</span>
+                <i class="bi bi-search emoji"></i>
                 <h4>Canal Na Mira da Verdade</h4>
             </a>
         </div>
     </div>
 
     <!-- Seção Solicitação de Estudo Bíblico -->
-    <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 50px 40px; border-radius: 15px; margin: 60px 0; border-left: 5px solid #F9A01B;">
-        <div style="text-align: center; max-width: 800px; margin: 0 auto 50px;">
-            <h2 style="font-family: 'Bebas neue', sans-serif; font-size: 2.5em; color: #003366; margin-bottom: 25px; font-weight: 500;">
+    <section class="estudo-request acb-fullbleed" aria-labelledby="estudo-request-title">
+        <div class="estudo-request__inner">
+            <h2 id="estudo-request-title" class="acb-title-serif estudo-request__title">
                 Solicite Seu Estudo Bíblico Gratuito
             </h2>
-            <p style="font-family: 'Roboto', sans-serif; font-size: 1.15rem; line-height: 1.8; color: #333; margin: 0 auto 20px;">
+
+            <p class="estudo-request__lead">
                 Deseja aprofundar seu conhecimento na Palavra de Deus? Oferecemos <strong>estudos bíblicos gratuitos</strong> que podem ser realizados da forma que preferir!
             </p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px auto 0;">
-                <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                    <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">🏠</span>
-                    <h3 style="font-family: 'Roboto', sans-serif; font-size: 1.1em; color: #003366; font-weight: 600; margin-bottom: 8px;">Presencial</h3>
-                    <p style="font-family: 'Roboto', sans-serif; font-size: 0.95rem; color: #666; margin: 0;">Na sua residência ou na igreja</p>
-                </div>
 
-                <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                    <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">💻</span>
-                    <h3 style="font-family: 'Roboto', sans-serif; font-size: 1.1em; color: #003366; font-weight: 600; margin-bottom: 8px;">Online</h3>
-                    <p style="font-family: 'Roboto', sans-serif; font-size: 0.95rem; color: #666; margin: 0;">Por videoconferência</p>
-                </div>
+            <div class="estudo-request__modes" aria-label="Formas de participação">
+                <article class="estudo-request__mode">
+                    <div class="estudo-request__mode-icon" aria-hidden="true">
+                        <i class="bi bi-house"></i>
+                    </div>
+                    <h3>Presencial</h3>
+                    <p>Na sua residência ou na igreja</p>
+                </article>
 
-                <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
-                    <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">📱</span>
-                    <h3 style="font-family: 'Roboto', sans-serif; font-size: 1.1em; color: #003366; font-weight: 600; margin-bottom: 8px;">Remoto</h3>
-                    <p style="font-family: 'Roboto', sans-serif; font-size: 0.95rem; color: #666; margin: 0;">Por telefone ou mensagem</p>
+                <article class="estudo-request__mode">
+                    <div class="estudo-request__mode-icon" aria-hidden="true">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h3>Online</h3>
+                    <p>Por videoconferência</p>
+                </article>
+
+                <article class="estudo-request__mode">
+                    <div class="estudo-request__mode-icon" aria-hidden="true">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h3>Remoto</h3>
+                    <p>Por telefone ou mensagem</p>
+                </article>
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <div class="container_form">
+                <div class="form-cta" @if($errors->any()) data-open-on-load="1" @endif>
+                    @if ($errors->any())
+                        <div class="form-server-errors" style="display:none;">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
+                    @php
+                        $formConfigEstudoBiblico = [
+                            'title' => 'Preencha o formulário',
+                            'subtitle' => 'Solicitação de Estudo Bíblico',
+                            'action' => route('estudo-biblico.enviar'),
+                            'method' => 'POST',
+                            'submitLabel' => 'Enviar Mensagem',
+                            'fields' => [
+                                ['type' => 'text', 'name' => 'nome', 'label' => 'Nome', 'placeholder' => 'Nome', 'required' => true, 'autocomplete' => 'name'],
+                                ['type' => 'email', 'name' => 'email', 'label' => 'E-mail', 'placeholder' => 'E-mail', 'required' => true, 'autocomplete' => 'email'],
+                                ['type' => 'tel', 'name' => 'telefone', 'label' => 'Telefone', 'placeholder' => '(00) 00000-0000', 'required' => true, 'autocomplete' => 'tel', 'inputmode' => 'tel', 'maxlength' => 15, 'mask' => 'br-phone'],
+                                ['type' => 'textarea', 'name' => 'mensagem', 'label' => 'Mensagem', 'placeholder' => 'Mensagem', 'required' => true, 'rows' => 10],
+                            ],
+                        ];
+                    @endphp
+
+                    <button
+                        type="button"
+                        class="btn-primary-solid form-open-btn"
+                        data-form-config='@json($formConfigEstudoBiblico)'>
+                        Preencher Formulário
+                    </button>
                 </div>
             </div>
-            <p style="font-family: 'Roboto', sans-serif; font-size: 1.1em; color: #003366; font-weight: 600; margin: 30px 0 0;">
-                📝 Preencha o formulário abaixo e entraremos em contato com você!
-            </p>
         </div>
-
-        <!-- FORMULÁRIO -->
-        <div style="max-width: 700px; margin: 0 auto;">
-            <form action="{{ route('estudo-biblico.enviar') }}" method="POST" style="background: #fff; border: 2px solid #e0e0e0; border-radius: 15px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                @csrf
-                <h2 style="font-family: 'Bebas neue', sans-serif; font-size: 2em; color: #003366; text-align: center; margin-bottom: 30px; font-weight: 500;">Preencha o formulário</h2>
-                <div class="container_label">
-                    <label for="nome">Nome</label>
-                    <div class="container_input">
-                        <i class='bx bx-user'></i>
-                        <input type="text" name="nome" id="nome" placeholder="Nome" required>
-                    </div>
-                </div>
-
-                <div class="container_label">
-                    <label for="email">Email</label>
-                    <div class="container_input">
-                        <i class='bx bx-envelope'></i>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>
-                </div>
-
-                <div class="container_label">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" rows="10" required></textarea>
-                </div>
-
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
-    </div>
+    </section>
 
 </div>
 @endsection
-
-@push('scripts')
-<script>
-    // Validação do formulário
-    document.querySelector('form').addEventListener('submit', function(e) {
-        const email = document.getElementById('email').value.trim();
-
-        if (email.length === 0 || !email.includes('@')) {
-            alert('Por favor, insira um e-mail válido.');
-            e.preventDefault();
-        }
-    });
-</script>
-@endpush
-

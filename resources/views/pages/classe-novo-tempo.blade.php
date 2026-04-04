@@ -10,7 +10,33 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 0 20px 40px;
+    }
+
+    /* Cola a 1ª seção na imagem do header e a 1ª na 2ª seção */
+    .cnt-container > .cnt-intro:first-child {
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .cnt-container > .convite-section {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    /* Cola a penúltima seção ("Participe") com a última */
+    .cnt-container > .participe-section {
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .cnt-container > .cnt-intro:last-child {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .cnt-intro {
@@ -84,7 +110,7 @@
 
     .expectativas-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 25px;
         margin-bottom: 40px;
     }
@@ -92,23 +118,10 @@
     .expectativa-card {
         background: #fff;
         border: 2px solid #e0e0e0;
-        border-radius: 10px;
+        border-radius: 15px;
         padding: 30px 25px;
-        text-align: center;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         transition: transform 0.3s, box-shadow 0.3s;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .expectativa-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(135deg, #003366 0%, #1b4472 100%);
     }
 
     .expectativa-card:hover {
@@ -116,15 +129,41 @@
         box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     }
 
-    .expectativa-card .emoji {
-        font-size: 3em;
-        margin-bottom: 15px;
-        display: block;
+    .expectativa-card .icon-box {
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        transition: transform 0.3s;
+    }
+
+    .expectativa-card:hover .icon-box {
+        transform: scale(1.1);
+    }
+
+    .expectativa-card .icon-box.amber {
+        background: #fef3c7;
+    }
+
+    .expectativa-card .icon-box.indigo {
+        background: #e0e7ff;
+    }
+
+    .expectativa-card .icon-box.pink {
+        background: #fce7f3;
+    }
+
+    .expectativa-card .icon-box.cyan {
+        background: #cffafe;
     }
 
     .expectativa-card h4 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: #003366;
         margin-bottom: 12px;
         font-weight: 600;
@@ -134,22 +173,22 @@
         font-family: 'Roboto', sans-serif;
         font-size: 0.95rem;
         color: #666;
-        line-height: 1.6;
+        line-height: 1.7;
     }
 
     .participe-section {
-        background: #f8f9fa;
-        padding: 40px;
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        padding: 50px 40px;
         border-radius: 15px;
         margin: 50px 0;
         text-align: center;
-        border-left: 5px solid #003366;
+        color: #fff;
     }
 
     .participe-section h3 {
         font-family: 'Bebas neue', sans-serif;
         font-size: 2em;
-        color: #003366;
+        color: #fff;
         margin-bottom: 20px;
         font-weight: 500;
     }
@@ -158,39 +197,8 @@
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         line-height: 1.8;
-        color: #333;
-        margin-bottom: 15px;
-    }
-
-    .horario-info {
-        background: linear-gradient(135deg, #003366 0%, #1b4472 100%);
-        padding: 50px 40px;
-        border-radius: 15px;
-        margin: 50px 0;
-        text-align: center;
-        color: #fff;
-    }
-
-    .horario-info h3 {
-        font-family: 'Bebas neue', sans-serif;
-        font-size: 2em;
-        color: #fff;
-        margin-bottom: 20px;
-        font-weight: 500;
-    }
-
-    .horario-info p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.1rem;
         color: #f8f9fa;
-        margin-bottom: 10px;
-    }
-
-    .horario-info .destaque {
-        font-size: 2em;
-        font-weight: bold;
-        color: #ffd700;
-        margin: 20px 0;
+        margin-bottom: 15px;
     }
 
     .versiculo-section {
@@ -246,12 +254,12 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/classe_novo_tempo/classe_novo_tempo_header.webp') }}" alt="Classe Novo Tempo" style="width: 100%;">
+<img src="{{ asset('img/classe_novo_tempo/classe_novo_tempo_header.webp') }}" alt="Classe Novo Tempo" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="cnt-container">
 
     <!-- Seção Introdutória -->
-    <div class="cnt-intro">
+    <div class="cnt-intro acb-fullbleed">
         <h1>Bem-vindos à Classe Novo Tempo!</h1>
         <p>
             Um espaço de amizade, estudo da Bíblia e esperança, inspirado na TV Novo Tempo, especialmente para você que nos visita!
@@ -259,8 +267,8 @@
     </div>
 
     <!-- Seção Convite -->
-    <div class="convite-section">
-        <h2>Um Convite Especial para Você</h2>
+    <div class="convite-section acb-fullbleed">
+        <h2 class="acb-title-serif">Um Convite Especial para Você</h2>
         <p>
             Você já conhece a TV Novo Tempo? Gosta dos programas e das mensagens de fé e esperança que eles transmitem? Então, você vai se sentir em casa na nossa Classe Novo Tempo!
         </p>
@@ -271,29 +279,37 @@
 
     <!-- Seção O Que Esperar -->
     <div class="expectativas-section">
-        <h2>O que esperar da nossa classe?</h2>
+        <h2 class="acb-title-serif">O que esperar da nossa classe?</h2>
 
         <div class="expectativas-grid">
             <div class="expectativa-card">
-                <span class="emoji">🤝</span>
+                <div class="icon-box amber">
+                    <i class="bi bi-house-heart-fill"></i>
+                </div>
                 <h4>Ambiente Acolhedor</h4>
                 <p>Um lugar onde você pode se sentir à vontade para perguntar, compartilhar suas ideias e fazer novos amigos.</p>
             </div>
 
             <div class="expectativa-card">
-                <span class="emoji">📖</span>
+                <div class="icon-box indigo">
+                    <i class="bi bi-book-half"></i>
+                </div>
                 <h4>Estudo da Bíblia</h4>
                 <p>De forma simples e prática, estudamos as Escrituras Sagradas, buscando respostas para as grandes questões da vida.</p>
             </div>
 
             <div class="expectativa-card">
-                <span class="emoji">💡</span>
+                <div class="icon-box pink">
+                    <i class="bi bi-lightbulb"></i>
+                </div>
                 <h4>Temas Atuais</h4>
                 <p>Conversamos sobre assuntos relevantes para o nosso dia a dia, sempre com uma perspectiva de fé e esperança.</p>
             </div>
 
             <div class="expectativa-card">
-                <span class="emoji">🙏</span>
+                <div class="icon-box cyan">
+                    <i class="bi bi-heart"></i>
+                </div>
                 <h4>Comunhão e Oração</h4>
                 <p>Momentos especiais para compartilharmos nossos pedidos e agradecimentos, fortalecendo nossa conexão com Deus e uns com os outros.</p>
             </div>
@@ -301,8 +317,8 @@
     </div>
 
     <!-- Seção Participe Conosco -->
-    <div class="participe-section">
-        <h3>Participe Conosco!</h3>
+    <div class="participe-section acb-fullbleed">
+        <h3 class="acb-title-serif">Participe Conosco!</h3>
         <p>
             Nossa classe se reúne todos os sábados, às 11h, ao lado da nave principal da igreja.
         </p>
@@ -311,30 +327,16 @@
         </p>
     </div>
 
-    <!-- Seção Horário -->
-    <div class="horario-info">
-        <h3>📍 Quando e Onde</h3>
-        <p><strong>Igreja Adventista do Sétimo Dia Central de Brasília</strong></p>
-        <p>Setor de Autarquias Sul, Quadra 4, Lote 8</p>
-        <p>Brasília - DF</p>
-        <p class="destaque">Sábados às 11h</p>
-        <p style="margin-top: 20px;">Ao lado da nave principal da igreja</p>
-    </div>
-
-    <!-- Seção Versículo -->
-    <div class="versiculo-section">
-        <p>
-            "Porque onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles."
-        </p>
-        <p class="reference">📖 Mateus 18:20</p>
-    </div>
-
     <!-- Seção Convite Final -->
-    <div class="cnt-intro">
-        <h2 style="font-size: 2em; color: #003366; margin-bottom: 20px;">Esperamos por você no próximo sábado!</h2>
+    <div class="cnt-intro acb-fullbleed">
+        <h2 class="acb-title-serif" style="font-size: 2em; color: #003366; margin-bottom: 20px;">Esperamos por você no próximo sábado!</h2>
         <p style="text-align: center;">
             Venha fazer parte dessa experiência especial de amizade, aprendizado e crescimento espiritual!
         </p>
+        <blockquote class="acb-quote" style="max-width: 900px; margin: 20px auto 0;">
+            <p>"Porque onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles."</p>
+            <span class="acb-quote__ref"><i class="bi bi-book-half"></i> Mateus 18:20</span>
+        </blockquote>
     </div>
 
 </div>

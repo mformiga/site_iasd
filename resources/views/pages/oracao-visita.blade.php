@@ -41,7 +41,7 @@
 
     .form-section {
         background: #fff;
-        padding: 50px 40px;
+        padding: 50px 24px;
         border-radius: 15px;
         margin: 50px 0;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -140,11 +140,14 @@
         accent-color: #003366;
     }
 
-    .checkbox-group span {
+    .checkbox-group label {
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
         color: #333;
         line-height: 1.5;
+        margin: 0;
+        cursor: pointer;
+        user-select: none;
     }
 
     .btn-submit {
@@ -186,7 +189,7 @@
         }
 
         .form-section {
-            padding: 30px 20px;
+            padding: 28px 14px;
         }
 
         .form-section h2 {
@@ -207,12 +210,12 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/oracao/oracao_header.webp') }}" alt="Oração e Visita" style="width: 100%;">
+<img src="{{ asset('img/cards/oracao/oracao_header.webp') }}" alt="Oração e Visita" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="oracao-container">
     <!-- Seção Introdutória -->
-    <div class="oracao-intro">
-        <h1>Precisa de Oração ou Visita? Estamos Aqui para Interceder por Você!</h1>
+    <div class="oracao-intro acb-fullbleed">
+        <h1>Precisa de Oração ou Visita?<br>Estamos Aqui para Interceder por Você!</h1>
         <p>
             No Ministério de Oração, nossa missão é apoiar você em meio às dificuldades da vida. Oramos por seus pedidos, confiando no poder transformador da oração.
         </p>
@@ -223,7 +226,7 @@
 
     <!-- Seção do Formulário -->
     <div class="form-section">
-        <h2>Preencha o formulário</h2>
+        <h2 class="acb-title-serif">Preencha o formulário</h2>
 
         <form action="{{ route('oracao-visita.enviar') }}" method="POST" class="oracao-form">
             @csrf
@@ -254,7 +257,7 @@
 
             <div class="checkbox-group">
                 <input type="checkbox" name="contato_pastor" value="1" id="contato_pastor">
-                <span for="contato_pastor">Deseja ser contatado por um dos nossos pastores</span>
+                <label for="contato_pastor">Deseja ser contatado por um dos nossos pastores</label>
             </div>
 
             <div class="form-group">
@@ -267,22 +270,22 @@
     </div>
 
     <!-- Versículos Bíblicos -->
-    <div style="background: linear-gradient(135deg, #003366 0%, #001531 100%); padding: 50px 40px; border-radius: 15px; text-align: center; margin-top: 50px; box-shadow: 0 8px 30px rgba(0, 51, 102, 0.3);">
+    <div class="acb-fullbleed" style="background: linear-gradient(135deg, #003366 0%, #001531 100%); padding: 50px 40px; border-radius: 15px; text-align: center; margin-top: 50px; box-shadow: 0 8px 30px rgba(0, 51, 102, 0.3);">
         <i class='bx bx-book-open' style="font-size: 3rem; color: #fff; margin-bottom: 20px; display: block;"></i>
-        <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 2.2em; color: #fff; margin-bottom: 25px; font-weight: 500;">O Poder da Oração Intercessória</h3>
-        <p style="font-family: 'Roboto', sans-serif; font-size: 1.3rem; color: #f0f0f0; line-height: 1.8; font-style: italic; max-width: 900px; margin: 0 auto 20px;">
-            "Confessai, pois, os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. A oração de um justo pode muito em seus efeitos."
-        </p>
-        <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #ffd700; font-weight: 600; letter-spacing: 1px; margin-bottom: 30px;">
-            TIAGO 5:16
-        </p>
+        <h3 class="acb-title-serif" style="font-size: 2.2em; color: #fff; margin-bottom: 25px; font-weight: 700;">O Poder da Oração Intercessória</h3>
+        <blockquote class="acb-quote acb-quote--glass" style="max-width: 900px; margin: 0 auto 22px;">
+            <p>
+                "Confessai, pois, os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. A oração de um justo pode muito em seus efeitos."
+            </p>
+            <span class="acb-quote__ref">TIAGO 5:16</span>
+        </blockquote>
         <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.3); max-width: 600px; margin: 30px auto;">
-        <p style="font-family: 'Roboto', sans-serif; font-size: 1.3rem; color: #f0f0f0; line-height: 1.8; font-style: italic; max-width: 900px; margin: 0 auto 20px;">
-            "Antes de tudo, pois, exorto que se façam súplicas, orações, intercessões e ações de graças por todos os homens."
-        </p>
-        <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #ffd700; font-weight: 600; letter-spacing: 1px;">
-            1 TIMÓTEO 2:1
-        </p>
+        <blockquote class="acb-quote acb-quote--glass" style="max-width: 900px; margin: 0 auto;">
+            <p>
+                "Antes de tudo, pois, exorto que se façam súplicas, orações, intercessões e ações de graças por todos os homens."
+            </p>
+            <span class="acb-quote__ref">1 TIMÓTEO 2:1</span>
+        </blockquote>
     </div>
 </div>
 @endsection

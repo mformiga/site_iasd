@@ -75,7 +75,11 @@
     }
 
     .video-section {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
         margin: 15px 0;
     }
 
@@ -242,17 +246,76 @@
         .saude-section {
             padding: 25px 20px;
         }
+
+        .video-section a {
+            width: 100%;
+            max-width: 260px;
+            text-align: center;
+        }
+
+        .participe-section {
+            padding: 40px 18px;
+            border-radius: 14px;
+            margin: 40px 0;
+        }
+
+        .participe-section h2 {
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .participe-section p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .info-box {
+            padding: 18px 16px;
+            margin: 18px auto 0;
+            max-width: 100%;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.08);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            text-align: left;
+        }
+
+        .info-box h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: flex-start;
+            font-size: 1.35em;
+            margin: 18px 0 8px;
+        }
+
+        .info-box h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .info-box p {
+            margin: 6px 0;
+            font-size: 1.02rem;
+        }
+
+        .info-box .destaque {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/classe_saude/classe_saude_header.webp') }}" alt="Classe de Saúde" style="width: 100%;">
+<img src="{{ asset('img/classe_saude/classe_saude_header.webp') }}" alt="Classe de Saúde" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="classe-saude-container">
 
     <!-- Seção Introdutória -->
-    <div class="classe-saude-intro">
+    <div class="classe-saude-intro acb-fullbleed">
         <h1>Bem-vindo à Classe de Saúde</h1>
         <p>
             A Classe de Saúde é um espaço especial criado para membros e visitantes que desejam aprender e compartilhar princípios sobre uma vida saudável em seus aspectos físico, mental e espiritual.
@@ -261,9 +324,9 @@
             Nosso objetivo é ajudar cada participante a desenvolver hábitos que promovam bem-estar integral, em harmonia com os ensinamentos bíblicos e com os conselhos inspirados de Ellen G. White.
         </p>
 
-        <div class="citacao-destaque">
+        <div class="citacao-destaque acb-quote" style="max-width: 900px; margin: 30px auto;">
             <p>"A verdadeira educação significa mais do que o preparo meramente acadêmico. É o desenvolvimento harmonioso das faculdades físicas, mentais e espirituais."</p>
-            <p class="fonte">- Educação, p. 13</p>
+            <span class="fonte acb-quote__ref">- Educação, p. 13</span>
         </div>
 
         <div class="video-section">
@@ -298,16 +361,16 @@
             <li>Prevenção de doenças e cuidados práticos do dia a dia</li>
         </ul>
 
-        <div class="citacao-box">
+        <div class="citacao-box acb-quote">
             <p>"O apetite pervertido, quando satisfeito, enfraquece o intelecto e corrompe as faculdades morais."</p>
-            <span class="fonte">- Conselhos sobre o Regime Alimentar, p. 45</span>
+            <span class="fonte acb-quote__ref">- Conselhos sobre o Regime Alimentar, p. 45</span>
         </div>
 
         <div class="video-section">
             <a href="https://www.instagram.com/reel/DGehyNEP9ZN/?igsh=MWQ1b2VyNGl3d2Y2ZA==" target="_blank">
                 <i class="bi bi-play-circle"></i> Vídeo 1
             </a>
-            <a href="https://www.instagram.com/reel/DB9vqqvvFAX/?igsh=Z2FmdGQ1OWl6Z3E1" target="_blank" style="margin-left: 10px;">
+            <a href="https://www.instagram.com/reel/DB9vqqvvFAX/?igsh=Z2FmdGQ1OWl6Z3E1" target="_blank">
                 <i class="bi bi-play-circle"></i> Vídeo 2
             </a>
         </div>
@@ -351,9 +414,9 @@
             <li>Técnicas de relaxamento e respiração</li>
         </ul>
 
-        <div class="citacao-box">
+        <div class="citacao-box acb-quote">
             <p>"É dever de todos cultivar a esperança em lugar da dúvida, a alegria em vez da melancolia."</p>
-            <span class="fonte">- Mente, Caráter e Personalidade, vol. 2, p. 492</span>
+            <span class="fonte acb-quote__ref">- Mente, Caráter e Personalidade, vol. 2, p. 492</span>
         </div>
 
         <div class="video-section">
@@ -405,35 +468,15 @@
             <li>Princípios do estilo de vida adventista</li>
         </ul>
 
-        <div class="citacao-box">
+        <div class="citacao-box acb-quote">
             <p>"É o amor de Cristo que deve ser a força motivadora da vida. Esse amor é o poder restaurador."</p>
-            <span class="fonte">- O Desejado de Todas as Nações, p. 824</span>
+            <span class="fonte acb-quote__ref">- O Desejado de Todas as Nações, p. 824</span>
         </div>
 
         <div class="video-section">
             <a href="https://www.instagram.com/reel/DOY-9Pwj6xw/?igsh=MWdlMWhoNnFjYXdrdg==" target="_blank">
                 <i class="bi bi-play-circle"></i> Assista ao Vídeo
             </a>
-        </div>
-    </div>
-
-    <!-- Seção Participe -->
-    <div class="participe-section">
-        <h2>PARTICIPE VOCÊ TAMBÉM!</h2>
-        <p>
-            Seja você membro da igreja ou visitante, todos são bem-vindos à Classe de Saúde! Venha aprender, compartilhar experiências e fortalecer sua jornada de fé e saúde integral.
-        </p>
-
-        <div class="info-box">
-            <h3><i class="bi bi-geo-alt-fill"></i> LOCAL</h3>
-            <p>IASD Central de Brasília</p>
-
-            <h3 style="margin-top: 25px;"><i class="bi bi-calendar-date"></i> QUANDO</h3>
-            <p>Todos os sábados</p>
-            <p class="destaque">Durante a Escola Sabatina</p>
-
-            <h3 style="margin-top: 25px;"><i class="bi bi-clock"></i> HORÁRIO</h3>
-            <p class="destaque">11h</p>
         </div>
     </div>
 

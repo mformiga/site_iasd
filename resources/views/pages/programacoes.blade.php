@@ -446,7 +446,7 @@
 @endsection
 
 @push('scripts')
-<script src="{{ asset('js/programacoes-events.js') }}"></script>
+<script src="{{ asset('js/programacoes-events.js?v=' . time()) }}"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const YEAR = 2026;
@@ -559,9 +559,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const monthStart = toIso(YEAR, currentMonth + 1, 1);
         const monthEnd = toIso(YEAR, currentMonth + 1, daysInMonth);
 
-        // Filter events for the current month
+        // Filter events for the current month (including events that start before but occur during the month)
         const monthEvents = EVENTS.filter(e => {
-            return e.start >= monthStart && e.start <= monthEnd;
+            // Event starts during the month OR event is ongoing during the month
+            return (e.start >= monthStart && e.start <= monthEnd) || (e.end >= monthStart && e.end <= monthEnd) || (e.start <= monthStart && e.end >= monthEnd);
         });
 
         if (monthEvents.length === 0) {
@@ -575,10 +576,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // Group events by date
         const eventsByDate = {};
         for (const e of monthEvents) {
-            if (!eventsByDate[e.start]) {
-                eventsByDate[e.start] = [];
+            // For multi-day events, add to each day they occur during the month
+            const eventStart = new Date(e.start + 'T12:00:00');
+            const eventEnd = new Date(e.end + 'T12:00:00');
+            const currentDate = new Date(Math.max(eventStart.getTime(), new Date(monthStart + 'T12:00:00').getTime()));
+            const endDate = new Date(Math.min(eventEnd.getTime(), new Date(monthEnd + 'T12:00:00').getTime()));
+
+            while (currentDate <= endDate) {
+                const isoDate = toIso(currentDate.getFullYear(), currentDate.getMonth() + 1, currentDate.getDate());
+                if (!eventsByDate[isoDate]) {
+                    eventsByDate[isoDate] = [];
+                }
+                eventsByDate[isoDate].push(e);
+                currentDate.setDate(currentDate.getDate() + 1);
             }
-            eventsByDate[e.start].push(e);
         }
 
         // Sort dates

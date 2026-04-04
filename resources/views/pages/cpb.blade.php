@@ -54,6 +54,15 @@ $addressEncoded = urlencode($addressString);
 <style>
     html { scroll-behavior: smooth; }
 
+    /* Background da seção hero igual às páginas profecias e evidencias-biblicas */
+    .page-hero {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 50px 40px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
     /* Estilos utilitários para o carrossel */
     .d-flex {
         display: flex;
@@ -468,10 +477,15 @@ $addressEncoded = urlencode($addressString);
     .cpb-store-info {
         background: #f8f9fa;
         border: 2px solid #e0e0e0;
+        border-top: 4px solid rgba(0, 51, 102, 0.22);
         border-radius: 14px;
-        padding: 30px;
+        padding: 28px;
         max-width: 900px;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 22px;
+        align-items: start;
     }
     
     .cpb-address-box {
@@ -479,23 +493,40 @@ $addressEncoded = urlencode($addressString);
         border: 2px solid #e0e0e0;
         border-radius: 12px;
         padding: 20px;
-        margin-bottom: 25px;
-        text-align: center;
+        margin-bottom: 0;
+        text-align: left;
+        align-self: center;
     }
     
     .cpb-address-box strong {
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
         color: #003366;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         margin-bottom: 10px;
     }
     
+    .cpb-address-box strong i {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #e0e7ff;
+        color: #003366;
+        font-size: 1.05rem;
+        flex: 0 0 auto;
+    }
+    
     .cpb-address-box span {
         display: block;
         color: #333;
         font-family: 'Roboto', sans-serif;
-        margin-bottom: 15px;
+        margin-bottom: 0;
+        line-height: 1.6;
     }
     
     .cpb-gps-buttons {
@@ -504,6 +535,7 @@ $addressEncoded = urlencode($addressString);
         gap: 10px;
         justify-content: center;
         margin-top: 15px;
+        align-items: stretch;
     }
     
     .cpb-gps-button {
@@ -518,30 +550,95 @@ $addressEncoded = urlencode($addressString);
         font-family: 'Roboto', sans-serif;
         font-weight: 600;
         font-size: 0.9rem;
-        transition: background 0.3s;
+        transition: background 0.3s, transform 0.3s;
+        border: 1px solid #d7dde5;
+        justify-content: center;
+        flex: 1 1 0;
+        min-width: 160px;
+        min-height: 46px;
+        text-align: center;
+    }
+
+    .cpb-gps-button i {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .cpb-gps-button i::before {
+        line-height: 1;
+        display: block;
+    }
+
+    .cpb-gps-button span {
+        display: inline-flex;
+        align-items: center;
+        line-height: 1.1;
     }
     
     .cpb-gps-button:hover {
         background: #d1d5db;
+        transform: translateY(-1px);
+    }
+
+    .cpb-gps-button.cpb-gps-waze {
+        background: #e0f2fe;
+        border-color: #bae6fd;
+        color: #0b4a6f;
+    }
+
+    .cpb-gps-button.cpb-gps-waze:hover {
+        background: #bae6fd;
+    }
+
+    .cpb-gps-button.cpb-gps-maps {
+        background: #e0e7ff;
+        border-color: #c7d2fe;
+        color: #1e3a8a;
+    }
+
+    .cpb-gps-button.cpb-gps-maps:hover {
+        background: #c7d2fe;
     }
     
     .cpb-contact-info {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        margin-bottom: 25px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 0;
     }
     
     .cpb-contact-item {
-        text-align: center;
+        background: #fff;
+        border: 2px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 16px 18px;
+        text-align: left;
     }
     
     .cpb-contact-item strong {
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
         color: #003366;
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         margin-bottom: 8px;
+    }
+
+    .cpb-contact-item strong i {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #fef3c7;
+        color: #003366;
+        font-size: 1.05rem;
+        flex: 0 0 auto;
     }
     
     .cpb-contact-item span,
@@ -559,11 +656,49 @@ $addressEncoded = urlencode($addressString);
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        justify-content: center;
     }
     
     .cpb-contact-item a:hover {
         color: #15803d;
+    }
+
+    .cpb-contact-rows {
+        display: grid;
+        gap: 10px;
+    }
+
+    .cpb-contact-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .cpb-contact-row .cpb-contact-label {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: #003366;
+        font-size: 0.92rem;
+    }
+
+    .cpb-contact-row .cpb-contact-value {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.95rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .cpb-contact-row .cpb-contact-value:hover {
+        text-decoration: underline;
+    }
+
+    .cpb-contact-row .cpb-contact-value.cpb-contact-whatsapp {
+        color: #16a34a;
     }
     
     .cpb-buy-button {
@@ -578,12 +713,26 @@ $addressEncoded = urlencode($addressString);
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1.1rem;
-        margin-top: 20px;
-        transition: background 0.3s;
+        margin-top: 0;
+        transition: background 0.3s, transform 0.3s;
     }
     
     .cpb-buy-button:hover {
         background: #15803d;
+        transform: translateY(-1px);
+    }
+
+    .cpb-store-actions {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        margin-top: 6px;
+    }
+
+    .cpb-store-actions .cpb-buy-button {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
     }
     
     @media (max-width: 768px) {
@@ -594,6 +743,20 @@ $addressEncoded = urlencode($addressString);
         .cpb-contact-info {
             grid-template-columns: 1fr;
         }
+
+        .cpb-store-info {
+            grid-template-columns: 1fr;
+            padding: 22px;
+        }
+
+        .cpb-address-box {
+            align-self: stretch;
+        }
+
+        .cpb-gps-button {
+            flex: 1 1 100%;
+            width: 100%;
+        }
         
         .cpb-store-image-container img {
             min-height: 300px;
@@ -601,6 +764,7 @@ $addressEncoded = urlencode($addressString);
 
         .pa-widget.pa-w-casapublicadora .row {
             padding: 0 0.5rem;
+            overflow: visible;
         }
 
         .pa-slider-header {
@@ -609,22 +773,74 @@ $addressEncoded = urlencode($addressString);
             align-items: flex-start;
         }
 
-        .pa-slider-controle {
-            flex-direction: row;
+        .pa-slider-header .d-flex.justify-content-between.align-items-center.w-100 {
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
-            gap: 1rem;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .pa-slider-header .btn-primary {
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            border-radius: 999px;
+        }
+
+        .pa-slider-controle {
+            display: grid !important;
+            grid-template-columns: 36px 1fr 36px;
+            align-items: center;
+            gap: 10px;
+            padding: 0 8px;
+        }
+
+        .pa-slider-controle .pa-slider-bullet {
+            overflow-x: auto;
+            justify-content: center;
+            padding: 4px 0;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .pa-slider-controle .pa-slider-bullet::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pa-slider-bullet {
+            gap: 0.25rem;
+        }
+
+        .pa-slider-bullet i {
+            margin: 0 2px !important;
+        }
+
+        .fa-circle {
+            font-size: 0.42rem;
+        }
+
+        .pa-slider-btn {
+            width: 36px;
+            height: 36px;
+            font-size: 1rem;
+        }
+
+        .pa-glide-casapublicadora .glide__slide {
+            height: auto;
         }
 
         .carousel-image-link {
             width: 100%;
             height: auto;
-            padding-bottom: 56.18%;
+            aspect-ratio: 16 / 9;
         }
 
         .carousel-image-link img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            position: absolute;
+            inset: 0;
         }
     }
 </style>
@@ -663,6 +879,7 @@ $addressEncoded = urlencode($addressString);
                         <img 
                             src="${video.thumbnail}" 
                             alt="${video.title}" 
+                            loading="lazy" decoding="async"
                         />
                     </a>
                 `;
@@ -719,8 +936,7 @@ $addressEncoded = urlencode($addressString);
                 // Função para atualizar bullets ativos da Casa Publicadora
                 function updateBulletsCasaPublicadora() {
                     const bullets = document.querySelectorAll('#casapublicadora-bullets i');
-                    const slides = document.querySelectorAll('.pa-glide-casapublicadora .glide__slide');
-                    const totalSlides = slides.length;
+                    const totalSlides = bullets.length;
                     if (totalSlides === 0) return;
                     
                     let currentIndex = glideCasaPublicadora.index;
@@ -764,11 +980,11 @@ $addressEncoded = urlencode($addressString);
 @endpush
 
 @section('content')
-<img class="page-header-img" src="{{ asset('img/cpb/header-cpb.webp') }}" alt="Casa Publicadora Brasileira">
+<img class="page-header-img" src="{{ asset('img/cpb/header-cpb.webp') }}" alt="Casa Publicadora Brasileira" fetchpriority="high" decoding="async">
 
 <div class="page-container">
-    <div class="page-hero">
-        <h1 class="page-title">Casa Publicadora Brasileira</h1>
+    <div class="page-hero acb-fullbleed">
+        <h1 class="page-title acb-title-serif">Casa Publicadora Brasileira</h1>
         <h2 class="page-subtitle">Bem-vindo(a) à seção da Casa Publicadora Brasileira, um espaço de inspiração e conhecimento para todos que desejam fortalecer a fé, a espiritualidade e os valores cristãos.</h2>
     </div>
 
@@ -829,7 +1045,7 @@ $addressEncoded = urlencode($addressString);
     </div>
 
     <div class="page-section">
-        <h2 class="page-section-title">Principais Produtos da CPB</h2>
+        <h2 class="page-section-title acb-title-serif">Principais Produtos da CPB</h2>
         <p class="page-text" style="text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
             A CPB é sinônimo de qualidade e compromisso com a mensagem bíblica. Conheça alguns destaques:
         </p>
@@ -872,19 +1088,19 @@ $addressEncoded = urlencode($addressString);
                 <i class="bi bi-geo-alt-fill"></i>
                 <span>Visite Nossa Loja Física</span>
             </div>
-            <h2 class="page-section-title" style="margin-bottom: 15px;">Brasília - DF</h2>
-            <p class="page-text cpb-store-intro">
-                "Que tal levar para casa um pedacinho dessa inspiração? A Loja da CPB em Brasília está de portas abertas para você!"
-            </p>
+            <h2 class="page-section-title acb-title-serif" style="margin-bottom: 15px;">Brasília - DF</h2>
+            <blockquote class="acb-quote" style="max-width: 800px; margin: 0 auto 30px;">
+                <p>"Que tal levar para casa um pedacinho dessa inspiração? A Loja da CPB em Brasília está de portas abertas para você!"</p>
+            </blockquote>
         </div>
 
         <div class="cpb-store-image-container">
-            <img src="{{ asset('img/cpb/cpb_livraria.webp') }}" alt="Loja Física CPB Brasília">
+            <img src="{{ asset('img/cpb/cpb_livraria.webp') }}" alt="Loja Física CPB Brasília" loading="lazy" decoding="async">
         </div>
 
         <div class="cpb-store-info">
             <div class="cpb-address-box">
-                <strong>Endereço:</strong>
+                <strong><i class="bi bi-geo-alt-fill"></i> Endereço:</strong>
                 <span>
                     Setor Comercial Norte Q 1 Bloco A Edifício Number One 17 e 23<br>
                     Asa Norte, Brasília - DF, 70711-900
@@ -893,14 +1109,14 @@ $addressEncoded = urlencode($addressString);
                     <a href="https://www.waze.com/ul?q=Livraria+CPB+Brasilia"
                        target="_blank"
                        rel="noopener noreferrer"
-                       class="cpb-gps-button">
+                       class="cpb-gps-button cpb-gps-waze">
                         <i class="bi bi-geo-alt"></i>
                         <span>Waze</span>
                     </a>
                     <a href="https://www.google.com/maps/dir/?api=1&destination={{ $addressEncoded }}"
                        target="_blank"
                        rel="noopener noreferrer"
-                       class="cpb-gps-button">
+                       class="cpb-gps-button cpb-gps-maps">
                         <i class="bi bi-map"></i>
                         <span>Google Maps</span>
                     </a>
@@ -909,22 +1125,27 @@ $addressEncoded = urlencode($addressString);
 
             <div class="cpb-contact-info">
                 <div class="cpb-contact-item">
-                    <strong>Telefone:</strong>
-                    <span>(61) 3321-2021</span>
+                    <strong><i class="bi bi-telephone"></i> Contato:</strong>
+                    <div class="cpb-contact-rows">
+                        <div class="cpb-contact-row">
+                            <span class="cpb-contact-label">Telefone</span>
+                            <a class="cpb-contact-value" href="tel:+556133212021">(61) 3321-2021</a>
+                        </div>
+                        <div class="cpb-contact-row">
+                            <span class="cpb-contact-label">WhatsApp</span>
+                            <a class="cpb-contact-value cpb-contact-whatsapp"
+                               href="https://wa.me/5561982350008"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp"></i>
+                                <span>(61) 98235-0008</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="cpb-contact-item">
-                    <strong>WhatsApp:</strong>
-                    <a href="https://wa.me/5561982350008"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="bi bi-whatsapp"></i>
-                        <span>(61) 98235-0008</span>
-                    </a>
-                </div>
-
-                <div class="cpb-contact-item">
-                    <strong>Horário:</strong>
+                    <strong><i class="bi bi-clock"></i> Horário:</strong>
                     <span style="font-size: 0.9rem;">
                         Segunda a Quinta: 08:30h às 18h<br>
                         Sexta: 08:30h às 16h
@@ -932,7 +1153,7 @@ $addressEncoded = urlencode($addressString);
                 </div>
             </div>
 
-            <div style="text-align: center;">
+            <div class="cpb-store-actions">
                 <a href="https://livrarias.cpb.com.br/brasilia"
                    target="_blank"
                    rel="noopener noreferrer"

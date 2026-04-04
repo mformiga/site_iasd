@@ -10,15 +10,45 @@
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 0 20px 40px;
+    }
+
+    .dizimos-header-wrap {
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 1920 / 300;
+    }
+
+    .dizimos-page-header-img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
     }
 
     .dizimos-intro {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         padding: 40px 40px 30px 40px;
         border-radius: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 0;
         text-align: center;
+    }
+
+    /* Cola a 1ª seção na imagem do header e une a 1ª com a 2ª */
+    .dizimos-container > .dizimos-intro {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .dizimos-container > .dizimo-section {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .dizimos-intro h1 {
@@ -89,7 +119,7 @@
         padding: 50px 40px;
         border-radius: 15px;
         margin: 50px 0;
-        border-left: 5px solid #003366;
+        border-top: 4px solid rgba(0, 51, 102, 0.22);
     }
 
     .ofertas-section h2 {
@@ -141,8 +171,8 @@
 
     .beneficios-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
         margin-bottom: 40px;
     }
 
@@ -150,8 +180,8 @@
         background: #fff;
         border: 2px solid #e0e0e0;
         border-radius: 15px;
-        padding: 35px 25px;
-        text-align: center;
+        padding: 30px 25px;
+        text-align: left;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         transition: transform 0.3s, box-shadow 0.3s;
     }
@@ -162,14 +192,40 @@
     }
 
     .beneficio-card .emoji {
-        font-size: 3em;
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 20px;
-        display: block;
+        font-size: 1.8em;
+        transition: transform 0.3s;
+    }
+
+    .beneficio-card:hover .emoji {
+        transform: scale(1.1);
+    }
+
+    .beneficios-grid .beneficio-card:nth-child(4n+1) .emoji {
+        background: #fef3c7;
+    }
+
+    .beneficios-grid .beneficio-card:nth-child(4n+2) .emoji {
+        background: #e0e7ff;
+    }
+
+    .beneficios-grid .beneficio-card:nth-child(4n+3) .emoji {
+        background: #fce7f3;
+    }
+
+    .beneficios-grid .beneficio-card:nth-child(4n) .emoji {
+        background: #cffafe;
     }
 
     .beneficio-card h4 {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.3em;
+        font-size: 1.2em;
         color: #003366;
         margin-bottom: 15px;
         font-weight: 600;
@@ -177,9 +233,9 @@
 
     .beneficio-card p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
+        font-size: 0.95rem;
         color: #666;
-        line-height: 1.6;
+        line-height: 1.7;
     }
 
     .como-contribuir-section {
@@ -197,7 +253,7 @@
 
     .formas-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 25px;
         margin-bottom: 40px;
     }
@@ -205,21 +261,44 @@
     .forma-card {
         background: #fff;
         border: 2px solid #e0e0e0;
-        border-radius: 10px;
+        border-radius: 15px;
         padding: 30px 25px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         transition: transform 0.3s, box-shadow 0.3s;
+        text-align: left;
     }
 
     .forma-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     }
 
     .forma-card .icon {
-        font-size: 2.5em;
-        margin-bottom: 15px;
-        display: block;
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        transition: transform 0.3s;
+    }
+
+    .forma-card:hover .icon {
+        transform: scale(1.1);
+    }
+
+    .formas-grid .forma-card:nth-child(3n+1) .icon {
+        background: #fef3c7;
+    }
+
+    .formas-grid .forma-card:nth-child(3n+2) .icon {
+        background: #e0e7ff;
+    }
+
+    .formas-grid .forma-card:nth-child(3n) .icon {
+        background: #cffafe;
     }
 
     .forma-card h4 {
@@ -234,7 +313,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: 0.95rem;
         color: #666;
-        line-height: 1.6;
+        line-height: 1.7;
     }
 
     .forma-card a {
@@ -643,7 +722,7 @@
 
     @media (max-width: 768px) {
         .dizimos-container {
-            padding: 20px 15px;
+            padding: 0 15px 20px;
         }
 
         .dizimos-intro {
@@ -671,21 +750,85 @@
 
         .pa-widget.pa-w-provaievede .row {
             padding: 0 0.5rem;
+            overflow: visible;
+        }
+
+        .pa-glide-provaievede .glide__slide {
+            height: auto;
+        }
+
+        .pa-glide-provaievede .carousel-image-link {
+            position: relative;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+
+        .pa-glide-provaievede .carousel-image-link img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .pa-slider-controle {
+            display: grid !important;
+            grid-template-columns: 36px 1fr 36px;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+        #provaievede-bullets {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding: 0 6px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        #provaievede-bullets::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pa-slider-btn {
+            width: 36px;
+            height: 36px;
+        }
+
+        .pa-slider-bullet-btn {
+            width: 8px;
+            height: 8px;
+            margin: 0 2px;
+        }
+
+        .pa-slider-bullet-btn.active {
+            transform: scale(1.25);
         }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/dizimos_ofertas/dizimos_ofertas_header.webp') }}" alt="Dízimos e Ofertas" style="width: 100%;">
+<div class="dizimos-header-wrap">
+    <img class="dizimos-page-header-img" src="{{ asset('img/dizimos_ofertas/dizimos_ofertas_header.webp') }}" alt="Dízimos e Ofertas" fetchpriority="high" decoding="async">
+</div>
 
 <div class="dizimos-container">
 
     <!-- Seção Introdutória -->
-    <div class="dizimos-intro">
+    <div class="dizimos-intro acb-fullbleed">
         <h1>Dízimos e Ofertas: Adoração, Fidelidade e Parceria com Deus</h1>
         <p>
-            Compreender e praticar a devolução dos dízimos e a entrega das ofertas é uma parte fundamental da jornada de fé e adoração para nós, Adventistas do Sétimo Dia. Mais do que uma obrigação, vemos esses atos como uma resposta de amor, gratidão e reconhecimento de que tudo o que temos pertence a Deus.
+            Compreender e praticar a devolução dos dízimos e a entrega das ofertas é uma parte fundamental da jornada de fé e adoração. Mais do que uma obrigação, vemos esses atos como uma resposta de amor, gratidão e reconhecimento de que tudo o que temos pertence a Deus.
         </p>
         <p>
             É uma forma de nos associarmos a Ele em Sua missão de espalhar o Evangelho e cuidar das necessidades do mundo, sendo fiéis mordomos dos recursos que Ele nos confia.
@@ -693,8 +836,8 @@
     </div>
 
     <!-- Seção Dízimo -->
-    <div class="dizimo-section">
-        <h2>O que é o Dízimo?</h2>
+    <div class="dizimo-section acb-fullbleed">
+        <h2 class="acb-title-serif">O que é o Dízimo?</h2>
         <p>
             A palavra "dízimo" significa literalmente "a décima parte". Biblicamente, refere-se à devolução de 10% de toda a nossa renda a Deus. Não é um pagamento, mas um ato de reconhecimento de que Ele é o Dono e Provedor de tudo.
         </p>
@@ -704,20 +847,22 @@
         <p>
             <strong>Propósito:</strong> O dízimo é primariamente destinado ao sustento do ministério evangélico – pastores, obreiros bíblicos e missionários – permitindo a pregação do evangelho em todo o mundo.
         </p>
-        <blockquote>
-            "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos, se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+        <blockquote class="acb-quote acb-quote--glass">
+            <p>
+                "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos, se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+            </p>
             <span class="referencia">— Malaquias 3:10</span>
         </blockquote>
     </div>
 
     <!-- Seção Ofertas -->
-    <div class="ofertas-section">
-        <h2>O que são as Ofertas?</h2>
+    <div class="ofertas-section acb-fullbleed">
+        <h2 class="acb-title-serif">O que são as Ofertas?</h2>
         <p>
             Diferente do dízimo (que é 10%), as ofertas são contribuições voluntárias, dadas de coração, além do dízimo. Elas representam nossa gratidão pelas bênçãos de Deus e nosso desejo de apoiar causas específicas da igreja e necessidades humanitárias.
         </p>
 
-        <h3>Destino das Ofertas</h3>
+        <h3 class="acb-title-serif">Destino das Ofertas</h3>
         <ul style="list-style: none; padding: 0;">
             <li style="margin-bottom: 12px; padding-left: 25px; position: relative;">
                 <span style="position: absolute; left: 0; color: #003366; font-weight: bold;">✓</span>
@@ -741,15 +886,17 @@
             </li>
         </ul>
 
-        <blockquote>
-            "Cada um contribua segundo tiver proposto no coração, não com tristeza ou por necessidade; porque Deus ama a quem dá com alegria."
+        <blockquote class="acb-quote">
+            <p>
+                "Cada um contribua segundo tiver proposto no coração, não com tristeza ou por necessidade; porque Deus ama a quem dá com alegria."
+            </p>
             <span class="referencia" style="display: block; margin-top: 10px; font-weight: 600; color: #003366;">— 2 Coríntios 9:7</span>
         </blockquote>
     </div>
 
     <!-- Seção Benefícios -->
     <div class="beneficios-section">
-        <h2>Por que Devolver o Dízimo e Ofertar?</h2>
+        <h2 class="acb-title-serif">Por que Devolver o Dízimo e Ofertar?</h2>
 
         <div class="beneficios-grid">
             <div class="beneficio-card">
@@ -792,7 +939,7 @@
 
     <!-- Seção Como Contribuir -->
     <div class="como-contribuir-section">
-        <h2>Como Contribuir na IASD Central?</h2>
+        <h2 class="acb-title-serif">Como Contribuir na IASD Central?</h2>
         <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
             Entendemos a importância de facilitar seu ato de adoração através da contribuição. Escolha a forma mais conveniente para você:
         </p>
@@ -847,16 +994,18 @@
     </div>
 
     <!-- Seção Reflexão -->
-    <div class="reflexao-section">
-        <h3>Reflita</h3>
+    <div class="reflexao-section acb-fullbleed">
+        <h3 class="acb-title-serif">Reflita</h3>
         <p>
             Devolver o dízimo e entregar ofertas são privilégios que nos conectam mais profundamente com Deus e Sua missão. Que possamos experimentar a alegria e as bênçãos de sermos fiéis mordomos dos recursos que Ele nos confia.
         </p>
         <p>
             Se tiver dúvidas ou precisar de mais informações, não hesite em procurar a tesouraria ou um dos líderes de nossa igreja.
         </p>
-        <blockquote>
-            "[...] mais bem-aventurado é dar que receber."
+        <blockquote class="acb-quote">
+            <p>
+                "[...] mais bem-aventurado é dar que receber."
+            </p>
             <span class="referencia">— Atos 20:35</span>
         </blockquote>
     </div>
@@ -1030,8 +1179,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 function updateBulletsProvaiEVede() {
                     const bullets = document.querySelectorAll('#provaievede-bullets button');
-                    const slides = document.querySelectorAll('.pa-glide-provaievede .glide__slide');
-                    const totalSlides = slides.length;
+                    const totalSlides = bullets.length;
                     if (totalSlides === 0) return;
 
                     let currentIndex = glideProvaiEVede.index;

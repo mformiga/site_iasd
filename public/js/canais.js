@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const instagramUrl = "https://www.instagram.com/comunidadecentralbsb/";
     const botoes = document.querySelectorAll(".btn_canais button");
     const divs = [
         document.getElementById("div1"),
@@ -16,7 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     botoes.forEach((btn, i) => {
-        btn.addEventListener("click", () => mostrarDiv(i));
+        btn.addEventListener("click", (e) => {
+            if (btn.id === "btn2") {
+                e.preventDefault();
+                e.stopPropagation();
+                window.open(instagramUrl, "_blank", "noopener,noreferrer");
+                return;
+            }
+
+            mostrarDiv(i);
+        });
     });
 
     mostrarDiv(0);

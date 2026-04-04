@@ -159,17 +159,30 @@
     }
 
     .livro-destaque {
-        background: #f8f9fa;
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
         padding: 30px;
         border-radius: 15px;
         margin: 30px 0;
-        border-left: 5px solid #003366;
+        color: #ffffff;
+    }
+
+    /* Sem espaço entre "Leitura Atual" e "Quer Participar?" */
+    .clube-livro-container > .livro-destaque {
+        margin-bottom: 0 !important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .clube-livro-container > .cta-section {
+        margin-top: 0 !important;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .livro-destaque h3 {
         font-family: 'Bebas neue', sans-serif;
         font-size: 1.8em;
-        color: #003366;
+        color: #ffffff;
         margin-bottom: 15px;
         font-weight: 500;
     }
@@ -178,8 +191,33 @@
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         line-height: 1.8;
-        color: #333;
+        color: rgba(248, 250, 252, 0.92);
         margin-bottom: 15px;
+    }
+
+    .livro-destaque .livro-card {
+        background: rgba(255, 255, 255, 0.10);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        padding: 25px;
+        border-radius: 12px;
+        margin: 20px 0;
+        text-align: center;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    .livro-destaque .livro-card h4 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .livro-destaque .livro-card .livro-autor {
+        font-style: italic;
+        color: rgba(248, 250, 252, 0.85);
+        margin-bottom: 0;
     }
 
     .cta-section {
@@ -188,7 +226,16 @@
         border-radius: 15px;
         margin: 50px 0;
         text-align: center;
-        border: 2px solid #003366;
+        border: 0;
+    }
+
+    .cta-section img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .cta-section h2 {
@@ -273,23 +320,33 @@
 
         .intro-section h1 {
             font-size: 2.2em;
+            white-space: normal;
+            overflow-wrap: anywhere;
         }
 
         .como-funciona-grid {
             grid-template-columns: 1fr;
+        }
+
+        .cta-section{
+            padding: 32px 18px;
+        }
+
+        .cta-section img{
+            margin: 18px auto;
         }
     }
 </style>
 @endpush
 
 @section('content')
-<img src="{{ asset('img/clube_do_livro/clube_livro_header.webp') }}" alt="Clube do Livro" style="width: 100%;">
+<img src="{{ asset('img/clube_do_livro/clube_livro_header.webp') }}" alt="Clube do Livro" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="clube-livro-container">
 
     <!-- Seção Introdutória -->
-    <div class="intro-section">
-        <h1>CLUBE DO LIVRO: Páginas que Conectam</h1>
+    <div class="intro-section acb-fullbleed">
+        <h1 class="acb-title-serif">CLUBE DO LIVRO: Páginas que Conectam</h1>
         <p>
             Bem-vindo(a) ao espaço oficial do Clube do Livro da Igreja Adventista Central de Brasília. Este é um convite aberto a todos que amam a leitura e buscam nela uma ferramenta para o crescimento espiritual, reflexão e, claro, uma ótima comunhão.
         </p>
@@ -299,7 +356,7 @@
     </div>
 
     <!-- Como Funciona -->
-    <h2 class="section-title"><i class="bi bi-lightbulb"></i> Como Funciona o Nosso Clube?</h2>
+    <h2 class="section-title acb-title-serif"><i class="bi bi-lightbulb"></i> Como Funciona o Nosso Clube?</h2>
 
     <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
         Para que todos possam participar, nossos encontros são objetivos, acessíveis e focados na partilha de ideias.
@@ -340,14 +397,14 @@
     </div>
 
     <!-- Leitura Atual -->
-    <div class="livro-destaque">
-        <h3><i class="bi bi-journals"></i> Leitura Atual</h3>
+    <div class="livro-destaque acb-fullbleed">
+        <h3 class="acb-title-serif"><i class="bi bi-journals"></i> Leitura Atual</h3>
         <p>
             No momento, estamos mergulhados na fascinante obra:
         </p>
-        <div style="background: #fff; padding: 25px; border-radius: 10px; margin: 20px 0; text-align: center;">
-            <h4 style="font-family: 'Bebas neue', sans-serif; font-size: 1.8em; color: #003366; margin-bottom: 10px;">"Cartas de um Diabo a seu Aprendiz"</h4>
-            <p style="font-style: italic; color: #666; margin-bottom: 0;">de C.S. Lewis</p>
+        <div class="livro-card">
+            <h4>"Cartas de um Diabo a seu Aprendiz"</h4>
+            <p class="livro-autor">de C.S. Lewis</p>
         </div>
         <p>
             Uma leitura instigante que explora a teologia e a natureza humana através de uma perspectiva única. Mesmo que você não tenha começado o livro, sinta-se à vontade para participar e conhecer a dinâmica do grupo!
@@ -355,8 +412,8 @@
     </div>
 
     <!-- Quer Participar -->
-    <div class="cta-section">
-        <h2><i class="bi bi-chat-dots"></i> Quer Participar? Junte-se a Nós!</h2>
+    <div class="cta-section acb-fullbleed">
+        <h2 class="acb-title-serif"><i class="bi bi-chat-dots"></i> Quer Participar?<br>Junte-se a Nós!</h2>
         <p>
             Ficou interessado? Você é nosso convidado especial!
         </p>
@@ -366,7 +423,7 @@
         <p>
             Para receber o link da próxima reunião no Google Meet e ser adicionado ao nosso grupo, por favor, entre em contato:
         </p>
-        <img src="{{ asset('img/clube_do_livro/clubelivro.jpg') }}" alt="Capa do livro Cartas de um Diabo a seu Aprendiz" style="max-width: 400px; height: auto; margin: 30px auto; display: block; box-shadow: 0 6px 25px rgba(0,0,0,0.3); border-radius: 10px;">
+        <img src="{{ asset('img/clube_do_livro/clubelivro.jpg') }}" alt="Capa do livro Cartas de um Diabo a seu Aprendiz" loading="lazy" decoding="async" style="max-width: 400px; height: auto; margin: 30px auto; display: block; box-shadow: 0 6px 25px rgba(0,0,0,0.3); border-radius: 10px;">
     </div>
 
 </div>

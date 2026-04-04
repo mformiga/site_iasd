@@ -519,7 +519,7 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/profecias/profecias_header.webp') }}" alt="Profecias Bíblicas" style="width: 100%;">
+<img src="{{ asset('img/profecias/profecias_header.webp') }}" alt="Profecias Bíblicas" style="width: 100%;" fetchpriority="high" decoding="async">
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -626,7 +626,7 @@
                     </p>
                     <div class="guide-actions">
                         <div class="action-row">
-                            <a href="https://drive.google.com/file/d/1u7cneUzs8Ub9vceKdWf9bh2I9m47TRpc/view?usp=sharing" target="_blank" class="btn-primary">
+                            <a href="https://drive.google.com/file/d/1Ls1quFiatBtilN2LdGVaXNRw6wXTeK6o/view?usp=drive_link" target="_blank" class="btn-primary">
                                 <i data-lucide="download"></i>
                                 Baixar em PDF
                             </a>
@@ -656,7 +656,7 @@
                     </p>
                     <div class="guide-actions">
                         <div class="action-row">
-                            <a href="https://drive.google.com/file/d/13GLidRAKTLBIWPOb3QU3o7RLzzELlKJv/view?usp=sharing" target="_blank" class="btn-primary btn-purple">
+                            <a href="https://drive.google.com/file/d/1zNmsjIGlmxq_u6jcHyoVMZDkzylDrkhw/view?usp=drive_link" target="_blank" class="btn-primary btn-purple">
                                 <i data-lucide="download"></i>
                                 Baixar em PDF
                             </a>

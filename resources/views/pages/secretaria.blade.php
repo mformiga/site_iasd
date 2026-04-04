@@ -371,13 +371,13 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cards/secretaria_header.webp') }}" alt="IASD Central de Brasília - Secretaria" style="width: 100%;">
+<img src="{{ asset('img/cards/secretaria/secretaria_header.webp') }}" alt="IASD Central de Brasília - Secretaria" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="secretaria-container">
 
     <!-- Seção Introdutória -->
-    <div class="secretaria-intro">
-        <h1>FALE COM A SECRETARIA</h1>
+    <div class="secretaria-intro acb-fullbleed">
+        <h1 class="acb-title-serif">FALE COM A SECRETARIA</h1>
         <p>
             A Secretaria da Igreja Adventista do Sétimo Dia de Brasília está aqui para servi-lo(a) com excelência, cortesia e eficiência. Nosso compromisso é oferecer apoio administrativo e espiritual a membros e visitantes, facilitando a vida da comunidade eclesiástica.
         </p>
@@ -387,8 +387,8 @@
     </div>
 
     <!-- Seção Missão -->
-    <div class="missao-section">
-        <h2>MISSÃO DA SECRETARIA</h2>
+    <div class="missao-section acb-fullbleed">
+        <h2 class="acb-title-serif">MISSÃO DA SECRETARIA</h2>
         <p>
             Nossa missão é honrar a Deus através de um serviço exemplar, mantendo registros precisos, facilitar a comunicação e apoiar a liderança da igreja. Buscamos ser um canal de bênção, demonstrando o amor de Cristo em cada interação.
         </p>
@@ -398,12 +398,12 @@
     </div>
 
     <!-- Seção Serviços -->
-    <div class="servicos-section">
-        <h2>SERVIÇOS DISPONÍVEIS</h2>
+    <div class="servicos-section acb-fullbleed">
+        <h2 class="acb-title-serif">SERVIÇOS DISPONÍVEIS</h2>
 
         <div class="servicos-grid">
             <div class="servico-card">
-                <h4>📋 Transferência de Membros</h4>
+                <h4><i class="bi bi-clipboard"></i> Transferência de Membros</h4>
                 <ul>
                     <li>Solicitação de transferência para outras igrejas</li>
                     <li>Recebimento de membros transferidos</li>
@@ -413,7 +413,7 @@
             </div>
 
             <div class="servico-card">
-                <h4>💍 Casamentos Religiosos</h4>
+                <h4><i class="bi bi-gem"></i> Casamentos Religiosos</h4>
                 <ul>
                     <li>Agendamento de cerimônias</li>
                     <li>Orientações sobre documentos necessários</li>
@@ -423,7 +423,7 @@
             </div>
 
             <div class="servico-card">
-                <h4>🔖 Batismos e Profissão de Fé</h4>
+                <h4><i class="bi bi-bookmark-fill"></i> Batismos e Profissão de Fé</h4>
                 <ul>
                     <li>Inscrição para classe batismal</li>
                     <li>Documentação necessária</li>
@@ -433,7 +433,7 @@
             </div>
 
             <div class="servico-card">
-                <h4>👶 Dedicatória de Crianças</h4>
+                <h4><i class="bi bi-person-heart"></i> Dedicatória de Crianças</h4>
                 <ul>
                     <li>Agendamento de dedicatórias</li>
                     <li>Orientações aos pais</li>
@@ -442,7 +442,7 @@
             </div>
 
             <div class="servico-card">
-                <h4>✍️ Cartas de Mudança</h4>
+                <h4><i class="bi bi-pencil"></i> Cartas de Mudança</h4>
                 <ul>
                     <li>Emissão de cartas recomendação</li>
                     <li>Atestados de membros</li>
@@ -451,7 +451,7 @@
             </div>
 
             <div class="servico-card">
-                <h4>📚 Registros e Certificados</h4>
+                <h4><i class="bi bi-journals"></i> Registros e Certificados</h4>
                 <ul>
                     <li>Certidões de batismo</li>
                     <li>Certidões de casamento</li>
@@ -461,7 +461,7 @@
             </div>
 
             <div class="servico-card">
-                <h4>📊 Estatísticas e Relatórios</h4>
+                <h4><i class="bi bi-bar-chart"></i> Estatísticas e Relatórios</h4>
                 <ul>
                     <li>Ficha de membros atualização</li>
                     <li>Censo anual</li>
@@ -470,7 +470,7 @@
             </div>
 
             <div class="servico-card">
-                <h4>📞 Atendimento Geral</h4>
+                <h4><i class="bi bi-telephone"></i> Atendimento Geral</h4>
                 <ul>
                     <li>Informações sobre a igreja</li>
                     <li>Contato com departamentos</li>
@@ -481,20 +481,20 @@
         </div>
 
         <div class="observacao-box">
-            <p>⚠️ <strong>Observação:</strong> Alguns serviços podem requerer agendamento prévio e documentos específicos. Entre em contato para verificar os requisitos.</p>
+            <p><i class="bi bi-exclamation-triangle-fill"></i> <strong>Observação:</strong> Alguns serviços podem requerer agendamento prévio e documentos específicos. Entre em contato para verificar os requisitos.</p>
         </div>
     </div>
 
     <!-- Seção de Contato -->
-    <div class="contato-section">
-        <h2>ENTRE EM CONTATO</h2>
+    <div class="contato-section acb-fullbleed">
+        <h2 class="acb-title-serif">ENTRE EM CONTATO</h2>
         <p>Tem alguma dúvida ou precisa de algum dos nossos serviços? Preencha o formulário abaixo e entraremos em contato com você o mais breve possível.</p>
         <a href="https://forms.gle/AcLNhK1kJh5mWHed7" target="_blank" class="btn-formulario">ACESSAR FORMULÁRIO DE CONTATO</a>
     </div>
 
     <!-- Seção FAQ -->
     <div class="faq-section">
-        <h2>Perguntas Frequentes (FAQ)</h2>
+        <h2 class="acb-title-serif">Perguntas Frequentes (FAQ)</h2>
 
         <div class="faq-grid">
             <div class="faq-item">
@@ -530,12 +530,14 @@
     </div>
 
     <!-- Seção Convite -->
-    <div class="convite-section">
-        <h3>Juntos Somos Mais Fortes!</h3>
-        <p class="verse">"Conheça o estado das suas ovelhas e cuide bem dos seus rebanhos"</p>
-        <p class="verse-reference">Provérbios 27:23</p>
+    <div class="convite-section acb-fullbleed">
+        <h3 class="acb-title-serif">Juntos Somos Mais Fortes!</h3>
+        <blockquote class="acb-quote" style="max-width: 900px; margin: 0 auto 18px;">
+            <p>"Conheça o estado das suas ovelhas e cuide bem dos seus rebanhos"</p>
+            <span class="acb-quote__ref">Provérbios 27:23</span>
+        </blockquote>
         <p class="mensagem">
-            Ao manter seus dados atualizados, você fortalece os laços de comunhão e contribui para que nossa igreja cumpra sua missão com excelência. 😊
+            Ao manter seus dados atualizados, você fortalece os laços de comunhão e contribui para que nossa igreja cumpra sua missão com excelência. <i class="bi bi-emoji-smile"></i>
         </p>
     </div>
 
@@ -545,7 +547,6 @@
 @push('scripts')
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Animação suave de scroll para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -559,7 +560,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Animação de entrada para os cards
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -574,7 +574,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Aplicar animação aos cards
     document.querySelectorAll('.servico-card, .faq-item, .convite-section').forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(20px)';

@@ -135,7 +135,7 @@ $orchestras = [
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 40px 20px 0;
     }
 
     .corais-intro {
@@ -304,26 +304,48 @@ $orchestras = [
     }
 
     .group-leaders {
-        background: #f8fafc;
-        padding: 15px;
-        border-radius: 10px;
-        border-left: 3px solid #3b82f6;
+        background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+        padding: 14px;
+        border-radius: 12px;
+        border: 1px solid rgba(15, 23, 42, 0.10);
+        box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
     }
 
     .group-leaders-title {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
         font-family: 'Roboto', sans-serif;
-        font-size: 0.85em;
+        font-size: 0.9em;
         color: #1e3a8a;
-        font-weight: 700;
+        font-weight: 800;
         text-transform: uppercase;
-        margin-bottom: 10px;
-        letter-spacing: 0.5px;
+        margin-bottom: 12px;
+        letter-spacing: 0.6px;
+    }
+
+    .group-leaders-title i {
+        width: 28px;
+        height: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: rgba(59, 130, 246, 0.12);
+        color: #1e3a8a;
     }
 
     .leader-item {
-        display: flex;
-        margin-bottom: 8px;
-        font-size: 0.9rem;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 10px;
+        align-items: start;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        padding: 10px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(15, 23, 42, 0.08);
     }
 
     .leader-item:last-child {
@@ -331,22 +353,35 @@ $orchestras = [
     }
 
     .leader-role {
-        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(59, 130, 246, 0.12);
         color: #1e3a8a;
-        min-width: 100px;
-        flex-shrink: 0;
+        font-weight: 800;
+        font-size: 0.82rem;
+        letter-spacing: 0.2px;
     }
 
     .leader-name {
-        color: #475569;
+        color: #0f172a;
+        font-weight: 650;
+        line-height: 1.35;
     }
 
     .minister-section {
         background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         padding: 50px 40px;
         border-radius: 15px;
-        margin: 50px 0;
+        margin: 50px 0 0;
         text-align: center;
+    }
+
+    /* Sem espaço entre a última seção e o rodapé */
+    .corais-container > .minister-section {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     .minister-section h2 {
@@ -416,7 +451,7 @@ $orchestras = [
 
     @media (max-width: 768px) {
         .corais-container {
-            padding: 20px 15px;
+            padding: 20px 15px 0;
         }
 
         .corais-intro {
@@ -475,6 +510,10 @@ $orchestras = [
         .minister-name {
             font-size: 1.5em;
         }
+
+        .leader-item {
+            grid-template-columns: 1fr;
+        }
     }
 
     /* Lightbox Styles */
@@ -523,19 +562,19 @@ $orchestras = [
 @endpush
 
 @section('content')
-<img src="{{ asset('img/corais/corais_header.webp') }}" alt="Corais e Orquestras" style="width: 100%; height: 220px; object-fit: cover;">
+<img class="page-header-img" src="{{ asset('img/corais/corais_header.webp') }}" alt="Corais e Orquestras" fetchpriority="high" decoding="async">
 
 <div class="corais-container">
     <!-- Seção Introdutória -->
-    <div class="corais-intro">
-        <h1>Corais e Orquestras</h1>
+    <div class="corais-intro acb-fullbleed">
+        <h1 class="acb-title-serif">Corais e Orquestras</h1>
         <p>
             Bem-vindo ao ministério de música da Igreja Adventista Central de Brasília. Aqui você encontrará uma diversidade de corais e orquestras que dedicam seus talentos para louvar a Deus e edificar a igreja através da música sacra.
         </p>
     </div>
 
     <!-- Seção de Corais -->
-    <h2 class="section-title">Nossos Corais</h2>
+    <h2 class="section-title acb-title-serif">Nossos Corais</h2>
 
     <div class="groups-grid">
         @foreach($choirs as $choir)
@@ -550,7 +589,7 @@ $orchestras = [
             <div class="group-images-gallery">
                 @foreach($choir['images'] as $index => $image)
                 <div class="image-wrapper">
-                    <img src="{{ asset('img/corais/' . $image) }}" alt="{{ $choir['name'] }}" class="group-image lightbox-trigger" data-full="{{ asset('img/corais/' . $image) }}">
+                    <img src="{{ asset('img/corais/' . $image) }}" alt="{{ $choir['name'] }}" loading="lazy" decoding="async" class="group-image lightbox-trigger" data-full="{{ asset('img/corais/' . $image) }}">
                     @if(isset($choir['captions']) && isset($choir['captions'][$index]) && !empty($choir['captions'][$index]))
                     <div class="image-caption">{{ $choir['captions'][$index] }}</div>
                     @endif
@@ -560,10 +599,10 @@ $orchestras = [
             @endif
             <p class="group-description">{{ $choir['description'] }}</p>
             <div class="group-leaders">
-                <div class="group-leaders-title">Liderança</div>
+                <div class="group-leaders-title"><i class="bi bi-people-fill"></i> Liderança</div>
                 @foreach($choir['leaders'] as $leader)
                 <div class="leader-item">
-                    <span class="leader-role">{{ $leader['role'] }}:</span>
+                    <span class="leader-role">{{ $leader['role'] }}</span>
                     <span class="leader-name">{{ $leader['name'] }}</span>
                 </div>
                 @endforeach
@@ -573,7 +612,7 @@ $orchestras = [
     </div>
 
     <!-- Seção de Orquestras -->
-    <h2 class="section-title">Nossas Orquestras</h2>
+    <h2 class="section-title acb-title-serif">Nossas Orquestras</h2>
 
     <div class="groups-grid">
         @foreach($orchestras as $orchestra)
@@ -588,17 +627,17 @@ $orchestras = [
             <div class="group-images-gallery">
                 @foreach($orchestra['images'] as $image)
                 <div class="image-wrapper">
-                    <img src="{{ asset('img/corais/' . $image) }}" alt="{{ $orchestra['name'] }}" class="group-image lightbox-trigger" data-full="{{ asset('img/corais/' . $image) }}">
+                    <img src="{{ asset('img/corais/' . $image) }}" alt="{{ $orchestra['name'] }}" loading="lazy" decoding="async" class="group-image lightbox-trigger" data-full="{{ asset('img/corais/' . $image) }}">
                 </div>
                 @endforeach
             </div>
             @endif
             <p class="group-description">{{ $orchestra['description'] }}</p>
             <div class="group-leaders">
-                <div class="group-leaders-title">Liderança</div>
+                <div class="group-leaders-title"><i class="bi bi-people-fill"></i> Liderança</div>
                 @foreach($orchestra['leaders'] as $leader)
                 <div class="leader-item">
-                    <span class="leader-role">{{ $leader['role'] }}:</span>
+                    <span class="leader-role">{{ $leader['role'] }}</span>
                     <span class="leader-name">{{ $leader['name'] }}</span>
                 </div>
                 @endforeach
@@ -608,12 +647,12 @@ $orchestras = [
     </div>
 
     <!-- Seção Ministro de Música -->
-    <div class="minister-section">
-        <h2>Ministro de Música</h2>
+    <div class="minister-section acb-fullbleed">
+        <h2 class="acb-title-serif">Ministro de Música</h2>
         <div class="minister-content">
             <div class="minister-gallery">
-                <img src="{{ asset('img/corais/maestro1.webp') }}" alt="Maestro Marcos de Paula" class="minister-photo lightbox-trigger" data-full="{{ asset('img/corais/maestro1.webp') }}">
-                <img src="{{ asset('img/corais/maestro2.webp') }}" alt="Maestro Marcos de Paula" class="minister-photo lightbox-trigger" data-full="{{ asset('img/corais/maestro2.webp') }}">
+                <img src="{{ asset('img/corais/maestro1.webp') }}" alt="Maestro Marcos de Paula" loading="lazy" decoding="async" class="minister-photo lightbox-trigger" data-full="{{ asset('img/corais/maestro1.webp') }}">
+                <img src="{{ asset('img/corais/maestro2.webp') }}" alt="Maestro Marcos de Paula" loading="lazy" decoding="async" class="minister-photo lightbox-trigger" data-full="{{ asset('img/corais/maestro2.webp') }}">
             </div>
             <div class="minister-name">Marcos de Paula</div>
             <div class="minister-title">Bacharelando em Música pela Universidade de São Paulo (USP)</div>
@@ -627,7 +666,7 @@ $orchestras = [
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox">
     <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" src="" alt="">
+    <img class="lightbox-content" id="lightbox-img" src="" alt="" loading="lazy" decoding="async">
 </div>
 @endsection
 

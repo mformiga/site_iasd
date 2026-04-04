@@ -40,18 +40,21 @@
     }
 
     .oquee-section {
-        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        background: #fff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-top: 4px solid rgba(11, 42, 74, 0.22);
         padding: 50px 40px;
-        border-radius: 15px;
+        border-radius: 18px;
         margin: 30px 0;
         text-align: center;
-        color: #fff;
+        color: #0f172a;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     }
 
     .oquee-section h2 {
         font-family: 'Bebas neue', sans-serif;
         font-size: 2.5em;
-        color: #fff;
+        color: #0b2a4a;
         margin-bottom: 20px;
         font-weight: 500;
     }
@@ -60,7 +63,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
         line-height: 1.8;
-        color: #f8f9fa;
+        color: rgba(15, 23, 42, 0.85);
         margin-bottom: 0;
         max-width: 800px;
         margin-left: auto;
@@ -121,7 +124,7 @@
         padding: 40px;
         border-radius: 15px;
         margin: 50px 0;
-        border-left: 5px solid #003366;
+        border-top: 4px solid rgba(11, 42, 74, 0.22);
         text-align: center;
     }
 
@@ -133,17 +136,20 @@
     }
 
     .porque-section {
-        background: linear-gradient(135deg, #1b4472 0%, #003366 100%);
+        background: #fff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-top: 4px solid rgba(11, 42, 74, 0.22);
         padding: 60px 40px;
-        border-radius: 15px;
+        border-radius: 18px;
         margin: 50px 0;
-        color: #fff;
+        color: #0f172a;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     }
 
     .porque-section h2 {
         font-family: 'Bebas neue', sans-serif;
         font-size: 2.5em;
-        color: #fff;
+        color: #0b2a4a;
         text-align: center;
         margin-bottom: 40px;
         font-weight: 500;
@@ -156,25 +162,26 @@
     }
 
     .motivo-card {
-        background: rgba(255,255,255,0.1);
-        border: 2px solid rgba(255,255,255,0.2);
-        border-radius: 15px;
+        background: #fff;
+        border: 1px solid rgba(15, 23, 42, 0.10);
+        border-radius: 16px;
         padding: 30px 20px;
         text-align: center;
-        backdrop-filter: blur(10px);
+        box-shadow: 0 12px 22px rgba(15, 23, 42, 0.08);
     }
 
     .motivo-card .icon {
         font-size: 2.5em;
         margin-bottom: 15px;
         display: block;
+        color: #0b2a4a;
     }
 
     .motivo-card p {
         font-family: 'Roboto', sans-serif;
         font-size: 1.05rem;
         line-height: 1.6;
-        color: #f8f9fa;
+        color: rgba(15, 23, 42, 0.78);
     }
 
     .eventos-section {
@@ -227,18 +234,21 @@
     }
 
     .instagram-section {
-        background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+        background: #fff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-top: 4px solid rgba(11, 42, 74, 0.22);
         padding: 50px 40px;
-        border-radius: 15px;
+        border-radius: 18px;
         margin: 50px 0;
         text-align: center;
-        color: #fff;
+        color: #0f172a;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     }
 
     .instagram-section h3 {
         font-family: 'Bebas neue', sans-serif;
         font-size: 2em;
-        color: #fff;
+        color: #0b2a4a;
         margin-bottom: 20px;
         font-weight: 500;
     }
@@ -246,14 +256,15 @@
     .instagram-section p {
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
-        color: #f8f9fa;
+        color: rgba(15, 23, 42, 0.78);
         margin-bottom: 25px;
     }
 
     .btn-instagram {
         display: inline-block;
-        background-color: #fff;
-        color: #833ab4;
+        background-color: #833ab4;
+        color: #fff;
+        border: 1px solid rgba(131, 58, 180, 0.25);
         padding: 15px 40px;
         border-radius: 8px;
         text-decoration: none;
@@ -265,7 +276,8 @@
 
     .btn-instagram:hover {
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 10px 18px rgba(15, 23, 42, 0.18);
+        background-color: #6f2ea0;
     }
 
     .contato-section {
@@ -274,6 +286,19 @@
         border-radius: 15px;
         margin: 50px 0;
         text-align: center;
+    }
+
+    /* Sem espaço entre "Venha nos Conhecer!" e o versículo */
+    .cemab-container > .contato-section {
+        margin-bottom: 0 !important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .cemab-container > .versiculo-section {
+        margin-top: 0 !important;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .contato-section h3 {
@@ -328,12 +353,13 @@
     }
 
     .versiculo-section {
-        background: linear-gradient(135deg, #003366 0%, #1b4472 100%);
+        background: #0b2a4a;
         padding: 50px 40px;
-        border-radius: 15px;
+        border-radius: 18px;
         margin: 50px 0;
         text-align: center;
         color: #fff;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
     }
 
     .versiculo-section blockquote {
@@ -353,18 +379,21 @@
     }
 
     .site-section {
-        background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        background: #fff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-top: 4px solid rgba(11, 42, 74, 0.22);
         padding: 50px 40px;
-        border-radius: 15px;
+        border-radius: 18px;
         margin: 50px 0;
         text-align: center;
-        color: #fff;
+        color: #0f172a;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     }
 
     .site-section h3 {
         font-family: 'Bebas neue', sans-serif;
         font-size: 2em;
-        color: #fff;
+        color: #0b2a4a;
         margin-bottom: 20px;
         font-weight: 500;
     }
@@ -372,14 +401,15 @@
     .site-section p {
         font-family: 'Roboto', sans-serif;
         font-size: 1.1rem;
-        color: #f8f9fa;
+        color: rgba(15, 23, 42, 0.78);
         margin-bottom: 25px;
     }
 
     .btn-site {
         display: inline-block;
-        background-color: #fff;
-        color: #003366;
+        background-color: #0b2a4a;
+        color: #fff;
+        border: 1px solid rgba(11, 42, 74, 0.20);
         padding: 15px 40px;
         border-radius: 8px;
         text-decoration: none;
@@ -391,7 +421,8 @@
 
     .btn-site:hover {
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 10px 18px rgba(15, 23, 42, 0.18);
+        background-color: #083055;
     }
 
     @media (max-width: 768px) {
@@ -409,7 +440,9 @@
 
         .oquee-section,
         .porque-section,
-        .versiculo-section {
+        .versiculo-section,
+        .instagram-section,
+        .site-section {
             padding: 40px 20px;
         }
 
@@ -432,12 +465,12 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/cemab/cemab_header.webp') }}" alt="CEMAB (Centro Musical Adventista de Brasília)" style="width: 100%; height: 220px; object-fit: cover;">
+<img class="page-header-img" src="{{ asset('img/cemab/cemab_header.webp') }}" alt="CEMAB (Centro Musical Adventista de Brasília)">
 
 <div class="cemab-container">
 
     <!-- Seção Introdutória -->
-    <div class="cemab-intro">
+    <div class="cemab-intro acb-fullbleed">
         <h1>CEMAB (Centro Musical Adventista de Brasília)</h1>
         <p>
             O CEMAB é um espaço dedicado ao ensino musical de excelência, integrado aos valores cristãos da Igreja Adventista. Aqui, crianças, jovens e adultos aprendem a expressar sua fé e talentos através de instrumentos, canto e teoria musical, em um ambiente acolhedor e inspirador!
@@ -448,8 +481,8 @@
     </div>
 
     <!-- Seção Destaque -->
-    <div class="oquee-section">
-        <h2><i class="bi bi-star-fill"></i> Transformando Vidas Através da Música <i class="bi bi-music-note-beamed"></i></h2>
+    <div class="oquee-section acb-fullbleed">
+        <h2 class="acb-title-serif"><i class="bi bi-star-fill"></i> Transformando Vidas Através da Música <i class="bi bi-music-note-beamed"></i></h2>
         <p>
             Venha fazer parte do CEMAB e desenvolver seus talentos musicais em um ambiente cristão e acolhedor!
         </p>
@@ -457,7 +490,7 @@
 
     <!-- Seção Cursos Oferecidos -->
     <div class="cursos-section">
-        <h2><i class="bi bi-journals"></i> Cursos Oferecidos</h2>
+        <h2 class="acb-title-serif"><i class="bi bi-journals"></i> Cursos Oferecidos</h2>
 
         <div class="cursos-grid">
             <div class="curso-card">
@@ -492,8 +525,8 @@
     </div>
 
     <!-- Seção Por Que Escolher o CEMAB -->
-    <div class="porque-section">
-        <h2><i class="bi bi-award-fill"></i> Por Que Escolher o CEMAB?</h2>
+    <div class="porque-section acb-fullbleed">
+        <h2 class="acb-title-serif"><i class="bi bi-award-fill"></i> Por Que Escolher o CEMAB?</h2>
 
         <div class="motivos-grid">
             <div class="motivo-card">
@@ -520,7 +553,7 @@
 
     <!-- Seção Eventos e Apresentações -->
     <div class="eventos-section">
-        <h2><i class="bi bi-calendar3"></i> Eventos e Apresentações</h2>
+        <h2 class="acb-title-serif"><i class="bi bi-calendar3"></i> Eventos e Apresentações</h2>
         <p style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
             No CEMAB, a música ganha vida em:
         </p>
@@ -544,15 +577,15 @@
     </div>
 
     <!-- Seção Instagram -->
-    <div class="instagram-section">
-        <h3>Siga nosso Instagram @cemab.escolademusica</h3>
+    <div class="instagram-section acb-fullbleed">
+        <h3 class="acb-title-serif">Siga nosso Instagram @cemab.escolademusica</h3>
         <p>Para ver as datas dos eventos e ficar por dentro das novidades!</p>
         <a href="https://instagram.com/cemab.escolademusica" target="_blank" class="btn-instagram">Seguir no Instagram</a>
     </div>
 
     <!-- Seção de Contato -->
-    <div class="contato-section">
-        <h3><i class="bi bi-geo-alt-fill"></i> Venha nos Conhecer!</h3>
+    <div class="contato-section acb-fullbleed">
+        <h3 class="acb-title-serif"><i class="bi bi-geo-alt-fill"></i> Venha nos Conhecer!</h3>
 
         <div class="contato-info">
             <div class="contato-item">
@@ -577,17 +610,19 @@
     </div>
 
     <!-- Seção Versículo -->
-    <div class="versiculo-section">
-        <blockquote>"Louvem a Deus com harpa e som de cânticos!"</blockquote>
-        <cite><i class="bi bi-music-note"></i> Salmos 98:5 <i class="bi bi-music-note"></i></cite>
+    <div class="versiculo-section acb-fullbleed">
+        <blockquote class="acb-quote acb-quote--glass" style="max-width: 900px; margin: 0 auto;">
+            <p>"Louvem a Deus com harpa e som de cânticos!"</p>
+            <span class="acb-quote__ref"><i class="bi bi-music-note"></i> Salmos 98:5 <i class="bi bi-music-note"></i></span>
+        </blockquote>
         <p style="margin-top: 30px; font-size: 1.1rem;">
             No CEMAB, a música é mais que uma arte: é um propósito para servir e adorar!
         </p>
     </div>
 
     <!-- Seção Site -->
-    <div class="site-section">
-        <h3><i class="bi bi-laptop"></i> Acompanhe nossas novidades</h3>
+    <div class="site-section acb-fullbleed">
+        <h3 class="acb-title-serif"><i class="bi bi-laptop"></i> Acompanhe nossas novidades</h3>
         <p>Acesse nossa página para saber mais sobre os cursos, eventos e inscrições!</p>
         <a href="https://cemab.vercel.app/" target="_blank" class="btn-site">Acessar Site do CEMAB</a>
     </div>

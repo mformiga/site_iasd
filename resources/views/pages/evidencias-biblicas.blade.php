@@ -71,8 +71,6 @@
         text-align: center;
         margin-bottom: 40px;
         font-weight: 500;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #f59e0b;
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
@@ -93,7 +91,7 @@
 
     .cards-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         margin-bottom: 40px;
     }
@@ -246,7 +244,7 @@
 
     .mab-image {
         width: 100%;
-        height: 400px;
+        height: 500px;
         background: #44403c;
         display: flex;
         align-items: center;
@@ -389,6 +387,12 @@
         margin-top: 15px;
     }
 
+    @media (max-width: 1200px) {
+        .cards-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     @media (max-width: 768px) {
         .evidencias-container {
             padding: 20px 15px;
@@ -419,7 +423,7 @@
         }
 
         .mab-image {
-            height: 250px;
+            height: 320px;
         }
 
         .quote-text {
@@ -430,11 +434,11 @@
 @endpush
 
 @section('content')
-<img src="{{ asset('img/evidencias_biblicas/evidencias_biblicas_header.webp') }}" alt="Evidências Bíblicas" style="width: 100%;">
+<img src="{{ asset('img/evidencias_biblicas/evidencias_biblicas_header.webp') }}" alt="Evidências Bíblicas" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="evidencias-container">
     <!-- Seção Introdutória -->
-    <div class="intro-section">
+    <div class="intro-section acb-fullbleed">
         <h1>Evidências Bíblicas</h1>
         <span class="subtitle">Arqueologia, História e Fé</span>
         <p>
@@ -444,7 +448,7 @@
 
     <!-- Secção 1: Arqueologia e a Bíblia -->
     <div class="section-block">
-        <h2 class="section-title">Arqueologia e a Bíblia</h2>
+        <h2 class="section-title acb-title-serif">Arqueologia e a Bíblia</h2>
         <p class="section-intro">
             A Bíblia não é apenas um livro de fé, mas também um registro histórico comprovado por descobertas arqueológicas.
         </p>
@@ -470,8 +474,8 @@
     </div>
 
     <!-- Secção 2: Jesus Cristo -->
-    <div class="jesus-section">
-        <h2>Jesus Cristo: Evidências Históricas</h2>
+    <div class="jesus-section acb-fullbleed">
+        <h2 class="acb-title-serif">Jesus Cristo: Evidências Históricas</h2>
         <div class="jesus-grid">
             <div class="jesus-item">
                 <h3>Confiabilidade dos Evangelhos</h3>
@@ -494,7 +498,7 @@
 
     <!-- Secção 3: Integridade Textual -->
     <div class="section-block">
-        <h2 class="section-title">Integridade Textual</h2>
+        <h2 class="section-title acb-title-serif">Integridade Textual</h2>
         <div class="stats-grid">
             <div class="stat-card">
                 <span class="stat-number">1.000+</span>
@@ -516,13 +520,15 @@
 
     <!-- Secção Explore Mais -->
     <div class="explore-section">
-        <h2>Explore e Aprofunde-se:</h2>
+        <h2 class="acb-title-serif">Explore e Aprofunde-se:</h2>
 
-        <div class="mab-banner">
+        <div class="mab-banner acb-fullbleed">
             <!-- Imagem em destaque -->
             <div class="mab-image">
                 <img src="{{ asset('img/evidencias_biblicas/imgi_91_stock-315-scaled.webp') }}"
-                     alt="Museu de Arqueologia Bíblica">
+                     alt="Museu de Arqueologia Bíblica"
+                     loading="lazy" decoding="async"
+                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'p-16 text-center\'><div class=\'text-6xl mb-4\'>🏛️</div><p class=\'text-amber-200 font-serif italic text-xl\'>Acervo Histórico MAB</p></div>'">
             </div>
 
             <!-- Conteúdo do MAB -->
@@ -541,14 +547,14 @@
         <!-- Outros Links -->
         <div class="links-grid">
             <a href="https://www.novotempo.com/programa/evidencias/" target="_blank" class="link-card">
-                <span class="link-emoji">📺</span>
+                <i class="bi bi-tv link-emoji"></i>
                 <div>
                     <h4>Série Evidências</h4>
                     <p>Assista na TV Novo Tempo.</p>
                 </div>
             </a>
             <div class="link-card">
-                <span class="link-emoji">🌍</span>
+                <i class="bi bi-globe2 link-emoji"></i>
                 <div>
                     <h4>Museus Internacionais</h4>
                     <p>Louvre (França) e Museu de Israel.</p>
@@ -558,11 +564,11 @@
     </div>
 
     <!-- Citação Final -->
-    <div class="quote-section">
-        <blockquote class="quote-text">
-            "Estejam sempre preparados para responder a qualquer que lhes pedir a razão da esperança que há em vocês."
+    <div class="quote-section acb-fullbleed">
+        <blockquote class="acb-quote" style="max-width: 900px; margin: 0 auto;">
+            <p>"Estejam sempre preparados para responder a qualquer que lhes pedir a razão da esperança que há em vocês."</p>
+            <span class="acb-quote__ref">— 1 Pedro 3:15</span>
         </blockquote>
-        <cite class="quote-ref">— 1 Pedro 3:15</cite>
     </div>
 </div>
 @endsection
