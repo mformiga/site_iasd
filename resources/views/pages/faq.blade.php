@@ -240,18 +240,23 @@
 }
 
 .sub-tab-button {
-    padding: 10px 15px;
+    padding: 12px 10px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: #666;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
-    white-space: nowrap;
+    white-space: normal;
+    line-height: 1.3;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sub-tab-button:hover {
@@ -345,10 +350,12 @@
     }
 
     .sub-tab-button {
-        padding: 8px 12px;
-        font-size: 0.85rem;
+        padding: 10px 8px;
+        font-size: 0.7rem;
         white-space: normal;
         text-align: left;
+        min-height: auto;
+        line-height: 1.2;
     }
 
     .sub-section-title {
