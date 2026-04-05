@@ -22,7 +22,7 @@
                    rel="noopener noreferrer"
                    aria-label="LinkedIn do Maurício (abre em nova aba)"
                    style="display:block;">
-                    <img src="{{ asset('img/time_dev/mauricio.webp') }}"
+                    <img src="{{ asset('img/time_dev/mauricio.webp') }}?v=2026-04-04-atualizado"
                          alt="Maurício"
                          loading="lazy"
                          decoding="async"
@@ -45,7 +45,7 @@
                    rel="noopener noreferrer"
                    aria-label="LinkedIn do Grégori (abre em nova aba)"
                    style="display:block;">
-                    <img src="{{ asset('img/time_dev/gregori.webp') }}"
+                    <img src="{{ asset('img/time_dev/gregori.webp') }}?v=2026-04-04-atualizado"
                          alt="Grégori"
                          loading="lazy"
                          decoding="async"

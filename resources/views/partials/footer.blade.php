@@ -24,7 +24,7 @@
             <a href="https://www.facebook.com/share/18C9sd7nvQ/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (abre em nova aba)">
                 <img src="{{ asset('img/rodape/facebook-circle-logo-36.png') }}" alt="Facebook" loading="lazy" decoding="async">
             </a>
-            <a href="https://www.instagram.com/comunidadecentralbsb/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre em nova aba)">
+            <a href="https://www.instagram.com/iasdbrasilia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre em nova aba)">
                 <img src="{{ asset('img/rodape/instagram-logo-36.png') }}" alt="Instagram" loading="lazy" decoding="async">
             </a>
             <a href="https://www.youtube.com/@adventistascentralbrasilia" target="_blank" rel="noopener noreferrer" aria-label="YouTube (abre em nova aba)">

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const instagramUrl = "https://www.instagram.com/comunidadecentralbsb/";
+    const instagramUrl = "https://www.instagram.com/iasdbrasilia/";
     const botoes = document.querySelectorAll(".btn_canais button");
     const divs = [
         document.getElementById("div1"),

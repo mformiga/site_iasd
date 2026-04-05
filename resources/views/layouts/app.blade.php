@@ -140,7 +140,7 @@
       },
       "sameAs": [
         "https://www.facebook.com/share/18C9sd7nvQ/",
-        "https://www.instagram.com/comunidadecentralbsb/",
+        "https://www.instagram.com/iasdbrasilia/",
         "https://www.youtube.com/@adventistascentralbrasilia",
         "https://www.tiktok.com/@igrejaadvcentraldebsb"
       ],

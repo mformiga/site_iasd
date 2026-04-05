@@ -8,7 +8,14 @@
       "Bash(taskkill:*)",
       "Bash(curl -s http://127.0.0.1:8000/cpb)",
       "Bash(curl:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)",
+      "Bash(git pull:*)",
+      "Bash(git show-ref:*)",
+      "Bash(grep -n \"canais.js\" storage/framework/views/*.php)",
+      "Bash(\"C:\\\\Users\\\\formi\\\\site_iasd\\\\resources\\\\views\\\\pages\\\\faq_new.blade.php\")"
     ]
   }
 }

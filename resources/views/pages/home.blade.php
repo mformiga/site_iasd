@@ -134,7 +134,7 @@
 
 @push('scripts')
 <script src="{{ asset('js/slider.js') }}" defer></script>
-<script src="{{ asset('js/canais.js') }}?v=2026-03-31" defer></script>
+<script src="{{ asset('js/canais.js') }}?v=2026-04-04-atualizado" defer></script>
 <script src="{{ asset('js/videos_youtube.js') }}" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
