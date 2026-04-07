@@ -553,7 +553,7 @@ html { scroll-behavior: smooth; }
                 <p><strong>Trabalhar:</strong> deve ser evitado quando se trata de atividade secular comum e remunerada, exceto em casos de necessidade, misericórdia ou dever essencial.</p>
                 <p><strong>Estudar:</strong> estudos seculares, acadêmicos ou profissionais normalmente não harmonizam com o propósito do sábado; estudo bíblico e espiritual, sim.</p>
                 <p><strong>Dirigir:</strong> pode ser apropriado quando ligado ao culto, serviço cristão, visitação, necessidade familiar ou socorro.</p>
-                <p><strong>Cozinhar:</strong> idealmente se prepara antes, em espírito de planejamento sabático (Êxodo 16:22-23), mas aquecer ou finalizar alimentos simples não é visto da mesma forma que trabalho culinário pesado e rotineiro.</p>
+                <p><strong>Cozinhar:</strong> idealmente se prepara antes, em espírito de planejamento sabático <a href="#" class="biblical-reference" data-reference="Êxodo 16:22-23">Êxodo 16:22-23</a>, mas aquecer ou finalizar alimentos simples não é visto da mesma forma que trabalho culinário pesado e rotineiro.</p>
                 <p><strong>Comprar e vender:</strong> são geralmente evitados, com base em <a href="#" class="biblical-reference" data-reference="Neemias 13:15-22">Neemias 13:15-22</a>, porque mantêm o ciclo comercial do dia comum.</p>
                 <p><strong>Internet:</strong> depende do uso. Pode ser apropriada para culto, estudo bíblico, evangelismo ou comunhão; usos banais, comerciais ou de entretenimento comum tendem a descaracterizar a santidade do dia.</p>
                 <p><strong>Esportes:</strong> atividades competitivas, centradas em desempenho e recreação secular, em regra, não correspondem ao espírito sabático; caminhadas na natureza, contemplação e atividades familiares reverentes podem ser apropriadas.</p>
@@ -592,7 +592,7 @@ html { scroll-behavior: smooth; }
             <div class="doctrine-item">
                 <h4>2.2 Os escritos de Ellen G. White são inspirados no mesmo nível da Bíblia?</h4>
                 <p>A resposta adventista exige precisão. Os adventistas afirmam que o dom profético é genuinamente dado pelo Espírito Santo e, nesse sentido, seus escritos são considerados inspirados. Mas isso não significa que estejam no mesmo nível funcional e normativo da Bíblia. A Bíblia é a revelação normativa, canônica e suprema para toda a igreja. Os escritos de Ellen White são autoridade subordinada, útil para edificação, correção e orientação, mas sempre testados pela Escritura.</p>
-                <p>A diferença fundamental não é entre "inspirado" e "não inspirado", mas entre cânon normativo universal e manifestação posterior do dom profético sujeita à Palavra já revelada. A igreja adventista sustenta que Deus continua a conceder dons espirituais, inclusive o profético, sem com isso abrir novo cânon ou relativizar a suficiência da Bíblia (1 Tessalonicenses 5:19-21; 1 Coríntios 14:1).</p>
+                <p>A diferença fundamental não é entre "inspirado" e "não inspirado", mas entre cânon normativo universal e manifestação posterior do dom profético sujeita à Palavra já revelada. A igreja adventista sustenta que Deus continua a conceder dons espirituais, inclusive o profético, sem com isso abrir novo cânon ou relativizar a suficiência da Bíblia <a href="#" class="biblical-reference" data-reference="1 Tessalonicenses 5:19-21">1 Tessalonicenses 5:19-21</a>; <a href="#" class="biblical-reference" data-reference="1 Coríntios 14:1">1 Coríntios 14:1</a>.</p>
             </div>
 
             <div class="doctrine-item">
@@ -610,24 +610,24 @@ html { scroll-behavior: smooth; }
             <div class="doctrine-item">
                 <h4>2.5 Ellen G. White cometeu plágio ou usou empréstimos literários indevidos em seus escritos? Como explicar as semelhanças extensas com outros autores sem citar as fontes? Como a igreja explica o uso de fontes não inspiradas nos escritos de Ellen White?</h4>
                 <p>A explicação adventista é que Ellen White, como outros autores religiosos e inclusive escritores bíblicos em certos contextos, fez uso de materiais, linguagem e formulações já existentes para expressar verdades que cria terem sido confiadas por Deus. A inspiração, na compreensão adventista, é inspiração do pensamento, não ditado verbal mecânico. Isso significa que o profeta pode usar vocabulário, estrutura literária, secretários, documentos e fontes auxiliares sem que isso negue a realidade do dom profético.</p>
-                <p>A igreja também argumenta que os padrões modernos de citação acadêmica não eram os mesmos do século XIX. Além disso, o uso de fontes não inspiradas não é, por si só, problema bíblico. Lucas investigou cuidadosamente fontes e testemunhos (Lucas 1:1-4); Paulo cita autores não bíblicos em certos contextos (Atos 17:28; Tito 1:12). O ponto decisivo, para a avaliação adventista, não é se houve dependência literária em algum grau, mas se o ministério, os frutos, a mensagem central e a fidelidade bíblica de Ellen White confirmam a autenticidade de seu chamado.</p>
+                <p>A igreja também argumenta que os padrões modernos de citação acadêmica não eram os mesmos do século XIX. Além disso, o uso de fontes não inspiradas não é, por si só, problema bíblico. Lucas investigou cuidadosamente fontes e testemunhos <a href="#" class="biblical-reference" data-reference="Lucas 1:1-4">Lucas 1:1-4</a>; Paulo cita autores não bíblicos em certos contextos (<a href="#" class="biblical-reference" data-reference="Atos 17:28">Atos 17:28</a>; <a href="#" class="biblical-reference" data-reference="Tito 1:12">Tito 1:12</a>). O ponto decisivo, para a avaliação adventista, não é se houve dependência literária em algum grau, mas se o ministério, os frutos, a mensagem central e a fidelidade bíblica de Ellen White confirmam a autenticidade de seu chamado.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>2.6 Ellen G. White fez profecias que não se cumpriram (como previsões sobre o fim do mundo ainda no século XIX). Como a Igreja explica isso? Ela fez previsões ou afirmações que não se cumpriram?</h4>
-                <p>A resposta adventista distingue entre expectativas humanas, condicionais históricas, aplicações pastorais e profecias propriamente ditas. A igreja sustenta que Ellen White não marcou data para a volta de Cristo após 1844 e explicitamente desaconselhou a fixação de datas. Quando certas declarações parecem sugerir iminência, os adventistas as entendem à luz do padrão bíblico de linguagem escatológica, que frequentemente apresenta a volta de Cristo como próxima para manter a igreja em vigilância (Mateus 24:42-44; Tiago 5:8-9).</p>
-                <p>Além disso, a Bíblia contém profecias condicionais, nas quais o desfecho histórico depende da resposta humana (Jeremias 18:7-10; Jonas 3:4-10). A análise adventista, portanto, procura separar leitura isolada de frases, interpretação fora de contexto e natureza real da declaração. A posição oficial é que Ellen White deve ser avaliada de forma integral, à luz de seus frutos, sua exaltação de Cristo, sua fidelidade às Escrituras e do conjunto de sua obra, não por leituras fragmentárias.</p>
+                <p>A resposta adventista distingue entre expectativas humanas, condicionais históricas, aplicações pastorais e profecias propriamente ditas. A igreja sustenta que Ellen White não marcou data para a volta de Cristo após 1844 e explicitamente desaconselhou a fixação de datas. Quando certas declarações parecem sugerir iminência, os adventistas as entendem à luz do padrão bíblico de linguagem escatológica, que frequentemente apresenta a volta de Cristo como próxima para manter a igreja em vigilância <a href="#" class="biblical-reference" data-reference="Mateus 24:42-44">Mateus 24:42-44</a>; <a href="#" class="biblical-reference" data-reference="Tiago 5:8-9">Tiago 5:8-9</a>.</p>
+                <p>Além disso, a Bíblia contém profecias condicionais, nas quais o desfecho histórico depende da resposta humana <a href="#" class="biblical-reference" data-reference="Jeremias 18:7-10">Jeremias 18:7-10</a>; <a href="#" class="biblical-reference" data-reference="Jonas 3:4-10">Jonas 3:4-10</a>. A análise adventista, portanto, procura separar leitura isolada de frases, interpretação fora de contexto e natureza real da declaração. A posição oficial é que Ellen White deve ser avaliada de forma integral, à luz de seus frutos, sua exaltação de Cristo, sua fidelidade às Escrituras e do conjunto de sua obra, não por leituras fragmentárias.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>2.7 Como a igreja responde a alegadas contradições de Ellen White em temas de ciência, história e saúde que parecem contradizer os conhecimentos atuais?</h4>
                 <p>A resposta adventista parte do princípio de que o dom profético não transforma o mensageiro em enciclopédia infalível em todas as áreas de linguagem técnica, científica ou histórica. A mensagem profética é dada em linguagem humana, situada no tempo, e pode usar expressões correntes da época sem que seu propósito espiritual seja invalidado. Isso também é observado na própria Bíblia, que fala fenomenologicamente do nascer do sol, por exemplo, sem compromisso com linguagem científica moderna.</p>
-                <p>No campo da saúde, os adventistas argumentam que muitas orientações de Ellen White foram amplamente confirmadas em seu valor preventivo e integral: moderação, pureza, sobriedade, cuidado com o corpo, equilíbrio entre trabalho, alimentação, descanso e vida espiritual (1 Coríntios 6:19-20; 10:31; 3 João 2). Onde há debates interpretativos, a igreja tende a ler suas declarações em contexto histórico e temático, evitando absolutizações indevidas de frases isoladas.</p>
+                <p>No campo da saúde, os adventistas argumentam que muitas orientações de Ellen White foram amplamente confirmadas em seu valor preventivo e integral: moderação, pureza, sobriedade, cuidado com o corpo, equilíbrio entre trabalho, alimentação, descanso e vida espiritual <a href="#" class="biblical-reference" data-reference="1 Coríntios 6:19-20">1 Coríntios 6:19-20</a>; <a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">10:31</a>; <a href="#" class="biblical-reference" data-reference="3 João 2">3 João 2</a>. Onde há debates interpretativos, a igreja tende a ler suas declarações em contexto histórico e temático, evitando absolutizações indevidas de frases isoladas.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>2.8 Acreditar em Ellen G. White e em seus escritos é obrigatório para ser membro batizado da igreja adventista ou pertencer à "Igreja Remanescente" ou para ser salvo?</h4>
-                <p>A salvação, para os adventistas, vem somente por Cristo, pela graça, mediante a fé, e não pela aceitação formal de Ellen White (João 3:16; Efésios 2:8-9; Atos 4:12). Ninguém é salvo por crer em um mensageiro humano. No entanto, a igreja entende que o dom de profecia é uma característica bíblica do povo remanescente (Apocalipse 12:17; 19:10) e, por isso, reconhecer esse dom faz parte da identidade doutrinária adventista.</p>
+                <p>A salvação, para os adventistas, vem somente por Cristo, pela graça, mediante a fé, e não pela aceitação formal de Ellen White <a href="#" class="biblical-reference" data-reference="João 3:16">João 3:16</a>; <a href="#" class="biblical-reference" data-reference="Efésios 2:8-9">Efésios 2:8-9</a>; <a href="#" class="biblical-reference" data-reference="Atos 4:12">Atos 4:12</a>. Ninguém é salvo por crer em um mensageiro humano. No entanto, a igreja entende que o dom de profecia é uma característica bíblica do povo remanescente (Apocalipse 12:17; 19:10) e, por isso, reconhecer esse dom faz parte da identidade doutrinária adventista.</p>
                 <p>Em termos eclesiásticos, a pessoa que se une à igreja é chamada a aceitar seus ensinos fundamentais, entre eles a manifestação do dom profético no ministério de Ellen White. Mas isso não significa colocá-la como condição meritória de salvação. A distinção é importante: uma coisa é o critério de salvação; outra é a coerência doutrinária e comunitária de quem decide fazer parte da IASD.</p>
             </div>
 
@@ -692,7 +692,7 @@ html { scroll-behavior: smooth; }
                 <p>Sua base bíblica é construída por convergência de textos:</p>
                 <p>Daniel 7:9-10: tribunal assentado, livros abertos;</p>
                 <p>Daniel 8:14: purificação do santuário;</p>
-                <p>Daniel 9:24-27: conexão cronológica das 70 semanas com o período maior;</p>
+                <p><a href="#" class="biblical-reference" data-reference="Daniel 9:24-27">Daniel 9:24-27</a>: conexão cronológica das 70 semanas com o período maior;</p>
                 <p>Hebreus 8-9: ministério de Cristo no santuário celestial;</p>
                 <p>Apocalipse 14:6-7: anúncio de que "é chegada a hora do seu juízo" antes da volta de Cristo;</p>
                 <p>Apocalipse 22:12: Cristo traz sua recompensa consigo, implicando juízo prévio.</p>
@@ -701,7 +701,7 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>3.2 Como a IASD fundamenta biblicamente a data de 1844 e, em especial, 22 de outubro de 1844? A profecia dos 2300 dias/tardes e manhãs de Daniel 8 realmente aponta para 1844 e o início do juízo?</h4>
-                <p>A IASD aplica o princípio dia-ano em profecias apocalípticas (Números 14:34; Ezequiel 4:6) e entende que os 2300 dias de Daniel 8:14 representam 2300 anos. Como Daniel 8 não fornece explicitamente o ponto inicial, a igreja relaciona a profecia com Daniel 9, onde as 70 semanas são "determinadas" para o povo de Israel e começam com o decreto para restaurar Jerusalém. O decreto mais completo é o de Artaxerxes, em 457 a.C. (Esdras 7:11-26).</p>
+                <p>A IASD aplica o princípio dia-ano em profecias apocalípticas <a href="#" class="biblical-reference" data-reference="Números 14:34">Números 14:34</a>; <a href="#" class="biblical-reference" data-reference="Ezequiel 4:6">Ezequiel 4:6</a> e entende que os 2300 dias de Daniel 8:14 representam 2300 anos. Como Daniel 8 não fornece explicitamente o ponto inicial, a igreja relaciona a profecia com Daniel 9, onde as 70 semanas são "determinadas" para o povo de Israel e começam com o decreto para restaurar Jerusalém. O decreto mais completo é o de Artaxerxes, em 457 a.C. <a href="#" class="biblical-reference" data-reference="Esdras 7:11-26">Esdras 7:11-26</a>.</p>
                 <p>Contando 2300 anos a partir de 457 a.C., chega-se a 1844 d.C. Quanto à data 22 de outubro de 1844, ela resulta da associação entre a purificação do santuário e o Dia da Expiação de Levítico 16, calculado segundo o calendário judaico caraíta usado pelos mileritas. A posição adventista atual mantém 1844 como marco profético do início da fase final do ministério de Cristo no santuário celestial. A data específica de 22 de outubro é entendida historicamente como o dia do Grande Desapontamento, ligado ao cálculo do calendário religioso daquele ano.</p>
             </div>
 
@@ -1039,7 +1039,7 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>7.6 O que significa o "selo de Deus" em contraste com a marca da besta?</h4>
-                <p>O selo de Deus é o sinal de propriedade e proteção divina. Biblicamente, o selo contém o nome, o título e o território do soberano. O sábado é identificado como o selo da lei de Deus porque contém esses elementos (Êxodo 20:11). Enquanto a marca da besta representa a lealdade a uma autoridade humana, o selo de Deus representa a lealdade ao Criador e a aceitação da Sua lei no coração pelo Espírito Santo. Referências: Ezequiel 20:12, Apocalipse 7:2-3, Efésios 4:30.</p>
+                <p>O selo de Deus é o sinal de propriedade e proteção divina. Biblicamente, o selo contém o nome, o título e o território do soberano. O sábado é identificado como o selo da lei de Deus porque contém esses elementos (Êxodo 20:11). Enquanto a marca da besta representa a lealdade a uma autoridade humana, o selo de Deus representa a lealdade ao Criador e a aceitação da Sua lei no coração pelo Espírito Santo. Referências: Ezequiel 20:12, Apocalipse 7:2-3, <a href="#" class="biblical-reference" data-reference="Efésios 4:30">Efésios 4:30</a></p>
             </div>
 
             <div class="doctrine-item">
@@ -1052,17 +1052,17 @@ html { scroll-behavior: smooth; }
                 <p>Sim. Durante o milênio:</p>
                 <p>Os justos estarão no céu com Cristo, participando do julgamento dos ímpios e dos anjos caídos.</p>
                 <p>A Terra ficará deserta, em um estado de caos e desolação (como o abismo original de Gênesis 1:2), sem habitantes humanos vivos.</p>
-                <p>Satanás e seus anjos ficarão presos na Terra por uma "corrente de circunstâncias", pois não terão ninguém para enganar. Referências: Apocalipse 20:1-6, 1 Coríntios 6:2-3, Jeremias 4:23-26.</p>
+                <p>Satanás e seus anjos ficarão presos na Terra por uma "corrente de circunstâncias", pois não terão ninguém para enganar. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 20:1-6">Apocalipse 20:1-6</a>, <a href="#" class="biblical-reference" data-reference="1 Coríntios 6:2-3">1 Coríntios 6:2-3</a>, <a href="#" class="biblical-reference" data-reference="Jeremias 4:23-26">Jeremias 4:23-26</a>.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>7.9 Qual é o papel de Satanás durante o milênio e por que ele é relacionado ao bode emissário de Levítico 16?</h4>
-                <p>Satanás é "preso" na Terra desolada. Ele é relacionado ao bode emissário (Azazel) porque, no Dia da Expiação (Levítico 16), após o santuário ser purificado pelo sangue do sacrifício, os pecados confessados eram colocados sobre o bode emissário, que era levado ao deserto. Da mesma forma, após Cristo completar a expiação no santuário celestial, Ele colocará a responsabilidade final por todos os pecados sobre Satanás (o originador do mal), que será banido para a Terra desolada durante o milênio. Referências: Levítico 16:8-10, 20-22, Apocalipse 20:1-3.</p>
+                <p>Satanás é "preso" na Terra desolada. Ele é relacionado ao bode emissário (Azazel) porque, no Dia da Expiação <a href="#" class="biblical-reference" data-reference="Levítico 16">Levítico 16</a>, após o santuário ser purificado pelo sangue do sacrifício, os pecados confessados eram colocados sobre o bode emissário, que era levado ao deserto. Da mesma forma, após Cristo completar a expiação no santuário celestial, Ele colocará a responsabilidade final por todos os pecados sobre Satanás (o originador do mal), que será banido para a Terra desolada durante o milênio. Referências: <a href="#" class="biblical-reference" data-reference="Levítico 16:8-10">Levítico 16:8-10</a>, <a href="#" class="biblical-reference" data-reference="Levítico 16:20-22">20-22</a>, <a href="#" class="biblical-reference" data-reference="Apocalipse 20:1-3">Apocalipse 20:1-3</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>7.10 É verdade que os adventistas ensinam que o bode emissário (Azazel) no Dia da Expiação representa Satanás em Levítico 16? Isso não faria de Satanás um co-salvador que carrega nossos pecados?</h4>
-                <p>Sim, os adventistas ensinam que Azazel representa Satanás. No entanto, isso não faz dele um co-salvador. O Nisto Cremos é enfático: Cristo realizou a expiação completa pelo pecado na cruz. Satanás não morre pelos nossos pecados para nos salvar; ele carrega a culpa e a punição final como o instigador do pecado. Assim como um criminoso é responsável por induzir outros ao crime, Satanás é punido por ter levado a humanidade a pecar. A salvação vem apenas do "Bode para o Senhor" (Cristo). Referências: Levítico 16:8, Hebreus 9:22-28.</p>
+                <p>Sim, os adventistas ensinam que Azazel representa Satanás. No entanto, isso não faz dele um co-salvador. O Nisto Cremos é enfático: Cristo realizou a expiação completa pelo pecado na cruz. Satanás não morre pelos nossos pecados para nos salvar; ele carrega a culpa e a punição final como o instigador do pecado. Assim como um criminoso é responsável por induzir outros ao crime, Satanás é punido por ter levado a humanidade a pecar. A salvação vem apenas do "Bode para o Senhor" (Cristo). Referências: <a href="#" class="biblical-reference" data-reference="Levítico 16:8">Levítico 16:8</a>, <a href="#" class="biblical-reference" data-reference="Hebreus 9:22-28">Hebreus 9:22-28</a></p>
             </div>
 
             <div class="doctrine-item">
@@ -1079,17 +1079,17 @@ html { scroll-behavior: smooth; }
                 <h4>7.12 Como os adventistas interpretam as três mensagens angélicas de Apocalipse 14:6–12?</h4>
                 <p><strong>Primeira Mensagem:</strong> Chamado para temer a Deus, dar-Lhe glória e adorar o Criador (restauração do sábado), pois a hora do Seu juízo chegou.</p>
                 <p><strong>Segunda Mensagem:</strong> Anúncio da queda de Babilônia (sistemas religiosos confusos e apóstatas).</p>
-                <p><strong>Terceira Mensagem:</strong> Aviso contra a adoração da besta e o recebimento de sua marca, destacando a perseverança daqueles que guardam os mandamentos de Deus. Referências: Apocalipse 14:6-12.</p>
+                <p><strong>Terceira Mensagem:</strong> Aviso contra a adoração da besta e o recebimento de sua marca, destacando a perseverança daqueles que guardam os mandamentos de Deus. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6-12">Apocalipse 14:6-12</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>7.13 Quem são os 144.000 no Apocalipse? São literais ou simbólicos?</h4>
-                <p>A interpretação predominante é que o número é simbólico, representando a totalidade do povo de Deus que estará vivo na Terra para enfrentar a crise final sem passar pela morte antes da vinda de Cristo. Eles são caracterizados pela fidelidade absoluta e por terem o selo de Deus. Referências: Apocalipse 7:4-8, Apocalipse 14:1-5.</p>
+                <p>A interpretação predominante é que o número é simbólico, representando a totalidade do povo de Deus que estará vivo na Terra para enfrentar a crise final sem passar pela morte antes da vinda de Cristo. Eles são caracterizados pela fidelidade absoluta e por terem o selo de Deus. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 7:4-8">Apocalipse 7:4-8</a>, <a href="#" class="biblical-reference" data-reference="Apocalipse 14:1-5">Apocalipse 14:1-5</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>7.14 Os adventistas rejeitam o arrebatamento secreto? Como entendem a segunda vinda de Cristo?</h4>
-                <p>Sim, a IASD rejeita o arrebatamento secreto. A segunda vinda de Cristo será literal, pessoal, visível e audível. "Todo olho O verá". Não haverá uma vinda "invisível" em duas etapas. Referências: Apocalipse 1:7, Mateus 24:27, 30-31, 1 Tessalonicenses 4:16-17.</p>
+                <p>Sim, a IASD rejeita o arrebatamento secreto. A segunda vinda de Cristo será literal, pessoal, visível e audível. "Todo olho O verá". Não haverá uma vinda "invisível" em duas etapas. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 1:7">Apocalipse 1:7</a>, <a href="#" class="biblical-reference" data-reference="Mateus 24:27">Mateus 24:27</a>, <a href="#" class="biblical-reference" data-reference="Mateus 24:30-31">30-31</a>, <a href="#" class="biblical-reference" data-reference="1 Tessalonicenses 4:16-17">1 Tessalonicenses 4:16-17</a>.</p>
             </div>
 
             <div class="doctrine-item">
@@ -1097,7 +1097,7 @@ html { scroll-behavior: smooth; }
                 <p><strong>Salvos mortos:</strong> Ressuscitam (primeira ressurreição).</p>
                 <p><strong>Salvos vivos:</strong> São transformados e arrebatados para encontrar o Senhor nos ares.</p>
                 <p><strong>Ímpios vivos:</strong> São destruídos pelo resplendor da vinda de Cristo.</p>
-                <p><strong>Ímpios mortos:</strong> Permanecem na sepultura até o fim do milênio. Referências: 1 Tessalonicenses 4:16-17, 2 Tessalonicenses 2:8, Apocalipse 20:5.</p>
+                <p><strong>Ímpios mortos:</strong> Permanecem na sepultura até o fim do milênio. Referências: 1 Tessalonicenses 4:16-17, 2 Tessalonicenses 2:8, <a href="#" class="biblical-reference" data-reference="Apocalipse 20:5">Apocalipse 20:5</a></p>
             </div>
 
             <div class="doctrine-item">
@@ -1131,17 +1131,17 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>8.3 A doutrina do remanescente não é exclusivista e contrária à unidade do corpo de Cristo descrita em 1 Coríntios 12?</h4>
-                <p>Não, pois a unidade bíblica é baseada na verdade e no Espírito. O remanescente é chamado para unir o corpo de Cristo em torno da "fé que uma vez foi entregue aos santos". A exclusividade é da mensagem, não das pessoas. O convite é inclusivo: "sai dela, povo meu". Referências: Efésios 4:13, Apocalipse 18:4.</p>
+                <p>Não, pois a unidade bíblica é baseada na verdade e no Espírito. O remanescente é chamado para unir o corpo de Cristo em torno da "fé que uma vez foi entregue aos santos". A exclusividade é da mensagem, não das pessoas. O convite é inclusivo: "sai dela, povo meu". Referências: <a href="#" class="biblical-reference" data-reference="Efésios 4:13">Efésios 4:13</a>, <a href="#" class="biblical-reference" data-reference="Apocalipse 18:4">Apocalipse 18:4</a>.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>8.4 Se guardar o sábado é central ao remanescente, por que outros grupos sabatistas tais como os Batistas do Sétimo Dia não são reconhecidos da mesma forma?</h4>
-                <p>Porque a identidade do remanescente em Apocalipse envolve não apenas os mandamentos, mas também o "testemunho de Jesus" (identificado como o Espírito de Profecia) e a missão específica de proclamar as Três Mensagens Angélicas em um contexto de juízo. Outros grupos podem guardar o sábado, mas não compartilham da totalidade da missão profética adventista. Referências: Apocalipse 12:17, Apocalipse 19:10.</p>
+                <p>Porque a identidade do remanescente em Apocalipse envolve não apenas os mandamentos, mas também o "testemunho de Jesus" (identificado como o Espírito de Profecia) e a missão específica de proclamar as Três Mensagens Angélicas em um contexto de juízo. Outros grupos podem guardar o sábado, mas não compartilham da totalidade da missão profética adventista. Referências: Apocalipse 12:17, <a href="#" class="biblical-reference" data-reference="Apocalipse 19:10">Apocalipse 19:10</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>8.5 O que significa "Babilônia" para a IASD no Apocalipse 14 em relação às outras igrejas cristãs?</h4>
-                <p>Babilônia representa a confusão religiosa e a apostasia. Refere-se a organizações religiosas que rejeitaram as verdades bíblicas em favor de tradições humanas (como a imortalidade da alma e a santidade do domingo). O chamado é para que os filhos de Deus saiam desses sistemas antes que as pragas caiam. Referências: Apocalipse 14:8, Apocalipse 18:1-4.</p>
+                <p>Babilônia representa a confusão religiosa e a apostasia. Refere-se a organizações religiosas que rejeitaram as verdades bíblicas em favor de tradições humanas (como a imortalidade da alma e a santidade do domingo). O chamado é para que os filhos de Deus saiam desses sistemas antes que as pragas caiam. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 14:8">Apocalipse 14:8</a>, <a href="#" class="biblical-reference" data-reference="Apocalipse 18:1-4">Apocalipse 18:1-4</a>.</p>
             </div>
 
             <div class="doctrine-item">
@@ -1156,7 +1156,7 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>8.8 Os adventistas são evangélicos/protestantes ou possuem identidade teológica própria? As crenças adventistas são compatíveis com o protestantismo histórico?</h4>
-                <p>Os adventistas são protestantes e evangélicos, herdeiros da Reforma (Sola Scriptura, Sola Fide). No entanto, possuem uma identidade teológica própria ("o evangelho eterno" no contexto do juízo), que eles veem como a conclusão da Reforma que foi interrompida. Referências: Apocalipse 14:6.</p>
+                <p>Os adventistas são protestantes e evangélicos, herdeiros da Reforma (Sola Scriptura, Sola Fide). No entanto, possuem uma identidade teológica própria ("o evangelho eterno" no contexto do juízo), que eles veem como a conclusão da Reforma que foi interrompida. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6">Apocalipse 14:6</a>.</p>
             </div>
 
             <div class="doctrine-item">
@@ -1239,14 +1239,14 @@ html { scroll-behavior: smooth; }
                 <p>Não. Os adventistas não creem que Jesus seja um anjo criado. A identificação de Cristo com Miguel não significa que Ele seja um ser criado ou da mesma natureza dos anjos.</p>
                 <p>Na leitura adventista, "Miguel" é um título funcional aplicado a Cristo em certos contextos bíblicos, especialmente nos textos de conflito cósmico e liderança dos exércitos celestiais. O nome Miguel significa algo como "Quem é como Deus?", e aparece em cenas de guerra espiritual e autoridade celestial.</p>
                 <p>Textos principais:</p>
-                <p>Daniel 10:13 — Miguel, um dos primeiros príncipes.</p>
-                <p>Daniel 12:1 — Miguel se levanta em favor do povo de Deus.</p>
-                <p>Judas 9 — Miguel, o arcanjo.</p>
-                <p>Apocalipse 12:7 — Miguel e seus anjos pelejam contra o dragão.</p>
-                <p>1 Tessalonicenses 4:16 — a voz do arcanjo associada à volta de Cristo.</p>
+                <p><a href="#" class="biblical-reference" data-reference="Daniel 10:13">Daniel 10:13</a> — Miguel, um dos primeiros príncipes.</p>
+                <p><a href="#" class="biblical-reference" data-reference="Daniel 12:1">Daniel 12:1</a> — Miguel se levanta em favor do povo de Deus.</p>
+                <p><a href="#" class="biblical-reference" data-reference="Judas 9">Judas 9</a> — Miguel, o arcanjo.</p>
+                <p><a href="#" class="biblical-reference" data-reference="Apocalipse 12:7">Apocalipse 12:7</a> — Miguel e seus anjos pelejam contra o dragão.</p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Tessalonicenses 4:16">1 Tessalonicenses 4:16</a> — a voz do arcanjo associada à volta de Cristo.</p>
                 <p>A lógica adventista é esta: o ser que lidera os anjos, defende o povo de Deus, derrota Satanás e está ligado à ressurreição e à vitória final é o próprio Cristo em sua função de Comandante celestial. "Arcanjo", nessa leitura, não quer dizer "anjo criado", mas chefe dos anjos.</p>
                 <p>Isso é muito diferente da posição das Testemunhas de Jeová. Elas entendem Miguel como um ser criado, o maior dos anjos. A IASD rejeita isso porque afirma claramente que:</p>
-                <p>Cristo é eterno (Miquéias 5:2; João 1:1-3);</p>
+                <p>Cristo é eterno (<a href="#" class="biblical-reference" data-reference="Miquéias 5:2">Miquéias 5:2</a>; <a href="#" class="biblical-reference" data-reference="João 1:1-3">João 1:1-3</a>);</p>
                 <p>Cristo é Criador, não criatura (Colossenses 1:16-17; Hebreus 1:1-8);</p>
                 <p>Cristo é adorado (Mateus 28:17; Hebreus 1:6; Apocalipse 5:11-14);</p>
                 <p>"nele habita corporalmente toda a plenitude da Divindade" (Colossenses 2:9).</p>
@@ -1302,7 +1302,7 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>10.1 Por que os adventistas evitam carne de porco e outros animais considerados impuros (Levítico 11)? Isso não fazia parte da lei cerimonial?</h4>
-                <p>Os adventistas entendem que a distinção entre animais puros e impuros não surgiu apenas com a lei cerimonial de Moisés, mas já existia antes, sendo depois reafirmada em Levítico 11.</p>
+                <p>Os adventistas entendem que a distinção entre animais puros e impuros não surgiu apenas com a lei cerimonial de Moisés, mas já existia antes, sendo depois reafirmada em <a href="#" class="biblical-reference" data-reference="Levítico 11">Levítico 11</a></p>
                 <p>Um ponto importante é Gênesis 7:2, antes do Sinai: Noé já devia distinguir entre animais limpos e imundos. Isso mostra que a categoria não nasceu meramente com o sistema cerimonial israelita.</p>
                 <p>Levítico 11 e Deuteronômio 14 organizam essa distinção para o povo de Israel. A leitura adventista é que essa diferença possui também caráter sanitário, moral e de santidade prática, não apenas ritual. O Nisto Cremos trata da saúde cristã em conexão com a santidade do corpo e da vida.</p>
                 <p>Textos importantes:</p>
@@ -1331,7 +1331,7 @@ html { scroll-behavior: smooth; }
                 <p>Na leitura adventista, Jesus ensinou que a contaminação moral vem do coração, não da falta de rito humano. Isso não equivale a abolir categorias alimentares já definidas por Deus.</p>
                 <p>Portanto:</p>
                 <p>Atos 10 fala principalmente sobre pessoas, não sobre cardápio;</p>
-                <p>Marcos 7 fala sobre tradição ritual, não sobre revogação de Levítico 11.</p>
+                <p>Marcos 7 fala sobre tradição ritual, não sobre revogação de <a href="#" class="biblical-reference" data-reference="Levítico 11">Levítico 11</a></p>
             </div>
 
             <div class="doctrine-item">
@@ -1343,11 +1343,11 @@ html { scroll-behavior: smooth; }
                 <p>porém, a salvação está em Cristo, não no cardápio.</p>
                 <p>O Nisto Cremos trata a saúde como parte da mordomia cristã. O objetivo é glorificar a Deus no corpo, na mente e nos hábitos.</p>
                 <p>Textos relevantes:</p>
-                <p>Gênesis 1:29</p>
-                <p>Daniel 1:8-20</p>
-                <p>1 Coríntios 6:19-20</p>
-                <p>1 Coríntios 10:31</p>
-                <p>Romanos 14:17</p>
+                <p><a href="#" class="biblical-reference" data-reference="Gênesis 1:29">Gênesis 1:29</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Daniel 1:8-20">Daniel 1:8-20</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 6:19-20">1 Coríntios 6:19-20</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">1 Coríntios 10:31</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Romanos 14:17">Romanos 14:17</a></p>
                 <p>Então, o vegetarianismo, para a IASD, é uma recomendação de saúde e um ideal de estilo de vida, não um teste absoluto de salvação.</p>
             </div>
 
@@ -1361,11 +1361,11 @@ html { scroll-behavior: smooth; }
                 <p>testemunho cristão;</p>
                 <p>obediência prática a princípios divinos.</p>
                 <p>Textos principais:</p>
-                <p>1 Coríntios 6:19-20</p>
-                <p>1 Coríntios 10:31</p>
-                <p>Romanos 12:1-2</p>
-                <p>3 João 2</p>
-                <p>1 Tessalonicenses 5:23</p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 6:19-20">1 Coríntios 6:19-20</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">1 Coríntios 10:31</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Romanos 12:1-2">Romanos 12:1-2</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="3 João 2">3 João 2</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Tessalonicenses 5:23">1 Tessalonicenses 5:23</a></p>
                 <p>Pastoralmente, a melhor forma de dizer é:</p>
                 <p>não somos salvos porque seguimos a reforma de saúde;</p>
                 <p>mas quem foi alcançado pela graça deve desejar honrar a Deus também nessa área.</p>
@@ -1553,11 +1553,11 @@ html { scroll-behavior: smooth; }
                 <p>compreensão do evangelho;</p>
                 <p>decisão consciente de discipulado.</p>
                 <p>Textos principais:</p>
-                <p>Marcos 16:16</p>
-                <p>Atos 2:38</p>
-                <p>Atos 8:12</p>
-                <p>Atos 8:36-38</p>
-                <p>Romanos 6:3-6</p>
+                <p><a href="#" class="biblical-reference" data-reference="Marcos 16:16">Marcos 16:16</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Atos 2:38">Atos 2:38</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Atos 8:12">Atos 8:12</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Atos 8:36-38">Atos 8:36-38</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Romanos 6:3-6">Romanos 6:3-6</a></p>
                 <p>Como um bebê ainda não pode exercer arrependimento e fé consciente, a igreja não o batiza.</p>
             </div>
 
@@ -1597,8 +1597,8 @@ html { scroll-behavior: smooth; }
                 <p>mas a Ceia não é mero simbolismo frio;</p>
                 <p>há uma presença real de Cristo em sentido espiritual e relacional.</p>
                 <p>Textos principais:</p>
-                <p>1 Coríntios 10:16-17</p>
-                <p>1 Coríntios 11:23-29</p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:16-17">1 Coríntios 10:16-17</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 11:23-29">1 Coríntios 11:23-29</a></p>
                 <p>João 6 como pano de fundo cristológico, ainda que não diretamente institucional da Ceia.</p>
             </div>
 
@@ -1687,8 +1687,8 @@ html { scroll-behavior: smooth; }
                 <h4>14.1 Os adventistas creem em criação literal em seis dias?</h4>
                 <p>Sim. A IASD crê em criação literal em seis dias. Isso é parte central de sua doutrina.</p>
                 <p>Textos principais:</p>
-                <p>Gênesis 1–2</p>
-                <p>Êxodo 20:8-11</p>
+                <p><a href="#" class="biblical-reference" data-reference="Gênesis 1-2">Gênesis 1–2</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Êxodo 20:8-11">Êxodo 20:8-11</a></p>
                 <p>O Nisto Cremos trata a criação como fundamento indispensável para a teologia bíblica e cristã. A conexão com o sábado é decisiva: o quarto mandamento baseia o sábado no padrão da criação em seis dias.</p>
             </div>
 
@@ -1735,9 +1735,9 @@ html { scroll-behavior: smooth; }
                 <h4>14.5 O dilúvio foi global e explica geologia e fósseis na leitura adventista?</h4>
                 <p>Sim. Na leitura adventista tradicional, o dilúvio de Gênesis foi global, não apenas regional.</p>
                 <p>Textos principais:</p>
-                <p>Gênesis 6–9</p>
-                <p>Mateus 24:37-39</p>
-                <p>2 Pedro 3:5-6</p>
+                <p><a href="#" class="biblical-reference" data-reference="Gênesis 6-9">Gênesis 6–9</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Mateus 24:37-39">Mateus 24:37-39</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="2 Pedro 3:5-6">2 Pedro 3:5-6</a></p>
                 <p>Essa leitura serve como parte importante da explicação adventista para grande parte do registro fóssil e de formações geológicas de larga escala. A igreja vê o dilúvio como evento histórico catastrófico de alcance mundial.</p>
             </div>
         </div>
@@ -1772,11 +1772,11 @@ html { scroll-behavior: smooth; }
                 <p>Sim. A IASD reconhece amplamente o ministério feminino em várias áreas. O próprio Nisto Cremos afirma que o Espírito distribui dons à igreja para ministérios como ensino, proclamação, administração, reconciliação, compaixão e serviço. Isso não é limitado, nesse princípio, apenas aos homens.</p>
                 <p>Além disso, o livro reconhece o ministério profético de Ellen G. White, cofundadora da Igreja Adventista do Sétimo Dia. Isso, por si só, mostra que a IASD não crê que Deus esteja impedido de usar mulheres em ensino, exortação e liderança espiritual.</p>
                 <p>Textos relevantes:</p>
-                <p>Joel 2:28-29</p>
-                <p>Atos 2:17-18</p>
-                <p>Romanos 16</p>
-                <p>Juízes 4–5</p>
-                <p>Atos 18:26</p>
+                <p><a href="#" class="biblical-reference" data-reference="Joel 2:28-29">Joel 2:28-29</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Atos 2:17-18">Atos 2:17-18</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Romanos 16">Romanos 16</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Juízes 4-5">Juízes 4–5</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Atos 18:26">Atos 18:26</a></p>
                 <p>Na prática, mulheres podem:</p>
                 <p>pregar;</p>
                 <p>ensinar;</p>
