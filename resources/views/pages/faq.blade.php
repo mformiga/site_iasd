@@ -1016,7 +1016,7 @@ html { scroll-behavior: smooth; }
             <div class="doctrine-item">
                 <h4>7.2 Se sábado e domingo não aparecem explicitamente em Apocalipse 13, como a IASD faz essa ligação? Os adventistas ensinam que a imposição do domingo como dia de culto obrigatório será a "Marca da Besta". Existe base bíblica para isso?</h4>
                 <p>A ligação é feita através da exegese comparativa e da história profética. Embora os nomes "sábado" e "domingo" não estejam em Apocalipse 13, a mensagem do primeiro anjo em Apocalipse 14:7 convida a adorar "Aquele que fez o céu, e a terra, e o mar", uma citação direta do mandamento do sábado (Êxodo 20:11). Isso coloca o sábado no centro do conflito final sobre adoração.</p>
-                <p>A base bíblica para relacionar a marca à mudança da lei está em Daniel 7:25, que profetiza um poder que cuidaria em "mudar os tempos e a lei". Como o sábado é o único mandamento que lida com o "tempo" da adoração, a IASD entende que a substituição do sábado pelo domingo é a maior evidência dessa tentativa de alteração da autoridade divina. A "marca" ocorre quando essa substituição é imposta por lei, forçando uma escolha entre a lei de Deus e a lei dos homens. Referências: Daniel 7:25, Atos 5:29, Apocalipse 14:12.</p>
+                <p>A base bíblica para relacionar a marca à mudança da lei está em <a href="#" class="biblical-reference" data-reference="Daniel 7:25">Daniel 7:25</a>, que profetiza um poder que cuidaria em "mudar os tempos e a lei". Como o sábado é o único mandamento que lida com o "tempo" da adoração, a IASD entende que a substituição do sábado pelo domingo é a maior evidência dessa tentativa de alteração da autoridade divina. A "marca" ocorre quando essa substituição é imposta por lei, forçando uma escolha entre a lei de Deus e a lei dos homens. Referências: <a href="#" class="biblical-reference" data-reference="Daniel 7:25">Daniel 7:25</a>, <a href="#" class="biblical-reference" data-reference="Atos 5:29">Atos 5:29</a>, <a href="#" class="biblical-reference" data-reference="Apocalipse 14:12">Apocalipse 14:12</a>.</p>
             </div>
 
             <div class="doctrine-item">
@@ -1029,7 +1029,7 @@ html { scroll-behavior: smooth; }
                 <p><strong>Besta que sobe do mar (Ap 13:1-10):</strong> Representa o Papado (o sistema romano), que uniu igreja e estado e dominou durante a Idade Média (os 1260 anos de Daniel 7:25).</p>
                 <p><strong>Besta que sobe da terra (Ap 13:11-18):</strong> Representa os Estados Unidos da América, que surgem em um território despovoado ("da terra"), com princípios cristãos e democráticos ("dois chifres como de cordeiro"), mas que acabará falando "como dragão" ao impor decretos religiosos.</p>
                 <p><strong>Imagem da besta:</strong> É a união de igrejas protestantes apóstatas com o estado para impor dogmas religiosos por força civil, replicando o modelo de perseguição da Idade Média.</p>
-                <p><strong>Falso profeta:</strong> Identificado como o protestantismo apostatado que, unido ao espiritismo e ao poder civil, realiza sinais para enganar o mundo. Referências: Apocalipse 13, Apocalipse 16:13, 2 Tessalonicenses 2:3-4.</p>
+                <p><strong>Falso profeta:</strong> Identificado como o protestantismo apostatado que, unido ao espiritismo e ao poder civil, realiza sinais para enganar o mundo. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 13">Apocalipse 13</a>, <a href="#" class="biblical-reference" data-reference="Apocalipse 16:13">Apocalipse 16:13</a>, <a href="#" class="biblical-reference" data-reference="2 Tessalonicenses 2:3-4">2 Tessalonicenses 2:3-4</a>.</p>
             </div>
 
             <div class="doctrine-item">
@@ -1044,7 +1044,7 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>7.7 O que significa "não poder comprar nem vender" em Apocalipse 13:17 na interpretação adventista?</h4>
-                <p>Significa um boicote econômico total imposto contra aqueles que se recusarem a aceitar a marca da besta (a observância compulsória do domingo). É uma forma de pressão civil e econômica para forçar a conformidade religiosa antes que o decreto de morte final seja emitido. Referências: Apocalipse 13:17.</p>
+                <p>Significa um boicote econômico total imposto contra aqueles que se recusarem a aceitar a marca da besta (a observância compulsória do domingo). É uma forma de pressão civil e econômica para forçar a conformidade religiosa antes que o decreto de morte final seja emitido. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 13:17">Apocalipse 13:17</a></p>
             </div>
 
             <div class="doctrine-item">
@@ -1102,17 +1102,17 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>7.16 Como os adventistas lidam com previsões de datas, se ninguém sabe o dia nem a hora?</h4>
-                <p>A Igreja Adventista proíbe a marcação de datas para a volta de Cristo, baseada em Mateus 24:36. Embora estudem os "sinais dos tempos" para saber que a vinda está próxima, qualquer tentativa de marcar dia ou hora é considerada antibíblica. Referências: Marcos 13:32, Atos 1:7.</p>
+                <p>A Igreja Adventista proíbe a marcação de datas para a volta de Cristo, baseada em Mateus 24:36. Embora estudem os "sinais dos tempos" para saber que a vinda está próxima, qualquer tentativa de marcar dia ou hora é considerada antibíblica. Referências: <a href="#" class="biblical-reference" data-reference="Marcos 13:32">Marcos 13:32</a>, <a href="#" class="biblical-reference" data-reference="Atos 1:7">Atos 1:7</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>7.17 Por que Jesus ainda não voltou, se tanto tempo já passou?</h4>
-                <p>Os adventistas entendem que Deus é paciente, não querendo que ninguém pereça (2 Pedro 3:9). A demora também é relacionada à necessidade de o evangelho ser pregado em todo o mundo como testemunho (Mateus 24:14) e ao amadurecimento do caráter do Seu povo. Referências: 2 Pedro 3:8-12, Apocalipse 14:14-15.</p>
+                <p>Os adventistas entendem que Deus é paciente, não querendo que ninguém pereça (2 Pedro 3:9). A demora também é relacionada à necessidade de o evangelho ser pregado em todo o mundo como testemunho (Mateus 24:14) e ao amadurecimento do caráter do Seu povo. Referências: <a href="#" class="biblical-reference" data-reference="2 Pedro 3:8-12">2 Pedro 3:8-12</a>, <a href="#" class="biblical-reference" data-reference="Apocalipse 14:14-15">Apocalipse 14:14-15</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>7.18 O que é a visão adventista do Grande Conflito entre Cristo e Satanás?</h4>
-                <p>É a moldura teológica que explica a origem do mal como uma rebelião de Lúcifer no céu contra o governo e a lei de Deus. A Terra tornou-se o palco onde o caráter de Deus (amor e justiça) está sendo vindicado perante o universo. A história da salvação é o processo de Deus resolver esse conflito preservando o livre-arbítrio. Referências: Apocalipse 12:7-9, Isaías 14:12-14, Ezequiel 28:12-17.</p>
+                <p>É a moldura teológica que explica a origem do mal como uma rebelião de Lúcifer no céu contra o governo e a lei de Deus. A Terra tornou-se o palco onde o caráter de Deus (amor e justiça) está sendo vindicado perante o universo. A história da salvação é o processo de Deus resolver esse conflito preservando o livre-arbítrio. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 12:7-9">Apocalipse 12:7-9</a>, <a href="#" class="biblical-reference" data-reference="Isaías 14:12-14">Isaías 14:12-14</a>, <a href="#" class="biblical-reference" data-reference="Ezequiel 28:12-17">Ezequiel 28:12-17</a></p>
             </div>
         </div>
 
@@ -1121,12 +1121,12 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>8.1 A Igreja Adventista se considera a única igreja verdadeira ou a igreja remanescente exclusiva de Apocalipse 12:17?</h4>
-                <p>A IASD se identifica como a igreja remanescente profética, mas isso não significa que ela seja a "única igreja verdadeira" no sentido de que apenas seus membros serão salvos. O remanescente é um movimento com uma missão específica: restaurar as verdades esquecidas e proclamar as mensagens finais. Deus tem um "povo invisível" em todas as denominações. Referências: Apocalipse 12:17, João 10:16.</p>
+                <p>A IASD se identifica como a igreja remanescente profética, mas isso não significa que ela seja a "única igreja verdadeira" no sentido de que apenas seus membros serão salvos. O remanescente é um movimento com uma missão específica: restaurar as verdades esquecidas e proclamar as mensagens finais. Deus tem um "povo invisível" em todas as denominações. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 12:17">Apocalipse 12:17</a>, <a href="#" class="biblical-reference" data-reference="João 10:16">João 10:16</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>8.2 Pessoas de outras igrejas ou religiões (católicos, evangélicos, espíritas, etc) também podem ser salvas segundo a doutrina adventista?</h4>
-                <p>Sim. Os adventistas acreditam que Deus julga as pessoas de acordo com a luz que receberam e a sinceridade de seu coração. Muitos que nunca ouviram a mensagem adventista, mas viveram fielmente segundo o que conheciam da vontade de Deus, serão salvos. Referências: Romanos 2:14-16, Atos 17:30.</p>
+                <p>Sim. Os adventistas acreditam que Deus julga as pessoas de acordo com a luz que receberam e a sinceridade de seu coração. Muitos que nunca ouviram a mensagem adventista, mas viveram fielmente segundo o que conheciam da vontade de Deus, serão salvos. Referências: <a href="#" class="biblical-reference" data-reference="Romanos 2:14-16">Romanos 2:14-16</a>, <a href="#" class="biblical-reference" data-reference="Atos 17:30">Atos 17:30</a></p>
             </div>
 
             <div class="doctrine-item">
