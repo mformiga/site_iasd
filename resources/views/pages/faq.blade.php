@@ -98,7 +98,7 @@ main, footer {
     max-width: none !important;
 }
 
-.faq-container {
+.evidencias-container {
     max-width: 1200px !important;
 }
 
@@ -126,7 +126,7 @@ main, footer {
     margin: 0;
 }
 
-.faq-container {
+.evidencias-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -357,7 +357,7 @@ main, footer {
 }
 
 @media (max-width: 768px) {
-    .faq-container {
+    .evidencias-container {
         padding: 20px 15px;
     }
 
