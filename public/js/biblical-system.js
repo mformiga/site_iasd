@@ -7,8 +7,6 @@
 (function() {
     'use strict';
 
-    console.log('🔧 Carregando sistema de links bíblicos...');
-
     // TEXTOS BÍBLICOS DA NVI - APENAS VERSÍCULOS ESPECÍFICOS
     const biblicalPassages = {
         "Gênesis 2:1-3": "Assim foram acabados os céus e a terra, e todos os seus exércitos. No sétimo dia Deus já havia concluído a obra que realizara, e nesse dia descansou. Deus abençoou o sétimo dia e o santificou, porque nele descansou de toda a obra que realizara na criação.",
@@ -781,63 +779,53 @@
         "Atos 2:17-18": "E nos últimos dias acontecerá, diz Deus, Que do meu Espírito derramarei sobre toda a carne; E os vossos filhos e as vossas filhas profetizarão, Os vossos jovens terão visões, E os vossos velhos terão sonhos; E também do meu Espírito derramarei sobre os meus servos e sobre as minhas servas naqueles dias, e profetizarão.",
         "Atos 18:26": "E ele começou a falar ousadamente na sinagoga. Quando o ouviram Priscila e Áqüila, o levaram consigo e lhe declararam mais precisamente o caminho de Deus.",
         "1 Timóteo 2:11-15": "A mulher aprenda em silêncio, com toda a sujeição. Não permito, porém, que a mulher ensine, nem use de autoridade sobre o marido, mas que esteja em silêncio. Porque primeiro foi formado Adão, depois Eva. E Adão não foi enganado, mas a mulher, sendo enganada, caiu em transgressão. Salvar-se-á, porém, dando à luz filhos, se permanecer com modéstia na fé, no amor e na santificação.",
-        "1 Coríntios 14:34-35": "As mulheres estejam caladas nas igrejas, porque lhes não é permitido falar; mas estejam sujeitas, como também ordena a lei. E, se querem aprender alguma coisa, interroguem em casa a seus próprios maridos; porque é vergonhoso que as mulheres falem na igreja."
+        "1 Coríntios 14:34-35": "As mulheres estejam caladas nas igrejas, porque lhes não é permitido falar; mas estejam sujeitas, como também ordena a lei. E, se querem aprender alguma coisa, interroguem em casa a seus próprios maridos; porque é vergonhoso que as mulheres falem na igreja.",
+
+        // SEÇÃO 3 - TEXTOS FALTANTES
+        "Lucas 24:25-27, 44-47": "E ele lhes disse: Ó néscios e tardios de coração para crer tudo o que os profetas disseram! Porventura não era necessário que o Cristo padecesse essas coisas e entrasse na sua glória? E, começando por Moisés, e por todos os profetas, explicava-lhes o que dele se achava em todas as Escrituras. E disse-lhes: Assim está escrito que o Cristo padeceria e ressuscitaria dentre os mortos ao terceiro dia; e que em seu nome se pregaria o arrependimento e a remissão dos pecados, em todas as nações, começando por Jerusalém.",
+        "Êxodo 25:40": "Vê, pois, e faze tudo conforme o modelo que te foi mostrado no monte.",
+        "Êxodo 25:8-9": "Me farão um santuário, e eu habitarei no meio deles. Conforme tudo o que eu te mostrar para o modelo do tabernáculo e para a forma de todos os seus utensílios, assim o farão.",
     };
 
     // Tornar disponível globalmente
     window.biblicalPassages = biblicalPassages;
 
-    console.log('✅ biblicalPassages carregado! Total:', Object.keys(biblicalPassages).length);
-
     // FUNÇÃO PARA INICIALIZAR OS LINKS
+    let initialized = false;
+
     function initBiblicalLinks() {
+        // Evitar dupla inicialização
+        if (initialized) {
+            return;
+        }
+        initialized = true;
+
         const links = document.querySelectorAll('.biblical-reference');
-        console.log('🔗 Links encontrados:', links.length);
 
         if (links.length === 0) {
-            console.log('⚠️ Nenhum link bíblico encontrado');
             return;
         }
 
         links.forEach(function(link, index) {
             const reference = link.getAttribute('data-reference');
-            console.log('📖 Configurando link', index + 1, ':', reference);
 
-            link.addEventListener('click', function(e) {
+            // Remover todos os event listeners anteriores clonando o elemento
+            const newLink = link.cloneNode(true);
+            link.parentNode.replaceChild(newLink, link);
+
+            // Configurar novo link
+            newLink.href = 'javascript:void(0)';
+
+            newLink.addEventListener('click', function(e) {
                 e.preventDefault();
                 e.stopPropagation();
 
-                console.log('👆 Clique no link:', reference);
-
-                const text = biblicalPassages[reference];
-                if (!text) {
-                    console.error('❌ Texto não encontrado para:', reference);
-                    console.log('Referências disponíveis:', Object.keys(biblicalPassages).slice(0, 10), '...');
-                    alert('Texto não encontrado: ' + reference);
-                    return;
-                }
-
-                console.log('✅ Texto encontrado, abrindo popup...');
-
-                // Verificar se a função openBiblicalPassage existe
-                if (typeof openBiblicalPassage === 'function') {
-                    openBiblicalPassage(reference, text);
-                } else {
-                    console.error('❌ openBiblicalPassage não disponível');
-                    alert('Erro: Sistema de popup não disponível');
-                }
-            });
-
-            // Adicionar suporte a teclado
-            link.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    link.click();
+                const text = window.biblicalPassages[reference];
+                if (text) {
+                    alert(text);
                 }
             });
         });
-
-        console.log('✅ Sistema de links bíblicos inicializado!');
     }
 
     // INICIALIZAR QUANDO O DOM ESTIVER PRONTO

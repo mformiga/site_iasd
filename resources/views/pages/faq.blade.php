@@ -18,7 +18,7 @@
       "name": "Quais são os horários dos cultos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Temos cultos aos sábados às 09h00 e 19h00. A Escola Sabatina acontece às 08h00."
+        "text": "Temos cultos aos sábados às 08h45 e 19h00. A Escola Sabatina acontece às 11h00."
       }
     },
     {
@@ -471,7 +471,7 @@ html { scroll-behavior: smooth; }
         <div class="faq-list">
             <div class="faq-item">
                 <h3>Quais são os horários dos cultos?</h3>
-                <p>Temos cultos aos sábados às 09h00 e 18h00. A Escola Sabatina acontece às 11h00. Os cultos também acontecem aos Domingos e Quartas às 19h00. Você é muito bem-vindo(a) em todos os nossos encontros!</p>
+                <p>Temos cultos aos sábados às 08h45 e 18h00. A Escola Sabatina acontece às 11h00. Os cultos também acontecem aos Domingos e Quartas às 19h00. Você é muito bem-vindo(a) em todos os nossos encontros!</p>
             </div>
 
             <div class="faq-item">
