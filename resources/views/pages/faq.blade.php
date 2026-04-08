@@ -92,10 +92,21 @@ body {
     color: #2d2a26;
 }
 
-/* Garantir layout full-width */
+/* Garantir layout full-width e compensar barra lateral */
 main, footer {
     width: 100% !important;
     max-width: none !important;
+}
+
+/* Compensar barra lateral fixa */
+body {
+    padding-right: 60px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-right: 40px;
+    }
 }
 
 .faq-banner {
