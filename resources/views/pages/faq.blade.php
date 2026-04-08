@@ -399,7 +399,7 @@ html { scroll-behavior: smooth; }
         <div class="faq-list">
             <div class="faq-item">
                 <h3>Quais são os horários dos cultos?</h3>
-                <p>Temos cultos aos sábados às 09h00 e 19h00. A Escola Sabatina acontece às 08h00. Você é muito bem-vindo em todos os nossos encontros!</p>
+                <p>Temos cultos aos sábados às 09h00 e 18h00. A Escola Sabatina acontece às 11h00. Os cultos também acontecem aos Domingos e Quartas às 19h00. Você é muito bem-vindo(a) em todos os nossos encontros!</p>
             </div>
 
             <div class="faq-item">
@@ -429,7 +429,7 @@ html { scroll-behavior: smooth; }
 
             <div class="faq-item">
                 <h3>O que a IASD Central de Brasília oferece?</h3>
-                <p>Oferecemos estudos bíblicos gratuitos, escola sabatina para todas as idades, corais e orquestras, ministérios para todas as faixas etárias (crianças, adolescentes, jovens, adultos e idosos), eventos especiais ao longo do ano, ações comunitárias através da ASA (Ação Solidária Adventista), suporte espiritual através do Ministério de Oração, e muito mais.</p>
+                <p>Oferecemos estudos bíblicos gratuitos, escola sabatina para todas as idades, corais e orquestras, ministérios para todas as faixas etárias (crianças, adolescentes, jovens, adultos e idosos), eventos especiais ao longo do ano, ações comunitárias através da <a href="{{ route('asa') }}">ASA (Ação Solidária Adventista)</a>, suporte espiritual através do <a href="{{ route('oracao-visita') }}">Ministério de Oração</a>, e muito mais.</p>
             </div>
 
             <div class="faq-item">
