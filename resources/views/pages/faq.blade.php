@@ -98,21 +98,8 @@ main, footer {
     max-width: none !important;
 }
 
-/* Ajustar largura da FAQ considerando barra lateral de 50% */
 .faq-container {
-    max-width: calc(1200px - 50%) !important;
-}
-
-@media (min-width: 1600px) {
-    .faq-container {
-        max-width: 1000px !important;
-    }
-}
-
-@media (max-width: 1200px) {
-    .faq-container {
-        max-width: 600px !important;
-    }
+    max-width: 1200px !important;
 }
 
 .faq-banner {
