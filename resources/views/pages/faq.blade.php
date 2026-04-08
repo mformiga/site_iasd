@@ -1901,13 +1901,6 @@ html { scroll-behavior: smooth; }
         <p>Solicite materiais de estudo gratuitos e comece sua jornada espiritual hoje mesmo!</p>
         <a href="{{ route('estudo-biblico') }}" class="btn-estudo-biblico">Acessar Estudo Bíblico</a>
     </div>
-
-    <div class="faq-contact">
-        <h3>Ainda Tem Dúvidas?</h3>
-        <p>Entre em contato conosco! Estamos aqui para ajudar.</p>
-        <p>📞 <strong>(61) 98157-4702</strong></p>
-        <p>✉️ <a href="mailto:comunicacaocentralbsb@gmail.com">comunicacaocentralbsb@gmail.com</a></p>
-    </div>
 </div>
 
 <script>
