@@ -112,13 +112,9 @@ html { scroll-behavior: smooth; }
 
 .faq-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-}
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    color: #666;
 }
 
 .faq-tabs {
