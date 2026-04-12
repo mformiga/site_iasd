@@ -2,9 +2,9 @@
 
 @section('title', 'IASD Central de Brasília - Perguntas Frequentes')
 
-@section('meta-description', 'Encontre respostas para as perguntas mais frequentes sobre a IASD Central de Brasília, doutrinas adventistas, crenças fundamentais, programações, estudos bíblicos e muito mais. Abordagem clara sobre sábado, Ellen White, estado dos mortos, salvação, escatologia, criação e outras questões.')
+@section('meta-description', 'Encontre respostas para as perguntas mais frequentes sobre a IASD Central de Brasília. Horários, programações, estudos bíblicos e mais.')
 @section('og-title', 'Perguntas Frequentes - IASD Central de Brasília')
-@section('og-description', 'Dúvidas sobre doutrinas adventistas e nossa igreja? Encontre respostas claras e bem fundamentadas em mais de 70 perguntas frequentes sobre crenças, práticas e programações!')
+@section('og-description', 'Dúvidas sobre nossa igreja? Encontre respostas aqui!')
 @section('page-name', 'FAQ')
 
 @push('schema-faq')
@@ -63,90 +63,18 @@
     },
     {
       "@type": "Question",
-      "name": "Por que os adventistas guardam o sábado e não o domingo?",
+      "name": "O que a IASD Central de Brasília oferece?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Os adventistas guardam o sábado porque acreditam que o quarto mandamento (Êxodo 20:8-11) estabelece o sábado como dia de descanso sagrado, não revogado no Novo Testamento. Jesus e os apóstolos mantiveram a observância do sábado."
+        "text": "Oferecemos estudos bíblicos, escola sabatina, corais e orquestras, ministérios para todas as idades, eventos especiais, ações comunitárias através da ASA, e muito mais."
       }
     },
     {
       "@type": "Question",
-      "name": "Os adventistas creem em criação literal em seis dias?",
+      "name": "Como participar da IASD Central de Brasília?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sim. A IASD crê em criação literal em seis dias recentes, conforme Gênesis 1:1-2:3 e Êxodo 20:8-11. A criação é fundamental para a teologia bíblica e está diretamente ligada ao sábado como memorial da criação."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual é a posição da IASD sobre Ellen G. White?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A IASD entende que Ellen G. White exerceu o dom bíblico de profecia, como mensageira do Senhor. Seus escritos são considerados inspirados mas subordinados à Bíblia, que permanece como norma suprema de fé e prática."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O que os adventistas creem sobre o estado dos mortos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Os adventistas creem que os mortos estão em um estado de inconsciência, aguardando a ressurreição. Não acreditam em alma imortal nem que os mortos vão para o céu ou inferno imediatamente após a morte."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual é a posição da IASD sobre salvação e graça?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A IASD crê que a salvação vem somente por Cristo, pela graça, mediante a fé, não por obras. A lei não pode salvar, mas revela a vontade de Deus. A perfeição cristã não significa ausência de pecado, mas crescimento em santificação."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O que é o Juízo Investigativo na doutrina adventista?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O Juízo Investigativo é uma fase do juízo divino que começou em 1844, no santuário celestial, envolvendo o exame dos registros dos que professam fé em Cristo. É parte da compreensão adventista sobre o ministério de Jesus no santuário celestial."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual é a posição da IASD sobre a Trindade?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A IASD crê em um só Deus em três Pessoas coeternas: Pai, Filho e Espírito Santo. Esta posição está claramente formulada nas 28 Crenças Fundamentais e no livro 'Nisto Cremos'."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O que a IASD ensina sobre saúde e alimentação?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A IASD promove um estilo de vida saudável baseado em princípios bíblicos, incluindo alimentação vegetariana ou ovo-lacto-vegetariana, abstinência de álcool, tabaco e drogas, e cuidado com o corpo como templo do Espírito Santo."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Como a IASD entende o dízimo e as ofertas?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A IASD entende que o dízimo é 'santo ao Senhor' e deve ser devolvido a Deus como reconhecimento de Sua soberania. As ofertas são dádivas voluntárias para sustentar a obra da igreja. O dízimo é usado principalmente para o sustento ministerial."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual é a posição da IASD sobre batismo e ceia?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A IASD pratica o batismo por imersão de pessoas que já expressaram fé em Cristo e arrependimento de pecados. A Ceia do Senhor (Santa Ceia) é celebrada periodicamente, incluindo o lava-pés como ordenança instituída por Jesus."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Adventistas podem celebrar o Natal e a Páscoa?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Adventistas podem celebrar o Natal e a Páscoa, desde que o façam de modo cristão, centrado em Cristo e sem superstição. A IASD não as eleva a sacramentos obrigatórios, mas podem ser ocasiões legítimas para pregação e reflexão sobre a encarnação, morte e ressurreição de Cristo."
+        "text": "Você pode participar dos nossos cultos aos sábados, inscrever-se em estudos bíblicos, juntar-se a um ministério, ou participar de nossos eventos e programações especiais."
       }
     }
   ]
@@ -159,9 +87,9 @@
 html { scroll-behavior: smooth; }
 
 .intro-section {
+    width: 100%;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 50px 40px;
-    border-radius: 15px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -191,11 +119,6 @@ html { scroll-behavior: smooth; }
     margin: 0 auto;
 }
 
-/* Espaçamento visual para footer na FAQ */
-footer {
-    margin-top: 60px !important;
-}
-
 .faq-container {
     width: 100%;
     max-width: 800px;
@@ -207,7 +130,7 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0 20px 40px;
 }
 
 .faq-tabs {
@@ -302,6 +225,18 @@ footer {
     margin: 0;
 }
 
+.faq-item a {
+    color: #0563c1;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+}
+
+.faq-item a:hover,
+.faq-item a:focus {
+    color: #004a99;
+}
+
 .faq-contact {
     margin-top: 50px;
     text-align: center;
@@ -354,7 +289,7 @@ footer {
     color: #666;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-align: center !important;
+    text-align: center;
     white-space: normal;
     line-height: 1.3;
     min-height: 65px;
@@ -391,6 +326,7 @@ footer {
     margin-bottom: 25px;
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(211, 84, 0, 0.4);
+    scroll-margin-top: 100px;
 }
 
 .doctrine-item {
@@ -429,6 +365,18 @@ footer {
     font-weight: 700;
 }
 
+.biblical-reference {
+    color: #0563c1;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+}
+
+.biblical-reference:hover,
+.biblical-reference:focus {
+    color: #004a99;
+}
+
 @media (max-width: 768px) {
     .faq-container {
         padding: 20px 15px;
@@ -457,10 +405,10 @@ footer {
         padding: 10px 8px;
         font-size: 0.7rem;
         white-space: normal;
-        text-align: center !important;
+        text-align: center;
         min-height: auto;
         line-height: 1.2;
-        justify-content: center !important;
+        justify-content: center;
     }
 
     .sub-section-title {
@@ -486,13 +434,19 @@ footer {
 
 /* Seção de Estudo Bíblico */
 .faq-estudo-biblico {
+    width: 100%;
     margin-top: 40px;
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
     background: linear-gradient(135deg, #003366 0%, #001531 100%);
-    border-radius: 12px;
     border-top: 3px solid rgba(211, 84, 0, 0.4);
     color: #fff;
+}
+
+.faq-estudo-biblico__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .faq-estudo-biblico h3 {
@@ -537,16 +491,16 @@ footer {
 @section('content')
 <img src="{{ asset('img/cards/estudo_biblico/estudo_biblico_header.webp') }}" alt="Perguntas Frequentes - IASD Central de Brasília" style="width: 100%;" fetchpriority="high" decoding="async">
 
-<div class="evidencias-container">
-    <!-- Seção Introdutória -->
-    <div class="intro-section">
-        <h1>Perguntas Frequentes</h1>
-        <span class="subtitle">Encontre respostas para suas dúvidas</span>
-        <p>
-            Aqui você encontra as perguntas mais frequentes sobre nossa igreja, doutrinas e programações. Se não encontrar sua resposta, entre em contato conosco!
-        </p>
-    </div>
+<!-- Seção Introdutória -->
+<div class="intro-section">
+    <h1>Perguntas Frequentes</h1>
+    <span class="subtitle">Encontre respostas para suas dúvidas</span>
+    <p>
+        Aqui você encontra as perguntas mais frequentes sobre nossa igreja, doutrinas e programações. Se não encontrar sua resposta, entre em contato conosco!
+    </p>
+</div>
 
+<div class="evidencias-container">
     <div class="faq-tabs">
         <button class="faq-tab-button active" data-tab="igreja">IASD Central de Brasília</button>
         <button class="faq-tab-button" data-tab="doutrina">Questões sobre Doutrina</button>
@@ -555,42 +509,42 @@ footer {
     <div id="igreja" class="faq-tab-content active">
         <div class="faq-list">
             <div class="faq-item">
-                <h3>Quais são os horários dos cultos?</h3>
+                <h3>1. Quais são os horários dos cultos?</h3>
                 <p>Temos cultos aos sábados às 08h45 e 18h. A Escola Sabatina acontece às 11h. Os cultos também acontecem aos Domingos e Quartas às 19h. Você é muito bem-vindo(a) em todos os nossos encontros!</p>
             </div>
 
             <div class="faq-item">
-                <h3>Como fazer um estudo bíblico?</h3>
+                <h3>2. Como fazer um estudo bíblico?</h3>
                 <p>Você pode solicitar um estudo bíblico através do formulário em nossa página <a href="{{ route('estudo-biblico') }}">Estudo Bíblico</a>. Oferecemos estudos presenciais (na sua residência ou na igreja), online por videoconferência, ou por telefone/mensagem. Escolha a forma que preferir!</p>
             </div>
 
             <div class="faq-item">
-                <h3>Onde fica a igreja?</h3>
+                <h3>3. Onde fica a igreja?</h3>
                 <p>Estamos localizados em Brasília, DF. Consulte o mapa no rodapé de nosso site para obter a localização exata. Se precisar de instruções detalhadas, entre em contato conosco.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Quais são as programações da igreja?</h3>
+                <h3>4. Quais são as programações da igreja?</h3>
                 <p>Temos diversas programações durante todo o ano, incluindo estudos bíblicos, classes, corais, eventos especiais e muito mais. Consulte nossa página <a href="{{ route('programacoes') }}">Programações 2026</a> para ver todos os eventos e atividades planejados.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Como posso contribuir com dízimos e ofertas?</h3>
+                <h3>5. Como posso contribuir com dízimos e ofertas?</h3>
                 <p>Você pode contribuir através de nossa página <a href="{{ route('dizimos-ofertas') }}">Dízimos e Ofertas</a>, onde encontrará informações sobre como fazer sua contribuição de forma segura e prática.</p>
             </div>
 
             <div class="faq-item">
-                <h3>A igreja oferece estudos para crianças e jovens?</h3>
+                <h3>6. A igreja oferece estudos para crianças e jovens?</h3>
                 <p>Sim! Temos o Clube dos Aventureiros (crianças de 4-9 anos), o Clube de Desbravadores (adolescentes de 10-15 anos), classes bíblicas para juvenis e jovens, e diversas atividades específicas para cada faixa etária. Nossos ministérios infantis e jovens são especialmente preparados para atender cada etapa do desenvolvimento.</p>
             </div>
 
             <div class="faq-item">
-                <h3>O que a IASD Central de Brasília oferece?</h3>
-                <p>Oferecemos estudos bíblicos gratuitos, escola sabatina para todas as idades, corais e orquestras, ministérios para todas as faixas etárias (crianças, adolescentes, jovens, adultos e idosos), eventos especiais ao longo do ano, ações comunitárias através da <a href="{{ route('asa') }}">ASA (Ação Solidária Adventista)</a>, suporte espiritual através do <a href="{{ route('oracao-visita') }}">Ministério de Oração</a>, e muito mais.</p>
+                <h3>7. O que a IASD Central de Brasília oferece?</h3>
+                <p>Oferecemos <a href="{{ route('estudo-biblico') }}">estudos bíblicos gratuitos</a>, <a href="{{ route('escola-sabatina') }}">escola sabatina</a> para todas as idades, <a href="{{ route('corais') }}">corais e orquestras</a>, ministérios para todas as faixas etárias (crianças, adolescentes, jovens, adultos e idosos), eventos especiais ao longo do ano, ações comunitárias através da <a href="{{ route('asa') }}">ASA (Ação Solidária Adventista)</a>, suporte espiritual através do <a href="{{ route('oracao-visita') }}">Ministério de Oração</a>, <a href="{{ route('doutores-da-esperanca') }}">humanização hospitalar</a> (Doutores da Esperança), <a href="{{ route('cemab') }}">cursos de música e instrumentos musicais</a> (CEMAB), <a href="{{ route('classe-saude') }}">classe de saúde</a>, e muito mais.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Como participar da IASD Central de Brasília?</h3>
+                <h3>8. Como participar da IASD Central de Brasília?</h3>
                 <p>Você pode participar dos nossos cultos aos sábados, inscrever-se gratuitamente em estudos bíblicos, juntar-se a um dos nossos ministérios, participar de nossos eventos e programações especiais, ou simplesmente visitar-nos para conhecer nossa comunidade. Todos são bem-vindos!</p>
             </div>
         </div>
@@ -620,7 +574,7 @@ footer {
             <div class="doctrine-item">
                 <h4>1.1 Por que os adventistas guardam o sábado em vez do domingo como a maioria dos cristãos?</h4>
                 <p>Os adventistas guardam o sábado porque entendem que o sétimo dia foi estabelecido por Deus na criação como memorial universal, antes da existência do povo judeu, e foi depois incluído no coração da lei moral, os Dez Mandamentos. Em <a href="#" class="biblical-reference" data-reference="Gênesis 2:1-3">Gênesis 2:1-3</a>, Deus descansou no sétimo dia, o abençoou e o santificou. Em <a href="#" class="biblical-reference" data-reference="Êxodo 20:8-11">Êxodo 20:8-11</a>, o mandamento não institui algo novo, mas manda "lembrar" do sábado, mostrando continuidade com a criação. Para a compreensão adventista, não há no Novo Testamento qualquer texto que transfira a santidade do sétimo dia para o primeiro dia da semana.</p>
-                <p>Além disso, Jesus guardou o sábado (<a href="#" class="biblical-reference" data-reference="Lucas 4:16">Lucas 4:16</a>), declarou-se "Senhor do sábado" (<a href="#" class="biblical-reference" data-reference="Marcos 2:27-28">Marcos 2:27-28</a>) e ensinou seu verdadeiro sentido contra distorções farisaicas, não contra o próprio mandamento. Os apóstolos também mantiveram a prática sabática em seu ministério (<a href="#" class="biblical-reference" data-reference="Atos 13:14">Atos 13:14</a>, Atos 13:42-44; <a href="#" class="biblical-reference" data-reference="Atos 16:13">16:13</a>; <a href="#" class="biblical-reference" data-reference="Atos 17:2">17:2</a>; <a href="#" class="biblical-reference" data-reference="Atos 18:4">18:4</a>). Por isso, os adventistas entendem que a observância do domingo se desenvolveu historicamente na igreja pós-apostólica, mas não por mandamento bíblico. A base da guarda do sábado, portanto, é a autoridade da Palavra de Deus, não o costume majoritário do cristianismo.</p>
+                <p>Além disso, Jesus guardou o sábado (<a href="#" class="biblical-reference" data-reference="Lucas 4:16">Lucas 4:16</a>), declarou-se "Senhor do sábado" (<a href="#" class="biblical-reference" data-reference="Marcos 2:27-28">Marcos 2:27-28</a>) e ensinou seu verdadeiro sentido contra distorções farisaicas, não contra o próprio mandamento. Os apóstolos também mantiveram a prática sabática em seu ministério (<a href="#" class="biblical-reference" data-reference="Atos 13:14">Atos 13:14</a>, <a href="#" class="biblical-reference" data-reference="Atos 13:42-44">Atos 13:42-44</a>; <a href="#" class="biblical-reference" data-reference="Atos 16:13">16:13</a>; <a href="#" class="biblical-reference" data-reference="Atos 17:2">17:2</a>; <a href="#" class="biblical-reference" data-reference="Atos 18:4">18:4</a>). Por isso, os adventistas entendem que a observância do domingo se desenvolveu historicamente na igreja pós-apostólica, mas não por mandamento bíblico. A base da guarda do sábado, portanto, é a autoridade da Palavra de Deus, não o costume majoritário do cristianismo.</p>
             </div>
 
             <div class="doctrine-item">
@@ -638,12 +592,12 @@ footer {
             <div class="doctrine-item">
                 <h4>1.4 O Novo Testamento não ensina que a guarda de dias, incluindo o sábado, foi abolida ou relativizada (<a href="#" class="biblical-reference" data-reference="Colossenses 2:16-17">Colossenses 2:16-17</a>, Gálatas 4) não sendo mais obrigatória para cristãos?</h4>
                 <p>A interpretação adventista distingue cuidadosamente entre o sábado semanal do quarto mandamento e os sábados cerimoniais ligados ao calendário ritual judaico. Em <a href="#" class="biblical-reference" data-reference="Colossenses 2:16-17">Colossenses 2:16-17</a>, Paulo menciona comida, bebida, festas, lua nova e sábados, uma fórmula que ecoa o calendário cerimonial anual, mensal e festivo do Antigo Testamento (<a href="#" class="biblical-reference" data-reference="1 Crônicas 23:31">1 Crônicas 23:31</a>; <a href="#" class="biblical-reference" data-reference="2 Crônicas 2:4">2 Crônicas 2:4</a>; <a href="#" class="biblical-reference" data-reference="2 Crônicas 31:3">31:3</a>; <a href="#" class="biblical-reference" data-reference="Ezequiel 45:17">Ezequiel 45:17</a>). Esses elementos eram "sombras das coisas futuras", apontando para Cristo. Os adventistas entendem que Paulo está falando do sistema cerimonial, não abolindo o sábado da criação inscrito nos Dez Mandamentos.</p>
-                <p>Quanto a <a href="#" class="biblical-reference" data-reference="Gálatas 4:9-11">Gálatas 4:9-11</a>, Paulo repreende a volta a observâncias legalistas ligadas a um sistema de justificação por obras e ao retorno a "rudimentos fracos e pobres". O foco, na leitura adventista, é a dependência de ordenanças como meio de aceitação diante de Deus, e não a obediência motivada pela graça aos mandamentos morais. Assim, o Novo Testamento relativiza dias cerimoniais e usos legalistas, mas não o mandamento moral do sábado. A mesma Bíblia que ensina liberdade em Cristo também afirma a permanência da lei moral (<a href="#" class="biblical-reference" data-reference="Romanos 3:31">Romanos 3:31</a>; Tiago 2:10-12).</p>
+                <p>Quanto a <a href="#" class="biblical-reference" data-reference="Gálatas 4:9-11">Gálatas 4:9-11</a>, Paulo repreende a volta a observâncias legalistas ligadas a um sistema de justificação por obras e ao retorno a "rudimentos fracos e pobres". O foco, na leitura adventista, não é a dependência de ordenanças como meio de aceitação diante de Deus, e sim a obediência motivada pela graça aos mandamentos morais. Assim, o Novo Testamento relativiza dias cerimoniais e usos legalistas, mas não o mandamento moral do sábado. A mesma Bíblia que ensina liberdade em Cristo também afirma a permanência da lei moral (<a href="#" class="biblical-reference" data-reference="Romanos 3:31">Romanos 3:31</a>; <a href="#" class="biblical-reference" data-reference="Tiago 2:10-12">Tiago 2:10-12</a>).</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>1.5 O fato de Jesus ter ressuscitado no domingo tornou esse dia o novo dia de adoração cristã?</h4>
-                <p>Os adventistas creem que a ressurreição de Jesus no primeiro dia da semana é um fato central da fé cristã, mas não alterou o mandamento do sábado. O Novo Testamento honra a ressurreição, porém não registra nenhuma ordem de Cristo ou dos apóstolos santificando o domingo em substituição ao sétimo dia. O memorial estabelecido por Cristo para sua morte e ressurreição não foi a mudança do dia de adoração, mas o batismo (<a href="#" class="biblical-reference" data-reference="Romanos 6">Romanos 6</a>:3-6; <a href="#" class="biblical-reference" data-reference="Colossenses 2:12">Colossenses 2:12</a>).</p>
+                <p>Os adventistas creem que a ressurreição de Jesus no primeiro dia da semana é um fato central da fé cristã, mas não alterou o mandamento do sábado. O Novo Testamento honra a ressurreição, porém não registra nenhuma ordem de Cristo ou dos apóstolos santificando o domingo em substituição ao sétimo dia. O memorial estabelecido por Cristo para sua morte e ressurreição não foi a mudança do dia de adoração, mas o batismo (<a href="#" class="biblical-reference" data-reference="Romanos 6:3-6">Romanos 6:3-6</a>; <a href="#" class="biblical-reference" data-reference="Colossenses 2:12">Colossenses 2:12</a>).</p>
                 <p>A posição adventista destaca que, se a ressurreição de Cristo tivesse transferido a santidade para o primeiro dia, seria razoável esperar uma instrução clara nas Escrituras. No entanto, isso não ocorre. Jesus morreu na sexta, repousou no sábado e ressuscitou no domingo, mas o texto bíblico não atribui santidade sabática ao primeiro dia. Assim, o domingo pode ser reconhecido como dia importante na história da redenção, mas não como substituto do sábado bíblico.</p>
             </div>
 
@@ -655,7 +609,7 @@ footer {
 
             <div class="doctrine-item">
                 <h4>1.7 Como os adventistas explicam a distinção entre lei moral (Dez Mandamentos) e lei cerimonial (leis de Moisés)?</h4>
-                <p>A distinção adventista entre lei moral e lei cerimonial se baseia em características bíblicas diferentes entre os dois conjuntos. A lei moral, resumida nos Dez Mandamentos, foi escrita pelo dedo de Deus em tábuas de pedra (<a href="#" class="biblical-reference" data-reference="Êxodo 31:18">Êxodo 31:18</a>; Deuteronômio 10:1-5), colocada dentro da arca (<a href="#" class="biblical-reference" data-reference="Deuteronômio 10:5">Deuteronômio 10:5</a>) e reflete princípios permanentes do caráter divino: amor a Deus e ao próximo (<a href="#" class="biblical-reference" data-reference="Mateus 22:37-40">Mateus 22:37-40</a>; <a href="#" class="biblical-reference" data-reference="Romanos 13:8-10">Romanos 13:8-10</a>).</p>
+                <p>A distinção adventista entre lei moral e lei cerimonial se baseia em características bíblicas diferentes entre os dois conjuntos. A lei moral, resumida nos Dez Mandamentos, foi escrita pelo dedo de Deus em tábuas de pedra (<a href="#" class="biblical-reference" data-reference="Êxodo 31:18">Êxodo 31:18</a>; <a href="#" class="biblical-reference" data-reference="Deuteronômio 10:1-5">Deuteronômio 10:1-5</a>), colocada na arca (<a href="#" class="biblical-reference" data-reference="Deuteronômio 10:5">Deuteronômio 10:5</a>) e reflete princípios permanentes do caráter divino: amor a Deus e ao próximo (<a href="#" class="biblical-reference" data-reference="Mateus 22:37-40">Mateus 22:37-40</a>; <a href="#" class="biblical-reference" data-reference="Romanos 13:8-10">Romanos 13:8-10</a>).</p>
                 <p>Já a lei cerimonial foi escrita por Moisés em um livro (<a href="#" class="biblical-reference" data-reference="Deuteronômio 31:24-26">Deuteronômio 31:24-26</a>), colocada ao lado da arca e incluía sacrifícios, festas anuais, alimentos rituais, purificações e ordenanças que apontavam tipologicamente para Cristo (<a href="#" class="biblical-reference" data-reference="Hebreus 9:9-10">Hebreus 9:9-10</a>; <a href="#" class="biblical-reference" data-reference="Hebreus 10:1">10:1</a>). Essas sombras encontraram cumprimento na obra redentora de Jesus. Por isso, os adventistas sustentam que a cruz encerrou a validade do sistema cerimonial como obrigação religiosa, mas não aboliu a lei moral eterna.</p>
             </div>
 
@@ -673,12 +627,12 @@ footer {
 
             <div class="doctrine-item">
                 <h4>1.10 Se os adventistas guardam o sábado, por que não observam outras leis do mesmo conjunto, como circuncisão, sábados ceremoniais, ano sabático, jubileu, etc?</h4>
-                <p>A resposta adventista é que essas práticas pertencem a categorias diferentes. O sábado semanal faz parte do Decálogo, a lei moral universal. Já circuncisão, sábados ceremoniais, festas anuais, ano sabático e jubileu pertencem ao sistema civil e cerimonial de Israel, ligado à teocracia, ao templo e ao simbolismo redentivo que apontava para Cristo. A circuncisão, por exemplo, é tratada no Novo Testamento como não obrigatória aos cristãos (<a href="#" class="biblical-reference" data-reference="Atos 15">Atos 15</a>:1-29; Gálatas 5:2-6).</p>
-                <p>Os sábados ceremoniais estavam associados às festas anuais e possuíam função tipológica (Levítico 23). O ano sabático e o jubileu integravam a estrutura socioeconômica da nação israelita na terra prometida (Levítico 25). Os adventistas, portanto, não veem incoerência em manter o sábado moral e não praticar elementos que pertenciam ao sistema cerimonial ou civil de Israel. O critério é bíblico: o que é permanente no caráter moral de Deus continua; o que era sombra ou legislação nacional teve cumprimento ou cessação em sua forma obrigatória.</p>
+                <p>A resposta adventista é que essas práticas pertencem a categorias diferentes. O sábado semanal faz parte do Decálogo, a lei moral universal. Já circuncisão, sábados cerimoniais, festas anuais, ano sabático e jubileu pertencem ao sistema civil e cerimonial de Israel, ligado à teocracia, ao templo e ao simbolismo redentivo que apontava para Cristo. A circuncisão, por exemplo, é tratada no Novo Testamento como não obrigatória aos cristãos (<a href="#" class="biblical-reference" data-reference="Atos 15:1-29">Atos 15:1-29</a>; <a href="#" class="biblical-reference" data-reference="Gálatas 5:2-6">Gálatas 5:2-6</a>).</p>
+                <p>Os sábados cerimoniais estavam associados às festas anuais e possuíam função tipológica (<a href="#" class="biblical-reference" data-reference="Levítico 23">Levítico 23</a>). O ano sabático e o jubileu integravam a estrutura socioeconômica da nação israelita na terra prometida (<a href="#" class="biblical-reference" data-reference="Levítico 25">Levítico 25</a>). Os adventistas, portanto, não veem incoerência em manter o sábado moral e não praticar elementos que pertenciam ao sistema cerimonial ou civil de Israel. O critério é bíblico: o que é permanente no caráter moral de Deus continua; o que era sombra ou legislação nacional teve cumprimento ou cessação em sua forma obrigatória.</p>
             </div>
 
             <div class="doctrine-item">
-                <h4>1.11 Se o Concílio de Jerusalém em <a href="#" class="biblical-reference" data-reference="Atos 15">Atos 15</a> não mencionou a obrigatoriedade do sábado aos gentios, por que os adventistas o consideram obrigatório?</h4>
+                <h4>1.11 Se o Concílio de Jerusalém em Atos 15 não mencionou a obrigatoriedade do sábado aos gentios, por que os adventistas o consideram obrigatório?</h4>
                 <p>Os adventistas entendem que <a href="#" class="biblical-reference" data-reference="Atos 15">Atos 15</a> tratou de uma controvérsia específica: se os gentios precisavam ser circuncidados e guardar a lei cerimonial de Moisés para serem salvos (<a href="#" class="biblical-reference" data-reference="Atos 15:1">Atos 15:1</a>, <a href="#" class="biblical-reference" data-reference="Atos 15:5">Atos 15:5</a>). O concílio não tinha como objetivo listar toda a ética cristã, mas resolver uma questão imediata de acesso à salvação e comunhão entre judeus e gentios. Por isso, a ausência de menção explícita ao sábado não significa sua revogação.</p>
                 <p>Além disso, em <a href="#" class="biblical-reference" data-reference="Atos 15:21">Atos 15:21</a>, Tiago afirma que Moisés era lido nas sinagogas todos os sábados, sugerindo que a instrução dos gentios continuaria. A leitura adventista é que o concílio não aboliu princípios já aceitos da moral bíblica; apenas não os transformou em objeto de debate naquele momento. Do mesmo modo, o concílio também não repetiu proibições ao homicídio, adultério ou idolatria em toda sua extensão, e nem por isso esses mandamentos deixaram de valer.</p>
             </div>
@@ -692,13 +646,13 @@ footer {
             <div class="doctrine-item">
                 <h4>1.13 <a href="#" class="biblical-reference" data-reference="Êxodo 35:3">Êxodo 35:3</a> proíbe acender fogo no sábado. Como os adventistas justificam o uso de fogão, carro e eletricidade nesse dia?</h4>
                 <p>A interpretação adventista leva em conta o contexto do texto. Em <a href="#" class="biblical-reference" data-reference="Êxodo 35:3">Êxodo 35:3</a>, a proibição de acender fogo aparece em ligação com a construção do tabernáculo e com a interrupção de trabalho comum no sábado. A compreensão adventista não trata esse verso como proibição absoluta de qualquer uso de calor ou energia em qualquer circunstância, mas como vedação ao trabalho servil e à atividade comum incompatível com a santidade do dia.</p>
-                <p>Por isso, o princípio aplicado hoje não é um literalismo mecânico, mas o uso reverente do sábado segundo sua finalidade bíblica: cessar trabalho secular, dedicar-se à adoração, comunhão, misericórdia e descanso santo (<a href="#" class="biblical-reference" data-reference="Isaías 58:13-14">Isaías 58:13-14</a>; Mateus 12:1-12). Assim, usar fogão, eletricidade ou carro não é automaticamente quebra do sábado; tudo depende do propósito. Se o uso serve à adoração, necessidade, deslocamento para culto, socorro, visita missionária ou cuidado essencial, ele pode ser harmonizado com o espírito do mandamento. O foco adventista é a santificação do tempo, não um casuísmo técnico desconectado da intenção divina.</p>
+                <p>Por isso, o princípio aplicado hoje não é um literalismo mecânico, mas o uso reverente do sábado segundo sua finalidade bíblica: cessar trabalho secular, dedicar-se à adoração, comunhão, misericórdia e descanso santo (<a href="#" class="biblical-reference" data-reference="Isaías 58:13-14">Isaías 58:13-14</a>; <a href="#" class="biblical-reference" data-reference="Mateus 12:1-12">Mateus 12:1-12</a>). Assim, usar fogão, eletricidade ou carro não é automaticamente quebra do sábado; tudo depende do propósito. Se o uso serve à adoração, necessidade, deslocamento para culto, socorro, visita missionária ou cuidado essencial, ele pode ser harmonizado com o espírito do mandamento. O foco adventista é a santificação do tempo, não um casuísmo técnico desconectado da intenção divina.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>1.14 Se a lei do sábado inclui pena de morte por violação (<a href="#" class="biblical-reference" data-reference="Êxodo 31:14-15">Êxodo 31:14-15</a>, <a href="#" class="biblical-reference" data-reference="Êxodo 35:2-3">Êxodo 35:2-3</a>), por que não seguem essa parte da lei?</h4>
                 <p>Os adventistas entendem que a pena civil aplicada em Israel pertencia à estrutura teocrática do Antigo Testamento, na qual Deus governava uma nação específica com sanções civis e religiosas integradas. A igreja cristã, porém, não é um Estado teocrático. Portanto, não executa penalidades civis do antigo Israel. Isso vale não apenas para o sábado, mas para várias punições legais do código nacional israelita.</p>
-                <p>A obrigação moral do mandamento permanece, mas a sanção civil vinculada à teocracia não. Esse princípio é coerente com o Novo Testamento, no qual a igreja disciplina espiritualmente, mas não impõe penas civis de morte por infrações religiosas. O sábado continua sendo santo; o modo de administração judicial próprio da antiga nação de Israel não foi transferido à igreja.</p>
+                <p>É importante notar que outros mandamentos também tinham pena de morte no contexto de Israel, como o homicídio (<a href="#" class="biblical-reference" data-reference="Êxodo 21:12">Êxodo 21:12</a>), adultério (<a href="#" class="biblical-reference" data-reference="Levítico 20:10">Levítico 20:10</a>) e idolatria (<a href="#" class="biblical-reference" data-reference="Deuteronômio 13:6-10">Deuteronômio 13:6-10</a>). O fato de a igreja não aplicar essas penas civis não significa que os mandamentos morais tenham sido abolidos. A obrigação moral do mandamento permanece, mas a sanção civil vinculada à teocracia não. Esse princípio é coerente com o Novo Testamento, no qual a igreja disciplina espiritualmente, mas não impõe penas civis de morte por infrações religiosas. O sábado continua sendo santo; o modo de administração judicial próprio da antiga nação de Israel não foi transferido à igreja.</p>
             </div>
 
             <div class="doctrine-item">
@@ -731,7 +685,44 @@ footer {
             <div class="doctrine-item">
                 <h4>1.18 Por que alguns acusam os adventistas de "judaizar" por guardarem o sábado?</h4>
                 <p>Alguns acusam os adventistas de "judaizar" porque associam a guarda do sábado a práticas distintivamente judaicas do Antigo Testamento. No entanto, a resposta adventista é que guardar o sábado bíblico não é retorno ao judaísmo rabínico nem à lei cerimonial mosaica, mas fidelidade a um mandamento moral instituído na criação e reafirmado por Cristo e pelos apóstolos. O sábado antecede o Sinai e antecede o próprio Israel (<a href="#" class="biblical-reference" data-reference="Gênesis 2:1-3">Gênesis 2:1-3</a>).</p>
-                <p>Além disso, judaizar no sentido neotestamentário implica impor elementos do sistema judaico como condição de salvação, especialmente circuncisão e dependência da lei cerimonial (<a href="#" class="biblical-reference" data-reference="Gálatas 5:1-4">Gálatas 5:1-4</a>; <a href="#" class="biblical-reference" data-reference="Atos 15">Atos 15</a>:1-11). Os adventistas rejeitam isso. Guardam o sábado não como meio de justificação, mas como expressão de obediência da fé. Portanto, para a teologia adventista, chamar a guarda do sábado de "judaização" confunde o mandamento moral universal com o sistema cerimonial temporário.</p>
+                <p>Além disso, judaizar no sentido neotestamentário implica impor elementos do sistema judaico como condição de salvação, especialmente circuncisão e dependência da lei cerimonial (<a href="#" class="biblical-reference" data-reference="Gálatas 5:1-4">Gálatas 5:1-4</a>; <a href="#" class="biblical-reference" data-reference="Atos 15:1-11">Atos 15:1-11</a>). Os adventistas rejeitam isso. Guardam o sábado não como meio de justificação, mas como expressão de obediência da fé. Portanto, para a teologia adventista, chamar a guarda do sábado de "judaização" confunde o mandamento moral universal com o sistema cerimonial temporário.</p>
+            </div>
+
+            <div class="doctrine-item">
+                <h4>1.19 Preciso guardar o sábado para ser salvo?</h4>
+                <p>Não, guardar o sábado não é uma condição para ser salvo. A salvação é um dom gratuito que Deus nos dá por causa do sacrifício de Cristo na cruz. A obediência à lei é uma consequência da salvação, não a sua causa. A obediência à lei é uma demonstração de amor e gratidão a Deus por Sua salvação. Vamos entender isso passo a passo, de forma simples e proveitosa, como se estivéssemos conversando com um amigo querido.</p>
+
+                <p><strong>1. A salvação é de graça, não por obras da lei</strong></p>
+
+                <p>A salvação é um dom que vem por graça, por meio da fé, e não depende das obras da lei (<a href="#" class="biblical-reference" data-reference="Efésios 2:8">Efésios 2:8</a>). Ninguém pode ser justificado por guardar o sábado ou por qualquer outra obra da lei. Paulo reforça isso: "Ninguém será justificado por obras da lei" (<a href="#" class="biblical-reference" data-reference="Gálatas 2:16">Gálatas 2:16</a>). A lei foi dada para mostrar nossa necessidade de um Salvador, não para nos salvar (<a href="#" class="biblical-reference" data-reference="Tito 3:5">Tito 3:5</a>). A graça de Deus é o único meio de salvação (<a href="#" class="biblical-reference" data-reference="Romanos 3:20">Romanos 3:20</a>).</p>
+
+                <p>Imagine assim: a lei de Deus (os Dez Mandamentos) é como um espelho que mostra nossa imperfeição. Quando vemos nossa falha diante da lei, percebemos nossa necessidade de um Salvador (<a href="#" class="biblical-reference" data-reference="Gálatas 3:24">Gálatas 3:24</a>). A lei aponta para Cristo, o único que pode nos salvar (<a href="#" class="biblical-reference" data-reference="João 5:39">João 5:39</a>). A salvação não vem por nossas obras, mas por fé em Jesus Cristo (<a href="#" class="biblical-reference" data-reference="Efésios 2:8-9">Efésios 2:8-9</a>).</p>
+
+                <p>Há uma questão importante: não podemos justificar a graça com a condição da lei, nem a lei com a graça. A graça é um dom natural da condição da salvação, não pagamento.</p>
+
+                <p><strong>2. O sábado tem igual importância como outros 9 mandamentos</strong></p>
+
+                <p>Os adventistas veem o sábado (quarto mandamento - <a href="#" class="biblical-reference" data-reference="Êxodo 20:8-11">Êxodo 20:8-11</a>) como parte importante da lei de Deus, mas não a consideram mais importante que os outros mandamentos. A lei de Deus é uma unidade, e todos os mandamentos têm igual importância moral. Não há hierarquia entre eles (<a href="#" class="biblical-reference" data-reference="Tiago 2:10">Tiago 2:10</a> - que quer dizer, o cumprimento de todos).</p>
+
+                <p>Se alguém pergunta: "Preciso guardar o sábado para ser salvo?" poderíamos fazer a mesma pergunta sobre os outros mandamentos. Preciso honrar meu pai (<a href="#" class="biblical-reference" data-reference="Êxodo 20:12">Êxodo 20:12</a>) para ser salvo? Preciso não roubar (<a href="#" class="biblical-reference" data-reference="Êxodo 20:15">Êxodo 20:15</a>) para ser salvo? Preciso não cometer adultério (<a href="#" class="biblical-reference" data-reference="Êxodo 20:14">Êxodo 20:14</a>) para ser salvo?</p>
+
+                <p>A resposta é: Sim, precisamos guardar todos os mandamentos, mas não por nossas próprias forças, mas por amor a Deus e por causa da graça de Cristo. Precisamos amar a Deus e guardar seus mandamentos (<a href="#" class="biblical-reference" data-reference="João 14:15">João 14:15</a>). O amor a Deus é a motivação para obedecer, não o medo da condenação.</p>
+
+                <p>A graça de Cristo nos capacita a obedecer aos mandamentos, incluindo o sábado (<a href="#" class="biblical-reference" data-reference="Gálatas 5:13-14">Gálatas 5:13-14</a>). A obediência não é uma condição para a salvação, mas uma consequência dela. Quando amamos a Deus, queremos obedecer-Lhe (<a href="#" class="biblical-reference" data-reference="João 14:15">João 14:15</a>).</p>
+
+                <p><strong>3. O que acontece com a desobediência deliberada, mesmo sabendo o que é correto?</strong></p>
+
+                <p>Aqui entra um ponto delicado, mas bíblico: a desobediência não anula a salvação se houver arrependimento e fé genuína, pois a graça cobre todo pecado confessado (<a href="#" class="biblical-reference" data-reference="1 João 1:9">1 João 1:9</a>). Mas a desobediência deliberada e persistente, mesmo sabendo a verdade, revela um coração não transformado pela graça – é como rejeitar o Espírito Santo que nos capacita a obedecer (<a href="#" class="biblical-reference" data-reference="Hebreus 10:26-29">Hebreus 10:26-29</a>; pisar o Filho de Deus, profanar o sangue da aliança).</p>
+
+                <p>Quem ama a Cristo guarda Seus mandamentos como fruto de fé (<a href="#" class="biblical-reference" data-reference="João 15:10">João 15:10</a>). Os santos finais "guardam os mandamentos de Deus e a fé de Jesus" (<a href="#" class="biblical-reference" data-reference="Apocalipse 14:12">Apocalipse 14:12</a>), não por legalismo, mas por amor. Se alguém sabe que o sábado é o dia bíblico (como memorial eterno, <a href="#" class="biblical-reference" data-reference="Isaías 66:22-23">Isaías 66:22-23</a>) e ignora por rebeldia, isso questiona se a fé é viva (<a href="#" class="biblical-reference" data-reference="Tiago 2:17">Tiago 2:17</a>: "A fé, se não tiver obras, por si só está morta").</p>
+
+                <p><strong>4. Por que os adventistas guardam o sábado, então?</strong></p>
+
+                <p>Porque é fruto da salvação: quem é salvo por Jesus quer agradá-Lo em tudo (<a href="#" class="biblical-reference" data-reference="Efésios 2:10">Efésios 2:10</a>). Somos feitura Sua, criados em Cristo Jesus para boas obras (<a href="#" class="biblical-reference" data-reference="Efésios 2:10">Efésios 2:10</a>). O sábado traz descanso, comunhão com Deus e antecipa o Céu (Nisto Cremos, capítulo do Sábado).</p>
+
+                <p>Jesus é o "Senhor do sábado" (<a href="#" class="biblical-reference" data-reference="Marcos 2:28">Marcos 2:28</a>) e o guardava (<a href="#" class="biblical-reference" data-reference="Lucas 4:16">Lucas 4:16</a>). Paulo também (<a href="#" class="biblical-reference" data-reference="Atos 17:2">Atos 17:2</a>). É um dom de graça para renovar-nos semanalmente.</p>
+
+                <p><strong>Em resumo</strong>, a salvação é 100% fé em Jesus – guarde o sábado por amor, não por medo. Comece lendo <a href="#" class="biblical-reference" data-reference="Efésios 2:8-10">Efésios 2:8-10</a> e ore por essa graça transformadora.</p>
             </div>
         </div>
 
@@ -1861,7 +1852,11 @@ footer {
             </div>
         </div>
 
-    <div class="faq-estudo-biblico">
+    </div>
+</div>
+
+<div class="faq-estudo-biblico">
+    <div class="faq-estudo-biblico__content">
         <h3>📖 Quer Aprofundar Seus Conhecimentos Bíblicos?</h3>
         <p>Descubra como a Bíblia pode transformar sua vida através de nossos estudos bíblicos gratuitos!</p>
         <p>Oferecemos estudos <strong>presenciais</strong> (na sua residência ou na igreja), <strong>online</strong> (por videoconferência) e <strong>remotos</strong> (por telefone ou mensagem).</p>
@@ -1872,6 +1867,7 @@ footer {
 @endsection
 
 @push('scripts')
+<script src="{{ asset('js/biblical-isolado.js') }}"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.faq-tab-button');
@@ -1897,6 +1893,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const subTabButtons = document.querySelectorAll('.sub-tab-button');
     const subTabContents = document.querySelectorAll('.sub-tab-content');
 
+    function scrollToSubSectionTitle(subTabId) {
+        if (!window.matchMedia('(max-width: 768px)').matches) {
+            return;
+        }
+
+        const subTabContent = document.getElementById(subTabId);
+        const sectionTitle = subTabContent?.querySelector('.sub-section-title');
+
+        if (!sectionTitle) {
+            return;
+        }
+
+        requestAnimationFrame(() => {
+            sectionTitle.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    }
+
     subTabButtons.forEach(button => {
         button.addEventListener('click', function() {
             const subTabId = this.getAttribute('data-subtab');
@@ -1910,6 +1926,7 @@ document.addEventListener('DOMContentLoaded', function() {
             subTabContents.forEach(content => content.classList.remove('active'));
             // Show selected sub-tab content
             document.getElementById(subTabId).classList.add('active');
+            scrollToSubSectionTitle(subTabId);
         });
     });
 });
