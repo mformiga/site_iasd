@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Meta Tags Básicas -->
+    <meta name="description" content="@yield('meta-description', 'IASD Central de Brasília - Uma comunidade de fé, amor e esperança. Encontre estudos bíblicos, programações, eventos e mais.')">
+    <meta name="keywords" content="IASD, Igreja Adventista, Brasília, estudo bíblico, escola sabatina, programações, eventos, adventista, igreja, culto">
+    <meta name="author" content="IASD Central de Brasília">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ request()->url() }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request()->url() }}">
+    <meta property="og:title" content="@yield('og-title', 'IASD Central de Brasília')">
+    <meta property="og:description" content="@yield('og-description', 'Uma comunidade de fé, amor e esperança em Brasília. Junte-se a nós!')">
+    <meta property="og:image" content="@yield('og-image', asset('img/logo_iasd.webp'))">
+    <meta property="og:site_name" content="IASD Central de Brasília">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ request()->url() }}">
+    <meta property="twitter:title" content="@yield('twitter-title', 'IASD Central de Brasília')">
+    <meta property="twitter:description" content="@yield('twitter-description', 'Uma comunidade de fé, amor e esperança em Brasília. Junte-se a nós!')">
+    <meta property="twitter:image" content="@yield('twitter-image', asset('img/logo_iasd.webp'))">
+
     @yield('meta')
 
     <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
@@ -35,6 +59,11 @@
     </noscript>
 
     <title>@yield('title', 'IASD Central de Brasília')</title>
+
+    <!-- Schema.org JSON-LD -->
+    @yield('schema-organization')
+    @yield('schema-webpage')
+    @yield('schema-localbusiness')
 </head>
 <body>
     <main>
