@@ -1877,7 +1877,7 @@ html { scroll-behavior: smooth; }
 @endsection
 
 @push('scripts')
-<script src="{{ asset('js/biblical-isolado.js') }}?v=2"></script>
+<script src="{{ asset('js/biblical-isolado.js') }}?v=3"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.faq-tab-button');
