@@ -774,6 +774,7 @@
         "Mateus 3:13-17": "Então veio Jesus da Galileia ao Jordão ter com João, para ser batizado por ele. Mas João opunha-se-lhe, dizendo: Eu careço de ser batizado por ti, e vens tu a mim? Jesus, porém, respondendo, disse-lhe: Deixa por agora, porque assim nos convém cumprir toda a justiça. Então ele o permitiu. E, sendo Jesus batizado, saiu logo da água, e eis que se lhe abriram os céus, e viu o Espírito de Deus descendo como pomba e vindo sobre ele; E eis que uma voz dos céus dizia: Este é o meu Filho amado, em quem me comprazo.",
         "João 3:23": "Ora, João batizava também em Enom, junto a Salim, porque havia ali muitas águas; e ali vinham, e eram batizados.",
         "Atos 8:12": "Mas, como cressem em Filipe, que lhes pregava acerca do reino de Deus, e do nome de Jesus Cristo, se batizavam, tanto homens como mulheres.",
+        "Atos 8:36-38": "E, indo eles caminhando, chegaram ao pé de alguma água, e disse o eunuco: Eis aqui água; que impede que eu seja batizado? E disse Filipe: É lícito, se crês de todo o coração. E, respondendo ele, disse: Creio que Jesus Cristo é o Filho de Deus. E mandou parar o carro, e desceram ambos à água, tanto Filipe como o eunuco, e o batizou.",
         "Atos 8:36-39": "E, indo eles caminhando, chegaram ao pé de alguma água, e disse o eunuco: Eis aqui água; que impede que eu seja batizado? E disse Filipe: É lícito, se crês de todo o coração. E, respondendo ele, disse: Creio que Jesus Cristo é o Filho de Deus. E mandou parar o carro, e desceram ambos à água, tanto Filipe como o eunuco, e o batizou. E, quando saíram da água, o Espírito do Senhor arrebatou a Filipe, e não o viu mais o eunuco; e jubiloso, seguiu o seu caminho.",
         "Atos 8:38-39": "E mandou parar o carro, e desceram ambos à água, tanto Filipe como o eunuco, e o batizou. E, quando saíram da água, o Espírito do Senhor arrebatou a Filipe, e não o viu mais o eunuco; e jubiloso, seguiu o seu caminho.",
         "Colossenses 2:12": "Sepultados com ele no batismo, nele também ressuscitastes pela fé no poder de Deus, que o ressuscitou dentre os mortos.",
@@ -828,7 +829,7 @@
 
         "1 Samuel 1:22,28": "Porém, quando ela ficou grávida, depois de ter circuncidado o menino, subiu com o marido a oferecer os sacrifícios anuais e o seu voto. Eu, pois, o consagrei ao Senhor, todos os dias que viver; pois ao Senhor foi consagrado.",
 
-        "2 Tessalonicenses 1:9": "Os quais, por castigo, padecerão eterna perdição, ante a face do Senhor e a glória do seu poder.",
+        "2 Tessalonicenses 1:9": "Estes sofrerão penalidade de eterna destruição, banidos da face do Senhor e da glória do seu poder.",
 
         "Apocalipse 20:14-15": "E a morte e o inferno foram lançados no lago de fogo; esta é a segunda morte. E aquele que não foi achado escrito no livro da vida foi lançado no lago de fogo.",
 
@@ -854,6 +855,8 @@
         "Apocalipse 14:6": "E vi outro anjo voar pelo meio do céu, e tinha o evangelho eterno, para o proclamar aos que habitam sobre a terra, e a toda a nação, e tribo, e língua, e povo.",
 
         "Apocalipse 14:7": "Dizendo com grande voz: Temei a Deus, e dai-lhe glória; porque é vinda a hora do seu juízo. E adorai aquele que fez o céu, e a terra, e o mar, e as fontes das águas.",
+
+        "Apocalipse 14:6-12": "E vi outro anjo voar pelo meio do céu, e tinha o evangelho eterno, para o proclamar aos que habitam sobre a terra, e a toda a nação, e tribo, e língua, e povo. Dizendo com grande voz: Temei a Deus, e dai-lhe glória; porque é vinda a hora do seu juízo. E adorai aquele que fez o céu, e a terra, e o mar, e as fontes das águas. E outro anjo seguiu, dizendo: Caiu! Caiu Babilônia, aquela grande cidade, que a todas as nações deu a beber do vinho da ira da sua fornicação! E seguiu-os o terceiro anjo, dizendo com grande voz: Se alguém adorar a besta e a sua imagem, e receber o sinal na sua testa ou na sua mão, também o tal beberá do vinho da ira de Deus, que se deitou, não misturado, no cálice da sua ira, e será atormentado com fogo e enxofre diante dos santos anjos e diante do Cordeiro. E a fumaça do seu tormento sobe para todo o sempre; e não têm repouso nem de dia nem de noite os que adoram a besta e a sua imagem, e aquele que receber o sinal do seu nome. Aqui está a paciência dos santos; aqui estão os que guardam os mandamentos de Deus e a fé em Jesus.",
 
         "Apocalipse 15-16": "E vi outro grande e admirável sinal no céu: sete anjos, que tinham as sete últimas pragas; porque nelas é consumada a ira de Deus. E vi um como mar de vidro misturado com fogo, e também os que saíram vitoriosos da besta.",
 

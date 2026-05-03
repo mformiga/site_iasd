@@ -908,6 +908,11 @@ html { scroll-behavior: smooth; }
                 <p>A principal razão é hermenêutica. Muitas denominações não adotam a leitura historicista das profecias de Daniel e Apocalipse, não aplicam o princípio dia-ano da mesma maneira, ou entendem <a href="#" class="biblical-reference" data-reference="Daniel 8:14">Daniel 8:14</a> em outro contexto histórico. Outras veem em Hebreus uma entrada imediata e plena de Cristo no Santíssimo sem distinção de fases ministeriais posteriores.</p>
                 <p>Além disso, a doutrina adventista está ligada à história específica do movimento milerita e ao desenvolvimento teológico pós-1844, o que leva muitos cristãos a considerá-la uma construção particular da IASD. A resposta adventista é que a verdade bíblica não depende de maioria denominacional, mas de fidelidade exegética. Portanto, a rejeição por outras igrejas é reconhecida como real, mas não considerada decisiva para a validade da doutrina.</p>
             </div>
+
+            <div class="doctrine-item">
+                <p class="highlight-text"><strong>🔍 Quer aprofundar seus estudos sobre profecias bíblicas?</strong></p>
+                <p>Explore nosso conteúdo exclusivo sobre <a href="{{ route('profecias') }}">Profecias Bíblicas</a> para uma análise mais detalhada das profecias de Daniel, Apocalipse e outros textos proféticos que fundamentam nossa fé.</p>
+            </div>
         </div>
 
         <div id="estado-mortos" class="sub-tab-content">
@@ -971,15 +976,15 @@ html { scroll-behavior: smooth; }
                 <p>O ponto de partida dessa compreensão, no pensamento adventista exposto em Nisto Cremos, é a visão bíblica do ser humano. O homem não possui em si mesmo uma alma naturalmente imortal; a vida eterna é um dom de Deus em Cristo, não uma propriedade inerente do ser humano. Por isso, a punição final dos ímpios não é viver eternamente sofrendo, mas sofrer o juízo de Deus e finalmente perecer de modo irreversível. As bases principais são textos como <a href="#" class="biblical-reference" data-reference="Gênesis 2:7">Gênesis 2:7</a>, <a href="#" class="biblical-reference" data-reference="Ezequiel 18:4">Ezequiel 18:4</a>, <a href="#" class="biblical-reference" data-reference="Romanos 6:23">Romanos 6:23</a>, <a href="#" class="biblical-reference" data-reference="Malaquias 4:1-3">Malaquias 4:1-3</a>, <a href="#" class="biblical-reference" data-reference="Mateus 10:28">Mateus 10:28</a>, <a href="#" class="biblical-reference" data-reference="João 3:16">João 3:16</a>, <a href="#" class="biblical-reference" data-reference="2 Tessalonicenses 1:7-9">2 Tessalonicenses 1:7-9</a> e <a href="#" class="biblical-reference" data-reference="Apocalipse 20:14-15">Apocalipse 20:14-15</a>.</p>
                 <p>Na leitura adventista, a expressão "segunda morte" é decisiva. Se o destino final dos ímpios fosse vida eterna em tormento, então não seria propriamente morte no sentido pleno, mas uma existência interminável em sofrimento. Porém, Apocalipse apresenta o castigo final como morte, não como uma forma alternativa de vida eterna. Assim, <a href="#" class="biblical-reference" data-reference="Apocalipse 20:14-15">Apocalipse 20:14-15</a> é entendido como a eliminação definitiva do pecado, dos pecadores impenitentes, de Satanás e de seus anjos.</p>
                 <p>A objeção mais comum vem de textos como <a href="#" class="biblical-reference" data-reference="Apocalipse 20:10">Apocalipse 20:10</a>, onde se fala do diabo, da besta e do falso profeta sendo atormentados "pelos séculos dos séculos". A resposta adventista distingue entre:</p>
-                <p>textos simbólicos e apocalípticos, que exigem leitura cuidadosa;</p>
-                <p>personagens simbólicos, como a besta e o falso profeta;</p>
-                <p>e a doutrina geral da Escritura sobre o destino dos ímpios.</p>
+                <p>- textos simbólicos e apocalípticos, que exigem leitura cuidadosa;</p>
+                <p>- personagens simbólicos, como a besta e o falso profeta;</p>
+                <p>- e a doutrina geral da Escritura sobre o destino dos ímpios.</p>
                 <p>Ou seja: os adventistas não constroem sua doutrina do inferno a partir de uma leitura isolada e literalista de uma expressão apocalíptica, mas do conjunto da revelação bíblica. Nesse conjunto, os ímpios são descritos como os que perecem, são consumidos, viram cinzas, sofrem destruição eterna, recebem a segunda morte. Isso aparece em <a href="#" class="biblical-reference" data-reference="Salmos 37:10,20">Salmos 37:10,20</a>, <a href="#" class="biblical-reference" data-reference="Obadias 16">Obadias 16</a>, <a href="#" class="biblical-reference" data-reference="Malaquias 4:1-3">Malaquias 4:1-3</a>, <a href="#" class="biblical-reference" data-reference="Mateus 10:28">Mateus 10:28</a>, <a href="#" class="biblical-reference" data-reference="Filipenses 3:19">Filipenses 3:19</a>, <a href="#" class="biblical-reference" data-reference="2 Pedro 3:7">2 Pedro 3:7</a> e <a href="#" class="biblical-reference" data-reference="Judas 7">Judas 7</a>.</p>
                 <p>Portanto, a resposta adventista é clara: não, os adventistas não creem em tormento consciente eterno dos ímpios. Eles creem na destruição final, total e irreversível dos ímpios no juízo de Deus.</p>
                 <p>Do ponto de vista apologético, essa posição procura preservar ao mesmo tempo:</p>
-                <p>a seriedade da justiça divina;</p>
-                <p>a realidade do juízo;</p>
-                <p>e a coerência moral do caráter de Deus como amor, justiça e santidade.</p>
+                <p>- a seriedade da justiça divina;</p>
+                <p>- a realidade do juízo;</p>
+                <p>- e a coerência moral do caráter de Deus como amor, justiça e santidade.</p>
                 <p>Na visão adventista, um Deus que pune eternamente seres finitos com tormento sem fim criaria um problema moral muito maior do que o que a Bíblia de fato ensina. A destruição final, ao contrário, seria a manifestação de uma justiça verdadeira, santa e proporcional.</p>
             </div>
 
@@ -988,17 +993,17 @@ html { scroll-behavior: smooth; }
                 <p>Os adventistas interpretam essas expressões à luz do uso bíblico da linguagem sobre juízo, e não a partir de pressupostos filosóficos sobre a imortalidade natural da alma.</p>
                 <p>No caso de "fogo eterno", o argumento central é que, na Bíblia, "eterno" muitas vezes descreve o resultado permanente de uma ação divina, e não necessariamente um processo que nunca termina. O exemplo clássico é <a href="#" class="biblical-reference" data-reference="Judas 7">Judas 7</a>, onde Sodoma e Gomorra são postas como exemplo do "fogo eterno". Evidentemente, aquelas cidades não continuam queimando hoje. O fogo foi "eterno" em seus efeitos: a destruição foi definitiva, irreversível.</p>
                 <p>O mesmo raciocínio é aplicado a <a href="#" class="biblical-reference" data-reference="Mateus 25:46">Mateus 25:46</a>. Quando o texto fala em "castigo eterno", a interpretação adventista não é "castigar eternamente", mas um castigo cujos efeitos são eternos. O paralelo do versículo é importante:</p>
-                <p>os justos entram na vida eterna;</p>
-                <p>os ímpios recebem o castigo eterno.</p>
+                <p>- os justos entram na vida eterna;</p>
+                <p>- os ímpios recebem o castigo eterno;</p>
                 <p>A vida eterna é um processo contínuo de existência;</p>
                 <p>o castigo eterno é uma sentença definitiva com efeito permanente.</p>
                 <p>O foco está no caráter irreversível do juízo, não na duração infinita do ato de punir.</p>
                 <p>Algo semelhante ocorre com a expressão "tormento pelos séculos dos séculos" em <a href="#" class="biblical-reference" data-reference="Apocalipse 14:11">Apocalipse 14:11</a> e <a href="#" class="biblical-reference" data-reference="Apocalipse 20:10">Apocalipse 20:10</a>. Os adventistas lembram que Apocalipse é um livro cheio de símbolos. A linguagem do "fumo" subindo para sempre também ecoa o Antigo Testamento, especialmente imagens de juízo contra cidades e poderes rebeldes, como em <a href="#" class="biblical-reference" data-reference="Isaías 34:8-10">Isaías 34:8-10</a>. Ali também a ideia não é necessariamente fogo queimando infinitamente em sentido literal, mas um juízo de consequências definitivas, memoráveis e irrevogáveis.</p>
                 <p>Além disso, a expressão "para sempre" ou equivalentes pode, na própria Bíblia, significar duração condicionada ao contexto. Por exemplo, em <a href="#" class="biblical-reference" data-reference="Êxodo 21:6">Êxodo 21:6</a>, o servo serviria "para sempre", o que claramente não significa eternidade metafísica, mas enquanto durasse sua vida e condição. Em <a href="#" class="biblical-reference" data-reference="1 Samuel 1:22,28">1 Samuel 1:22,28</a>, Samuel é dedicado "para sempre", isto é, por toda a sua vida. Isso mostra que o termo deve ser lido dentro da moldura literária e teológica do texto.</p>
                 <p>Assim, a interpretação adventista é:</p>
-                <p>fogo eterno = fogo cujo efeito é eterno;</p>
-                <p>castigo eterno = punição definitiva e irreversível;</p>
-                <p>tormento pelos séculos dos séculos = linguagem apocalíptica que enfatiza a totalidade, solenidade e irreversibilidade do juízo divino.</p>
+                <p>- fogo eterno = fogo cujo efeito é eterno;</p>
+                <p>- castigo eterno = punição definitiva e irreversível;</p>
+                <p>- tormento pelos séculos dos séculos = linguagem apocalíptica que enfatiza a totalidade, solenidade e irreversibilidade do juízo divino.</p>
                 <p>Apologeticamente, os adventistas argumentam que essa leitura faz mais justiça ao conjunto da Escritura. Se textos muito claros dizem que os ímpios perecem, são destruídos, são consumidos, tornam-se cinzas, então textos figurados devem ser interpretados em harmonia com esses textos mais diretos, e não o contrário.</p>
             </div>
 
@@ -1018,15 +1023,15 @@ html { scroll-behavior: smooth; }
                 <p>A ideia de que somente um tormento eterno tornaria o pecado realmente sério parte de uma noção específica de justiça, mas não necessariamente bíblica. Os adventistas respondem que a Bíblia apresenta o salário do pecado como morte, não como vida eterna em dor. <a href="#" class="biblical-reference" data-reference="Romanos 6:23">Romanos 6:23</a> é central aqui. O pecado é tão grave que leva à perda total da vida, à exclusão definitiva do reino de Deus e à destruição sem retorno. Isso já é, em si mesmo, uma punição absolutamente séria.</p>
                 <p>Além disso, a justiça divina, na visão adventista, não é vingança infinita, mas juízo santo, verdadeiro e proporcional. A Bíblia ensina graus de responsabilidade e de castigo, como em <a href="#" class="biblical-reference" data-reference="Lucas 12:47-48">Lucas 12:47-48</a>, <a href="#" class="biblical-reference" data-reference="Mateus 11:20-24">Mateus 11:20-24</a> e <a href="#" class="biblical-reference" data-reference="Romanos 2:5-6">Romanos 2:5-6</a>. Isso se harmoniza melhor com a ideia de que os ímpios sofrerão o juízo de Deus de forma real e proporcional, culminando na segunda morte, do que com a noção de um sofrimento idêntico e infinito para todos.</p>
                 <p>Outro ponto importante é o caráter de Deus. Em Nisto Cremos, Deus é apresentado como amor, justiça e verdade. Os adventistas entendem que o juízo final precisa ser compatível com esse caráter. A destruição final dos ímpios não suaviza o pecado; ela mostra que:</p>
-                <p>Deus não banaliza o mal;</p>
-                <p>Deus não perpetua o mal eternamente;</p>
-                <p>Deus põe fim ao mal de modo justo, completo e definitivo.</p>
+                <p>- Deus não banaliza o mal;</p>
+                <p>- Deus não perpetua o mal eternamente;</p>
+                <p>- Deus põe fim ao mal de modo justo, completo e definitivo.</p>
                 <p>Em outras palavras, a punição final não é leve. Ela é absoluta. O pecador impenitente perde tudo: vida, futuro, herança, participação no reino e qualquer continuidade de existência. A seriedade do pecado é vista exatamente no fato de que ele conduz à ruína total fora de Cristo.</p>
                 <p>Apologeticamente, os adventistas costumam inverter a objeção: a pergunta não é se a destruição final diminui a justiça divina, mas se o tormento eterno não comprometeria a revelação de Deus em Cristo. A cruz mostra que Deus leva o pecado a sério, mas também revela que Seu propósito final é vencer o mal, não preservá-lo eternamente em um inferno ativo.</p>
                 <p>Assim, a resposta adventista é que a destruição final dos ímpios:</p>
-                <p>não enfraquece a doutrina do pecado;</p>
-                <p>não diminui a justiça de Deus;</p>
-                <p>e, ao contrário, mostra a vitória completa de Deus sobre o mal.</p>
+                <p>- não enfraquece a doutrina do pecado;</p>
+                <p>- não diminui a justiça de Deus;</p>
+                <p>- e, ao contrário, mostra a vitória completa de Deus sobre o mal.</p>
             </div>
         </div>
 
@@ -1038,14 +1043,14 @@ html { scroll-behavior: smooth; }
                 <p>Os adventistas ensinam que a salvação é somente pela graça, mediante a fé em Jesus Cristo. Nesse ponto, a posição oficial adventista, expressa em Nisto Cremos, é claramente protestante. Textos como <a href="#" class="biblical-reference" data-reference="Efésios 2:8-9">Efésios 2:8-9</a>, <a href="#" class="biblical-reference" data-reference="Romanos 3:20-28"><a href="#" class="biblical-reference" data-reference="Romanos 3:20">Romanos 3:20</a>-28</a>, <a href="#" class="biblical-reference" data-reference="Romanos 5:1">Romanos 5:1</a>, <a href="#" class="biblical-reference" data-reference="Gálatas 2:16">Gálatas 2:16</a> e <a href="#" class="biblical-reference" data-reference="Tito 3:5">Tito 3:5</a> são fundamentais.</p>
                 <p>Ao mesmo tempo, os adventistas afirmam que a fé salvadora nunca permanece sozinha. Ela produz obediência, transformação e santificação. Portanto, a obediência aos mandamentos — inclusive ao sábado — não é a base da salvação, mas é vista como fruto da salvação e sinal de uma relação viva com Cristo. Aqui entram textos como <a href="#" class="biblical-reference" data-reference="Efésios 2:10">Efésios 2:10</a>, <a href="#" class="biblical-reference" data-reference="João 14:15">João 14:15</a>, <a href="#" class="biblical-reference" data-reference="1 João 2:3-6">1 João 2:3-6</a>, <a href="#" class="biblical-reference" data-reference="1 João 5:2-3">1 João 5:2-3</a>, <a href="#" class="biblical-reference" data-reference="Tiago 2:17-26">Tiago 2:17-26</a> e <a href="#" class="biblical-reference" data-reference="Apocalipse 14:12">Apocalipse 14:12</a>.</p>
                 <p>A distinção é decisiva:</p>
-                <p>causa da salvação: a graça de Deus em Cristo;</p>
-                <p>meio de apropriação: a fé;</p>
-                <p>evidência da salvação: uma vida de obediência;</p>
-                <p>resultado da salvação: santificação e fidelidade.</p>
+                <p>- causa da salvação: a graça de Deus em Cristo;</p>
+                <p>- meio de apropriação: a fé;</p>
+                <p>- evidência da salvação: uma vida de obediência;</p>
+                <p>- resultado da salvação: santificação e fidelidade.</p>
                 <p>No pensamento adventista, o sábado entra nessa lógica. Ele não salva ninguém. Cristo salva. Mas, uma vez que a pessoa reconhece Cristo como Senhor e aceita a autoridade das Escrituras, ela se dispõe a obedecer ao que Deus ordenou, inclusive o quarto mandamento. Assim, o sábado não é um concorrente da graça; é parte da resposta obediente de quem foi alcançado pela graça.</p>
                 <p>Apologeticamente, os adventistas rejeitam duas distorções:</p>
-                <p>o legalismo, que tenta merecer salvação por obras;</p>
-                <p>e o antinomismo, que diz que a graça torna a obediência irrelevante.</p>
+                <p>- o legalismo, que tenta merecer salvação por obras;</p>
+                <p>- e o antinomismo, que diz que a graça torna a obediência irrelevante.</p>
                 <p>Para a IASD, ambos são erros. A graça salva, e a mesma graça transforma. Quem foi justificado é chamado a viver em novidade de vida. Por isso, a obediência importa muito, mas como consequência da união com Cristo, não como moeda de troca para obter aceitação divina.</p>
             </div>
 
@@ -1053,31 +1058,31 @@ html { scroll-behavior: smooth; }
                 <h4>6.2 A ênfase adventista na lei e no sábado torna sua teologia legalista? O que os adventistas entendem por "graça e lei"? São complementares ou excludentes?</h4>
                 <p>Na autocompreensão adventista, a ênfase na lei e no sábado não deveria tornar sua teologia legalista. O legalismo surge quando a lei é usada como meio de justificação. A posição oficial adventista é que a lei jamais salva; ela revela o caráter de Deus, define o pecado e orienta a vida do crente, mas não pode justificar o pecador. Isso se baseia em <a href="#" class="biblical-reference" data-reference="Romanos 3:20">Romanos 3:20</a>, <a href="#" class="biblical-reference" data-reference="Romanos 7:7">Romanos 7:7</a>, <a href="#" class="biblical-reference" data-reference="Gálatas 2:16">Gálatas 2:16</a> e <a href="#" class="biblical-reference" data-reference="Tiago 1:23-25">Tiago 1:23-25</a>.</p>
                 <p>Em Nisto Cremos, graça e lei são vistas como complementares, não excludentes. A lei mostra a vontade de Deus e expõe o pecado; a graça oferece perdão, reconciliação e poder para obedecer. Assim:</p>
-                <p>a lei revela o padrão divino;</p>
-                <p>a graça restaura o pecador;</p>
-                <p>o Espírito Santo escreve a lei no coração;</p>
-                <p>a obediência surge como fruto de uma relação redimida com Deus.</p>
+                <p>- a lei revela o padrão divino;</p>
+                <p>- a graça restaura o pecador;</p>
+                <p>- o Espírito Santo escreve a lei no coração;</p>
+                <p>- a obediência surge como fruto de uma relação redimida com Deus.</p>
                 <p>Essa lógica é muito importante no adventismo. A lei sem graça produz condenação e orgulho religioso. A graça sem lei, se mal compreendida, pode ser transformada em permissividade. Mas biblicamente, segundo a leitura adventista, a nova aliança não elimina a lei moral; ela a internaliza. Os textos principais aqui são <a href="#" class="biblical-reference" data-reference="Jeremias 31:31-33">Jeremias 31:31-33</a>, <a href="#" class="biblical-reference" data-reference="Hebreus 8:8-10">Hebreus 8:8-10</a>, <a href="#" class="biblical-reference" data-reference="Romanos 3:31">Romanos 3:31</a>, <a href="#" class="biblical-reference" data-reference="Romanos 8:3-4">Romanos 8:3-4</a> e <a href="#" class="biblical-reference" data-reference="Mateus 5:17-19">Mateus 5:17-19</a>.</p>
                 <p>A acusação de legalismo surge porque os adventistas dão grande destaque ao sábado, à saúde, ao estilo de vida e à guarda dos mandamentos. A resposta apologética adventista é que uma ênfase prática em santidade não é legalismo por si só. Torna-se legalismo apenas quando essas coisas são apresentadas como base meritória da salvação. No ensino oficial, isso seria incorreto.</p>
                 <p>Dito isso, os próprios adventistas reconhecem historicamente que, em certos momentos e contextos, houve tendências legalistas entre alguns membros e pregadores. Mas isso é visto como desvio da teologia adventista, não como sua essência. O adventismo entende que sua mensagem correta é cristocêntrica: a lei conduz a Cristo, Cristo justifica o pecador, e o Espírito leva o crente à obediência.</p>
                 <p>Portanto, para os adventistas:</p>
-                <p>graça e lei não são inimigas;</p>
-                <p>a graça não cancela a lei moral;</p>
-                <p>e a lei não substitui a graça.</p>
+                <p>- graça e lei não são inimigas;</p>
+                <p>- a graça não cancela a lei moral;</p>
+                <p>- e a lei não substitui a graça.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>6.3 A guarda do sábado como "selo de Deus" faz dela uma condição de salvação nos últimos dias?</h4>
                 <p>A resposta adventista exige distinção. Em termos absolutos, a salvação continua sendo somente por Cristo, nunca pelo sábado em si. Mas, em termos escatológicos, a IASD ensina que, no conflito final, o sábado terá papel especial como sinal de lealdade a Deus, em contraste com a marca da besta.</p>
                 <p>Isso quer dizer que o sábado não é apresentado como um rito salvador, mas como um ponto concreto em que a fidelidade a Deus se torna visível na crise final. A base para isso é a ligação entre:</p>
-                <p>o sábado como sinal entre Deus e Seu povo em <a href="#" class="biblical-reference" data-reference="Êxodo 31:13-17">Êxodo 31:13-17</a> e <a href="#" class="biblical-reference" data-reference="Ezequiel 20:12,20">Ezequiel 20:12,20</a>;</p>
-                <p>a adoração ao Criador em <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6-7">Apocalipse 14:6-7</a>;</p>
-                <p>e a perseverança dos santos em <a href="#" class="biblical-reference" data-reference="Apocalipse 14:12">Apocalipse 14:12</a>.</p>
+                <p>- o sábado como sinal entre Deus e Seu povo em <a href="#" class="biblical-reference" data-reference="Êxodo 31:13-17">Êxodo 31:13-17</a> e <a href="#" class="biblical-reference" data-reference="Ezequiel 20:12,20">Ezequiel 20:12,20</a>;</p>
+                <p>- a adoração ao Criador em <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6-7">Apocalipse 14:6-7</a>;</p>
+                <p>- e a perseverança dos santos em <a href="#" class="biblical-reference" data-reference="Apocalipse 14:12">Apocalipse 14:12</a>.</p>
                 <p>Na teologia adventista, quando a verdade é claramente conhecida e a pessoa escolhe conscientemente a rebelião contra Deus, a questão deixa de ser apenas "qual dia guardar?" e passa a ser "a quem obedecer?". Nesse cenário final, o sábado seria um dos pontos centrais da controvérsia entre a autoridade de Deus e a autoridade humana usurpadora.</p>
                 <p>Por isso, os adventistas dizem que a guarda do sábado não salva, mas a rejeição consciente da vontade de Deus, quando plenamente compreendida, revela uma atitude de rebelião incompatível com a fé salvadora. Isso é diferente de afirmar que pessoas sinceras, que hoje guardam o domingo sem conhecer a mensagem bíblica sobre o sábado, estejam automaticamente perdidas. A IASD não ensina isso. Pelo contrário, ensina que Deus julga cada pessoa conforme a luz recebida, como se vê em <a href="#" class="biblical-reference" data-reference="Atos 17:30">Atos 17:30</a>, <a href="#" class="biblical-reference" data-reference="Romanos 2:11-16">Romanos 2:11-16</a> e <a href="#" class="biblical-reference" data-reference="João 9:41">João 9:41</a>.</p>
                 <p>Apologeticamente, os adventistas procuram evitar dois extremos:</p>
-                <p>dizer que o sábado é irrelevante;</p>
-                <p>ou dizer que o sábado, por si só, salva.</p>
+                <p>- dizer que o sábado é irrelevante;</p>
+                <p>- ou dizer que o sábado, por si só, salva.</p>
                 <p>A posição oficial é mais específica: no tempo final, em um contexto de plena luz e decisão consciente, o sábado funciona como sinal exterior de uma fidelidade interior. Assim, ele se torna parte do teste final, mas a salvação continua tendo sua base unicamente na justiça de Cristo.</p>
             </div>
 
@@ -1087,11 +1092,11 @@ html { scroll-behavior: smooth; }
                 <p>A segurança da salvação é real no presente. Quem se arrepende, crê em Cristo e permanece nEle pode ter certeza da aceitação divina. Os textos mais usados são <a href="#" class="biblical-reference" data-reference="João 3:16">João 3:16</a>, <a href="#" class="biblical-reference" data-reference="João 5:24">João 5:24</a>, <a href="#" class="biblical-reference" data-reference="Romanos 5:1">Romanos 5:1</a>, <a href="#" class="biblical-reference" data-reference="Romanos 8:1">Romanos 8:1</a>, <a href="#" class="biblical-reference" data-reference="1 João 5:11-13">1 João 5:11-13</a> e <a href="#" class="biblical-reference" data-reference="Hebreus 7:25">Hebreus 7:25</a>. O adventista fiel não precisa viver em terror constante, como se nunca pudesse saber se está em Cristo.</p>
                 <p>Por outro lado, a IASD entende que a salvação pode ser abandonada por apostasia, incredulidade persistente e rejeição consciente da graça. Por isso, dá peso aos textos de advertência, como <a href="#" class="biblical-reference" data-reference="Hebreus 3:12-14">Hebreus 3:12-14</a>, <a href="#" class="biblical-reference" data-reference="Hebreus 6:4-6">Hebreus 6:4-6</a>, <a href="#" class="biblical-reference" data-reference="Hebreus 10:26-29">Hebreus 10:26-29</a>, <a href="#" class="biblical-reference" data-reference="2 Pedro 2:20-22">2 Pedro 2:20-22</a>, <a href="#" class="biblical-reference" data-reference="João 15:1-6">João 15:1-6</a> e <a href="#" class="biblical-reference" data-reference="Apocalipse 2:10">Apocalipse 2:10</a>.</p>
                 <p>A lógica adventista é relacional: a salvação não é uma coisa armazenada mecanicamente; ela está em Cristo. Enquanto a pessoa permanece em Cristo pela fé, ela está segura. Se deliberadamente rompe essa união, rejeitando a graça, ela se coloca em perigo espiritual real. Portanto:</p>
-                <p>há certeza da salvação presente;</p>
-                <p>mas não garantia automática independente da perseverança.</p>
+                <p>- há certeza da salvação presente;</p>
+                <p>- mas não garantia automática independente da perseverança.</p>
                 <p>Apologeticamente, os adventistas dizem que essa posição evita dois erros:</p>
-                <p>a presunção, que transforma a segurança em licença para negligência espiritual;</p>
-                <p>e o desespero, que nega a certeza do amor e do perdão de Deus.</p>
+                <p>- a presunção, que transforma a segurança em licença para negligência espiritual;</p>
+                <p>- e o desespero, que nega a certeza do amor e do perdão de Deus.</p>
                 <p>Assim, o adventista pode dizer: "tenho certeza da salvação em Cristo hoje", sem dizer: "estou salvo de modo incondicional, mesmo que depois eu abandone a fé".</p>
             </div>
 
@@ -1102,16 +1107,16 @@ html { scroll-behavior: smooth; }
                 <p>Sobre a possibilidade de parar completamente de pecar antes da volta de Cristo, há nuances internas no adventismo histórico. O ensino oficial tende a afirmar que Deus é poderoso para conceder vitória real sobre o pecado e que Seu povo é chamado a viver em obediência. Textos como <a href="#" class="biblical-reference" data-reference="Romanos 6">Romanos 6</a>, <a href="#" class="biblical-reference" data-reference="1 João 3:6-9">1 João 3:6-9</a>, <a href="#" class="biblical-reference" data-reference="Judas 24">Judas 24</a> e <a href="#" class="biblical-reference" data-reference="Apocalipse 14:5">Apocalipse 14:5</a> costumam ser citados nesse contexto. Contudo, isso não deve ser entendido como salvação por desempenho humano autônomo.</p>
                 <p>A preocupação da pergunta é importante: se se fala em "caráter perfeito", isso não tornaria a salvação dependente do esforço? A resposta adventista oficial deveria ser não. A formação do caráter cristão não é mérito humano independente, mas fruto da união com Cristo. Ellen White, quando corretamente lida dentro do conjunto da teologia adventista, não coloca o pecador como salvando a si mesmo pelo próprio esforço. A ênfase é que o caráter transformado é a evidência da atuação da graça, não a sua causa.</p>
                 <p>O problema aparece quando certos discursos populares ou devocionais são lidos de modo isolado e acabam soando perfeccionistas. A formulação teológica mais equilibrada no adventismo insiste em quatro pontos:</p>
-                <p>a justificação é sempre pela justiça de Cristo;</p>
-                <p>a santificação também é obra da graça;</p>
-                <p>o cristão é chamado à vitória real sobre o pecado;</p>
-                <p>mas nunca pode reivindicar mérito próprio.</p>
+                <p>- a justificação é sempre pela justiça de Cristo;</p>
+                <p>- a santificação também é obra da graça;</p>
+                <p>- o cristão é chamado à vitória real sobre o pecado;</p>
+                <p>- mas nunca pode reivindicar mérito próprio.</p>
                 <p>Em termos apologéticos, os adventistas respondem que a exigência de santidade não é invenção adventista; ela está no Novo Testamento. O erro seria pensar que essa santidade substitui Cristo. Não substitui. O crente é aceito por causa de Cristo e transformado por causa de Cristo.</p>
                 <p>Portanto, a resposta mais justa é:</p>
-                <p>os adventistas entendem "perfeição cristã" como maturidade, integridade e vitória crescente em Cristo;</p>
-                <p>muitos creem que, pela graça, o crente pode viver em obediência real antes da volta de Jesus;</p>
-                <p>mas o ensino oficial não deveria transformar isso em salvação por esforço humano;</p>
-                <p>qualquer leitura que faça da perfeição uma base meritória de aceitação diante de Deus distorce o centro do evangelho.</p>
+                <p>- os adventistas entendem "perfeição cristã" como maturidade, integridade e vitória crescente em Cristo;</p>
+                <p>- muitos creem que, pela graça, o crente pode viver em obediência real antes da volta de Jesus;</p>
+                <p>- mas o ensino oficial não deveria transformar isso em salvação por esforço humano;</p>
+                <p>- qualquer leitura que faça da perfeição uma base meritória de aceitação diante de Deus distorce o centro do evangelho.</p>
             </div>
 
             <div class="doctrine-item">
@@ -1119,15 +1124,15 @@ html { scroll-behavior: smooth; }
                 <p>Na teologia adventista, esses elementos não são necessários como meio meritório de salvação, mas têm relação importante com a santificação e com os frutos da obediência.</p>
                 <p>A lei moral, incluindo o sábado, expressa a vontade de Deus para a vida humana. A reforma de saúde, por sua vez, não é geralmente tratada como requisito para ser justificado diante de Deus, mas como parte de uma vida cristã de mordomia, santidade e cuidado com o corpo. Textos relevantes incluem <a href="#" class="biblical-reference" data-reference="Romanos 12:1-2">Romanos 12:1-2</a>, <a href="#" class="biblical-reference" data-reference="1 Coríntios 6:19-20">1 Coríntios 6:19-20</a>, <a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">1 Coríntios 10:31</a>, <a href="#" class="biblical-reference" data-reference="3 João 2">3 João 2</a>, <a href="#" class="biblical-reference" data-reference="Êxodo 20:8-11">Êxodo 20:8-11</a>, <a href="#" class="biblical-reference" data-reference="Isaías 58:13-14">Isaías 58:13-14</a> e <a href="#" class="biblical-reference" data-reference="João 14:15">João 14:15</a>.</p>
                 <p>A distinção correta, para os adventistas, é esta:</p>
-                <p>salvação: somente pela graça, mediante a fé;</p>
-                <p>santificação: vida transformada pelo Espírito;</p>
-                <p>obediência: fruto visível dessa transformação.</p>
+                <p>- salvação: somente pela graça, mediante a fé;</p>
+                <p>- santificação: vida transformada pelo Espírito;</p>
+                <p>- obediência: fruto visível dessa transformação.</p>
                 <p>Assim, guardar a lei e o sábado pertence claramente ao campo da obediência cristã. Já a reforma de saúde pertence ao campo da mordomia e do estilo de vida consagrado. Nenhuma dessas práticas compra perdão, remove culpa ou substitui a obra expiatória de Cristo.</p>
                 <p>No entanto, os adventistas também dizem que a santificação não é opcional. Quem foi salvo é chamado a viver de modo coerente com a vontade de Deus. Isso significa que lei, sábado e princípios de saúde não são irrelevantes. Eles não são "extras sem importância"; são áreas concretas da vida em que a fé se expressa.</p>
                 <p>Apologeticamente, a melhor formulação adventista é:</p>
-                <p>não são a raiz da salvação;</p>
-                <p>são frutos da salvação;</p>
-                <p>e participam do processo de santificação como expressões práticas de fidelidade.</p>
+                <p>- não são a raiz da salvação;</p>
+                <p>- são frutos da salvação;</p>
+                <p>- e participam do processo de santificação como expressões práticas de fidelidade.</p>
                 <p>Se alguém transformá-los em condição meritória de aceitação diante de Deus, isso é legalismo. Se alguém os tratar como irrelevantes para a vida cristã, isso seria desobediência ou graça barata. O adventismo procura, ao menos em sua formulação oficial, manter o equilíbrio entre esses dois erros.</p>
             </div>
 
@@ -1135,18 +1140,18 @@ html { scroll-behavior: smooth; }
                 <h4>6.7 Como os adventistas entendem <a href="#" class="biblical-reference" data-reference="Gálatas 3:19">Gálatas 3:19</a>, que diz que a lei foi acrescentada por causa das transgressões?</h4>
                 <p>Os adventistas entendem <a href="#" class="biblical-reference" data-reference="Gálatas 3:19">Gálatas 3:19</a> dentro do argumento mais amplo de Paulo contra a justificação pelas obras da lei. O texto diz que a lei foi "acrescentada por causa das transgressões, até que viesse o Descendente". A interpretação adventista procura distinguir entre diferentes funções da lei e entre diferentes aspectos da legislação dada a Israel.</p>
                 <p>Em primeiro lugar, os adventistas não entendem esse verso como prova de que a lei moral dos Dez Mandamentos tenha sido abolida. Em vez disso, veem Paulo dizendo que a lei teve papel especial de:</p>
-                <p>tornar o pecado mais evidente;</p>
-                <p>expor a transgressão;</p>
-                <p>conduzir o pecador à necessidade de Cristo.</p>
+                <p>- tornar o pecado mais evidente;</p>
+                <p>- expor a transgressão;</p>
+                <p>- conduzir o pecador à necessidade de Cristo.</p>
                 <p>Isso combina com <a href="#" class="biblical-reference" data-reference="Romanos 3:20">Romanos 3:20</a>, <a href="#" class="biblical-reference" data-reference="Romanos 5:20">Romanos 5:20</a>, <a href="#" class="biblical-reference" data-reference="Romanos 7:7">Romanos 7:7</a> e <a href="#" class="biblical-reference" data-reference="Gálatas 3:24">Gálatas 3:24</a>. A lei, nesse sentido, foi "acrescentada" para lidar com a condição pecaminosa do povo, revelando objetivamente a vontade divina e mostrando a gravidade do pecado.</p>
                 <p>Em segundo lugar, muitos adventistas distinguem aqui entre a lei moral permanente e o sistema cerimonial associado ao santuário, sacrifícios e sombras messiânicas. Esse sistema, de fato, tinha função temporária e apontava para Cristo, como se vê em <a href="#" class="biblical-reference" data-reference="Colossenses 2:14-17">Colossenses 2:14-17</a>, Hebreus 9 e <a href="#" class="biblical-reference" data-reference="Hebreus 10:1">Hebreus 10:1</a>. Assim, o aspecto pedagógico e provisório da lei em Gálatas é frequentemente aplicado, em grande parte, à economia mosaica como administração histórica voltada para conduzir a Cristo.</p>
                 <p>Ao mesmo tempo, a IASD não diria que a lei moral começou no Sinai, como se antes disso não houvesse padrão moral divino. O próprio conceito de "transgressão" pressupõe lei. Por isso, "foi acrescentada" não significa necessariamente "foi criada do nada pela primeira vez", mas que foi formalmente dada, explicitada e aplicada de modo especial na história da aliança.</p>
                 <p>Apologeticamente, os adventistas respondem que Gálatas combate o uso errado da lei como caminho de justificação, não a validade da lei moral como expressão do caráter de Deus. Paulo não está ensinando que o evangelho elimina a obediência, mas que a lei não pode substituir a promessa nem a fé em Cristo.</p>
                 <p>Portanto, a leitura adventista de <a href="#" class="biblical-reference" data-reference="Gálatas 3:19">Gálatas 3:19</a> é esta:</p>
-                <p>a lei foi dada de forma especial por causa do pecado humano;</p>
-                <p>para revelar a transgressão e conduzir a Cristo;</p>
-                <p>o sistema cerimonial tinha função temporária até a vinda de Cristo;</p>
-                <p>mas a lei moral não foi anulada como padrão divino de vida.</p>
+                <p>- a lei foi dada de forma especial por causa do pecado humano;</p>
+                <p>- para revelar a transgressão e conduzir a Cristo;</p>
+                <p>- o sistema cerimonial tinha função temporária até a vinda de Cristo;</p>
+                <p>- mas a lei moral não foi anulada como padrão divino de vida.</p>
             </div>
         </div>
 
@@ -1196,8 +1201,8 @@ html { scroll-behavior: smooth; }
             <div class="doctrine-item">
                 <h4>7.8 O que acontece durante o milênio segundo a escatologia adventista? Os justos estarão no céu e a Terra ficará deserta?</h4>
                 <p>Sim. Durante o milênio:</p>
-                <p>Os justos estarão no céu com Cristo, participando do julgamento dos ímpios e dos anjos caídos.</p>
-                <p>A Terra ficará deserta, em um estado de caos e desolação (como o abismo original de <a href="#" class="biblical-reference" data-reference="Gênesis 1:2">Gênesis 1:2</a>), sem habitantes humanos vivos.</p>
+                <p>- Os justos estarão no céu com Cristo, participando do julgamento dos ímpios e dos anjos caídos.</p>
+                <p>- A Terra ficará deserta, em um estado de caos e desolação (como o abismo original de <a href="#" class="biblical-reference" data-reference="Gênesis 1:2">Gênesis 1:2</a>), sem habitantes humanos vivos.</p>
                 <p>Satanás e seus anjos ficarão presos na Terra por uma "corrente de circunstâncias", pois não terão ninguém para enganar. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 20:1-6">Apocalipse 20:1-6</a>, <a href="#" class="biblical-reference" data-reference="1 Coríntios 6:2-3">1 Coríntios 6:2-3</a>, <a href="#" class="biblical-reference" data-reference="Jeremias 4:23-26">Jeremias 4:23-26</a>.</p>
             </div>
 
@@ -1208,24 +1213,24 @@ html { scroll-behavior: smooth; }
 
             <div class="doctrine-item">
                 <h4>7.10 É verdade que os adventistas ensinam que o bode emissário (Azazel) no Dia da Expiação representa Satanás em Levítico 16? Isso não faria de Satanás um co-salvador que carrega nossos pecados?</h4>
-                <p>Sim, os adventistas ensinam que Azazel representa Satanás. No entanto, isso não faz dele um co-salvador. O Nisto Cremos é enfático: Cristo realizou a expiação completa pelo pecado na cruz. Satanás não morre pelos nossos pecados para nos salvar; ele carrega a culpa e a punição final como o instigador do pecado. Assim como um criminoso é responsável por induzir outros ao crime, Satanás é punido por ter levado a humanidade a pecar. A salvação vem apenas do "Bode para o Senhor" (Cristo). Referências: <a href="#" class="biblical-reference" data-reference="Levítico 16:8">Levítico 16:8</a>, Hebreus 9:22-28</p>
+                <p>Sim, os adventistas ensinam que Azazel representa Satanás. No entanto, isso não faz dele um co-salvador. O Nisto Cremos é enfático: Cristo realizou a expiação completa pelo pecado na cruz. Satanás não morre pelos nossos pecados para nos salvar; ele carrega a culpa e a punição final como o instigador do pecado. Assim como um criminoso é responsável por induzir outros ao crime, Satanás é punido por ter levado a humanidade a pecar. A salvação vem apenas do "Bode para o Senhor" (Cristo). Referências: <a href="#" class="biblical-reference" data-reference="Levítico 16:8">Levítico 16:8</a>, <a href="#" class="biblical-reference" data-reference="Hebreus 9:22-28">Hebreus 9:22-28</a></p>
             </div>
 
             <div class="doctrine-item">
                 <h4>7.11 Os adventistas acreditam em uma grande tribulação antes da volta de Cristo? Qual é a sequência dos eventos finais?</h4>
                 <p>Sim, baseados em <a href="#" class="biblical-reference" data-reference="Daniel 12:1">Daniel 12:1</a> e <a href="#" class="biblical-reference" data-reference="Mateus 24:21">Mateus 24:21</a>. A sequência é:</p>
-                <p>Proclamação das Três Mensagens Angélicas.</p>
-                <p>Fechamento da porta da graça (fim da intercessão de Cristo).</p>
-                <p>As Sete Pragas (Grande Tribulação).</p>
-                <p>Decreto de morte contra os fiéis.</p>
-                <p>Segunda Vinda de Cristo. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 15-16">Apocalipse 15 e 16</a>, <a href="#" class="biblical-reference" data-reference="1 Tessalonicenses 4:16-17">1 Tessalonicenses 4:16-17</a>.</p>
+                <p>- Proclamação das Três Mensagens Angélicas.</p>
+                <p>- Fechamento da porta da graça (fim da intercessão de Cristo).</p>
+                <p>- As Sete Pragas (Grande Tribulação).</p>
+                <p>- Decreto de morte contra os fiéis.</p>
+                <p>- Segunda Vinda de Cristo. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 15-16">Apocalipse 15 e 16</a>, <a href="#" class="biblical-reference" data-reference="1 Tessalonicenses 4:16-17">1 Tessalonicenses 4:16-17</a>.</p>
             </div>
 
             <div class="doctrine-item">
-                <h4>7.12 Como os adventistas interpretam as três mensagens angélicas de <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6">Apocalipse 14:6</a>–12?</h4>
+                <h4>7.12 Como os adventistas interpretam as três mensagens angélicas de <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6-12">Apocalipse 14:6-12</a>?</h4>
                 <p><strong>Primeira Mensagem:</strong> Chamado para temer a Deus, dar-Lhe glória e adorar o Criador (restauração do sábado), pois a hora do Seu juízo chegou.</p>
                 <p><strong>Segunda Mensagem:</strong> Anúncio da queda de Babilônia (sistemas religiosos confusos e apóstatas).</p>
-                <p><strong>Terceira Mensagem:</strong> Aviso contra a adoração da besta e o recebimento de sua marca, destacando a perseverança daqueles que guardam os mandamentos de Deus. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6">Apocalipse 14:6</a>-12</p>
+                <p><strong>Terceira Mensagem:</strong> Aviso contra a adoração da besta e o recebimento de sua marca, destacando a perseverança daqueles que guardam os mandamentos de Deus. Referências: <a href="#" class="biblical-reference" data-reference="Apocalipse 14:6-12">Apocalipse 14:6-12</a></p>
             </div>
 
             <div class="doctrine-item">
@@ -1328,14 +1333,14 @@ html { scroll-behavior: smooth; }
                 <p><a href="#" class="biblical-reference" data-reference="Efésios 4:4-6">Efésios 4:4-6</a> — um Espírito, um Senhor, um Deus e Pai.</p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Pedro 1:2">1 Pedro 1:2</a> — eleição segundo a presciência do Pai, santificação do Espírito, obediência a Jesus Cristo.</p>
                 <p>A IASD também crê, como os cristãos evangélicos históricos, que:</p>
-                <p>o Pai é Deus;</p>
-                <p>o Filho é Deus;</p>
-                <p>o Espírito Santo é Deus;</p>
-                <p>e, ainda assim, não há três deuses, mas um só Deus.</p>
+                <p>- o Pai é Deus;</p>
+                <p>- o Filho é Deus;</p>
+                <p>- o Espírito Santo é Deus;</p>
+                <p>- e, ainda assim, não há três deuses, mas um só Deus.</p>
                 <p>Isso não significa confusão entre as Pessoas. O Pai não é o Filho, o Filho não é o Espírito, e o Espírito não é o Pai. Eles são distintos em pessoa, mas um em essência, propósito, caráter e divindade.</p>
                 <p>Onde os adventistas se aproximam fortemente dos evangélicos clássicos? Na afirmação de que:</p>
-                <p>Jesus é plenamente Deus (<a href="#" class="biblical-reference" data-reference="João 1:1-3">João 1:1-3</a>, <a href="#" class="biblical-reference" data-reference="João 1:14">14</a>; <a href="#" class="biblical-reference" data-reference="Colossenses 2:9">Colossenses 2:9</a>);</p>
-                <p>o Espírito Santo é Pessoa divina, não mera força impessoal (<a href="#" class="biblical-reference" data-reference="João 14:16-17">João 14:16-17</a>, <a href="#" class="biblical-reference" data-reference="João 14:26">26</a>; <a href="#" class="biblical-reference" data-reference="João 16:13-14">João 16:13-14</a>; <a href="#" class="biblical-reference" data-reference="Atos 5:3-4">Atos 5:3-4</a>).</p>
+                <p>- Jesus é plenamente Deus (<a href="#" class="biblical-reference" data-reference="João 1:1-3">João 1:1-3</a>, <a href="#" class="biblical-reference" data-reference="João 1:14">14</a>; <a href="#" class="biblical-reference" data-reference="Colossenses 2:9">Colossenses 2:9</a>);</p>
+                <p>- o Espírito Santo é Pessoa divina, não mera força impessoal (<a href="#" class="biblical-reference" data-reference="João 14:16-17">João 14:16-17</a>, <a href="#" class="biblical-reference" data-reference="João 14:26">26</a>; <a href="#" class="biblical-reference" data-reference="João 16:13-14">João 16:13-14</a>; <a href="#" class="biblical-reference" data-reference="Atos 5:3-4">Atos 5:3-4</a>).</p>
                 <p>Portanto, sim, os adventistas creem na Trindade em sentido real e ortodoxo. Se houver diferença em relação a certos grupos evangélicos, normalmente não está no fato de crer ou não crer na Trindade, mas na forma de explicar alguns pontos bíblicos ou históricos. Mas, em essência, a IASD é trinitariana.</p>
             </div>
 
@@ -1359,17 +1364,17 @@ html { scroll-behavior: smooth; }
                 <h4>9.3 A compreensão adventista da Trindade é igual à formulação "nicena" (católicos/evangélicos) ou possui diferenças?</h4>
                 <p>A resposta mais correta é: há ampla convergência, mas a ênfase adventista é mais bíblica do que credal-filosófica.</p>
                 <p>A IASD concorda com o núcleo da formulação nicena no que importa essencialmente:</p>
-                <p>há um só Deus;</p>
-                <p>o Pai, o Filho e o Espírito Santo são plenamente divinos;</p>
-                <p>o Filho não é criatura;</p>
-                <p>o Espírito Santo não é mera energia;</p>
-                <p>as três Pessoas são coeternas.</p>
+                <p>- há um só Deus;</p>
+                <p>- o Pai, o Filho e o Espírito Santo são plenamente divinos;</p>
+                <p>- o Filho não é criatura;</p>
+                <p>- o Espírito Santo não é mera energia;</p>
+                <p>- as três Pessoas são coeternas.</p>
                 <p>Nesse sentido, a proximidade com o cristianismo niceno é real.</p>
                 <p>Mas os adventistas, de forma geral, preferem linguagem bíblica e evitam transformar fórmulas conciliares em autoridade suprema. A autoridade final, para a IASD, não é Nicéia em si, mas a Bíblia. O Nisto Cremos deixa claro esse princípio: as crenças da igreja são aceitas porque são entendidas como ensino das Escrituras.</p>
                 <p>Assim, a diferença principal não é tanto de conteúdo essencial, mas de fundamentação e ênfase:</p>
-                <p>a IASD não baseia sua fé em tradição eclesiástica;</p>
-                <p>a IASD procura formular a doutrina a partir do texto bíblico;</p>
-                <p>a IASD evita especulações filosóficas sobre a natureza interna de Deus além do que foi revelado.</p>
+                <p>- a IASD não baseia sua fé em tradição eclesiástica;</p>
+                <p>- a IASD procura formular a doutrina a partir do texto bíblico;</p>
+                <p>- a IASD evita especulações filosóficas sobre a natureza interna de Deus além do que foi revelado.</p>
                 <p>Por isso, o adventista pode dizer sem problema que crê em um Deus triúno, mas normalmente desejará acrescentar: porque a Escritura revela o Pai, o Filho e o Espírito Santo como divinos e coeternos.</p>
                 <p>Passagens centrais:</p>
                 <p><a href="#" class="biblical-reference" data-reference="Deuteronômio 6:4">Deuteronômio 6:4</a> — um só Deus.</p>
@@ -1408,14 +1413,14 @@ html { scroll-behavior: smooth; }
                 <h4>9.5 Por que outros cristãos consideram problemática ou herética a identificação de Jesus com Miguel?</h4>
                 <p>Porque, para muitos cristãos, essa identificação parece perigosa por poder sugerir que Jesus seria apenas um anjo exaltado. E essa preocupação, em si, é compreensível.</p>
                 <p>Há três razões principais para a objeção:</p>
-                <p>Primeira: o termo "arcanjo" soa, para muitos, como categoria criada. Então, ao ouvir "Jesus é Miguel", muitos concluem imediatamente: "logo, Jesus é criatura".</p>
-                <p>Segunda: grupos efetivamente heréticos, como as Testemunhas de Jeová, usam linguagem parecida, mas com conteúdo diferente.</p>
-                <p>Terceira: Hebreus 1 enfatiza a superioridade absoluta do Filho sobre os anjos, o que leva muitos a considerar inadequada qualquer identificação entre Cristo e um arcanjo.</p>
+                <p>- Primeira: o termo "arcanjo" soa, para muitos, como categoria criada. Então, ao ouvir "Jesus é Miguel", muitos concluem imediatamente: "logo, Jesus é criatura".</p>
+                <p>- Segunda: grupos efetivamente heréticos, como as Testemunhas de Jeová, usam linguagem parecida, mas com conteúdo diferente.</p>
+                <p>- Terceira: Hebreus 1 enfatiza a superioridade absoluta do Filho sobre os anjos, o que leva muitos a considerar inadequada qualquer identificação entre Cristo e um arcanjo.</p>
                 <p>A resposta adventista a essa crítica é que a identificação não é ontológica, mas funcional e titular. Ou seja, não se diz que Cristo pertence à ordem criada dos anjos. Diz-se que Ele aparece como Comandante dos anjos.</p>
                 <p>Mesmo assim, é preciso reconhecer com honestidade: muitos cristãos consideram essa linguagem ruim ou desnecessária, porque pode causar confusão. E de fato pode. Pastoralmente, o adventista precisa deixar muito claro, sempre, que:</p>
-                <p>Jesus não foi criado;</p>
-                <p>Jesus não é um anjo por natureza;</p>
-                <p>Jesus é o Filho eterno de Deus.</p>
+                <p>- Jesus não foi criado;</p>
+                <p>- Jesus não é um anjo por natureza;</p>
+                <p>- Jesus é o Filho eterno de Deus.</p>
                 <p>Quando isso não é explicado, a formulação parece herética. Quando é explicado com precisão, a posição adventista busca preservar tanto a plena divindade de Cristo quanto sua função de líder do exército celestial.</p>
             </div>
 
@@ -1423,8 +1428,8 @@ html { scroll-behavior: smooth; }
                 <h4>9.6 Na encarnação, Jesus assumiu a natureza humana antes (sem tendências pecaminosas) ou depois da queda (com tendências pecaminosas)?</h4>
                 <p>A resposta oficial adventista precisa ser dada com muito cuidado: Jesus assumiu a verdadeira natureza humana decaída em suas fraquezas e limitações físicas, mas sem pecado, sem corrupção moral e sem qualquer participação em culpa ou inclinação interior ao mal como consentimento pecaminoso.</p>
                 <p>A IASD afirma ao mesmo tempo duas verdades bíblicas:</p>
-                <p>Cristo foi verdadeiramente humano;</p>
-                <p>Cristo foi absolutamente sem pecado.</p>
+                <p>- Cristo foi verdadeiramente humano;</p>
+                <p>- Cristo foi absolutamente sem pecado.</p>
                 <p>Textos essenciais:</p>
                 <p><a href="#" class="biblical-reference" data-reference="João 1:14">João 1:14</a> — o Verbo se fez carne.</p>
                 <p><a href="#" class="biblical-reference" data-reference="Romanos 8:3">Romanos 8:3</a> — Deus enviou seu Filho "em semelhança de carne pecaminosa".</p>
@@ -1437,8 +1442,8 @@ html { scroll-behavior: smooth; }
                 <p>porém, Ele nunca possuiu pecado pessoal, culpa, corrupção moral ou concupiscência consentida.</p>
                 <p>O Nisto Cremos enfatiza que Cristo se identificou plenamente com a raça humana, mas sem ser pecador. Essa é a linha que deve ser mantida.</p>
                 <p>Em termos pastorais, isso é precioso, porque significa duas coisas:</p>
-                <p>Jesus pode realmente nos representar, porque Se fez um de nós;</p>
-                <p>Jesus pode realmente nos salvar, porque permaneceu santo, puro e sem pecado.</p>
+                <p>- Jesus pode realmente nos representar, porque Se fez um de nós;</p>
+                <p>- Jesus pode realmente nos salvar, porque permaneceu santo, puro e sem pecado.</p>
                 <p>Ele não foi um homem pecador tentando melhorar. Ele foi o segundo Adão, santo, obediente e vitorioso, vencendo onde o primeiro caiu (<a href="#" class="biblical-reference" data-reference="Romanos 5:12-19">Romanos 5:12-19</a>; <a href="#" class="biblical-reference" data-reference="1 Coríntios 15">1 Coríntios 15</a>:21-22, <a href="#" class="biblical-reference" data-reference="1 Coríntios 15">1 Coríntios 15</a>:45-49).</p>
             </div>
         </div>
@@ -1490,7 +1495,7 @@ html { scroll-behavior: smooth; }
                 <p>O Nisto Cremos trata a saúde como parte da mordomia cristã. O objetivo é glorificar a Deus no corpo, na mente e nos hábitos.</p>
                 <p>Textos relevantes:</p>
                 <p><a href="#" class="biblical-reference" data-reference="Gênesis 1:29">Gênesis 1:29</a></p>
-                <p>Daniel 1:8-20</p>
+                <p><a href="#" class="biblical-reference" data-reference="Daniel 1:8-20">Daniel 1:8-20</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 6:19-20">1 Coríntios 6:19-20</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">1 Coríntios 10:31</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="Romanos 14:17">Romanos 14:17</a></p>
@@ -1502,10 +1507,10 @@ html { scroll-behavior: smooth; }
                 <p>A resposta oficial precisa ser equilibrada: a reforma de saúde não é o evangelho nem o meio de salvação, mas é uma área importante de santificação, obediência e mordomia cristã.</p>
                 <p>A salvação é somente pela graça, mediante a fé em Cristo (<a href="#" class="biblical-reference" data-reference="Efésios 2:8-9">Efésios 2:8-9</a>). Isso a IASD afirma claramente. Porém, a vida salva produz frutos visíveis. Assim como a fé afeta a língua, a sexualidade, as finanças e o caráter, também afeta o uso do corpo.</p>
                 <p>Por isso, a reforma de saúde é mais do que "bem-estar". Ela envolve:</p>
-                <p>respeito ao corpo como templo do Espírito;</p>
-                <p>clareza mental para a vida espiritual;</p>
-                <p>testemunho cristão;</p>
-                <p>obediência prática a princípios divinos.</p>
+                <p>- respeito ao corpo como templo do Espírito;</p>
+                <p>- clareza mental para a vida espiritual;</p>
+                <p>- testemunho cristão;</p>
+                <p>- obediência prática a princípios divinos.</p>
                 <p>Textos principais:</p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 6:19-20">1 Coríntios 6:19-20</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">1 Coríntios 10:31</a></p>
@@ -1513,8 +1518,8 @@ html { scroll-behavior: smooth; }
                 <p><a href="#" class="biblical-reference" data-reference="3 João 2">3 João 2</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Tessalonicenses 5:23">1 Tessalonicenses 5:23</a></p>
                 <p>Pastoralmente, a melhor forma de dizer é:</p>
-                <p>não somos salvos porque seguimos a reforma de saúde;</p>
-                <p>mas quem foi alcançado pela graça deve desejar honrar a Deus também nessa área.</p>
+                <p>- não somos salvos porque seguimos a reforma de saúde;</p>
+                <p>- mas quem foi alcançado pela graça deve desejar honrar a Deus também nessa área.</p>
             </div>
 
             <div class="doctrine-item">
@@ -1543,18 +1548,18 @@ html { scroll-behavior: smooth; }
                 <h4>10.6 Adventistas podem consumir outras bebidas com cafeína, como chá preto, mate, energéticos e refrigerantes?</h4>
                 <p>Na prática adventista histórica, bebidas com cafeína costumam ser desaconselhadas, especialmente quando têm caráter estimulante forte e potencial de dependência. Isso inclui, em muitos contextos, chá preto, mate, energéticos e certos refrigerantes.</p>
                 <p>A Bíblia não traz uma lista dessas bebidas, então a aplicação é feita por princípio:</p>
-                <p>cuidado com o corpo;</p>
-                <p>domínio próprio;</p>
-                <p>evitar dependência;</p>
-                <p>preservar clareza mental.</p>
+                <p>- cuidado com o corpo;</p>
+                <p>- domínio próprio;</p>
+                <p>- evitar dependência;</p>
+                <p>- preservar clareza mental.</p>
                 <p>Textos-base:</p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 6:12">1 Coríntios 6:12</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">1 Coríntios 10:31</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="Romanos 12:1-2">Romanos 12:1-2</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Pedro 5:8">1 Pedro 5:8</a></p>
                 <p>É importante distinguir:</p>
-                <p>a posição oficial enfatiza princípios;</p>
-                <p>a prática pastoral local pode variar em rigor e aplicação.</p>
+                <p>- a posição oficial enfatiza princípios;</p>
+                <p>- a prática pastoral local pode variar em rigor e aplicação.</p>
                 <p>Portanto, a resposta mais fiel é: em geral, essas bebidas são desaconselhadas no ideal adventista de saúde, ainda que a disciplina eclesiástica costume se concentrar mais fortemente em álcool, tabaco e drogas.</p>
             </div>
 
@@ -1568,10 +1573,10 @@ html { scroll-behavior: smooth; }
                 <p><a href="#" class="biblical-reference" data-reference="Romanos 12:1-2">Romanos 12:1-2</a></p>
                 <p>No Nisto Cremos, a conduta cristã é apresentada como chamada à modéstia, pureza e simplicidade.</p>
                 <p>Quanto aos itens:</p>
-                <p>jóias: tradicionalmente desaconselhadas, especialmente como ornamento;</p>
-                <p>piercings: em geral vistos como incompatíveis com o ideal adventista de simplicidade e reverência ao corpo;</p>
-                <p>maquiagem: a abordagem costuma ser de cautela, modéstia e rejeição da vaidade ou sensualização;</p>
-                <p>adornos em geral: avaliados pelo princípio da modéstia cristã.</p>
+                <p>- jóias: tradicionalmente desaconselhadas, especialmente como ornamento;</p>
+                <p>- piercings: em geral vistos como incompatíveis com o ideal adventista de simplicidade e reverência ao corpo;</p>
+                <p>- maquiagem: a abordagem costuma ser de cautela, modéstia e rejeição da vaidade ou sensualização;</p>
+                <p>- adornos em geral: avaliados pelo princípio da modéstia cristã.</p>
                 <p>A ideia não é dizer que qualquer uso externo seja automaticamente um pecado imperdoável, mas que o discípulo é chamado a uma vida de simplicidade santa, que contraste com a vaidade do mundo.</p>
             </div>
 
@@ -1593,7 +1598,7 @@ html { scroll-behavior: smooth; }
                 <h4>10.9 Adventistas podem receber transfusão de sangue?</h4>
                 <p>Sim. A Igreja Adventista do Sétimo Dia não proíbe transfusão de sangue como fazem as Testemunhas de Jeová.</p>
                 <p>A IASD valoriza fortemente a vida, a saúde, o cuidado médico responsável e a liberdade de consciência em decisões clínicas. Pode haver discussão sobre tipos de tratamento, riscos, alternativas e preferências pessoais, mas não há doutrina adventista proibindo transfusão.</p>
-                <p>Os textos bíblicos sobre não comer sangue, como Levítico 17 e <a href="#" class="biblical-reference" data-reference="Atos 15">Atos 15</a>, são entendidos no contexto alimentar, ritual e da reverência à vida, não como proibição absoluta de procedimento médico terapêutico moderno.</p>
+                <p>Os textos bíblicos sobre não comer sangue, como Levítico 17 e Atos 15, são entendidos no contexto alimentar, ritual e da reverência à vida, não como proibição absoluta de procedimento médico terapêutico moderno.</p>
                 <p>Portanto, sim, adventistas podem receber transfusão de sangue.</p>
             </div>
 
@@ -1612,11 +1617,11 @@ html { scroll-behavior: smooth; }
                 <p><a href="#" class="biblical-reference" data-reference="1 João 2:15-17">1 João 2:15-17</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:31">1 Coríntios 10:31</a></p>
                 <p>A preocupação com entretenimento, vestimenta e aparência existe porque essas áreas afetam:</p>
-                <p>a mente;</p>
-                <p>os desejos;</p>
-                <p>o testemunho;</p>
-                <p>a identidade cristã;</p>
-                <p>a sensibilidade espiritual.</p>
+                <p>- a mente;</p>
+                <p>- os desejos;</p>
+                <p>- o testemunho;</p>
+                <p>- a identidade cristã;</p>
+                <p>- a sensibilidade espiritual.</p>
                 <p>Em termos pastorais, o objetivo não é criar uma subcultura artificial, mas formar discípulos que vivam de maneira coerente com o Reino de Deus.</p>
             </div>
         </div>
@@ -1628,8 +1633,8 @@ html { scroll-behavior: smooth; }
                 <h4>11.1 O dízimo é uma prática do Antigo Testamento ou continua válido para os cristãos na Nova Aliança? Ele é obrigatório para a salvação?</h4>
                 <p>A posição adventista é que o dízimo continua válido como princípio de mordomia, embora não seja meio de salvação.</p>
                 <p>A IASD vê o dízimo como anterior ao Sinai:</p>
-                <p>Abraão deu o dízimo a Melquisedeque (<a href="#" class="biblical-reference" data-reference="Gênesis 14:20">Gênesis 14:20</a>);</p>
-                <p>Jacó fez voto relacionado ao dízimo (<a href="#" class="biblical-reference" data-reference="Gênesis 28:22">Gênesis 28:22</a>).</p>
+                <p>- Abraão deu o dízimo a Melquisedeque (<a href="#" class="biblical-reference" data-reference="Gênesis 14:20">Gênesis 14:20</a>);</p>
+                <p>- Jacó fez voto relacionado ao dízimo (<a href="#" class="biblical-reference" data-reference="Gênesis 28:22">Gênesis 28:22</a>).</p>
                 <p>Depois, o sistema foi regulado em Israel:</p>
                 <p><a href="#" class="biblical-reference" data-reference="Levítico 27:30, 32">Levítico 27:30, 32</a> — o dízimo é santo ao Senhor.</p>
                 <p>No Novo Testamento, Jesus não o condena:</p>
@@ -1645,7 +1650,7 @@ html { scroll-behavior: smooth; }
                 <p><a href="#" class="biblical-reference" data-reference="Levítico 27:30">Levítico 27:30</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="Malaquias 3:8-10">Malaquias 3:8-10</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="Mateus 23:23">Mateus 23:23</a></p>
-                <p>2 Coríntios 9:6-8</p>
+                <p><a href="#" class="biblical-reference" data-reference="2 Coríntios 9:6-8">2 Coríntios 9:6-8</a></p>
             </div>
 
             <div class="doctrine-item">
@@ -1654,19 +1659,19 @@ html { scroll-behavior: smooth; }
                 <p>Isso porque o dízimo não é visto como algo que pertence originalmente ao adorador e depois é oferecido a Deus. Pelo contrário: ele já é entendido como pertencente ao Senhor.</p>
                 <p>O próprio Nisto Cremos enfatiza isso ao dizer que essa porção é "sua efetiva propriedade". Com base em <a href="#" class="biblical-reference" data-reference="Levítico 27:30">Levítico 27:30</a>, a igreja entende que o dízimo é santo ao Senhor.</p>
                 <p>Então:</p>
-                <p>pagar sugere quitação de uma dívida ou contribuição voluntária qualquer;</p>
-                <p>devolver expressa melhor a ideia bíblica de mordomia.</p>
+                <p>- pagar sugere quitação de uma dívida ou contribuição voluntária qualquer;</p>
+                <p>- devolver expressa melhor a ideia bíblica de mordomia.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>11.3 Para onde vai o dinheiro do dízimo e das ofertas, e como ele é administrado na IASD?</h4>
                 <p>Na prática adventista, há distinção entre dízimos e ofertas.</p>
-                <p>Dízimo: destinado primariamente ao sustento do ministério evangélico e da pregação do evangelho. O anexo menciona o modelo levítico e o financiamento da obra mundial.</p>
+                <p>Dízimo: destinado primariamente ao sustento do ministério evangélico e da pregação do evangelho. O modelo seguido deve ser o de levítico e o financiamento da obra mundial.</p>
                 <p>Ofertas: usadas em várias frentes, como manutenção local, projetos missionários, expansão, assistência, construção e necessidades institucionais, conforme a organização da igreja.</p>
                 <p>A IASD possui uma estrutura administrativa representativa e organizada. Em princípio:</p>
-                <p>o dízimo não é tratado como verba livre local para qualquer fim;</p>
-                <p>ele integra uma administração denominacional voltada à missão global;</p>
-                <p>há sistemas de distribuição e auditoria dentro da estrutura eclesiástica.</p>
+                <p>- o dízimo não é tratado como verba livre local para qualquer fim;</p>
+                <p>- ele integra uma administração denominacional voltada à missão global;</p>
+                <p>- há sistemas de distribuição e auditoria dentro da estrutura eclesiástica.</p>
                 <p>A ideia teológica é que os recursos devem servir à missão, não ao enriquecimento pessoal de líderes.</p>
             </div>
         </div>
@@ -1678,9 +1683,9 @@ html { scroll-behavior: smooth; }
                 <h4>12.1 Por que os adventistas praticam apenas o batismo por imersão? Batismos realizados em outras denominações (por aspersão) são válidos?</h4>
                 <p>A IASD pratica apenas o batismo por imersão porque entende que esse é o modelo bíblico mais fiel.</p>
                 <p>Razões bíblicas:</p>
-                <p>o verbo grego baptizo traz a ideia de imergir;</p>
-                <p>o batismo simboliza morte, sepultamento e ressurreição com Cristo;</p>
-                <p>esse simbolismo aparece plenamente na imersão.</p>
+                <p>- o verbo grego baptizo traz a ideia de imergir;</p>
+                <p>- o batismo simboliza morte, sepultamento e ressurreição com Cristo;</p>
+                <p>- esse simbolismo aparece plenamente na imersão.</p>
                 <p>Textos-chave:</p>
                 <p><a href="#" class="biblical-reference" data-reference="Mateus 3:13-17">Mateus 3:13-17</a> — o exemplo de Jesus;</p>
                 <p><a href="#" class="biblical-reference" data-reference="João 3:23">João 3:23</a> — havia muita água;</p>
@@ -1694,16 +1699,16 @@ html { scroll-behavior: smooth; }
             <div class="doctrine-item">
                 <h4>12.2 A IASD aceita batismo infantil?</h4>
                 <p>Não. A IASD não pratica batismo infantil, porque entende que o batismo requer:</p>
-                <p>arrependimento;</p>
-                <p>fé pessoal;</p>
-                <p>compreensão do evangelho;</p>
-                <p>decisão consciente de discipulado.</p>
+                <p>- arrependimento;</p>
+                <p>- fé pessoal;</p>
+                <p>- compreensão do evangelho;</p>
+                <p>- decisão consciente de discipulado.</p>
                 <p>Textos principais:</p>
                 <p><a href="#" class="biblical-reference" data-reference="Marcos 16:16">Marcos 16:16</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="Atos 2:38">Atos 2:38</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="Atos 8:12">Atos 8:12</a></p>
-                <p>Atos 8:36-38</p>
-                <p><a href="#" class="biblical-reference" data-reference="Romanos 6">Romanos 6</a>:3-6</p>
+                <p><a href="#" class="biblical-reference" data-reference="Atos 8:36-38">Atos 8:36-38</a></p>
+                <p><a href="#" class="biblical-reference" data-reference="Romanos 6:3-6">Romanos 6:3-6</a></p>
                 <p>Como um bebê ainda não pode exercer arrependimento e fé consciente, a igreja não o batiza.</p>
             </div>
 
@@ -1711,9 +1716,9 @@ html { scroll-behavior: smooth; }
                 <h4>12.3 O que é a apresentação ou dedicação de crianças e por que ela não é batismo?</h4>
                 <p>A apresentação ou dedicação de crianças é um ato em que os pais consagram o filho a Deus e assumem publicamente a responsabilidade de criá-lo nos caminhos do Senhor.</p>
                 <p>Ela não é batismo porque:</p>
-                <p>não implica profissão pessoal de fé da criança;</p>
-                <p>não simboliza morte e ressurreição com Cristo;</p>
-                <p>não substitui a futura decisão individual.</p>
+                <p>- não implica profissão pessoal de fé da criança;</p>
+                <p>- não simboliza morte e ressurreição com Cristo;</p>
+                <p>- não substitui a futura decisão individual.</p>
                 <p>A base bíblica inclui:</p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Samuel 1:27-28">1 Samuel 1:27-28</a> — Ana consagra Samuel;</p>
                 <p><a href="#" class="biblical-reference" data-reference="Lucas 2:22">Lucas 2:22</a> — Jesus foi apresentado.</p>
@@ -1724,24 +1729,24 @@ html { scroll-behavior: smooth; }
                 <h4>12.4 O que é o lava-pés praticado antes da Ceia do Senhor?</h4>
                 <p>É o chamado rito da humildade. Baseia-se no gesto de Jesus em <a href="#" class="biblical-reference" data-reference="João 13:1-17">João 13:1-17</a>, quando Ele lavou os pés dos discípulos.</p>
                 <p>Na IASD, esse ato tem vários significados:</p>
-                <p>humildade;</p>
-                <p>serviço mútuo;</p>
-                <p>reconciliação;</p>
-                <p>renovada purificação relacional e espiritual;</p>
-                <p>preparação para a Ceia.</p>
+                <p>- humildade;</p>
+                <p>- serviço mútuo;</p>
+                <p>- reconciliação;</p>
+                <p>- renovada purificação relacional e espiritual;</p>
+                <p>- preparação para a Ceia.</p>
                 <p>O Nisto Cremos afirma que o lava-pés representa renovada purificação e a disposição de servir uns aos outros em humildade cristã.</p>
             </div>
 
             <div class="doctrine-item">
                 <h4>12.5 A Ceia do Senhor é apenas um memorial simbólico ou envolve a presença real de Cristo?</h4>
                 <p>A posição adventista evita dois extremos:</p>
-                <p>não ensina transubstanciação;</p>
-                <p>não reduz a Ceia a um ato vazio ou meramente mental.</p>
+                <p>- não ensina transubstanciação;</p>
+                <p>- não reduz a Ceia a um ato vazio ou meramente mental.</p>
                 <p>O Nisto Cremos afirma explicitamente que, na experiência da comunhão, Cristo está presente para encontrar-se com seu povo e fortalecê-lo. Isso é muito importante.</p>
                 <p>Então, para a IASD:</p>
-                <p>os emblemas não se transformam literalmente no corpo e sangue físicos;</p>
-                <p>mas a Ceia não é mero simbolismo frio;</p>
-                <p>há uma presença real de Cristo em sentido espiritual e relacional.</p>
+                <p>- os emblemas não se transformam literalmente no corpo e sangue físicos;</p>
+                <p>- mas a Ceia não é mero simbolismo frio;</p>
+                <p>- há uma presença real de Cristo em sentido espiritual e relacional.</p>
                 <p>Textos principais:</p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 10:16-17">1 Coríntios 10:16-17</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="1 Coríntios 11:23-29">1 Coríntios 11:23-29</a></p>
@@ -1784,11 +1789,11 @@ html { scroll-behavior: smooth; }
                 <h4>13.2 Por que a IASD rejeita a macroevolução e a evolução teísta?</h4>
                 <p>Porque entende que essas teorias entram em conflito com o relato bíblico da criação, da queda e da morte.</p>
                 <p>Se a macroevolução for aceita como mecanismo principal da origem humana, surgem grandes tensões com:</p>
-                <p>a historicidade de Adão e Eva;</p>
-                <p>a entrada do pecado no mundo;</p>
-                <p>a relação entre pecado e morte;</p>
-                <p>a base do sábado;</p>
-                <p>a necessidade de redenção como resposta a uma queda real.</p>
+                <p>- a historicidade de Adão e Eva;</p>
+                <p>- a entrada do pecado no mundo;</p>
+                <p>- a relação entre pecado e morte;</p>
+                <p>- a base do sábado;</p>
+                <p>- a necessidade de redenção como resposta a uma queda real.</p>
                 <p>Textos centrais:</p>
                 <p><a href="#" class="biblical-reference" data-reference="Gênesis 1:1-2:3">Gênesis 1:1-2:3</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="Romanos 5:12-21">Romanos 5:12-21</a></p>
@@ -1813,9 +1818,9 @@ html { scroll-behavior: smooth; }
                 <h4>13.4 Qual é a posição adventista sobre a idade da Terra e do universo (milhares vs milhões/bilhões)?</h4>
                 <p>A IASD oficialmente afirma a criação literal recente da vida na Terra em seis dias, mas historicamente nem sempre especifica com o mesmo grau dogmático cada detalhe cronológico do universo inteiro como tema confessional central.</p>
                 <p>Na prática, o adventismo tende a uma leitura de Terra recente, associada à cronologia bíblica. Quanto ao universo em sua totalidade, há adventistas que discutem o tema com cautela maior, mas a posição doutrinária da igreja enfatiza sobretudo:</p>
-                <p>criação divina literal;</p>
-                <p>semana da criação real;</p>
-                <p>historicidade de Gênesis.</p>
+                <p>- criação divina literal;</p>
+                <p>- semana da criação real;</p>
+                <p>- historicidade de Gênesis.</p>
                 <p>Portanto, se a pergunta for sobre a Terra e a vida humana, a tendência oficial adventista é rejeitar longas eras evolucionárias para a história da vida humana na Terra.</p>
             </div>
 
@@ -1824,9 +1829,14 @@ html { scroll-behavior: smooth; }
                 <p>Sim. Na leitura adventista tradicional, o dilúvio de Gênesis foi global, não apenas regional.</p>
                 <p>Textos principais:</p>
                 <p><a href="#" class="biblical-reference" data-reference="Gênesis 6:9">Gênesis 6:9</a></p>
-                <p>Mateus 24:37-39</p>
+                <p><a href="#" class="biblical-reference" data-reference="Mateus 24:37-39">Mateus 24:37-39</a></p>
                 <p><a href="#" class="biblical-reference" data-reference="2 Pedro 3:5-6">2 Pedro 3:5-6</a></p>
                 <p>Essa leitura serve como parte importante da explicação adventista para grande parte do registro fóssil e de formações geológicas de larga escala. A igreja vê o dilúvio como evento histórico catastrófico de alcance mundial.</p>
+            </div>
+
+            <div class="doctrine-item">
+                <p class="highlight-text"><strong>🔍 Quer aprofundar seus estudos sobre criação e evidências?</strong></p>
+                <p>Explore nossos conteúdos exclusivos sobre <a href="{{ route('evidencias-biblicas') }}">Evidências Bíblicas</a> e <a href="{{ route('criacionismo') }}">Criacionismo</a> para uma análise mais detalhada das evidências que fundamentam nossa fé na criação bíblica.</p>
             </div>
         </div>
 
@@ -1837,12 +1847,12 @@ html { scroll-behavior: smooth; }
                 <h4>14.1 Adventistas celebram o Natal? É pecado ou considerado pagão?</h4>
                 <p>Adventistas podem celebrar o Natal, desde que o façam de modo cristão, centrado em Cristo e sem superstição. A IASD não trata o Natal como sacramento obrigatório nem como festa proibida em si.</p>
                 <p>A preocupação adventista costuma ser dupla:</p>
-                <p>evitar consumismo, sentimentalismo vazio e elementos contrários ao evangelho;</p>
-                <p>usar a ocasião para enfatizar a encarnação de Cristo, generosidade e missão.</p>
+                <p>- evitar consumismo, sentimentalismo vazio e elementos contrários ao evangelho;</p>
+                <p>- usar a ocasião para enfatizar a encarnação de Cristo, generosidade e missão.</p>
                 <p>Então, a resposta equilibrada é:</p>
-                <p>não é pecado celebrar o Natal em si;</p>
-                <p>mas a igreja não o eleva a ordenança bíblica;</p>
-                <p>e alerta contra excessos, paganização cultural e secularização da data.</p>
+                <p>- não é pecado celebrar o Natal em si;</p>
+                <p>- mas a igreja não o eleva a ordenança bíblica;</p>
+                <p>- e alerta contra excessos, paganização cultural e secularização da data.</p>
             </div>
 
             <div class="doctrine-item">
