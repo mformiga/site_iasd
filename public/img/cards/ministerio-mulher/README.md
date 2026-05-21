@@ -14,5 +14,6 @@ Esta pasta deve conter as imagens utilizadas na página do Ministério da Mulher
 
 ## Notas:
 - As imagens devem estar em formato WebP para melhor performance
-- Para imagens de pesquisa, é recomendado extrair as páginas do PDF fornecido
-- A imagem de cabeçalho pode ser criada usando um editor de imagens com fotos representativas do ministério
+- Os arquivos `mm_header.webp` e `pesquisa0*.webp` no repositório são versões provisórias (geradas para o site funcionar)
+- Substitua pelos arquivos finais quando tiver o PDF/design oficial da pesquisa
+- A imagem de cabeçalho pode ser trocada por foto oficial do ministério (recomendado: 1920×300px)
