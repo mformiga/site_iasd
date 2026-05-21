@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php artisan:*)",
+      "Bash(start:*)",
+      "mcp__web-reader__webReader",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git diff:*)",
+      "Bash(git status:*)",
+      "Bash(ls -lh public/js/biblical-*.js)",
+      "Bash(ls -lh bootstrap/cache/*.php)",
+      "Bash(ls -lh config/*.php)",
+      "Bash(ls -lh app/Providers/*.php)",
+      "Bash(ls -lh storage/framework/views/*.php)"
+    ]
+  }
+}

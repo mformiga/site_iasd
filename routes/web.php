@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\SitemapController;
+
+// Sitemap
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
 // Página inicial
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -11,6 +15,7 @@ Route::get('/igreja', [PageController::class, 'igreja'])->name('igreja');
 Route::get('/dizimos-ofertas', [PageController::class, 'dizimosOfertas'])->name('dizimos-ofertas');
 Route::get('/escola-sabatina', [PageController::class, 'escolaSabatina'])->name('escola-sabatina');
 Route::get('/estudo-biblico', [PageController::class, 'estudoBiblico'])->name('estudo-biblico');
+Route::get('/estudo-biblico/formulario', [PageController::class, 'estudoBiblicoFormulario'])->name('estudo-biblico.formulario');
 Route::get('/oracao-visita', [PageController::class, 'oracaoVisita'])->name('oracao-visita');
 Route::get('/classe-novo-tempo', [PageController::class, 'classeNovoTempo'])->name('classe-novo-tempo');
 Route::get('/classe-saude', [PageController::class, 'classeSaude'])->name('classe-saude');
@@ -28,6 +33,7 @@ Route::get('/evidencias-biblicas', [PageController::class, 'evidenciasBiblicas']
 Route::get('/filmes-series', [PageController::class, 'filmesSeries'])->name('filmes-series');
 Route::get('/profecias', [PageController::class, 'profecias'])->name('profecias');
 Route::get('/radio-tv-novo-tempo', [PageController::class, 'radioTvNovoTempo'])->name('radio-tv-novo-tempo');
+Route::get('/ministerio-mulher', [PageController::class, 'ministerioMulher'])->name('ministerio-mulher');
 
 // Time de desenvolvimento
 Route::view('/time-de-desenvolvimento', 'pages.time-desenvolvimento')->name('time-desenvolvimento');
