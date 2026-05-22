@@ -7,41 +7,37 @@
 @endpush
 
 @php
+    $boletimBase = 'img/boletim/boletim_23_05_2026';
+
     $boletins = [
+        // Com descrição (script PDF)
         [
             'type' => 'image',
-            'src' => 'img/boletim/convite_jotinha_16_9.jpg.jpeg',
-            'alt' => 'Convite para programação infantil Jotinha',
-            'title' => 'JOTINHA',
-            'text' => 'Hoje, às 17h45, haverá a estreia do Jotinha na igreja: uma programação especial feita por crianças e para crianças, com muito louvor, dinâmicas e fortalecimento da fé. Traga sua família e convide um amigo!',
+            'src' => $boletimBase . '/oracao.jpeg',
+            'alt' => '365 Dias de Oração — motivo de oração',
+            'title' => '365 Dias de Oração',
+            'text' => 'Continuamos envolvidos no projeto Jornada de Oração: Frutos do Espírito. Ao longo deste mês, vamos orar pedindo a Deus que desenvolva em nossa vida o fruto: PAZ. O desafio da quinta semana de maio é: Ore para ser um instrumento de paz na vida das pessoas.',
         ],
         [
             'type' => 'image',
-            'src' => 'img/boletim/asa.jpeg',
-            'alt' => 'ASA Aberta com pizzas, sucos e lanches',
-            'title' => 'ASA Aberta',
-            'text' => 'Hoje, após o Jotinha, a ASA estará aberta para receber você com pizzas e lanches deliciosos a preços acessíveis, em um ambiente acolhedor e descontraído, perfeito para reencontrar amigos e fazer novas conexões. Aproveite!',
+            'src' => $boletimBase . '/pg.jpeg',
+            'alt' => 'Pequeno Grupo Feminino',
+            'title' => 'PG',
+            'text' => 'Convidamos todas as mulheres para mais um encontro do Pequeno Grupo Feminino, que acontecerá na próxima quinta-feira, dia 28/05. Este é um espaço dedicado ao acolhimento, à amizade e ao suporte mútuo entre as mulheres da nossa igreja. Se você deseja integrar essa comunidade de fé, entre em contato com a líder do Ministério da Mulher, Cristiane Barreto, para mais detalhes. Sua presença será uma grande alegria!',
         ],
         [
             'type' => 'image',
-            'src' => 'img/boletim/cha.jpeg',
-            'alt' => 'Chá Evangelístico para mulheres',
-            'title' => 'Chá Evangelístico',
-            'text' => 'Atenção Mulheres, vem aí o Sábado Missionário da Mulher Adventista e em celebração a este dia faremos um lindo chá da tarde, planejado especialmente para fortalecer laços e compartilhar esperança. Para tornar este encontro ainda mais significativo, cada mulher adventista deverá realizar a sua inscrição e também a de uma amiga convidada não adventista, sendo essencial a presença de ambas no dia do evento. O encontro acontecerá no sábado, dia 30 de maio de 2026, às 16h, no Salão Jovem da Igreja Central. As vagas são limitadas, por isso, garanta sua participação realizando a inscrição pelo QR Code, as inscrições se encerrarão nesta quarta-feira, dia 20/05. Não perca o prazo!',
+            'src' => $boletimBase . '/missao.jpeg',
+            'alt' => 'Sábado Missionário da Mulher Adventista',
+            'title' => 'Sábado Missionário',
+            'text' => 'No próximo sábado, temos um encontro marcado para celebrar o Sábado Missionário da Mulher Adventista, reconhecer a força e a dedicação das mulheres na liderança do evangelho. Será uma manhã repleta de testemunhos reais de quem vive a missão intensamente. Venha se inspirar, fortalecer sua fé e participar conosco desta linda celebração. Não perca! Aguardamos vocês a partir das 8h45.',
         ],
         [
             'type' => 'image',
             'src' => 'img/boletim/calendário doutores.jpeg',
             'alt' => 'Calendário dos Doutores de Esperança',
             'title' => 'Coração do Bem',
-            'text' => 'No próximo domingo dia 24/05, às 9h, acontecerá mais uma Oficina do Bem, na sala dos Doutores de Esperança. Um encontro de afeto e solidariedade, onde voluntários se reúnem para confeccionar corações de feltro que serão distribuídos aos pacientes durante os plantões do projeto Doutores de Esperança. Qualquer pessoa pode participar.',
-        ],
-        [
-            'type' => 'image',
-            'src' => 'img/boletim/impacto esperanca.jpeg',
-            'alt' => 'Impacto Esperança 2026',
-            'title' => 'Etiquetagem',
-            'text' => 'O Impacto Esperança 2026 precisa de você! Continuamos nosso mutirão de etiquetagem dos livros missionários todos os sábados, das 15h às 19h, em frente ao Centro White. Venha nos ajudar a preparar esse material evangelístico. Sua dedicação é essencial para o sucesso desta missão. Contamos com sua presença!',
+            'text' => 'Amanhã, dia 24/05, às 9h, acontecerá mais uma Oficina do Bem, na sala dos Doutores de Esperança. Um encontro de afeto e solidariedade, onde voluntários se reúnem para confeccionar corações de feltro que serão distribuídos aos pacientes durante os plantões do projeto Doutores de Esperança. Qualquer pessoa pode participar.',
         ],
         [
             'type' => 'image',
@@ -52,22 +48,51 @@
         ],
         [
             'type' => 'image',
+            'src' => 'img/boletim/impacto esperanca.jpeg',
+            'alt' => 'Impacto Esperança 2026',
+            'title' => 'Etiquetagem',
+            'text' => 'O Impacto Esperança 2026 precisa de você! Continuamos nosso mutirão de etiquetagem dos livros missionários todos os sábados, das 15h às 19h, em frente ao Centro White. Venha nos ajudar a preparar esse material evangelístico. Sua dedicação é essencial para o sucesso desta missão. Contamos com sua presença!',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/classe_novo_tempo.jpeg',
+            'alt' => 'Classe Novo Tempo — segunda temporada de estudos bíblicos',
+            'title' => 'Classe Novo Tempo',
+            'text' => 'Hoje, a Classe Novo Tempo inicia a Segunda Temporada de Estudos Bíblicos. A ideia é receber os amigos da Igreja, e você pode convidar pessoas que queiram estudar a Sã Doutrina Bíblica. Os encontros são sempre às 11 h, após o Culto Divino, e os estudos podem, também, ser ministrados de modo online, em caráter individual. Participe e traga amigos!',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/enem.jpeg',
+            'alt' => '22º Encontro Nacional de Quartetos Masculinos',
+            'title' => '22º ENQM',
+            'text' => 'No próximo sábado, dia 30/05/26, às 19h30, na Igreja Memorial Batista da 906 Sul. Acontecerá o 22º Encontro Nacional de Quartetos Masculinos – Especial Jader Santos. O evento contará com a presença do Quarteto Arautos do Rei (em sua formação atual e na memorável formação de 1992), além do destaque especial ao nosso querido Quarteto Agnus e a diversos outros grandes quartetos que enriquecerão essa noite. Para encerrar com chave de ouro, um grande coral com mais de 100 vozes unirá a comunidade em louvor; venha prestigiar e celebrar a beleza da música cristã.',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/asa_aberta.jpeg',
+            'alt' => 'ASA Aberta com pizzas, sucos e lanches',
+            'title' => 'ASA Aberta',
+            'text' => 'Hoje, após o Seminário de Liberdade Religiosa, a ASA estará aberta para receber você com pizzas e lanches deliciosos a preços acessíveis, em um ambiente acolhedor e descontraído, perfeito para reencontrar amigos e fazer novas conexões. Aproveite!',
+        ],
+        // Sem descrição — apenas imagem
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/culto_permanente.jpeg',
+            'alt' => 'Culto permanente',
+            'title' => null,
+            'text' => null,
+        ],
+        [
+            'type' => 'image',
             'src' => 'img/boletim/liberdade religiosa.jpeg',
-            'alt' => 'Liberdade religiosa',
+            'alt' => 'Seminário de Liberdade Religiosa',
             'title' => null,
             'text' => null,
         ],
         [
-            'type' => 'video',
-            'src' => 'img/boletim/caminhando com jesus -aventureiros.mp4',
-            'alt' => 'Vídeo Caminhando com Jesus - Aventureiros',
-            'title' => null,
-            'text' => null,
-        ],
-        [
-            'type' => 'video',
-            'src' => 'img/boletim/clube aventureiros.mp4',
-            'alt' => 'Vídeo Clube de Aventureiros',
+            'type' => 'image',
+            'src' => $boletimBase . '/saude.jpeg',
+            'alt' => 'Ministério de saúde',
             'title' => null,
             'text' => null,
         ],
@@ -84,7 +109,8 @@
 
     <div class="boletim-feed" aria-label="Conteúdos do boletim digital">
         @foreach ($boletins as $boletim)
-            <article class="boletim-feed__item">
+            @php($hasCaption = !empty($boletim['title']) || !empty($boletim['text']))
+            <article class="boletim-feed__item{{ $hasCaption ? '' : ' boletim-feed__item--media-only' }}">
                 <div class="boletim-feed__media-wrap">
                     @if ($boletim['type'] === 'video')
                         <video class="boletim-feed__media" controls muted playsinline preload="metadata" aria-label="{{ $boletim['alt'] }}">
