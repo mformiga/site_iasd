@@ -810,13 +810,13 @@
     </div>
 
     <!-- Seção de Contato -->
-    <div class="contato-section acb-fullbleed" style="background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fff;">
+    <div class="contato-section acb-fullbleed" style="background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fff; text-align: center;">
         <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 2em; color: #fff; margin-bottom: 20px; font-weight: 500;">Contato - Ministério da Mulher</h3>
         <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #f8f9fa; margin-bottom: 10px;">
-            <strong><i class="bi bi-envelope"></i> Email:</strong> <a href="mailto:mulherescentralbsb@gmail.com" style="color: #fff; text-decoration: none; font-weight: 600;">mulherescentralbsb@gmail.com</a>
+            <strong><i class="bi bi-person"></i> Nome:</strong> Cristiane
         </p>
         <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #f8f9fa;">
-            <strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/5561999999999" style="color: #fff; text-decoration: none; font-weight: 600;">(61) 99999-9999</a>
+            <strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/5561982192355" style="color: #fff; text-decoration: none; font-weight: 600;">(61) 98219-2355</a>
         </p>
         <blockquote class="acb-quote" style="max-width: 900px; margin: 22px auto 0; border-left-color: #fff;">
             <p style="color: #f8f9fa;">
