@@ -32,27 +32,31 @@
         display: block;
     }
 
-    .mm-intro {
-        background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%);
+    .hero-section {
         padding: 50px 40px;
         border-radius: 15px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         text-align: center;
     }
 
-    .mm-intro h1 {
+    .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hero-section h1 {
         font-family: 'Bebas neue', sans-serif;
         font-size: 3em;
-        color: #fff;
+        color: #003366;
         margin-bottom: 25px;
         font-weight: 500;
     }
 
-    .mm-intro p {
+    .hero-section p {
         font-family: 'Roboto', sans-serif;
         font-size: 1.15rem;
         line-height: 1.8;
-        color: #f8f9fa;
+        color: #333;
         text-align: justify;
         max-width: 900px;
         margin: 0 auto;
@@ -289,11 +293,11 @@
             padding: 0 15px 20px;
         }
 
-        .mm-intro {
+        .hero-section {
             padding: 30px 20px;
         }
 
-        .mm-intro h1 {
+        .hero-section h1 {
             font-size: 2.2em;
         }
 
@@ -333,13 +337,15 @@
 
 <div class="mm-container">
 
-    <!-- Seção Introdutória -->
-    <div class="mm-intro acb-fullbleed">
-        <h1>Ministério da Mulher - Mulher Plena</h1>
-        <p>
-            Bem-vinda ao Ministério da Mulher da IASD Central de Brasília! Nosso mission é promover o crescimento espiritual, emocional e social das mulheres, criando um ambiente de acolhimento, apoio e desenvolvimento pessoal.
-        </p>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section acb-fullbleed acb-bg-gradient-muted">
+        <div class="hero-content">
+            <h1>Ministério da Mulher - Mulher Plena</h1>
+            <p>
+                Bem-vinda ao Ministério da Mulher da IASD Central de Brasília! Nossa missão é promover o crescimento espiritual, emocional e social das mulheres, criando um ambiente de acolhimento, apoio e desenvolvimento pessoal.
+            </p>
+        </div>
+    </section>
 
     <!-- Sistema de Abas -->
     <div class="tabs-container">
@@ -364,43 +370,43 @@
 
             <h2>3. Objetivos</h2>
             <ul>
-                <li>Capacitar a mulher a aprofundar sua fé, crescer e renovar-se espiritualmente.</li>
-                <li>Dignificar a mulher como pessoa de valor inestimável, criada e redimida por Deus.</li>
-                <li>Cooperar com outros departamentos da igreja para atender às necessidades das mulheres.</li>
-                <li>Expressar a visão feminina adventista nos diversos espaços deliberativos da Igreja.</li>
-                <li>Ampliar oportunidades de serviço cristão dinâmico, desafiando cada mulher ao cumprimento da missão.</li>
+                <li>● Capacitar a mulher a aprofundar sua fé, crescer e renovar-se espiritualmente.</li>
+                <li>● Dignificar a mulher como pessoa de valor inestimável, criada e redimida por Deus.</li>
+                <li>● Cooperar com outros departamentos da igreja para atender às necessidades das mulheres.</li>
+                <li>● Expressar a visão feminina adventista nos diversos espaços deliberativos da Igreja.</li>
+                <li>● Ampliar oportunidades de serviço cristão dinâmico, desafiando cada mulher ao cumprimento da missão.</li>
             </ul>
 
             <h2>4. Os 4 Pilares da Plenitude</h2>
 
             <h3>1. Mulher Plena com Deus – Discipulado</h3>
             <ul>
-                <li>Mulher de oração</li>
-                <li>Estudante da Bíblia, do Espírito de Profecia e da Lição da Escola Sabatina</li>
-                <li>Mulher missionária</li>
+                <li>● Mulher de oração</li>
+                <li>● Estudante da Bíblia, do Espírito de Profecia e da Lição da Escola Sabatina</li>
+                <li>● Mulher missionária</li>
             </ul>
 
             <h3>2. Mulher Plena Consigo Mesma – Identidade</h3>
             <ul>
-                <li>Cuidado com a saúde física e emocional</li>
-                <li>Ser autora da própria história</li>
-                <li>Crescimento profissional</li>
-                <li>Educação financeira e empreendedorismo</li>
+                <li>● Cuidado com a saúde física e emocional</li>
+                <li>● Ser autora da própria história</li>
+                <li>● Crescimento profissional</li>
+                <li>● Educação financeira e empreendedorismo</li>
             </ul>
 
             <h3>3. Mulher Plena com a Família – Identidade e Novas Gerações</h3>
             <ul>
-                <li>Relacionamento conjugal</li>
-                <li>Educação dos filhos para servir a Deus</li>
-                <li>Delegar responsabilidades</li>
-                <li>Vida sexual nas diferentes fases</li>
+                <li>● Relacionamento conjugal</li>
+                <li>● Educação dos filhos para servir a Deus</li>
+                <li>● Delegar responsabilidades</li>
+                <li>● Vida sexual nas diferentes fases</li>
             </ul>
 
             <h3>4. Mulher Plena com a Missão – Liderança e Serviço</h3>
             <ul>
-                <li>Desenvolver dons e transformá-los em ministério</li>
-                <li>Preparar-se para estudar a Bíblia com pelo menos uma pessoa</li>
-                <li>Apoiar a Semana de Evangelismo Feminino</li>
+                <li>● Desenvolver dons e transformá-los em ministério</li>
+                <li>● Preparar-se para estudar a Bíblia com pelo menos uma pessoa</li>
+                <li>● Apoiar a Semana de Evangelismo Feminino</li>
             </ul>
 
             <h2>5. Atividades para 2026</h2>
@@ -409,17 +415,17 @@
 
             <h4>Devoção Pessoal:</h4>
             <ul>
-                <li>Grupo de WhatsApp "Mulher Plena BSB"</li>
-                <li>Incentivo ao Projeto Maná</li>
-                <li>Fortalecimento da Escola Sabatina</li>
-                <li>Ministério de Oração ativo (Líder: Joana)</li>
+                <li>● Grupo de WhatsApp "Mulher Plena BSB"</li>
+                <li>● Incentivo ao Projeto Maná</li>
+                <li>● Fortalecimento da Escola Sabatina</li>
+                <li>● Ministério de Oração ativo (Líder: Joana)</li>
             </ul>
 
             <h4>Dez Dias de Clamor e 365 Dias de Oração:</h4>
             <ul>
-                <li>Apoiar e colaborar com a liderança da igreja</li>
-                <li>Lançar a jornada anual dos Frutos do Espírito</li>
-                <li><strong>Meta:</strong> Todas as Mulheres Envolvidas</li>
+                <li>● Apoiar e colaborar com a liderança da igreja</li>
+                <li>● Lançar a jornada anual dos Frutos do Espírito</li>
+                <li>● <strong>Meta:</strong> Todas as Mulheres Envolvidas</li>
             </ul>
 
             <h4>Quartas de Poder:</h4>
@@ -448,31 +454,31 @@
 
             <h5>Temas trabalhados:</h5>
             <ul>
-                <li>Rede de apoio e discipulado</li>
-                <li>Ansiedade e saúde mental</li>
-                <li>Dupla jornada e exaustão</li>
-                <li>Depressão e fé</li>
-                <li>Educação de filhos</li>
-                <li>Comunicação no casamento</li>
-                <li>Intimidade com Deus</li>
-                <li>Propósito e identidade</li>
-                <li>Alimentação saudável</li>
-                <li>Representação cristã</li>
+                <li>● Rede de apoio e discipulado</li>
+                <li>● Ansiedade e saúde mental</li>
+                <li>● Dupla jornada e exaustão</li>
+                <li>● Depressão e fé</li>
+                <li>● Educação de filhos</li>
+                <li>● Comunicação no casamento</li>
+                <li>● Intimidade com Deus</li>
+                <li>● Propósito e identidade</li>
+                <li>● Alimentação saudável</li>
+                <li>● Representação cristã</li>
             </ul>
 
             <h4>QUEBRANDO O SILÊNCIO – 22/08:</h4>
             <ul>
-                <li>Sermão temático pela manhã</li>
-                <li>Programação especial à tarde (a definir)</li>
+                <li>● Sermão temático pela manhã</li>
+                <li>● Programação especial à tarde (a definir)</li>
             </ul>
 
             <h4>EXPERIÊNCIA DO SÁBADO:</h4>
             <p><strong>Lançamento:</strong> Chá Entre Amigas</p>
             <ul>
-                <li>Folder orientativo</li>
-                <li>Caixa quebra-gelo</li>
-                <li>Livreto "Estarei pronta para o Sábado"</li>
-                <li>Resgate da guarda do sábado como estilo de vida</li>
+                <li>● Folder orientativo</li>
+                <li>● Caixa quebra-gelo</li>
+                <li>● Livreto "Estarei pronta para o Sábado"</li>
+                <li>● Resgate da guarda do sábado como estilo de vida</li>
             </ul>
 
             <h4>PROJETO VIDA QUE NUTRE:</h4>
@@ -484,14 +490,14 @@
 
             <h4>EVANGELISMO FEMININO – 03 a 07/06:</h4>
             <ul>
-                <li>Semana especial em PG</li>
-                <li>Envolvimento ativo das mulheres</li>
+                <li>● Semana especial em PG</li>
+                <li>● Envolvimento ativo das mulheres</li>
             </ul>
 
             <h4>SÁBADO MISSIONÁRIO – 06/06:</h4>
             <ul>
-                <li>Sermão com ênfase missionária</li>
-                <li>Chá evangelístico à tarde</li>
+                <li>● Sermão com ênfase missionária</li>
+                <li>● Chá evangelístico à tarde</li>
             </ul>
 
             <h4>REDE DE AMOR:</h4>
@@ -625,27 +631,36 @@
 
             <div class="pesquisa-images">
                 <div class="pesquisa-image-container">
-                    <img src="{{ asset('img/cards/ministerio-mulher/pesquisa01.webp') }}" alt="Página 1 da Pesquisa" loading="lazy" decoding="async">
-                    <p>Página 1 - Informações Pessoais</p>
+                    <img src="{{ asset('img/cards/ministerio-mulher/1.webp') }}" alt="Página 1 da Pesquisa" loading="lazy" decoding="async">
                 </div>
 
                 <div class="pesquisa-image-container">
-                    <img src="{{ asset('img/cards/ministerio-mulher/pesquisa02.webp') }}" alt="Página 2 da Pesquisa" loading="lazy" decoding="async">
-                    <p>Página 2 - Áreas de Interesse</p>
+                    <img src="{{ asset('img/cards/ministerio-mulher/2.webp') }}" alt="Página 2 da Pesquisa" loading="lazy" decoding="async">
                 </div>
 
                 <div class="pesquisa-image-container">
-                    <img src="{{ asset('img/cards/ministerio-mulher/pesquisa03.webp') }}" alt="Página 3 da Pesquisa" loading="lazy" decoding="async">
-                    <p>Página 3 - Disponibilidade e Talentos</p>
+                    <img src="{{ asset('img/cards/ministerio-mulher/3.webp') }}" alt="Página 3 da Pesquisa" loading="lazy" decoding="async">
                 </div>
-            </div>
 
-            <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; margin-top: 30px; text-align: center;">
-                <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 1.8em; color: #d81b60; margin-bottom: 20px; font-weight: 500;">Participe da Pesquisa!</h3>
-                <p style="text-align: center; margin-bottom: 20px;">
-                    Sua participação é fundamental para planejarmos atividades que realmente atendam suas necessidades e interesses. A pesquisa leva apenas 5-10 minutos para ser preenchida.
-                </p>
-                <a href="#" style="display: inline-block; background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fff; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: transform 0.3s, box-shadow 0.3s; font-family: 'Roboto', sans-serif;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(216, 27, 96, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">Preencher Pesquisa</a>
+                <div class="pesquisa-image-container">
+                    <img src="{{ asset('img/cards/ministerio-mulher/4.webp') }}" alt="Página 4 da Pesquisa" loading="lazy" decoding="async">
+                </div>
+
+                <div class="pesquisa-image-container">
+                    <img src="{{ asset('img/cards/ministerio-mulher/5.webp') }}" alt="Página 5 da Pesquisa" loading="lazy" decoding="async">
+                </div>
+
+                <div class="pesquisa-image-container">
+                    <img src="{{ asset('img/cards/ministerio-mulher/6.webp') }}" alt="Página 6 da Pesquisa" loading="lazy" decoding="async">
+                </div>
+
+                <div class="pesquisa-image-container">
+                    <img src="{{ asset('img/cards/ministerio-mulher/7.webp') }}" alt="Página 7 da Pesquisa" loading="lazy" decoding="async">
+                </div>
+
+                <div class="pesquisa-image-container">
+                    <img src="{{ asset('img/cards/ministerio-mulher/8.webp') }}" alt="Página 8 da Pesquisa" loading="lazy" decoding="async">
+                </div>
             </div>
         </div>
 
@@ -658,16 +673,16 @@
                 <p><em>(Área mais recorrente na pesquisa)</em></p>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Apoio e união verdadeira</li>
-                    <li>Mulheres sem rede de apoio</li>
-                    <li>Integração e acolhimento</li>
-                    <li>União entre mulheres</li>
-                    <li>Mulheres acolhendo mulheres</li>
-                    <li>Pequenos grupos itinerantes</li>
-                    <li>Encontros para fortalecer laços</li>
-                    <li>Eventos de confraternização</li>
-                    <li>Ministério ativo e atencioso</li>
-                    <li>Maior integração entre membros</li>
+                    <li>● Apoio e união verdadeira</li>
+                    <li>● Mulheres sem rede de apoio</li>
+                    <li>● Integração e acolhimento</li>
+                    <li>● União entre mulheres</li>
+                    <li>● Mulheres acolhendo mulheres</li>
+                    <li>● Pequenos grupos itinerantes</li>
+                    <li>● Encontros para fortalecer laços</li>
+                    <li>● Eventos de confraternização</li>
+                    <li>● Ministério ativo e atencioso</li>
+                    <li>● Maior integração entre membros</li>
                 </ul>
                 <p><strong>Necessidade central identificada:</strong> Criar um ambiente seguro, relacional e de pertencimento.</p>
             </div>
@@ -676,16 +691,16 @@
                 <h4>2. VIDA ESPIRITUAL E FORTALECIMENTO DA FÉ</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Fortalecimento da fé</li>
-                    <li>Encontros de oração</li>
-                    <li>Programas permanentes de oração</li>
-                    <li>Leitura bíblica em conjunto (online)</li>
-                    <li>Devocionais</li>
-                    <li>Participação nos cultos</li>
-                    <li>Vigílias</li>
-                    <li>Retiro espiritual</li>
-                    <li>Comunhão e intimidade com Deus</li>
-                    <li>Reavivamento espiritual</li>
+                    <li>● Fortalecimento da fé</li>
+                    <li>● Encontros de oração</li>
+                    <li>● Programas permanentes de oração</li>
+                    <li>● Leitura bíblica em conjunto (online)</li>
+                    <li>● Devocionais</li>
+                    <li>● Participação nos cultos</li>
+                    <li>● Vigílias</li>
+                    <li>● Retiro espiritual</li>
+                    <li>● Comunhão e intimidade com Deus</li>
+                    <li>● Reavivamento espiritual</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> Continuidade espiritual, não apenas eventos pontuais.</p>
             </div>
@@ -694,15 +709,15 @@
                 <h4>3. FAMÍLIA, CASAMENTO E CRIAÇÃO DE FILHOS</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Como ter um lar cristão</li>
-                    <li>Educação de filhos</li>
-                    <li>Criar filhos sozinha</li>
-                    <li>Relação conjugal</li>
-                    <li>Casamento</li>
-                    <li>Apoio a mães sobrecarregadas</li>
-                    <li>Vida no lar</li>
-                    <li>Delegação e responsabilidade familiar</li>
-                    <li>Apoiar neurodivergentes</li>
+                    <li>● Como ter um lar cristão</li>
+                    <li>● Educação de filhos</li>
+                    <li>● Criar filhos sozinha</li>
+                    <li>● Relação conjugal</li>
+                    <li>● Casamento</li>
+                    <li>● Apoio a mães sobrecarregadas</li>
+                    <li>● Vida no lar</li>
+                    <li>● Delegação e responsabilidade familiar</li>
+                    <li>● Apoiar neurodivergentes</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> Suporte prático para desafios familiares reais.</p>
             </div>
@@ -711,15 +726,15 @@
                 <h4>4. SAÚDE EMOCIONAL E SOBRECARGA FEMININA</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Saúde emocional</li>
-                    <li>Depressão</li>
-                    <li>Ansiedade</li>
-                    <li>Controle emocional</li>
-                    <li>Dupla jornada</li>
-                    <li>Exaustão feminina</li>
-                    <li>Autocuidado</li>
-                    <li>Palestras sobre saúde mental</li>
-                    <li>Bem-estar da mulher</li>
+                    <li>● Saúde emocional</li>
+                    <li>● Depressão</li>
+                    <li>● Ansiedade</li>
+                    <li>● Controle emocional</li>
+                    <li>● Dupla jornada</li>
+                    <li>● Exaustão feminina</li>
+                    <li>● Autocuidado</li>
+                    <li>● Palestras sobre saúde mental</li>
+                    <li>● Bem-estar da mulher</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> A igreja como espaço de cuidado emocional.</p>
             </div>
@@ -728,10 +743,10 @@
                 <h4>5. SAÚDE FÍSICA E ESTILO DE VIDA</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Saúde natural</li>
-                    <li>Alimentação saudável</li>
-                    <li>Vida alimentar</li>
-                    <li>Vida equilibrada</li>
+                    <li>● Saúde natural</li>
+                    <li>● Alimentação saudável</li>
+                    <li>● Vida alimentar</li>
+                    <li>● Vida equilibrada</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> Cuidado integral (corpo, mente e espírito).</p>
             </div>
@@ -740,14 +755,14 @@
                 <h4>6. ENCONTROS, CHÁS E FORMATO DAS ATIVIDADES</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Chá evangelístico</li>
-                    <li>Piqueniques</li>
-                    <li>Almoços</li>
-                    <li>Atividades manuais</li>
-                    <li>Oficinas práticas (cozinhar, fotografar, imagem pessoal)</li>
-                    <li>PG Feminino</li>
-                    <li>Congresso de mulheres</li>
-                    <li>Coral feminino</li>
+                    <li>● Chá evangelístico</li>
+                    <li>● Piqueniques</li>
+                    <li>● Almoços</li>
+                    <li>● Atividades manuais</li>
+                    <li>● Oficinas práticas (cozinhar, fotografar, imagem pessoal)</li>
+                    <li>● PG Feminino</li>
+                    <li>● Congresso de mulheres</li>
+                    <li>● Coral feminino</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> Formatos leves, frequentes e relacionais.</p>
             </div>
@@ -756,13 +771,13 @@
                 <h4>7. MISSÃO E EVANGELISMO</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Quebrando o Silêncio</li>
-                    <li>Visitação</li>
-                    <li>Trabalho com mulheres afastadas</li>
-                    <li>Pequenos grupos</li>
-                    <li>Engajamento com projetos da igreja</li>
-                    <li>Ações sociais</li>
-                    <li>Apresentar Deus a novas pessoas</li>
+                    <li>● Quebrando o Silêncio</li>
+                    <li>● Visitação</li>
+                    <li>● Trabalho com mulheres afastadas</li>
+                    <li>● Pequenos grupos</li>
+                    <li>● Engajamento com projetos da igreja</li>
+                    <li>● Ações sociais</li>
+                    <li>● Apresentar Deus a novas pessoas</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> Ministério feminino intencional e missionário.</p>
             </div>
@@ -771,13 +786,13 @@
                 <h4>8. IDENTIDADE, PROPÓSITO E DESENVOLVIMENTO PESSOAL</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Encontrar o propósito</li>
-                    <li>Atuação da mulher na igreja</li>
-                    <li>Vida profissional</li>
-                    <li>Empreendedorismo</li>
-                    <li>Vida financeira</li>
-                    <li>Etiqueta e imagem pessoal</li>
-                    <li>Crescimento pessoal</li>
+                    <li>● Encontrar o propósito</li>
+                    <li>● Atuação da mulher na igreja</li>
+                    <li>● Vida profissional</li>
+                    <li>● Empreendedorismo</li>
+                    <li>● Vida financeira</li>
+                    <li>● Etiqueta e imagem pessoal</li>
+                    <li>● Crescimento pessoal</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> Formação da mulher em todas as áreas da vida.</p>
             </div>
@@ -786,29 +801,22 @@
                 <h4>9. INCLUSÃO E ACESSIBILIDADE</h4>
                 <p><strong>Inclui:</strong></p>
                 <ul>
-                    <li>Acessibilidade em Libras</li>
-                    <li>Apoio a mulheres com filhos neurodivergentes</li>
+                    <li>● Acessibilidade em Libras</li>
+                    <li>● Apoio a mulheres com filhos neurodivergentes</li>
                 </ul>
                 <p><strong>Necessidade central:</strong> Ministério inclusivo e sensível às diferenças.</p>
             </div>
-
-            <blockquote class="acb-quote" style="max-width: 900px; margin: 40px auto 0;">
-                <p>
-                    "A mulher virtuosa é a coroa do seu marido, mas a que procede vergonhosamente é como cáncer nos seus ossos."
-                </p>
-                <span class="acb-quote__ref"><i class="bi bi-book-half"></i> Provérbios 12:4</span>
-            </blockquote>
         </div>
     </div>
 
     <!-- Seção de Contato -->
-    <div class="contato-section acb-fullbleed" style="background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fff;">
+    <div class="contato-section acb-fullbleed" style="background: linear-gradient(135deg, #d81b60 0%, #880e4f 100%); color: #fff; text-align: center;">
         <h3 style="font-family: 'Bebas neue', sans-serif; font-size: 2em; color: #fff; margin-bottom: 20px; font-weight: 500;">Contato - Ministério da Mulher</h3>
         <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #f8f9fa; margin-bottom: 10px;">
-            <strong><i class="bi bi-envelope"></i> Email:</strong> <a href="mailto:mulherescentralbsb@gmail.com" style="color: #fff; text-decoration: none; font-weight: 600;">mulherescentralbsb@gmail.com</a>
+            <strong><i class="bi bi-person"></i> Nome:</strong> Cristiane
         </p>
         <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem; color: #f8f9fa;">
-            <strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/5561999999999" style="color: #fff; text-decoration: none; font-weight: 600;">(61) 99999-9999</a>
+            <strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/5561982192355" style="color: #fff; text-decoration: none; font-weight: 600;">(61) 98219-2355</a>
         </p>
         <blockquote class="acb-quote" style="max-width: 900px; margin: 22px auto 0; border-left-color: #fff;">
             <p style="color: #f8f9fa;">
