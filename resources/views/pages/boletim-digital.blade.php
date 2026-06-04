@@ -7,94 +7,72 @@
 @endpush
 
 @php
-    $boletimBase = 'img/boletim/boletim_30_05_2026';
+    $boletimBase = 'img/boletim/boletim_06_06_2026';
 
     $boletins = [
-        // Com descrição (script DOCX)
+        // Com descrição (script PDF)
         [
             'type' => 'image',
-            'src' => $boletimBase . '/culto_permanente.jpeg',
-            'alt' => 'Reunião de oração',
-            'title' => 'Oração',
-            'text' => 'Próximo sábado dia 06/06, às 16h30, teremos nossa reunião de oração. Temos recebido grandes bênçãos do Senhor! Participe conosco e venha clamar pelo derramamento do Espírito Santo!',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/agasalho.jpeg',
+            'src' => $boletimBase . '/Agasalho.jpg',
             'alt' => 'Campanha do agasalho',
             'title' => 'Campanha do Agasalho',
             'text' => 'A ASA está arrecadando agasalhos, cobertores e roupas de frio em geral. Colabore doando itens limpos e em bom estado de conservação; o que não lhe serve mais será de grande valia para famílias que enfrentam o rigor deste inverno. Deixe sua doação na caixa da ASA, localizada na recepção da igreja.',
         ],
         [
             'type' => 'image',
-            'src' => 'img/boletim/boletim_23_05_2026/missao.jpeg',
-            'alt' => 'Sábado Missionário da Mulher Adventista',
-            'title' => 'Sábado Missionário',
-            'text' => 'Temos um encontro marcado para celebrar o Sábado Missionário da Mulher Adventista, reconhecer a força e a dedicação das mulheres na liderança do evangelho. Será uma manhã repleta de testemunhos reais de quem vive a missão intensamente. Venha se inspirar, fortalecer sua fé e participar conosco desta linda celebração. Não perca! Aguardamos vocês a partir das 8h45.',
+            'src' => $boletimBase . '/Bordado.jpg',
+            'alt' => 'Curso de bordado ASA',
+            'title' => 'Curso de Bordado',
+            'text' => 'Oportunidade Imperdível: Curso de Bordado ASA! Venha aprender técnicas exclusivas para confeccionar lindas peças. Aprender a bordar é uma excelente oportunidade para empreender e conquistar uma renda extra. Todos os domingos às 9h. Invista no seu talento e transforme o seu domingo em um momento de aprendizado e crescimento. Esperamos por você!',
         ],
         [
             'type' => 'image',
-            'src' => 'img/boletim/voluntariado.jpeg',
-            'alt' => 'Voluntariado nos ministérios da igreja',
-            'title' => 'Voluntariado',
-            'text' => 'Seja voluntário em um de nossos ministérios! Acesse o QR Code e escolha o departamento da igreja que mais combina com você.',
+            'src' => $boletimBase . '/PG Feminino.jpeg',
+            'alt' => 'Pequeno Grupo Feminino',
+            'title' => 'PG Feminino',
+            'text' => 'Atenção mulheres! Nesta quinta-feira, dia 11/06, teremos mais um encontro do PG Feminino, um espaço de acolhimento, amizade e fé. Fale com a líder do Ministério da Mulher, Cristiane Barreto, para participar. Nos reunimos a cada 15 dias. Participe conosco!',
         ],
         [
             'type' => 'image',
-            'src' => 'img/boletim/impacto esperanca.jpeg',
-            'alt' => 'Impacto Esperança 2026',
-            'title' => 'Etiquetagem',
-            'text' => 'O Impacto Esperança 2026 precisa de você! Continuamos nosso mutirão de etiquetagem dos livros missionários todos os sábados, das 15h às 19h, em frente ao Centro White. Venha nos ajudar a preparar esse material evangelístico. Sua dedicação é essencial para o sucesso desta missão. Contamos com sua presença.',
+            'src' => $boletimBase . '/reniao_oracao.jpeg',
+            'alt' => 'Reunião de oração',
+            'title' => 'Reunião de Oração',
+            'text' => 'No sábado, 06/06/26, às 16h30, teremos nossa reunião de oração. Temos recebido grandes bênçãos do Senhor. Participe conosco e venha clamar pelo derramamento do Espírito Santo! Nossas reuniões acontecem a cada 15 dias, acompanhe e venha orar conosco.',
         ],
         [
             'type' => 'image',
-            'src' => $boletimBase . '/heroes.jpeg',
+            'src' => 'img/boletim/calendário doutores.jpeg',
+            'alt' => 'Calendário dos Doutores de Esperança',
+            'title' => 'Coração do Bem',
+            'text' => 'No domingo, 07/06/26, às 9h, na sala dos Doutores de Esperança, teremos nossa oficina do bem, onde voluntários se reúnem para confeccionar corações de feltro que serão distribuídos aos pacientes durante os Plantões dos Doutores de Esperança. Qualquer pessoa pode participar. Venha! Nossa oficina acontece a cada 15 dias, siga nosso calendário e venha ser um voluntário.',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/Fim de Semana Fam.jpg',
+            'alt' => 'Final de Semana da Família 2026',
+            'title' => 'Fim de Semana da Família',
+            'text' => 'Vem aí o 1º Final de Semana da Família de 2026 na Igreja Adventista Central de Brasília! De 12 a 14/06, receberemos o professor Airton Ramos, terapeuta e conselheiro familiar, para uma série especial de cultos e palestras imperdíveis. No sábado, 13 de junho, às 09h teremos o Culto da Família e, às 15h, teremos palestras imperdíveis para casais e interessados em casar com os temas Comunicação Sem Estresse e Homens versus Mulheres: quem não entende quem? No domingo, dia 14 de junho, às 10h, teremos uma palestra essencial para os pais sobre como Criar Filhos para o Céu em um Mundo Digital. Às 17h, do domingo, haverá uma palestra exclusiva sobre Sexualidade para casais e interessados em casar e, para fechar com chave de ouro, o grande Culto da Família que acontecerá às 19h. Chegue no horário e participe do sorteio de brindes especiais! Teremos a distribuição de presentes para todas as famílias não adventistas. Invista na sua família e participe conosco! Aguardamos vocês!',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/SDV.jpg',
+            'alt' => 'Pôr do Sol para solteiros, divorciados e viúvos',
+            'title' => 'SDV',
+            'text' => 'Na sexta-feira, 12 de junho, às 17h46, teremos um Pôr do Sol especial para os solteiros, divorciados e viúvos, em função do Fim de Semana da Família. Para este evento reserve sua vaga pelo telefone que aparece neste anúncio.',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/Jantar_Namorados.jpg',
+            'alt' => 'Jantar dos Namorados',
+            'title' => 'Jantar dos Namorados',
+            'text' => 'O amor está no ar! Venha celebrar o romance em uma programação gostosa, divertida e com um lindo toque espiritual no nosso tradicional Jantar dos Namorados! Será no sábado, 20 de junho, às 19h30, no Restaurante De\'Vitto Pasta e Pizza, no Lago Sul, com um rodízio incrível de massas, pizzas e risotos. As vagas são limitadas! Não deixe para a última hora, mude a rotina e venha celebrar o amor conosco! Data: 20/JUN (Sábado), às 19h30. Onde: Restaurante De\'Vitto Pasta & Pizza — QI 11, Lago Sul. Valor por casal: R$ 160,00 (bebidas à parte). Pagamento pelo aplicativo 7me (Outras Ofertas → Eventos e Outros → Ministério da Família) ou PIX: pix.centralbsb.aplac@adventistas.org. Inscrições: Gerson Kaiser pelo WhatsApp (61) 98429-0130. Envie o comprovante do depósito e o nome completo do casal.',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/heroes.jpg',
             'alt' => 'Série evangelística Heroes',
             'title' => 'Heroes',
-            'text' => 'Quem nunca desejou ser um herói e ter o poder de vencer suas próprias batalhas? Na nova série evangelística HEROES, você vai descobrir que os maiores heróis da Bíblia eram pessoas comuns, escolhidas para fazer coisas extraordinárias! Prepare-se para uma jornada emocionante de fé, coragem e transformação através das histórias de Abraão, Ester, Davi e Jesus. Serão quatro domingos que podem transformar completamente a sua história! O herói que você procura pode ser exatamente quem Deus quer formar dentro de você. Não perca, a série HEROES começa no próximo domingo, aqui na igreja. Traga sua família e participe!',
-        ],
-        [
-            'type' => 'image',
-            'src' => 'img/boletim/boletim_23_05_2026/enem.jpeg',
-            'alt' => '22º Encontro Nacional de Quartetos Masculinos',
-            'title' => '22º ENQM',
-            'text' => 'Hoje, às 19h30, na Igreja Memorial Batista da 906 Sul. Acontecerá o 22º Encontro Nacional de Quartetos Masculinos – Especial Jader Santos. O evento contará com a presença do Quarteto Arautos do Rei (em sua formação atual e na memorável formação de 1992), além do destaque especial ao nosso querido Quarteto Agnus e a diversos outros grandes quartetos que enriquecerão essa noite. Além um grande coral com mais de 100 vozes. Prestigie este evento.',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/arautos.jpeg',
-            'alt' => 'Arautos do Rei na Igreja Adventista Central de Brasília',
-            'title' => 'Arautos',
-            'text' => 'Prepare o seu coração! Os Arautos do Rei estarão conosco na Igreja Adventista Central de Brasília, neste domingo, 30/05, às 19h, para um culto especial de muito louvor, testemunhos e mensagens inspiradoras. Venha ouvir canções clássicas e inéditas que tocam o coração, em uma oportunidade perfeita para adorar a Deus junto com a sua família e amigos. E atenção: teremos surpresas incríveis, por isso chegue cedo para garantir o seu lugar. Aproveite e convide aquela pessoa especial que precisa de uma palavra de esperança.',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/convite_jotinha_18h_16_9.png',
-            'alt' => 'Convite para o Jotinha às 18h',
-            'title' => 'Jotinha',
-            'text' => 'Neste sábado, 18h, teremos mais uma edição incrível do Jotinha! Uma programação totalmente feita pelas crianças e para as crianças, preparada com muito carinho para fortalecer a fé, as amizades e o desenvolvimento dos talentos dos nossos pequenos. Neste segundo Jotinha do ano, teremos louvor, conjunto de instrumentos, dinâmicas e muita alegria, e queremos convidar toda a igreja para viver essa experiência conosco! Pais, mães e responsáveis: tragam suas crianças! E você, garotada, convide os seus amiguinhos! Será um momento alegre, acolhedor e cheio da presença de Deus. Não perca: neste sábado, às dezoito horas, aqui na igreja. Esperamos a sua família!',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/asa_aberta.jpeg',
-            'alt' => 'ASA Aberta com pizzas, sucos e lanches',
-            'title' => 'ASA Aberta',
-            'text' => 'Hoje, após o Jotinha, a ASA estará aberta para receber você com pizzas e lanches deliciosos a preços acessíveis, em um ambiente acolhedor e descontraído, perfeito para reencontrar amigos e fazer novas conexões. Aproveite!',
-        ],
-        // Sem descrição — apenas mídia
-        [
-            'type' => 'video',
-            'src' => $boletimBase . '/aventureiros.mp4',
-            'alt' => 'Vídeo dos Aventureiros',
-            'title' => null,
-            'text' => null,
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/classe_saude.jpeg',
-            'alt' => 'Classe de saúde',
-            'title' => null,
-            'text' => null,
+            'text' => 'Quem nunca desejou ser um herói e ter o poder de vencer suas próprias batalhas? Na nova série evangelística HEROES, você vai descobrir que os maiores heróis da Bíblia eram pessoas comuns, escolhidas para fazer coisas extraordinárias! Prepare-se para uma jornada emocionante de fé, coragem e transformação através das histórias de Abraão, Ester, Davi e Jesus. O herói que você procura pode ser exatamente quem Deus quer formar dentro de você. Não perca, a série HEROES, todos os domingos de junho, às 19h, aqui na igreja. Traga sua família e participe!',
         ],
     ];
 @endphp
