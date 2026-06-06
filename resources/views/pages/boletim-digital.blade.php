@@ -58,14 +58,25 @@
             'src' => $boletimBase . '/SDV.jpg',
             'alt' => 'Pôr do Sol para solteiros, divorciados e viúvos',
             'title' => 'SDV',
-            'text' => 'Na sexta-feira, 12 de junho, às 17h46, teremos um Pôr do Sol especial para os solteiros, divorciados e viúvos, em função do Fim de Semana da Família. Para este evento reserve sua vaga pelo telefone que aparece neste anúncio.',
+            'text' => 'Na sexta-feira, 12 de junho, às 17h46, teremos um Pôr do Sol especial para os solteiros, divorciados e viúvos, em função do Fim de Semana da Família. Para este evento faça sua inscrição com Emília pelo WhatsApp (61) 98119-9671.',
         ],
         [
             'type' => 'image',
             'src' => $boletimBase . '/Jantar_Namorados.jpg',
             'alt' => 'Jantar dos Namorados',
             'title' => 'Jantar dos Namorados',
-            'text' => 'O amor está no ar! Venha celebrar o romance em uma programação gostosa, divertida e com um lindo toque espiritual no nosso tradicional Jantar dos Namorados! Será no sábado, 20 de junho, às 19h30, no Restaurante De\'Vitto Pasta e Pizza, no Lago Sul, com um rodízio incrível de massas, pizzas e risotos. As vagas são limitadas! Não deixe para a última hora, mude a rotina e venha celebrar o amor conosco! Data: 20/JUN (Sábado), às 19h30. Onde: Restaurante De\'Vitto Pasta & Pizza — QI 11, Lago Sul. Valor por casal: R$ 160,00 (bebidas à parte). Pagamento pelo aplicativo 7me (Outras Ofertas → Eventos e Outros → Ministério da Família) ou PIX: pix.centralbsb.aplac@adventistas.org. Inscrições: Gerson Kaiser pelo WhatsApp (61) 98429-0130. Envie o comprovante do depósito e o nome completo do casal.',
+            'text' => 'O amor está no ar! Venha celebrar o romance em uma programação gostosa, divertida e com um lindo toque espiritual no nosso tradicional Jantar dos Namorados! Será no Restaurante De\'Vitto Pasta e Pizza, no Lago Sul, com um rodízio incrível de massas, pizzas e risotos. As vagas são limitadas! Não deixe para a última hora, mude a rotina e venha celebrar o amor conosco! Siga os passos para fazer a sua reserva:<br>
+            📅 Data do evento: 20/JUN (Sábado)<br>
+            🕡 Horário: às 19h30<br>
+            📍 Onde: Restaurante De\'Vitto Pasta & Pizza -  Instagram: @devittopastaepizza<br>
+            🍕 (Rodízio de Massas, Pizzas e Risotos) - QI 11 - Lago Sul<br>
+            💰 Valor por casal: R$ 160,00 (bebidas à parte)<br>
+            💳 Formas de Pagamento:<br>
+            1️⃣ Pelo aplicativo 7me Vá em Outras Ofertas ➡️ Eventos e Outros ➡️ Ministério da Família<br>
+            2️⃣ Chave PIX: pix.centralbsb.aplac@adventistas.org<br>
+            📝 Inscrições: Fale com o Gerson Kaiser pelo WhatsApp: (61) 98429-0130<br>
+            (Lembre-se de enviar o comprovante do depósito e o nome completo do casal!)
+            ',
         ],
         [
             'type' => 'image',
@@ -75,6 +86,11 @@
             'text' => 'Quem nunca desejou ser um herói e ter o poder de vencer suas próprias batalhas? Na nova série evangelística HEROES, você vai descobrir que os maiores heróis da Bíblia eram pessoas comuns, escolhidas para fazer coisas extraordinárias! Prepare-se para uma jornada emocionante de fé, coragem e transformação através das histórias de Abraão, Ester, Davi e Jesus. O herói que você procura pode ser exatamente quem Deus quer formar dentro de você. Não perca, a série HEROES, todos os domingos de junho, às 19h, aqui na igreja. Traga sua família e participe!',
         ],
     ];
+
+    $boletimColumns = [[], []];
+    foreach ($boletins as $index => $boletim) {
+        $boletimColumns[$index % 2][] = $boletim;
+    }
 @endphp
 
 @section('content')
@@ -86,33 +102,37 @@
     </div>
 
     <div class="boletim-feed" aria-label="Conteúdos do boletim digital">
-        @foreach ($boletins as $boletim)
-            @php($hasCaption = !empty($boletim['title']) || !empty($boletim['text']))
-            <article class="boletim-feed__item{{ $hasCaption ? '' : ' boletim-feed__item--media-only' }}">
-                <div class="boletim-feed__media-wrap">
-                    @if ($boletim['type'] === 'video')
-                        <video class="boletim-feed__media" controls muted playsinline preload="metadata" aria-label="{{ $boletim['alt'] }}">
-                            <source src="{{ asset($boletim['src']) }}" type="video/mp4">
-                            Seu navegador não suporta a reprodução deste vídeo.
-                        </video>
-                    @else
-                        <button type="button" class="boletim-feed__image-button boletim-lightbox-trigger" data-full="{{ asset($boletim['src']) }}" aria-label="Ampliar {{ $boletim['alt'] }}">
-                            <img class="boletim-feed__media" src="{{ asset($boletim['src']) }}" alt="{{ $boletim['alt'] }}" loading="lazy" decoding="async">
-                        </button>
-                    @endif
-                </div>
+        @foreach ($boletimColumns as $columnIndex => $column)
+            <div class="boletim-feed__column">
+                @foreach ($column as $rowIndex => $boletim)
+                    @php($hasCaption = !empty($boletim['title']) || !empty($boletim['text']))
+                    <article class="boletim-feed__item{{ $hasCaption ? '' : ' boletim-feed__item--media-only' }}" style="--boletim-order: {{ $rowIndex * 2 + $columnIndex }}">
+                        <div class="boletim-feed__media-wrap">
+                            @if ($boletim['type'] === 'video')
+                                <video class="boletim-feed__media" controls muted playsinline preload="metadata" aria-label="{{ $boletim['alt'] }}">
+                                    <source src="{{ asset($boletim['src']) }}" type="video/mp4">
+                                    Seu navegador não suporta a reprodução deste vídeo.
+                                </video>
+                            @else
+                                <button type="button" class="boletim-feed__image-button boletim-lightbox-trigger" data-full="{{ asset($boletim['src']) }}" aria-label="Ampliar {{ $boletim['alt'] }}">
+                                    <img class="boletim-feed__media" src="{{ asset($boletim['src']) }}" alt="{{ $boletim['alt'] }}" loading="lazy" decoding="async">
+                                </button>
+                            @endif
+                        </div>
 
-                @if ($boletim['title'] || $boletim['text'])
-                    <div class="boletim-feed__caption">
-                        @if ($boletim['title'])
-                            <h2>{{ $boletim['title'] }}</h2>
+                        @if ($boletim['title'] || $boletim['text'])
+                            <div class="boletim-feed__caption">
+                                @if ($boletim['title'])
+                                    <h2>{{ $boletim['title'] }}</h2>
+                                @endif
+                                @if ($boletim['text'])
+                                    <p>{!! $boletim['text'] !!}</p>
+                                @endif
+                            </div>
                         @endif
-                        @if ($boletim['text'])
-                            <p>{{ $boletim['text'] }}</p>
-                        @endif
-                    </div>
-                @endif
-            </article>
+                    </article>
+                @endforeach
+            </div>
         @endforeach
     </div>
 
