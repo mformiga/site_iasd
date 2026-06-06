@@ -154,6 +154,42 @@
         </div>
     </div>
 </div>
+
+<div class="cultos-section">
+    <div class="cultos-container">
+        <h2 class="acb-title-serif">Horários de Cultos</h2>
+        <p>Você é muito bem-vindo(a) em todos os nossos encontros!</p>
+
+        <div class="cultos-grid">
+            <div class="culto-item culto-sabado">
+                <div class="culto-icon">
+                    <i class="bi bi-calendar3-event"></i>
+                </div>
+                <h3>Sábado</h3>
+                <p>08h45 - Culto</p>
+                <p>11h00 - Escola Sabatina</p>
+                <p>17h30 - Culto jovem</p>
+            </div>
+
+            <div class="culto-item culto-domingo">
+                <div class="culto-icon">
+                    <i class="bi bi-calendar-check"></i>
+                </div>
+                <h3>Domingo</h3>
+                <p>19h00 - Culto evangelístico</p>
+            </div>
+
+            <div class="culto-item culto-quarta">
+                <div class="culto-icon">
+                    <i class="bi bi-calendar-week"></i>
+                </div>
+                <h3>Quarta-feira</h3>
+                <p>19h30 - Culto de oração</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @push('scripts')
