@@ -9,7 +9,7 @@
         <h2>contato</h2>
         <div class="info_contato">
             <span>
-                <img src="{{ asset('img/rodape/phone-solid-36.webp') }}" alt="" loading="lazy" decoding="async">
+                <img src="{{ asset('img/rodape/whatsapp-logo-36.png') }}" alt="WhatsApp" loading="lazy" decoding="async">
                 <p style="margin: 0;">(61) 98157-4702</p>
             </span>
             <span style="margin-bottom: 10px;">
