@@ -1,4 +1,107 @@
+function initBoletimExpandableTexts() {
+    const wraps = Array.from(document.querySelectorAll('.boletim-feed__text-wrap'));
+
+    wraps.forEach((wrap) => {
+        const textEl = wrap.querySelector('.boletim-feed__text');
+        const toggle = wrap.querySelector('.boletim-feed__toggle');
+        const label = toggle?.querySelector('.boletim-feed__toggle-label');
+
+        if (!textEl || !toggle || !label) {
+            return;
+        }
+
+        const getCollapsedHeight = () => getComputedStyle(wrap).getPropertyValue('--boletim-text-max-height').trim() || '7.5rem';
+
+        const updateToggle = () => {
+            if (wrap.classList.contains('is-animating') || wrap.classList.contains('is-expanded')) {
+                toggle.hidden = false;
+                wrap.classList.add('has-overflow');
+                return;
+            }
+
+            textEl.style.maxHeight = '';
+            const hasOverflow = textEl.scrollHeight > textEl.clientHeight + 2;
+            toggle.hidden = !hasOverflow;
+            wrap.classList.toggle('has-overflow', hasOverflow);
+        };
+
+        const formatHeight = (value) => (typeof value === 'number' ? `${value}px` : value);
+
+        const runHeightTransition = (fromHeight, toHeight, onComplete) => {
+            wrap.classList.add('is-animating');
+            textEl.style.maxHeight = formatHeight(fromHeight);
+
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    textEl.style.maxHeight = formatHeight(toHeight);
+                });
+            });
+
+            const handleEnd = (event) => {
+                if (event.propertyName !== 'max-height' || event.target !== textEl) {
+                    return;
+                }
+
+                textEl.removeEventListener('transitionend', handleEnd);
+                wrap.classList.remove('is-animating');
+                onComplete();
+            };
+
+            textEl.addEventListener('transitionend', handleEnd);
+        };
+
+        toggle.addEventListener('click', () => {
+            const isExpanded = wrap.classList.contains('is-expanded');
+
+            if (wrap.classList.contains('is-animating')) {
+                return;
+            }
+
+            if (isExpanded) {
+                const collapsedHeight = getCollapsedHeight();
+                const startHeight = textEl.scrollHeight;
+
+                wrap.classList.add('is-collapsing');
+                wrap.classList.remove('is-expanded');
+                label.textContent = 'Mostrar mais';
+                toggle.setAttribute('aria-expanded', 'false');
+
+                runHeightTransition(startHeight, collapsedHeight, () => {
+                    wrap.classList.remove('is-collapsing');
+                    textEl.style.maxHeight = '';
+                    updateToggle();
+                });
+
+                return;
+            }
+
+            const startHeight = textEl.getBoundingClientRect().height;
+            const endHeight = textEl.scrollHeight;
+
+            wrap.classList.remove('is-collapsing');
+            wrap.classList.add('is-expanded');
+            label.textContent = 'Mostrar menos';
+            toggle.setAttribute('aria-expanded', 'true');
+
+            runHeightTransition(startHeight, endHeight, () => {
+                textEl.style.maxHeight = 'none';
+            });
+        });
+
+        updateToggle();
+
+        if ('ResizeObserver' in window) {
+            const observer = new ResizeObserver(updateToggle);
+            observer.observe(textEl);
+        } else {
+            window.addEventListener('resize', updateToggle);
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    initBoletimExpandableTexts();
+
     const videos = Array.from(document.querySelectorAll('.boletim-feed video'));
 
     if (videos.length && 'IntersectionObserver' in window) {
