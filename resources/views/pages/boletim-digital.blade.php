@@ -108,7 +108,7 @@
             'type' => 'image',
             'src' => $boletimBase . '/Palestra 13-6- 15h.jpg',
             'alt' => 'Palestras do Fim de Semana da Família — sábado',
-            'title' => 'Palestra Sábado FSF',
+            'title' => 'Palestra Sábado',
             'text' => 'No sábado, 13 de junho, às 09h teremos o Culto da Família e, às 15h, teremos palestras imperdíveis para casais e interessados em casar com os temas Comunicação Sem Estresse e Homens versus Mulheres: quem não entende quem?',
         ],
         [
