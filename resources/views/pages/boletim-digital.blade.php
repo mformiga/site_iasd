@@ -127,7 +127,7 @@
         ],
         [
             'type' => 'image',
-            'src' => 'img/boletim/boletim_06_06_2026/Jantar_Namorados.jpg',
+            'src' => $boletimBase . '/Anúncios 2026 (4).jpg',
             'alt' => 'Jantar dos Namorados',
             'title' => 'Jantar dos Namorados',
             'text' => $textoJantarNamorados,
