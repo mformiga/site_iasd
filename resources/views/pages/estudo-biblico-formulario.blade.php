@@ -357,6 +357,7 @@
     }
 
     document.querySelector('form').addEventListener('submit', function(e) {
+        const submitBtn = this.querySelector('button[type="submit"]');
         const email = document.getElementById('email').value.trim();
         const telefone = document.getElementById('telefone').value.trim();
 
@@ -371,6 +372,10 @@
             e.preventDefault();
             return;
         }
+
+        // Só desabilita o botão se passou pela validação
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
     });
 </script>
 @endpush

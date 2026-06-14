@@ -235,6 +235,8 @@ class PageController extends Controller
             'mensagem' => 'required|string|max:1000',
         ]);
 
+        $googleSheetsError = false;
+
         if (config('services.google_sheets.credentials_path') && config('services.google_sheets.spreadsheet_id')) {
             try {
                 $sheets = app(GoogleSheetsService::class);
@@ -248,17 +250,19 @@ class PageController extends Controller
                     $validated['mensagem'],
                 ]);
             } catch (\Throwable $e) {
+                $googleSheetsError = true;
                 Log::error('Falha ao gravar no Google Sheets (estudo-biblico)', [
                     'message' => $e->getMessage(),
+                    'data' => $validated,
                 ]);
-
-                return redirect()->route('estudo-biblico.formulario')
-                    ->withErrors(['google_sheets' => 'Não foi possível registrar sua solicitação no momento. Tente novamente em alguns minutos.'])
-                    ->withInput();
             }
         }
 
-        return redirect()->route('estudo-biblico.formulario')->with('success', 'Solicitação de estudo bíblico enviada com sucesso! Entraremos em contato em breve.');
+        $message = $googleSheetsError
+            ? 'Solicitação recebida! Houve um problema ao registrar na planilha, mas entramos em contato em breve.'
+            : 'Solicitação de estudo bíblico enviada com sucesso! Entraremos em contato em breve.';
+
+        return redirect()->route('estudo-biblico.formulario')->with('success', $message);
     }
 
     /**
@@ -274,6 +278,8 @@ class PageController extends Controller
             'pedido' => 'required|string|max:1000',
         ]);
 
+        $googleSheetsError = false;
+
         if (config('services.google_sheets.credentials_path') && config('services.google_sheets.spreadsheet_id')) {
             try {
                 $sheets = app(GoogleSheetsService::class);
@@ -288,17 +294,19 @@ class PageController extends Controller
                     $validated['pedido'],
                 ]);
             } catch (\Throwable $e) {
+                $googleSheetsError = true;
                 Log::error('Falha ao gravar no Google Sheets (oracao-visita)', [
                     'message' => $e->getMessage(),
+                    'data' => $validated,
                 ]);
-
-                return back()
-                    ->withErrors(['google_sheets' => 'Não foi possível registrar seu pedido no momento. Tente novamente em alguns minutos.'])
-                    ->withInput();
             }
         }
 
-        return back()->with('success', 'Pedido de oração enviado com sucesso! Estaremos orando por você.');
+        $message = $googleSheetsError
+            ? 'Pedido recebido! Houve um problema ao registrar na planilha, mas estaremos orando por você.'
+            : 'Pedido de oração enviado com sucesso! Estaremos orando por você.';
+
+        return back()->with('success', $message);
     }
 
     /**
