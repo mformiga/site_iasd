@@ -7,23 +7,12 @@
 @endpush
 
 @php
-    $boletimBase = 'img/boletim/boletim_14_06_2026/Imagens para atualização do Boletim SITE';
+    $boletimBase = 'img/boletim/boletim_20_06_2026/Imagens para atualização do Boletim SITE';
     $oracao365Base = $boletimBase . '/365 Dias de Oração';
     $heroesBase = $boletimBase . '/HEROES';
 
-    $texto365Dias = 'Continuamos envolvidos no projeto Jornada de Oração: Frutos do Espírito. Ao longo deste mês, vamos orar pedindo a Deus que desenvolva em nossa vida o fruto: PACIÊNCIA. O desafio da TERCEIRA semana de JUNHO é: Ore por paciência nos tempos de espera e diante de problemas que você não pode controlar.';
-    $textoHeroes = 'Quem nunca desejou ser um herói e ter o poder de vencer suas próprias batalhas? Na nova série evangelística HEROES, você vai descobrir que os maiores heróis da Bíblia eram pessoas comuns, escolhidas para fazer coisas extraordinárias! Prepare-se para uma jornada emocionante de fé, coragem e transformação através das histórias de Abraão, Ester, Davi e Jesus. O herói que você procura pode ser exatamente quem Deus quer formar dentro de você. Não perca, a série HEROES, todos os domingos de junho, às 19h, aqui na igreja. Traga sua família e participe!';
-    $textoJantarNamorados = 'O amor está no ar! Venha celebrar o romance em uma programação gostosa, divertida e com um lindo toque espiritual no nosso tradicional Jantar dos Namorados! Será no Restaurante De\'Vitto Pasta e Pizza, no Lago Sul, com um rodízio incrível de massas, pizzas e risotos. As vagas são limitadas! Não deixe para a última hora, mude a rotina e venha celebrar o amor conosco! Siga os passos para fazer a sua reserva:<br>
-📅 Data do evento: 20/JUN (Sábado)<br>
-🕡 Horário: às 19h<br>
-📍 Onde: Restaurante De\'Vitto Pasta & Pizza - Instagram: @devittopastaepizza<br>
-🍕 (Rodízio de Massas, Pizzas e Risotos) - QI 11 - Lago Sul<br>
-💰 Valor por casal: R$ 160,00 (bebidas à parte)<br>
-💳 Formas de Pagamento:<br>
-1️⃣ Pelo aplicativo 7me Vá em Outras Ofertas ➡️ Eventos e Outros ➡️ Ministério da Família<br>
-2️⃣ Chave PIX: pix.centralbsb.aplac@adventistas.org<br>
-📝 Inscrições: Fale com o Gerson Kaiser pelo WhatsApp: (61) 98429-0130<br>
-(Lembre-se de enviar o comprovante do depósito e o nome completo do casal!)';
+    $texto365Dias = 'Continuamos envolvidos no projeto Jornada de Oração: Frutos do Espírito. Ao longo deste mês, vamos orar pedindo a Deus que desenvolva em nossa vida o fruto: PACIÊNCIA. O desafio da QUARTA semana de JUNHO é: Ore para responder com mansidão em vez de raiva, mesmo em situações de tensão.';
+    $textoHeroes = 'Quem nunca desejou ser um herói e ter o poder de vencer suas próprias batalhas? Na série evangelística HEROES, você vai descobrir que os maiores heróis da Bíblia eram pessoas comuns, escolhidas para fazer coisas extraordinárias! Prepare-se para uma jornada emocionante de fé, coragem e transformação através das histórias de Abraão, Ester, Davi e Jesus. O herói que você procura pode ser exatamente quem Deus quer formar dentro de você. Não perca, a série HEROES, todos os domingos de junho, às 19h, aqui na igreja. Traga sua família e participe!';
 
     $boletins = [
         // Com descrição (script DOCX)
@@ -36,7 +25,7 @@
         ],
         [
             'type' => 'image',
-            'src' => $oracao365Base . '/jornada_oracao.jpeg',
+            'src' => $oracao365Base . '/WhatsApp Image 2026-06-19 at 14.35.32.jpeg',
             'alt' => '365 Dias de Oração — Jornada de Oração',
             'title' => '365 Dias de Oração',
             'text' => $texto365Dias,
@@ -78,7 +67,7 @@
         ],
         [
             'type' => 'image',
-            'src' => $boletimBase . '/Ceia.jpg',
+            'src' => $boletimBase . '/Ceia (1).jpg',
             'alt' => 'Ceia do Senhor',
             'title' => 'Ceia',
             'text' => 'No dia 4 de julho, no período da manhã, celebraremos a Ceia do Senhor. Que possamos preparar nossos corações para este momento de comunhão.',
@@ -92,59 +81,31 @@
         ],
         [
             'type' => 'image',
-            'src' => $boletimBase . '/Fim de Semana Fam.jpg',
-            'alt' => 'Final de Semana da Família 2026',
-            'title' => 'Fim de Semana da Família',
-            'text' => '1º Final de Semana da Família de 2026 na Igreja Adventista Central de Brasília. De 12 a 14/06, receberemos o professor Airton Ramos, terapeuta e conselheiro familiar, para uma série especial de cultos e palestras imperdíveis.',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/SDV.jpg',
-            'alt' => 'Pôr do Sol para solteiros, divorciados e viúvos',
-            'title' => 'SDV',
-            'text' => 'Na sexta-feira, 12 de junho, às 17h46, teremos um Pôr do Sol especial para os solteiros, divorciados e viúvos, em função do Fim de Semana da Família. Para este evento faça sua inscrição com Emília pelo WhatsApp (61) 98119-9671.',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/Palestra 13-6- 15h.jpg',
-            'alt' => 'Palestras do Fim de Semana da Família — sábado',
-            'title' => 'Palestra Sábado',
-            'text' => 'No sábado, 13 de junho, às 09h teremos o Culto da Família e, às 15h, teremos palestras imperdíveis para casais e interessados em casar com os temas Comunicação Sem Estresse e Homens versus Mulheres: quem não entende quem?',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/Paletra Pais.jpg',
-            'alt' => 'Palestra para pais — Fim de Semana da Família',
-            'title' => 'Palestra para Pais',
-            'text' => 'No domingo, dia 14 de junho, às 10h, teremos uma palestra essencial para os pais sobre como Criar Filhos para o Céu em um Mundo Digital. Participe!',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/Palestra sexualidade 1 (2).jpg',
-            'alt' => 'Palestra de sexualidade e Culto da Família',
-            'title' => 'Sexualidade e Culto da Família',
-            'text' => 'Às 17h, do domingo, haverá uma palestra exclusiva sobre Sexualidade para casais e interessados em casar e, para fechar com chave de ouro, o grande Culto da Família que acontecerá às 19h. Chegue no horário e participe do sorteio de brindes especiais! Teremos a distribuição de presentes para todas as famílias não adventistas. Invista na sua família e participe conosco! Aguardamos vocês!',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/Anúncios 2026 (4).jpg',
-            'alt' => 'Jantar dos Namorados',
-            'title' => 'Jantar dos Namorados',
-            'text' => $textoJantarNamorados,
-        ],
-        [
-            'type' => 'image',
             'src' => $boletimBase . '/Etiquetagem.jpeg',
             'alt' => 'Impacto Esperança 2026 — etiquetagem',
             'title' => 'Etiquetagem',
-            'text' => 'O Impacto Esperança 2026 precisa de você! Continuamos nosso mutirão de etiquetagem dos livros missionários todos os sábados, das 15h às 19h, em frente ao Centro White. Venha nos ajudar a preparar esse material evangelístico. Sua dedicação é essencial para o sucesso desta missão. Contamos com sua presença. EXCEPCIONALMENTE NESTE SÁBADO NÃO HAVERÁ ETIQUETAGEM. Retornaremos com os trabalhos no próximo sábado, 20/06/26.',
+            'text' => 'O Impacto Esperança 2026 precisa de você! Continuamos nosso mutirão de etiquetagem dos livros missionários todos os sábados, das 15h às 19h, em frente ao Centro White. Venha nos ajudar a preparar esse material evangelístico. Sua dedicação é essencial para o sucesso desta missão. Contamos com sua presença.',
         ],
         [
             'type' => 'image',
-            'src' => $boletimBase . '/Saúde.jpeg',
-            'alt' => 'Classe Vida & Saúde',
-            'title' => 'Classe de Saúde',
-            'text' => 'Participe da Classe Vida & Saúde da Igreja Adventista Central de Brasília, aos sábados, sempre às 11h, e aprenda com profissionais renomados sobre temas vitais e ultra relevantes para o seu bem-estar físico, espiritual, corporal e material, a cada semana uma oportunidade única e gratuita para transformar sua vida por inteiro! Vem com a gente!',
+            'src' => $boletimBase . '/Entrega de livros.jpg',
+            'alt' => 'Entrega de livros missionários',
+            'title' => 'Entrega de Livros',
+            'text' => 'Nós temos uma missão grandiosa e cada um de nós faz a diferença! Chegou a hora de acelerar o passo e incentivar a todos na entrega de dois livros por semana. Não é apenas uma distribuição, é uma entrega intencional, com propósito, oração e foco em alcançar corações. Imagine o impacto de cada página compartilhada na vida de alguém neste momento! Vamos juntos, com dedicação e amor, fazer essa mensagem ir mais longe. Procure a equipe de publicações, retire os seus livros e faça parte desse movimento de esperança!',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/SGI.jpg',
+            'alt' => 'SGI — Sistema de Gerenciamento de Interessados',
+            'title' => 'SGI',
+            'text' => 'Está no ar o SGI - Sistema de Gerenciamento de Interessados. Querido membro, se você está estudando a Bíblia com alguém, a Igreja Central conta agora com um sistema de cadastro de interessados, o SGI, onde você poderá se cadastrar como Instrutor bíblico e cadastrar seus alunos. Nele você contará com o apoio do Ministério Pessoal e com estudos bíblicos especialmente preparados. Aponte seu celular para o QR CODE que está na tela e faça hoje mesmo o seu cadastro. E se você é visitante: Que bom que você veio! É uma alegria tê-lo conosco. Se você está nos visitando pela primeira vez e gostaria que orássemos por você ou tem interesse em estudar a Bíblia, acesse o nosso site pelo QR CODE que está aparecendo na tela ou procure nossa equipe de recepção, preencha o cartão de visitas que teremos o maior prazer em atendê-lo.',
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/convite_jotinha_18h_16_9 (1).png',
+            'alt' => 'Convite para o Jotinha às 18h',
+            'title' => 'Jotinha',
+            'text' => 'Neste sábado, às 18h, teremos mais um Jotinha! Nossa bandinha musical está crescendo, e é uma alegria ver crianças e juvenis cantando, tocando instrumentos e desenvolvendo os talentos que Deus lhes deu. Aqui seu filho pode: desenvolver seus talentos, fazer amizades, fixar mais ainda os valores cristãos, crescer no amor a Deus, participar ativamente da igreja. Talvez seu filho goste de cantar, aprender um instrumento ou apenas esteja esperando uma oportunidade para descobrir seus dons. Traga seus filhos hoje, às 18h e convide também amigos, vizinhos, sobrinhos e netos! Esperamos sua família para um fim de tarde de louvor, aprendizado e muita alegria!',
         ],
         [
             'type' => 'image',
