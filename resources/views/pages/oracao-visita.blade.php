@@ -318,13 +318,87 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script>
+    // Função para manter apenas dígitos
+    function onlyDigits(value) {
+        return String(value || '').replace(/\D+/g, '');
+    }
+
+    // Função para formatar telefone no padrão brasileiro
+    function formatBrPhone(value) {
+        const digits = onlyDigits(value).slice(0, 11);
+        if (!digits) return '';
+
+        const ddd = digits.slice(0, 2);
+        const rest = digits.slice(2);
+
+        if (digits.length <= 10) {
+            const p1 = rest.slice(0, 4);
+            const p2 = rest.slice(4, 8);
+            if (!rest) return `(${ddd}`;
+            if (rest.length <= 4) return `(${ddd}) ${p1}`;
+            return `(${ddd}) ${p1}-${p2}`;
+        }
+
+        const p1 = rest.slice(0, 5);
+        const p2 = rest.slice(5, 9);
+        if (!rest) return `(${ddd}`;
+        if (rest.length <= 5) return `(${ddd}) ${p1}`;
+        return `(${ddd}) ${p1}-${p2}`;
+    }
+
+    // Aplicar máscara de telefone
+    const telefoneInput = document.getElementById('telefone');
+    if (telefoneInput) {
+        const telefoneHandler = () => {
+            const next = formatBrPhone(telefoneInput.value);
+            if (telefoneInput.value !== next) telefoneInput.value = next;
+        };
+
+        // Inicial
+        telefoneHandler();
+
+        telefoneInput.addEventListener('input', telefoneHandler);
+        telefoneInput.addEventListener('blur', telefoneHandler);
+        telefoneInput.addEventListener('paste', () => setTimeout(telefoneHandler, 0));
+    }
+
+    // Bloquear números no campo nome
+    const nomeInput = document.getElementById('nome');
+    if (nomeInput) {
+        nomeInput.addEventListener('keypress', function(e) {
+            if (/\d/.test(e.key)) {
+                e.preventDefault();
+            }
+        });
+
+        nomeInput.addEventListener('paste', function(e) {
+            const paste = (e.clipboardData || window.clipboardData).getData('text');
+            if (/\d/.test(paste)) {
+                e.preventDefault();
+            }
+        });
+    }
+
     document.querySelector('form').addEventListener('submit', function(e) {
+        const submitBtn = this.querySelector('button[type="submit"]');
         const email = document.getElementById('email').value.trim();
+        const telefone = document.getElementById('telefone').value.trim();
 
         if (email.length === 0 || !email.includes('@')) {
             alert('Por favor, insira um e-mail válido.');
             e.preventDefault();
+            return;
         }
+
+        if (telefone.length === 0) {
+            alert('Por favor, insira um telefone válido.');
+            e.preventDefault();
+            return;
+        }
+
+        // Só desabilita o botão se passou pela validação
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
     });
 </script>
 @endpush

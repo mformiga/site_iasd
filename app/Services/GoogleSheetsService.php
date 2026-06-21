@@ -11,6 +11,7 @@ use Google\Service\Sheets\ValueRange;
 use Google\Service\Exception as GoogleServiceException;
 use Illuminate\Support\Arr;
 use RuntimeException;
+use GuzzleHttp\Client;
 
 class GoogleSheetsService
 {
@@ -37,6 +38,12 @@ class GoogleSheetsService
         $client->setApplicationName((string) config('app.name', 'Laravel'));
         $client->setScopes([Sheets::SPREADSHEETS]);
         $client->setAuthConfig($resolvedPath);
+
+        // Configurar cliente HTTP para resolver problemas de SSL
+        $client->setHttpClient(new \GuzzleHttp\Client([
+            'verify' => false, // Desabilitar verificação SSL em ambiente de desenvolvimento
+            'timeout' => 30,
+        ]));
 
         $this->sheets = new Sheets($client);
     }

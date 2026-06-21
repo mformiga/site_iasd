@@ -34,6 +34,7 @@ Route::get('/filmes-series', [PageController::class, 'filmesSeries'])->name('fil
 Route::get('/profecias', [PageController::class, 'profecias'])->name('profecias');
 Route::get('/radio-tv-novo-tempo', [PageController::class, 'radioTvNovoTempo'])->name('radio-tv-novo-tempo');
 Route::get('/ministerio-mulher', [PageController::class, 'ministerioMulher'])->name('ministerio-mulher');
+Route::view('/noticias/desbravadores-campori-2026', 'pages.noticia-desbravadores')->name('noticia-desbravadores');
 
 // Time de desenvolvimento
 Route::view('/time-de-desenvolvimento', 'pages.time-desenvolvimento')->name('time-desenvolvimento');
