@@ -7,11 +7,12 @@
 @endpush
 
 @php
-    $boletimBase = 'img/boletim/boletim_20_06_2026/Imagens para atualização do Boletim SITE';
+    $boletimBase = 'img/boletim/boletim_27_06_2026';
     $oracao365Base = $boletimBase . '/365 Dias de Oração';
     $heroesBase = $boletimBase . '/HEROES';
 
-    $texto365Dias = 'Continuamos envolvidos no projeto Jornada de Oração: Frutos do Espírito. Ao longo deste mês, vamos orar pedindo a Deus que desenvolva em nossa vida o fruto: PACIÊNCIA. O desafio da QUARTA semana de JUNHO é: Ore para responder com mansidão em vez de raiva, mesmo em situações de tensão.';
+    $texto365Dias = 'Continuamos envolvidos no projeto Jornada de Oração: Frutos do Espírito. Ao longo deste mês, vamos orar pedindo a Deus que desenvolva em nossa vida o fruto: BENIGNIDADE - GENTILEZA. O desafio da PRIMEIRA semana de JULHO é: Ore para que suas palavras sejam mais suaves, sábias e cheias de graça, mesmo em conversas difíceis.';
+    $textoReuniaoOracao = 'Participe da nossa Reunião de Oração. Temos recebido grandes bênçãos do Senhor. Venha clamar pelo derramamento do Espírito Santo! Nossas reuniões acontecem a cada 15 dias, acompanhe e venha orar conosco.';
     $textoHeroes = 'Quem nunca desejou ser um herói e ter o poder de vencer suas próprias batalhas? Na série evangelística HEROES, você vai descobrir que os maiores heróis da Bíblia eram pessoas comuns, escolhidas para fazer coisas extraordinárias! Prepare-se para uma jornada emocionante de fé, coragem e transformação através das histórias de Abraão, Ester, Davi e Jesus. O herói que você procura pode ser exatamente quem Deus quer formar dentro de você. Não perca, a série HEROES, todos os domingos de junho, às 19h, aqui na igreja. Traga sua família e participe!';
 
     $boletins = [
@@ -25,7 +26,7 @@
         ],
         [
             'type' => 'image',
-            'src' => $oracao365Base . '/WhatsApp Image 2026-06-19 at 14.35.32.jpeg',
+            'src' => $oracao365Base . '/WhatsApp Image 2026-05-30 at 22.57.53 (2).jpeg',
             'alt' => '365 Dias de Oração — Jornada de Oração',
             'title' => '365 Dias de Oração',
             'text' => $texto365Dias,
@@ -67,10 +68,17 @@
         ],
         [
             'type' => 'image',
+            'src' => $boletimBase . '/M_Oracoa.jpeg',
+            'alt' => 'Reunião de oração',
+            'title' => 'Reunião de Oração',
+            'text' => $textoReuniaoOracao,
+        ],
+        [
+            'type' => 'image',
             'src' => $boletimBase . '/Ceia (1).jpg',
             'alt' => 'Ceia do Senhor',
             'title' => 'Ceia',
-            'text' => 'No dia 4 de julho, no período da manhã, celebraremos a Ceia do Senhor. Que possamos preparar nossos corações para este momento de comunhão.',
+            'text' => 'No dia 4 de julho, a partir das 8h30, celebraremos a Ceia do Senhor. Que possamos preparar nossos corações para este momento de comunhão.',
         ],
         [
             'type' => 'image',
@@ -78,13 +86,6 @@
             'alt' => 'Oficina do Bem — Doutores de Esperança',
             'title' => 'Coração do Bem',
             'text' => 'Participe da Oficina do Bem, às 9h, na sala dos Doutores de Esperança. Onde voluntários se reúnem para confeccionar corações de feltro que serão distribuídos aos pacientes durante os Plantões dos Doutores de Esperança. Qualquer pessoa pode participar. Venha! Nossa oficina acontece a cada 15 dias, siga nosso calendário e venha ser um voluntário.',
-        ],
-        [
-            'type' => 'image',
-            'src' => $boletimBase . '/Etiquetagem.jpeg',
-            'alt' => 'Impacto Esperança 2026 — etiquetagem',
-            'title' => 'Etiquetagem',
-            'text' => 'O Impacto Esperança 2026 precisa de você! Continuamos nosso mutirão de etiquetagem dos livros missionários todos os sábados, das 15h às 19h, em frente ao Centro White. Venha nos ajudar a preparar esse material evangelístico. Sua dedicação é essencial para o sucesso desta missão. Contamos com sua presença.',
         ],
         [
             'type' => 'image',
@@ -102,10 +103,10 @@
         ],
         [
             'type' => 'image',
-            'src' => $boletimBase . '/convite_jotinha_18h_16_9 (1).png',
-            'alt' => 'Convite para o Jotinha às 18h',
-            'title' => 'Jotinha',
-            'text' => 'Neste sábado, às 18h, teremos mais um Jotinha! Nossa bandinha musical está crescendo, e é uma alegria ver crianças e juvenis cantando, tocando instrumentos e desenvolvendo os talentos que Deus lhes deu. Aqui seu filho pode: desenvolver seus talentos, fazer amizades, fixar mais ainda os valores cristãos, crescer no amor a Deus, participar ativamente da igreja. Talvez seu filho goste de cantar, aprender um instrumento ou apenas esteja esperando uma oportunidade para descobrir seus dons. Traga seus filhos hoje, às 18h e convide também amigos, vizinhos, sobrinhos e netos! Esperamos sua família para um fim de tarde de louvor, aprendizado e muita alegria!',
+            'src' => $boletimBase . '/tela 16_9  capa centro.png',
+            'alt' => 'Série Em Defesa da Liberdade',
+            'title' => 'Em Defesa da Liberdade',
+            'text' => 'Nos domingos de julho, aqui na Igreja Adventista Central de Brasília, sempre às 19h, teremos a série Em Defesa da Liberdade. Participe e traga a sua família!',
         ],
         [
             'type' => 'image',
@@ -113,6 +114,13 @@
             'alt' => 'Série evangelística Heroes',
             'title' => 'Heroes',
             'text' => $textoHeroes,
+        ],
+        [
+            'type' => 'image',
+            'src' => $boletimBase . '/investidura (1).png',
+            'alt' => 'Investidura do Clube de Aventureiros Cruzeiro do Sul',
+            'title' => 'Investidura Aventureiros',
+            'text' => 'Neste sábado, 27/06/26, às 16h, teremos a honra de realizar a 1ª Cerimônia de Investidura do Clube de Aventureiros Cruzeiro do Sul, um momento especial para celebrar o crescimento de nossas crianças, que receberão as especialidades conquistadas neste semestre, além da entrega das faixas para a classe Abelhinhas; traga sua família e participe conosco desta grande conquista.',
         ],
     ];
 
