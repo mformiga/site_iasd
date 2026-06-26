@@ -15,9 +15,7 @@
 @endpush
 
 @section('content')
-<div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 20px 5px 20px; text-align: center;">
-    <img src="{{ asset('img/noticias/desbravadores-1.jpeg') }}" alt="Clube de Desbravadores Cruzeiro do Sul em Campori APLaC 2026" style="max-width: 800px; width: 100%; height: auto; min-height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 51, 102, 0.15); display: inline-block; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;" fetchpriority="high" decoding="async" class="modal-trigger" data-src="{{ asset('img/noticias/desbravadores-1.jpeg') }}" onclick="openModal('{{ asset('img/noticias/desbravadores-1.jpeg') }}')">
-</div>
+<img src="{{ asset('img/noticias/desbravadores-1-header.jpeg') }}" alt="Clube de Desbravadores Cruzeiro do Sul em Campori APLaC 2026" style="width: 100%;" fetchpriority="high" decoding="async">
 
 <div class="noticia-page-wrapper" style="margin-top: 0;">
     <div class="noticia-page-intro">
@@ -61,7 +59,7 @@
             <p>Com o encerramento das atividades desta edição, o Clube Cruzeiro do Sul já projeta suas atenções para o próximo grande desafio do calendário oficial. A organização confirmou o início do planejamento e da preparação para o Campori da DSA (Divisão Sul-Americana), agendado para janeiro de 2027, que reunirá clubes de diversos países da América do Sul.</p>
 
             <figure class="noticia-page__gallery">
-                <img src="{{ asset('img/noticias/desbravadores-2.jpeg') }}" alt="Atividades do Campori APLaC 2026" loading="lazy" decoding="async" width="800" height="450" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;" onclick="openModal('{{ asset('img/noticias/desbravadores-2.jpeg') }}')">
+                <img src="{{ asset('img/noticias/desbravadores-2.jpeg') }}" alt="Atividades do Campori APLaC 2026" loading="lazy" decoding="async" width="800" height="450" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;" class="modal-trigger" data-src="{{ asset('img/noticias/desbravadores-2.jpeg') }}">
                 <figcaption>Atividades do Campori APLaC 2026</figcaption>
             </figure>
         </div>
@@ -173,6 +171,9 @@
         var clickableImages = document.querySelectorAll('.modal-trigger, .noticia-page__gallery img');
         clickableImages.forEach(function(img) {
             img.style.cursor = 'pointer';
+            img.addEventListener('click', function() {
+                openModal(img.getAttribute('data-src') || img.getAttribute('src'));
+            });
         });
     });
 </script>
