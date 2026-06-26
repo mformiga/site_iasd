@@ -60,6 +60,30 @@
     </div>
 </a>
 
+<section class="noticias-section">
+    <div class="noticias-container">
+        <div class="noticias-header">
+            <span class="noticias-eyebrow">Notícias</span>
+            <h2 class="acb-title-serif">Últimas Notícias da Nossa Comunidade</h2>
+        </div>
+
+        <a href="{{ route('noticia-desbravadores') }}" class="noticia-card" aria-label="Ler notícia completa sobre o Clube de Desbravadores">
+            <div class="noticia-card__image">
+                <img src="{{ asset('img/noticias/desbravadores-1.jpeg') }}" alt="Clube de Desbravadores Cruzeiro do Sul em Campori APLaC 2026" loading="lazy" decoding="async" width="600" height="338">
+            </div>
+            <div class="noticia-card__content">
+                <div class="noticia-card__meta">
+                    <span class="noticia-card__categoria">Religião &amp; Comunidade</span>
+                    <span class="noticia-card__data">10/06/2026</span>
+                </div>
+                <h3 class="noticia-card__title">Clube de Desbravadores Cruzeiro do Sul celebra participação marcante em Campori APLaC 2026</h3>
+                <p class="noticia-card__excerpt">Evento de quatro dias reuniu jovens para atividades de desenvolvimento pessoal, espiritual e fortalecimento comunitário; foco agora se volta para a edição sul-americana de 2027.</p>
+                <span class="noticia-card__cta">Ler notícia completa</span>
+            </div>
+        </a>
+    </div>
+</section>
+
 <span class="span_cards">
     <div class="container_cards">
         <a class="card" href="{{ route('estudo-biblico') }}">

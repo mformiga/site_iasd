@@ -183,7 +183,7 @@
     @yield('schema-webpage')
     @yield('schema-localbusiness')
 </head>
-<body>
+<body class="@yield('body-class', '')">
     <main>
         @include('partials.header')
 
