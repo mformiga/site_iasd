@@ -96,6 +96,13 @@
         ],
         [
             'type' => 'image',
+            'src' => $boletimBase . '/WhatsApp Image 2026-06-26 at 20.38.56.jpeg',
+            'alt' => 'Classe de Saúde — A importância do descanso',
+            'title' => 'Classe de Saúde',
+            'text' => '✨ A IMPORTÂNCIA DO DESCANSO ✨<br><br>A ciência nos revela que fomos estruturados sob um ritmo biológico preciso: a luz para o despertar e o labor, e a escuridão para o repouso. Contudo, a Bíblia nos conduz a uma dimensão ainda mais profunda dessa necessidade. O descanso, sob a ótica das Escrituras, transcende o biológico; ele é, em sua essência, uma necessidade espiritual. 📖🙏<br><br>Compreender esse equilíbrio é o primeiro passo para uma vida plena e em sintonia com o propósito divino. Queremos aprofundar esse tema com você!<br><br>📅 Data: Sábado, 27/06<br>🕚 Horário: 11h<br>📍 Local: Classe de Saúde - Igreja Adventista Central de Brasília - SGAS 611 AV. L2 Sul Brasília/DF<br><br>Será um momento muito especial de aprendizado e renovo. Esperamos por você! ✨🙌',
+        ],
+        [
+            'type' => 'image',
             'src' => $boletimBase . '/SGI.jpg',
             'alt' => 'SGI — Sistema de Gerenciamento de Interessados',
             'title' => 'SGI',
