@@ -58,7 +58,7 @@
         font-size: 1.15rem;
         line-height: 1.8;
         color: #333;
-        text-align: justify;
+        text-align: center;
         max-width: 900px;
         margin: 0 auto;
     }
