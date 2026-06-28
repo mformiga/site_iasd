@@ -520,6 +520,148 @@
         transform: translateX(4px);
     }
 
+    /* Conteúdo expansível da notícia */
+    .noticia-full-content {
+        max-width: 900px;
+        margin: 30px auto 0;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 32px rgba(0, 51, 102, 0.15);
+        display: none;
+        animation: slideDown 0.5s ease;
+    }
+
+    .noticia-full-content.active {
+        display: block;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .noticia-full-header {
+        position: relative;
+        padding: 20px;
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .noticia-full-header h3 {
+        margin: 0;
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.5em;
+    }
+
+    .close-noticia-btn {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .close-noticia-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: rotate(90deg);
+    }
+
+    .noticia-full-body {
+        padding: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .noticia-full-body p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .noticia-full-body h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        color: #003366;
+        margin: 30px 0 15px;
+        font-weight: 500;
+    }
+
+    .noticia-full-body blockquote {
+        background: #f8f9fa;
+        border-left: 4px solid #003366;
+        padding: 20px;
+        margin: 30px 0;
+        border-radius: 8px;
+        font-style: italic;
+    }
+
+    .noticia-full-body blockquote p {
+        margin: 0;
+        color: #555;
+        font-size: 1rem;
+    }
+
+    .noticia-full-body blockquote cite {
+        display: block;
+        margin-top: 15px;
+        font-weight: 600;
+        color: #003366;
+        font-style: normal;
+    }
+
+    .noticia-full-body figure {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .noticia-full-body figure img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 51, 102, 0.15);
+    }
+
+    .noticia-full-body figcaption {
+        margin-top: 15px;
+        font-size: 0.9rem;
+        color: #666;
+        font-style: italic;
+    }
+
+    .noticia-full-author {
+        text-align: center;
+        padding: 20px 40px;
+        background: #f8f9fa;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    .noticia-full-author span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        color: #666;
+        font-weight: 500;
+    }
+
     @media (max-width: 768px) {
         .noticias-section {
             padding: 24px 0;
@@ -735,7 +877,7 @@
                 <h2 class="acb-title-serif">Últimas Notícias da Nossa Comunidade</h2>
             </div>
 
-            <a href="{{ route('noticia-desbravadores') }}" class="noticia-card" aria-label="Ler notícia completa sobre o Clube de Desbravadores">
+            <div class="noticia-card" onclick="expandNews()" style="cursor: pointer;" aria-label="Ler notícia completa sobre o Clube de Desbravadores">
                 <div class="noticia-card__image">
                     <img src="{{ asset('img/noticias/desbravadores-1.jpeg') }}" alt="Clube de Desbravadores Cruzeiro do Sul em Campori APLaC 2026" loading="lazy" decoding="async" width="600" height="338">
                 </div>
@@ -748,8 +890,85 @@
                     <p class="noticia-card__excerpt">Evento de quatro dias reuniu jovens para atividades de desenvolvimento pessoal, espiritual e fortalecimento comunitário; foco agora se volta para a edição sul-americana de 2027.</p>
                     <span class="noticia-card__cta">Ler notícia completa</span>
                 </div>
-            </a>
+            </div>
+
+            <!-- Conteúdo Completo da Notícia (Expansível) -->
+            <div class="noticia-full-content" id="fullNewsContent">
+                <div class="noticia-full-header">
+                    <h3>📰 Notícia Completa</h3>
+                    <button class="close-noticia-btn" onclick="closeNews(event)" aria-label="Fechar notícia">×</button>
+                </div>
+
+                <div class="noticia-full-author">
+                    <span>Por Redação</span>
+                </div>
+
+                <div class="noticia-full-body">
+                    <p><strong>Brasília —</strong> O Clube de Desbravadores Cruzeiro do Sul consolidou, na última semana, mais um marco em sua trajetória com a conclusão de sua participação no Campori. O evento, que se estendeu por quatro dias, promoveu uma imersão focada no desenvolvimento de talentos, fortalecimento de laços de amizade e, fundamentalmente, no crescimento espiritual dos jovens participantes.</p>
+
+                    <p>Segundo a coordenação do Cruzeiro do Sul, as atividades proporcionaram momentos de reflexão e experiências práticas que devem gerar impactos duradouros na formação dos Desbravadores. O encontro é apontado pela liderança como um espaço essencial para a comunhão e o exercício da cidadania cristã.</p>
+
+                    <h2>Apoio e Fortalecimento Institucional</h2>
+                    <p>O sucesso da expedição foi creditado ao envolvimento direto da comunidade e do corpo eclesiástico. A diretoria do Clube emitiu um agradecimento público à liderança da igreja local pelo suporte contínuo e logístico, destacando o papel dos pastores e voluntários que atuaram na linha de frente das operações diárias.</p>
+
+                    <blockquote>
+                        <p>"Temos um clube forte porque contamos com o apoio, a confiança e o envolvimento da liderança e dos pastores da nossa igreja. Isso faz toda a diferença"</p>
+                        <cite>— Rozilene Manzi, líder do Clube Cruzeiro do Sul</cite>
+                    </blockquote>
+
+                    <p>Entre os colaboradores mencionados pelo suporte direto nas diversas atividades necessárias durante o acampamento estão os pastores Lucas Alves e Hugo Rodrigues, além de membros da equipe de apoio como Karin Gorski (com o suporte da ASA - Ação Solidária Adventista), Elisangela Terto Rosa "Rosinha", José Bullón, Luigi Braga, Silóe Almeida Júnior, Alexandre Tinoco, Fábio Costa, Diego Elesbão, Luciana Marques e Mateus Castanho.</p>
+
+                    <h2>Próximos Passos: Rumo a 2027</h2>
+                    <p>Com o encerramento das atividades desta edição, o Clube Cruzeiro do Sul já projeta suas atenções para o próximo grande desafio do calendário oficial. A organização confirmou o início do planejamento e da preparação para o Campori da DSA (Divisão Sul-Americana), agendado para janeiro de 2027, que reunirá clubes de diversos países da América do Sul.</p>
+
+                    <figure>
+                        <img src="{{ asset('img/noticias/desbravadores-2.jpeg') }}" alt="Atividades do Campori APLaC 2026" loading="lazy" decoding="async" width="800" height="450">
+                        <figcaption>Atividades do Campori APLaC 2026</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
 </div>
+
+<script>
+function expandNews() {
+    const fullContent = document.getElementById('fullNewsContent');
+    fullContent.classList.add('active');
+
+    // Scroll suave até o conteúdo expandido
+    setTimeout(() => {
+        fullContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+
+    // Prevenir scroll do body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeNews(event) {
+    event.stopPropagation(); // Evitar que o clique propague
+
+    const fullContent = document.getElementById('fullNewsContent');
+    fullContent.classList.remove('active');
+
+    // Restaurar scroll do body
+    document.body.style.overflow = 'auto';
+
+    // Scroll suave de volta ao card da notícia
+    const newsCard = document.querySelector('.noticia-card');
+    setTimeout(() => {
+        newsCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 100);
+}
+
+// Permitir fechar com a tecla Escape
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const fullContent = document.getElementById('fullNewsContent');
+        if (fullContent.classList.contains('active')) {
+            closeNews(event);
+        }
+    }
+});
+</script>
 @endsection
