@@ -33,12 +33,11 @@
     }
 
     .hero-section {
-        background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
-        padding: 60px 40px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 50px 40px;
         border-radius: 15px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         text-align: center;
-        color: #fff;
     }
 
     .hero-content {
@@ -48,20 +47,20 @@
 
     .hero-section h1 {
         font-family: 'Bebas neue', sans-serif;
-        font-size: 3.5em;
-        color: #fff;
-        margin-bottom: 20px;
+        font-size: 3em;
+        color: #003366;
+        margin-bottom: 25px;
         font-weight: 500;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
 
     .hero-section p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         line-height: 1.8;
-        color: #fff;
-        margin: 0;
-        font-weight: 300;
+        color: #333;
+        text-align: justify;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .content-section {
@@ -339,12 +338,12 @@
     }
 
     @media (max-width: 768px) {
-        .hero-section h1 {
-            font-size: 2.5em;
+        .hero-section {
+            padding: 30px 20px;
         }
 
-        .hero-section p {
-            font-size: 1.1rem;
+        .hero-section h1 {
+            font-size: 2.2em;
         }
 
         .atividades-grid,
