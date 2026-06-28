@@ -1,0 +1,755 @@
+@extends('layouts.app')
+
+@section('title', 'IASD Central de Brasília - Desbravadores Cruzeiro do Sul')
+
+@section('meta-description', 'Clube de Desbravadores Cruzeiro do Sul da IASD Central de Brasília. Formando jovens líderes com fé, serviço e espírito de aventura desde 1972.')
+@section('og-title', 'Desbravadores Cruzeiro do Sul - IASD Central de Brasília')
+@section('og-description', 'Formando jovens líderes com fé, serviço e espírito de aventura desde 1972. Participe do nosso clube!')
+@section('page-name', 'Desbravadores')
+
+@push('styles')
+<style>
+    .desbravadores-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .desbravadores-header-wrap {
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 1920 / 300;
+    }
+
+    .desbravadores-page-header-img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .hero-section {
+        background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
+        padding: 60px 40px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hero-section h1 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 3.5em;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 500;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero-section p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.8;
+        color: #fff;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .content-section {
+        background: #fff;
+        padding: 40px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .content-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.2em;
+        color: #8B4513;
+        margin-bottom: 25px;
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .content-section h2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, #D2691E, #CD853F);
+    }
+
+    .content-section p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+
+    .atividades-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .atividade-card {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 25px;
+        border-radius: 10px;
+        border-left: 4px solid #D2691E;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .atividade-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(139, 69, 19, 0.2);
+    }
+
+    .atividade-card h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.4em;
+        color: #8B4513;
+        margin-bottom: 10px;
+    }
+
+    .atividade-card p {
+        font-size: 0.95rem;
+        color: #666;
+        text-align: left;
+        margin: 0;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin: 30px 0;
+    }
+
+    .info-card {
+        background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px solid #e9ecef;
+        text-align: center;
+    }
+
+    .info-card h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.5em;
+        color: #8B4513;
+        margin-bottom: 15px;
+    }
+
+    .social-media-section {
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        padding: 40px;
+        border-radius: 15px;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .social-media-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.2em;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        background: rgba(255,255,255,0.1);
+        padding: 15px 30px;
+        border-radius: 50px;
+        margin: 10px;
+        text-decoration: none;
+        color: #fff;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .social-link:hover {
+        background: rgba(255,255,255,0.2);
+        transform: scale(1.05);
+    }
+
+    .social-link svg {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+    }
+
+    .social-link span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+
+    .steps-container {
+        counter-reset: step-counter;
+    }
+
+    .step-item {
+        position: relative;
+        padding-left: 70px;
+        margin-bottom: 30px;
+    }
+
+    .step-item::before {
+        counter-increment: step-counter;
+        content: counter(step-counter);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #D2691E, #CD853F);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .step-item h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.3em;
+        color: #8B4513;
+        margin-bottom: 10px;
+    }
+
+    .step-item p {
+        font-size: 1rem;
+        color: #666;
+        margin: 0;
+    }
+
+    .step-item a {
+        color: #D2691E;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .step-item a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-info {
+        background: linear-gradient(135deg, #fff8e7 0%, #fff 100%);
+        padding: 30px;
+        border-radius: 15px;
+        margin-top: 30px;
+        border-left: 5px solid #D2691E;
+    }
+
+    .contact-info h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.5em;
+        color: #8B4513;
+        margin-bottom: 15px;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+        color: #666;
+        margin: 5px 0;
+    }
+
+    .contact-info a {
+        color: #D2691E;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    .video-section {
+        background: #f8f9fa;
+        padding: 40px;
+        border-radius: 15px;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .video-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2em;
+        color: #8B4513;
+        margin-bottom: 25px;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .warning-box {
+        background: linear-gradient(135deg, #fff3cd 0%, #ffe9a1 100%);
+        padding: 25px;
+        border-radius: 10px;
+        margin: 30px 0;
+        border-left: 5px solid #ffc107;
+    }
+
+    .warning-box h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.4em;
+        color: #856404;
+        margin-bottom: 15px;
+    }
+
+    .warning-box p {
+        font-size: 1rem;
+        color: #856404;
+        margin: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+        .hero-section h1 {
+            font-size: 2.5em;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+        }
+
+        .atividades-grid,
+        .info-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .step-item {
+            padding-left: 60px;
+        }
+
+        .step-item::before {
+            width: 45px;
+            height: 45px;
+            font-size: 1.3em;
+        }
+    }
+
+    /* Seção de Notícias */
+    .noticias-section {
+        width: 100%;
+        background: #f8f9fa;
+        padding: clamp(30px, 5vw, 60px) 0;
+        margin: 0;
+    }
+
+    .noticias-container {
+        width: min(100%, 1200px);
+        margin: 0 auto;
+        padding: 0 clamp(20px, 6vw, 72px);
+    }
+
+    .noticias-header {
+        margin-bottom: clamp(30px, 5vw, 50px);
+        text-align: center;
+    }
+
+    .noticias-eyebrow {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: #003366;
+    }
+
+    .noticias-header h2 {
+        margin: 0;
+        font-family: 'Bebas neue', 'Arial Narrow', sans-serif;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: .03em;
+        color: #151d27;
+    }
+
+    /* Notícia Card */
+    .noticia-card {
+        display: block;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 51, 102, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        color: inherit;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .noticia-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 32px rgba(0, 51, 102, 0.2);
+    }
+
+    .noticia-card:focus-visible {
+        outline: 3px solid #003366;
+        outline-offset: 4px;
+    }
+
+    .noticia-card__image {
+        width: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+    }
+
+    .noticia-card__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+    }
+
+    .noticia-card:hover .noticia-card__image img {
+        transform: scale(1.05);
+    }
+
+    .noticia-card__content {
+        padding: clamp(24px, 4vw, 36px);
+    }
+
+    .noticia-card__meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+        flex-wrap: wrap;
+    }
+
+    .noticia-card__categoria {
+        display: inline-block;
+        padding: 6px 12px;
+        background: linear-gradient(135deg, #003366 0%, #1b4472 100%);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        border-radius: 4px;
+    }
+
+    .noticia-card__data {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.85rem;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .noticia-card__title {
+        margin: 0 0 12px;
+        font-family: 'Bebas neue', 'Arial Narrow', sans-serif;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        line-height: 1.2;
+        font-weight: 500;
+        letter-spacing: .02em;
+        color: #151d27;
+    }
+
+    .noticia-card__excerpt {
+        margin: 0 0 16px;
+        font-family: 'Roboto', sans-serif;
+        font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+        line-height: 1.6;
+        color: #555;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .noticia-card__cta {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #003366;
+        text-transform: uppercase;
+        letter-spacing: .03em;
+        position: relative;
+    }
+
+    .noticia-card__cta::after {
+        content: '→';
+        margin-left: 6px;
+        transition: transform 0.2s ease;
+    }
+
+    .noticia-card:hover .noticia-card__cta::after {
+        transform: translateX(4px);
+    }
+
+    @media (max-width: 768px) {
+        .noticias-section {
+            padding: 24px 0;
+        }
+
+        .noticias-container {
+            padding: 0 20px;
+        }
+
+        .noticias-header {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .noticia-card__content {
+            padding: 20px;
+        }
+
+        .noticia-card__title {
+            font-size: 1.4rem;
+        }
+
+        .noticia-card__excerpt {
+            font-size: 0.9rem;
+            -webkit-line-clamp: 2;
+        }
+
+        .noticia-card__meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+    }
+</style>
+@endpush
+
+@section('content')
+<div class="desbravadores-container">
+    <!-- Header Image -->
+    <div class="desbravadores-header-wrap">
+        <img src="{{ asset('img/noticias/desbravadores-1-header.jpeg') }}" alt="Desbravadores Cruzeiro do Sul" class="desbravadores-page-header-img">
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Clube de Desbravadores Cruzeiro do Sul</h1>
+            <p>Formando jovens líderes com fé, serviço e espírito de aventura desde 1972.</p>
+        </div>
+    </div>
+
+    <!-- História Section -->
+    <div class="content-section">
+        <h2>Nossa História</h2>
+        <p>O Clube de Desbravadores Cruzeiro do Sul nasceu na IASD Central de Brasília no início da década de 1970, quando líderes locais organizaram o primeiro grupo de jovens para formação física, mental e espiritual.</p>
+        <p>Desde então o clube cresceu, participou de campos, formou bandas marciais e líderes, e mantém tradição de serviço comunitário e evangelismo entre os adolescentes de Brasília.</p>
+        <p>Ao longo dos anos, temos formado gerações de jovens comprometidos com os princípios cristãos, preparando-os para serem cidadãos exemplares e líderes em suas comunidades.</p>
+    </div>
+
+    <!-- Missão e Valores Section -->
+    <div class="content-section">
+        <h2>Missão e Valores</h2>
+        <p>Nossa missão é desenvolver adolescentes (10–15 anos) integralmente — físico, mental e espiritual — por meio de atividades ao ar livre, serviço cristão e liderança.</p>
+        <p>Valorizamos fé ativa, disciplina, amizade e preparo para a vida. Acreditamos que cada jovem tem potencial único para fazer a diferença no mundo.</p>
+        <p>Nossos valores são baseados nos princípios cristãos adventistas, promovendo o desenvolvimento harmonioso de todas as faculdades humanas.</p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Fé</h3>
+                <p>Desenvolvimento espiritual e conexão com Deus</p>
+            </div>
+            <div class="info-card">
+                <h3>Serviço</h3>
+                <p>Compromisso com a comunidade e o próximo</p>
+            </div>
+            <div class="info-card">
+                <h3>Aventura</h3>
+                <p>Atividades ao ar livre e superação</p>
+            </div>
+            <div class="info-card">
+                <h3>Liderança</h3>
+                <p>Formação de jovens líderes cristãos</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Atividades Section -->
+    <div class="content-section">
+        <h2>Atividades e Programas</h2>
+        <p>Nossos desbravadores participam de uma variedade de atividades enriquecedoras:</p>
+
+        <div class="atividades-grid">
+            <div class="atividade-card">
+                <h3>🏕️ Campori e Acampamentos</h3>
+                <p>Eventos regionais e nacionais com jovens de todo o Brasil</p>
+            </div>
+            <div class="atividade-card">
+                <h3>🎖️ Investiduras</h3>
+                <p>Prog. de honra e conquistas anuais</p>
+            </div>
+            <div class="atividade-card">
+                <h3>🎵 Banda Marcial</h3>
+                <p>Formação musical e apresentações</p>
+            </div>
+            <div class="atividade-card">
+                <h3>🤝 Trabalhos Comunitários</h3>
+                <p>Serviço cristão e assistência social</p>
+            </div>
+            <div class="atividade-card">
+                <h3>🥾 Trilhas e Primeiros Socorros</h3>
+                <p>Atividades ao ar livre e sobrevivência</p>
+            </div>
+            <div class="atividade-card">
+                <h3>📖 Reuniões Semanais</h3>
+                <p>Encontros regulares de formação</p>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <h2>Conheça Nosso Trabalho</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/gbshEXCS15U" title="Desbravadores Cruzeiro do Sul" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Horários e Local Section -->
+    <div class="content-section">
+        <h2>Horários e Local</h2>
+        <p>Reuniões semanais no prédio da IASD Central de Brasília; reuniões especiais e acampamentos conforme calendário anual.</p>
+        <p>Para confirmar horários e entradas, consulte as redes sociais do clube ou entre em contato com a diretoria.</p>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📍 Local</h3>
+                <p>IASD Central de Brasília</p>
+            </div>
+            <div class="info-card">
+                <h3>🕐 Reuniões</h3>
+                <p>Conforme calendário anual</p>
+            </div>
+            <div class="info-card">
+                <h3>📅 Eventos</h3>
+                <p>Acampamentos e atividades especiais</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Redes Sociais Section -->
+    <div class="social-media-section">
+        <h2>Siga-nos nas Redes Sociais</h2>
+        <p style="color: #fff; margin-bottom: 25px; font-size: 1.1rem;">Acompanhe nossas atividades, fotos e novidades!</p>
+
+        <a href="https://www.instagram.com/cruzeirodosuldbv/reels/" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>@cruzeirodosuldbv</span>
+        </a>
+
+        <a href="https://www.youtube.com/c/desbravadorescruzeirodosul" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>YouTube</span>
+        </a>
+    </div>
+
+    <!-- Como Participar Section -->
+    <div class="content-section">
+        <h2>Como Participar</h2>
+        <p>Para fazer parte do Clube de Desbravadores Cruzeiro do Sul, siga as 3 etapas abaixo:</p>
+
+        <div class="steps-container">
+            <div class="step-item">
+                <h3>Pré-inscrição</h3>
+                <p>Preencher a pré-inscrição utilizando o código <strong>3ZK5E</strong> no link: <a href="https://clubes.adventistas.org/br/aplac/13634/cruzeiro-do-sul/" target="_blank">clubes.adventistas.org/br/aplac/13634/cruzeiro-do-sul/</a></p>
+            </div>
+
+            <div class="step-item">
+                <h3>Acertos Financeiros</h3>
+                <p>Fazer os acertos financeiros presencialmente na Tesouraria do Clube ou entrando em contato com o Siloé pelo E-mail: <a href="mailto:cruzeirodosul.tesouraria.bsb@gmail.com">cruzeirodosul.tesouraria.bsb@gmail.com</a></p>
+            </div>
+
+            <div class="step-item">
+                <h3>Ativação da Inscrição</h3>
+                <p>Comparecer à Secretaria do Clube para ativar a inscrição do seu filho ou entrando em contato com a Lindi</p>
+            </div>
+        </div>
+
+        <div class="warning-box">
+            <h3>⚠️ Importante</h3>
+            <p><strong>Lembre-se de realizar todas as 3 etapas.</strong> Caso contrário, o desbravador não estará regularmente inscrito e não poderá participar das atividades do Clube.</p>
+            <p>Cada desbravador inscrito possui um seguro que o permite participar das atividades com a segurança necessária.</p>
+            <p>Além disso, os desbravadores não inscritos no Clube não poderão ser inscritos no <strong>Campori da Aplac (Jun/26)</strong> e nem no <strong>Campori Sul-Americano (Jan/27)</strong>.</p>
+        </div>
+
+        <div class="contact-info">
+            <h3>📞 Contato</h3>
+            <p><strong>Email Tesouraria:</strong> <a href="mailto:cruzeirodosul.tesouraria.bsb@gmail.com">cruzeirodosul.tesouraria.bsb@gmail.com</a></p>
+            <p style="margin-top: 15px;"><em>Qualquer dúvida, estamos à disposição.</em></p>
+            <p><strong>Diretoria do Clube de Desbravadores Cruzeiro do Sul</strong></p>
+        </div>
+    </div>
+
+    <!-- Seção de Notícias -->
+    <section class="noticias-section">
+        <div class="noticias-container">
+            <div class="noticias-header">
+                <span class="noticias-eyebrow">Notícias</span>
+                <h2 class="acb-title-serif">Últimas Notícias da Nossa Comunidade</h2>
+            </div>
+
+            <a href="{{ route('noticia-desbravadores') }}" class="noticia-card" aria-label="Ler notícia completa sobre o Clube de Desbravadores">
+                <div class="noticia-card__image">
+                    <img src="{{ asset('img/noticias/desbravadores-1.jpeg') }}" alt="Clube de Desbravadores Cruzeiro do Sul em Campori APLaC 2026" loading="lazy" decoding="async" width="600" height="338">
+                </div>
+                <div class="noticia-card__content">
+                    <div class="noticia-card__meta">
+                        <span class="noticia-card__categoria">Religião &amp; Comunidade</span>
+                        <span class="noticia-card__data">10/06/2026</span>
+                    </div>
+                    <h3 class="noticia-card__title">Clube de Desbravadores Cruzeiro do Sul celebra participação marcante em Campori APLaC 2026</h3>
+                    <p class="noticia-card__excerpt">Evento de quatro dias reuniu jovens para atividades de desenvolvimento pessoal, espiritual e fortalecimento comunitário; foco agora se volta para a edição sul-americana de 2027.</p>
+                    <span class="noticia-card__cta">Ler notícia completa</span>
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+@endsection
