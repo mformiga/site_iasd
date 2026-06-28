@@ -703,15 +703,15 @@
     <img src="{{ asset('img/noticias/desbravadores-1-header.jpeg') }}" alt="Desbravadores Cruzeiro do Sul" class="desbravadores-page-header-img">
 </div>
 
-<div class="desbravadores-container">
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1>Clube de Desbravadores Cruzeiro do Sul</h1>
-            <p>Formando jovens líderes com fé, serviço e espírito de aventura desde 1972.</p>
-        </div>
+<!-- Hero Section -->
+<div class="hero-section acb-fullbleed">
+    <div class="hero-content">
+        <h1>Clube de Desbravadores Cruzeiro do Sul</h1>
+        <p>Formando jovens líderes com fé, serviço e espírito de aventura desde 1972.</p>
     </div>
+</div>
 
+<div class="desbravadores-container">
     <!-- História Section -->
     <div class="content-section">
         <h2>Nossa História</h2>
