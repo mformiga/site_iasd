@@ -940,9 +940,6 @@ function expandNews() {
     setTimeout(() => {
         fullContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 100);
-
-    // Prevenir scroll do body
-    document.body.style.overflow = 'hidden';
 }
 
 function closeNews(event) {
@@ -950,9 +947,6 @@ function closeNews(event) {
 
     const fullContent = document.getElementById('fullNewsContent');
     fullContent.classList.remove('active');
-
-    // Restaurar scroll do body
-    document.body.style.overflow = 'auto';
 
     // Scroll suave de volta ao card da notícia
     const newsCard = document.querySelector('.noticia-card');
