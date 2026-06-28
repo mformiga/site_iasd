@@ -699,12 +699,12 @@
 @endpush
 
 @section('content')
-<div class="desbravadores-container">
-    <!-- Header Image -->
-    <div class="desbravadores-header-wrap">
-        <img src="{{ asset('img/noticias/desbravadores-1-header.jpeg') }}" alt="Desbravadores Cruzeiro do Sul" class="desbravadores-page-header-img">
-    </div>
+<!-- Header Image -->
+<div class="desbravadores-header-wrap">
+    <img src="{{ asset('img/noticias/desbravadores-1-header.jpeg') }}" alt="Desbravadores Cruzeiro do Sul" class="desbravadores-page-header-img">
+</div>
 
+<div class="desbravadores-container">
     <!-- Hero Section -->
     <div class="hero-section">
         <div class="hero-content">
