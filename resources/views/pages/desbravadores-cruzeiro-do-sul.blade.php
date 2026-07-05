@@ -156,6 +156,14 @@
         margin-bottom: 15px;
     }
 
+    .info-card p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #666;
+        text-align: center;
+        margin: 0;
+    }
+
     .social-media-section {
         background: linear-gradient(135deg, #003366 0%, #001531 100%);
         padding: 40px;
@@ -519,6 +527,14 @@
         transform: translateX(4px);
     }
 
+    .noticia-card__cta:hover {
+        text-decoration: underline;
+    }
+
+    button.noticia-card__cta:hover {
+        text-decoration: underline;
+    }
+
     /* Conteúdo expansível da notícia */
     .noticia-full-content {
         max-width: 900px;
@@ -560,26 +576,6 @@
         margin: 0;
         font-family: 'Bebas neue', sans-serif;
         font-size: 1.5em;
-    }
-
-    .close-noticia-btn {
-        background: rgba(255, 255, 255, 0.2);
-        color: white;
-        border: none;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: background 0.3s, transform 0.3s;
-    }
-
-    .close-noticia-btn:hover {
-        background: rgba(255, 255, 255, 0.3);
-        transform: rotate(90deg);
     }
 
     .noticia-full-body {
@@ -694,6 +690,219 @@
             gap: 8px;
         }
     }
+
+    /* Seção de História Dinâmica */
+    .history-section {
+        background: linear-gradient(135deg, #fff8e7 0%, #fff 100%);
+        padding: 50px 40px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        border-left: 5px solid #D2691E;
+    }
+
+    .history-section h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 2.2em;
+        color: #8B4513;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .history-section h2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, #D2691E, #CD853F);
+    }
+
+    .history-timeline {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 30px;
+    }
+
+    .history-timeline::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(180deg, #D2691E 0%, #CD853F 100%);
+    }
+
+    .history-item {
+        position: relative;
+        margin-bottom: 25px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .history-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 20px rgba(210, 105, 30, 0.2);
+    }
+
+    .history-item::before {
+        content: '';
+        position: absolute;
+        left: -49px;
+        top: 25px;
+        width: 16px;
+        height: 16px;
+        background: #D2691E;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px #D2691E;
+    }
+
+    .history-item__year {
+        display: inline-block;
+        background: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    .history-item__title {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.4em;
+        color: #8B4513;
+        margin: 10px 0;
+    }
+
+    .history-item__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+        margin: 0;
+    }
+
+    .founder-card {
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        color: white;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 30px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .founder-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        animation: shine 15s infinite linear;
+    }
+
+    @keyframes shine {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .founder-card__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .founder-card__icon {
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+
+    .founder-card__title {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .founder-card__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 15px;
+    }
+
+    .founder-card__highlight {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        border-radius: 10px;
+        border-left: 4px solid #D4AF37;
+        font-style: italic;
+    }
+
+    .history-cta {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .history-cta__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .history-cta__link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(210, 105, 30, 0.4);
+    }
+
+    .history-cta__link::after {
+        content: '→';
+        font-size: 1.2em;
+        transition: transform 0.3s;
+    }
+
+    .history-cta__link:hover::after {
+        transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+        .history-section {
+            padding: 30px 20px;
+        }
+
+        .history-timeline {
+            padding-left: 30px;
+        }
+
+        .history-item::before {
+            left: -39px;
+        }
+
+        .founder-card {
+            padding: 20px;
+        }
+    }
 </style>
 @endpush
 
@@ -713,17 +922,50 @@
 
 <div class="desbravadores-container">
     <!-- História Section -->
-    <div class="content-section">
+    <div class="history-section">
         <h2>Nossa História</h2>
-        <p>O Clube de Desbravadores Cruzeiro do Sul nasceu na IASD Central de Brasília no início da década de 1970, quando líderes locais organizaram o primeiro grupo de jovens para formação física, mental e espiritual.</p>
-        <p>Desde então o clube cresceu, participou de campos, formou bandas marciais e líderes, e mantém tradição de serviço comunitário e evangelismo entre os adolescentes de Brasília.</p>
-        <p>Ao longo dos anos, temos formado gerações de jovens comprometidos com os princípios cristãos, preparando-os para serem cidadãos exemplares e líderes em suas comunidades.</p>
+
+        <div class="history-timeline">
+            <div class="history-item">
+                <span class="history-item__year">1972</span>
+                <h3 class="history-item__title">Fundação do Clube</h3>
+                <p class="history-item__text">O Clube de Desbravadores Cruzeiro do Sul nasceu na IASD Central de Brasília no início da década de 1970, quando líderes locais organizaram o primeiro grupo de jovens para formação física, mental e espiritual.</p>
+            </div>
+
+            <div class="history-item">
+                <span class="history-item__year">Décadas de Atuação</span>
+                <h3 class="history-item__title">Crescimento e Desenvolvimento</h3>
+                <p class="history-item__text">Desde então o clube cresceu, participou de campos, formou bandas marciais e líderes, e mantém tradição de serviço comunitário e evangelismo entre os adolescentes de Brasília.</p>
+            </div>
+
+            <div class="history-item">
+                <span class="history-item__title" style="color: #8B4513; margin-top: 0;">Legado de Liderança</span>
+                <p class="history-item__text">Ao longo dos anos, temos formado gerações de jovens comprometidos com os princípios cristãos, preparando-os para serem bons cidadãos e líderes com princípios cristãos em suas comunidades.</p>
+            </div>
+        </div>
+
+        <div class="founder-card">
+            <div class="founder-card__content">
+                <div class="founder-card__icon">⭐</div>
+                <h3 class="founder-card__title">Nosso Fundador</h3>
+                <p class="founder-card__text">O Pastor José Maria é o fundador do Clube de Desbravadores Cruzeiro do Sul e foi diretor deste clube nos anos de 1972 e 1973, estabelecendo as bases da nossa tradição de excelência na formação de jovens.</p>
+                <div class="founder-card__highlight">
+                    "A visão do Pastor José Maria em 1972 plantou a semente que cresceria para se tornar mais de 50 anos de transformação de vidas através do ministério de desbravadores."
+                </div>
+            </div>
+        </div>
+
+        <div class="history-cta">
+            <a href="/historia-desbravadores" class="history-cta__link">
+                Conheça Nossa História Completa
+            </a>
+        </div>
     </div>
 
     <!-- Missão e Valores Section -->
     <div class="content-section">
         <h2>Missão e Valores</h2>
-        <p>Nossa missão é desenvolver adolescentes (10–15 anos) integralmente — físico, mental e espiritual — por meio de atividades ao ar livre, serviço cristão e liderança.</p>
+        <p>Nossa missão é desenvolver juvenis e adolescentes (10–15 anos) e jovens líderes integralmente — físico, mental e espiritual — por meio de atividades ao ar livre, serviço cristão e liderança.</p>
         <p>Valorizamos fé ativa, disciplina, amizade e preparo para a vida. Acreditamos que cada jovem tem potencial único para fazer a diferença no mundo.</p>
         <p>Nossos valores são baseados nos princípios cristãos adventistas, promovendo o desenvolvimento harmonioso de todas as faculdades humanas.</p>
 
@@ -755,7 +997,7 @@
         <div class="atividades-grid">
             <div class="atividade-card">
                 <h3>🏕️ Campori e Acampamentos</h3>
-                <p>Eventos regionais e nacionais com jovens de todo o Brasil</p>
+                <p>Eventos nacionais e internacionais com jovens de todo o Brasil e América do Sul</p>
             </div>
             <div class="atividade-card">
                 <h3>🎖️ Investiduras</h3>
@@ -791,13 +1033,13 @@
     <!-- Horários e Local Section -->
     <div class="content-section">
         <h2>Horários e Local</h2>
-        <p>Reuniões semanais no prédio da IASD Central de Brasília; reuniões especiais e acampamentos conforme calendário anual.</p>
+        <p>Reuniões semanais aos Domingos de 9 a 12h na sede do Clube de Desbravadores localizada no prédio da IASD Central de Brasília; reuniões especiais e acampamentos conforme calendário anual.</p>
         <p>Para confirmar horários e entradas, consulte as redes sociais do clube ou entre em contato com a diretoria.</p>
 
         <div class="info-grid">
             <div class="info-card">
                 <h3>📍 Local</h3>
-                <p>IASD Central de Brasília</p>
+                <p>Sede do Clube na IASD Central de Brasília</p>
             </div>
             <div class="info-card">
                 <h3>🕐 Reuniões</h3>
@@ -844,12 +1086,12 @@
 
             <div class="step-item">
                 <h3>Acertos Financeiros</h3>
-                <p>Fazer os acertos financeiros presencialmente na Tesouraria do Clube ou entrando em contato com o Siloé pelo E-mail: <a href="mailto:cruzeirodosul.tesouraria.bsb@gmail.com">cruzeirodosul.tesouraria.bsb@gmail.com</a></p>
+                <p>Fazer os acertos financeiros presencialmente na Tesouraria do Clube ou entrando em contato pelo E-mail: <a href="mailto:cruzeirodosul.tesouraria.bsb@gmail.com">cruzeirodosul.tesouraria.bsb@gmail.com</a></p>
             </div>
 
             <div class="step-item">
                 <h3>Ativação da Inscrição</h3>
-                <p>Comparecer à Secretaria do Clube para ativar a inscrição do seu filho ou entrando em contato com a Lindi</p>
+                <p>Comparecer presencialmente à Secretaria do Clube para ativar a inscrição do seu filho</p>
             </div>
         </div>
 
@@ -895,7 +1137,6 @@
             <div class="noticia-full-content" id="fullNewsContent">
                 <div class="noticia-full-header">
                     <h3>📰 Notícia Completa</h3>
-                    <button class="close-noticia-btn" onclick="closeNews(event)" aria-label="Fechar notícia">×</button>
                 </div>
 
                 <div class="noticia-full-author">
@@ -905,7 +1146,7 @@
                 <div class="noticia-full-body">
                     <p><strong>Brasília —</strong> O Clube de Desbravadores Cruzeiro do Sul consolidou, na última semana, mais um marco em sua trajetória com a conclusão de sua participação no Campori. O evento, que se estendeu por quatro dias, promoveu uma imersão focada no desenvolvimento de talentos, fortalecimento de laços de amizade e, fundamentalmente, no crescimento espiritual dos jovens participantes.</p>
 
-                    <p>Segundo a coordenação do Cruzeiro do Sul, as atividades proporcionaram momentos de reflexão e experiências práticas que devem gerar impactos duradouros na formação dos Desbravadores. O encontro é apontado pela liderança como um espaço essencial para a comunhão e o exercício da cidadania cristã.</p>
+                    <p>Segundo a coordenação do Cruzeiro do Sul, as atividades proporcionaram momentos de reflexão e experiências práticas que devem gerar impactos duradouros na formação dos Desbravadores. O encontro é apontado pela liderança como um espaço essencial para a comunhão e o exercício da cidadão cristã.</p>
 
                     <h2>Apoio e Fortalecimento Institucional</h2>
                     <p>O sucesso da expedição foi creditado ao envolvimento direto da comunidade e do corpo eclesiástico. A diretoria do Clube emitiu um agradecimento público à liderança da igreja local pelo suporte contínuo e logístico, destacando o papel dos pastores e voluntários que atuaram na linha de frente das operações diárias.</p>
@@ -924,6 +1165,12 @@
                         <img src="{{ asset('img/noticias/desbravadores-2.jpeg') }}" alt="Atividades do Campori APLaC 2026" loading="lazy" decoding="async" width="800" height="450">
                         <figcaption>Atividades do Campori APLaC 2026</figcaption>
                     </figure>
+
+                    <div style="text-align: center; margin-top: 30px;">
+                        <button class="noticia-card__cta" onclick="closeNews(event)" aria-label="Fechar notícia" style="background: none; border: none; cursor: pointer; font-family: 'Roboto', sans-serif; font-size: 0.9rem; font-weight: 700; color: #003366; text-transform: uppercase; letter-spacing: .03em; padding: 0;">
+                            <span>← Fechar notícia completa</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -942,7 +1189,7 @@ function expandNews() {
 }
 
 function closeNews(event) {
-    event.stopPropagation(); // Evitar que o clique propague
+    event.preventDefault(); // Evitar comportamento padrão do botão
 
     const fullContent = document.getElementById('fullNewsContent');
     fullContent.classList.remove('active');
