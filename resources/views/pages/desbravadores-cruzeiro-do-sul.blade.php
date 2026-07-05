@@ -903,6 +903,357 @@
             padding: 20px;
         }
     }
+
+    /* Seção de Missão e Valores */
+    .mission-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 60px 40px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mission-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(210, 105, 30, 0.1) 0%, transparent 70%);
+        border-radius: 50%;
+        transform: translate(30%, -30%);
+    }
+
+    .mission-header {
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mission-icon {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+    .mission-header h2 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 3em;
+        color: #8B4513;
+        margin-bottom: 15px;
+        font-weight: 500;
+        position: relative;
+        display: inline-block;
+    }
+
+    .mission-header h2::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #D2691E, #CD853F);
+        border-radius: 2px;
+    }
+
+    .mission-tagline {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
+        color: #666;
+        font-weight: 500;
+        margin-top: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .mission-statement {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .mission-text {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+    }
+
+    .mission-text p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.15rem;
+        line-height: 2;
+        color: #333;
+        margin: 0;
+    }
+
+    .mission-text strong {
+        color: #D2691E;
+        font-weight: 700;
+    }
+
+    .mission-text em {
+        color: #8B4513;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .mission-highlight {
+        display: flex;
+        justify-content: center;
+    }
+
+    .highlight-card {
+        background: linear-gradient(135deg, #003366 0%, #001531 100%);
+        color: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.3);
+        position: relative;
+        overflow: hidden;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .highlight-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        animation: shine 15s infinite linear;
+    }
+
+    .highlight-icon {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .highlight-card h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .highlight-card p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .highlight-card strong {
+        color: #D4AF37;
+        font-weight: 700;
+    }
+
+    .values-showcase {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .value-card {
+        background: white;
+        padding: 35px 25px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .value-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #D2691E, #CD853F);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+    }
+
+    .value-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(210, 105, 30, 0.25);
+    }
+
+    .value-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .value-icon-wrapper {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        position: relative;
+        transition: transform 0.4s ease, background 0.4s ease;
+    }
+
+    .value-card:hover .value-icon-wrapper {
+        transform: scale(1.1) rotate(5deg);
+        background: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
+    }
+
+    .value-icon {
+        font-size: 2.2em;
+        transition: transform 0.4s ease;
+    }
+
+    .value-card:hover .value-icon {
+        transform: scale(1.1);
+    }
+
+    .value-card h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.6em;
+        color: #8B4513;
+        margin-bottom: 12px;
+        font-weight: 500;
+    }
+
+    .value-card p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .foundation-banner {
+        background: linear-gradient(135deg, #fff8e7 0%, #fff 100%);
+        padding: 35px 40px;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border-left: 5px solid #D2691E;
+    }
+
+    .foundation-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .foundation-badge {
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5em;
+        flex-shrink: 0;
+        box-shadow: 0 8px 25px rgba(210, 105, 30, 0.3);
+        position: relative;
+        z-index: 1;
+    }
+
+    .foundation-text h3 {
+        font-family: 'Bebas neue', sans-serif;
+        font-size: 1.8em;
+        color: #8B4513;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .foundation-text p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    @media (max-width: 1024px) {
+        .mission-statement {
+            grid-template-columns: 1fr;
+        }
+
+        .values-showcase {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .mission-section {
+            padding: 40px 25px;
+        }
+
+        .mission-header h2 {
+            font-size: 2.2em;
+        }
+
+        .mission-tagline {
+            font-size: 1.1rem;
+        }
+
+        .mission-text {
+            padding: 30px 25px;
+        }
+
+        .highlight-card {
+            padding: 30px 25px;
+        }
+
+        .values-showcase {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .foundation-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .foundation-badge {
+            width: 70px;
+            height: 70px;
+            font-size: 2em;
+        }
+
+        .foundation-text h3 {
+            font-size: 1.5em;
+        }
+    }
 </style>
 @endpush
 
@@ -963,28 +1314,66 @@
     </div>
 
     <!-- Missão e Valores Section -->
-    <div class="content-section">
-        <h2>Missão e Valores</h2>
-        <p>Nossa missão é desenvolver juvenis e adolescentes (10–15 anos) e jovens líderes integralmente — físico, mental e espiritual — por meio de atividades ao ar livre, serviço cristão e liderança.</p>
-        <p>Valorizamos fé ativa, disciplina, amizade e preparo para a vida. Acreditamos que cada jovem tem potencial único para fazer a diferença no mundo.</p>
-        <p>Nossos valores são baseados nos princípios cristãos adventistas, promovendo o desenvolvimento harmonioso de todas as faculdades humanas.</p>
+    <div class="mission-section">
+        <div class="mission-header">
+            <div class="mission-icon">🎯</div>
+            <h2>Missão e Valores</h2>
+            <p class="mission-tagline">Transformando jovens em líderes de propósito</p>
+        </div>
 
-        <div class="info-grid">
-            <div class="info-card">
+        <div class="mission-statement">
+            <div class="mission-text">
+                <p>Nossa missão é desenvolver juvenis e adolescentes <strong>(10–15 anos)</strong> e jovens líderes <em>integralmente</em> — físico, mental e espiritual — por meio de atividades ao ar livre, serviço cristão e liderança.</p>
+            </div>
+            <div class="mission-highlight">
+                <div class="highlight-card">
+                    <div class="highlight-icon">💫</div>
+                    <h3>Nosso Propósito</h3>
+                    <p>Acreditamos que cada jovem tem <strong>potencial único</strong> para fazer a diferença no mundo através de fé ativa, disciplina, amizade e preparo para a vida.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="values-showcase">
+            <div class="value-card">
+                <div class="value-icon-wrapper">
+                    <span class="value-icon">✝️</span>
+                </div>
                 <h3>Fé</h3>
-                <p>Desenvolvimento espiritual e conexão com Deus</p>
+                <p>Desenvolvimento espiritual e conexão profunda com Deus</p>
             </div>
-            <div class="info-card">
+            <div class="value-card">
+                <div class="value-icon-wrapper">
+                    <span class="value-icon">🤝</span>
+                </div>
                 <h3>Serviço</h3>
-                <p>Compromisso com a comunidade e o próximo</p>
+                <p>Compromisso inabalável com a comunidade e o próximo</p>
             </div>
-            <div class="info-card">
+            <div class="value-card">
+                <div class="value-icon-wrapper">
+                    <span class="value-icon">⛰️</span>
+                </div>
                 <h3>Aventura</h3>
-                <p>Atividades ao ar livre e superação</p>
+                <p>Atividades ao ar livre e superação de limites</p>
             </div>
-            <div class="info-card">
+            <div class="value-card">
+                <div class="value-icon-wrapper">
+                    <span class="value-icon">👑</span>
+                </div>
                 <h3>Liderança</h3>
-                <p>Formação de jovens líderes cristãos</p>
+                <p>Formação de jovens líderes cristãos para impactar o mundo</p>
+            </div>
+        </div>
+
+        <div class="foundation-banner">
+            <div class="foundation-content">
+                <div class="foundation-badge">
+                    <span>🏛️</span>
+                </div>
+                <div class="foundation-text">
+                    <h3>Fundamentos Cristãos</h3>
+                    <p>Nossos valores promovem o desenvolvimento harmonioso de todas as faculdades humanas — preparando jovens para serem bons cidadãos e líderes em sua comunidade.</p>
+                </div>
             </div>
         </div>
     </div>
